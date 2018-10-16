@@ -38,3 +38,5 @@ Route::resource('negocios', 'NegociosController');
 Route::resource('relacionamentos', 'RelacionamentosController');
 
 Route::resource('telemarketings', 'TelemarketingController');
+
+Route::resource('marketings', 'MarketingController');

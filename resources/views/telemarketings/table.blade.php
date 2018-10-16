@@ -4,7 +4,6 @@
             <th>Prioridade</th>
         <th>Tarefa</th>
         <th>Acao</th>
-        <th>Departamento</th>
         <th>Status</th>
             <th colspan="3">Action</th>
         </tr>
@@ -15,7 +14,6 @@
             <td>{!! $telemarketing->prioridade !!}</td>
             <td>{!! $telemarketing->tarefa !!}</td>
             <td>{!! $telemarketing->acao !!}</td>
-            <td>{!! $telemarketing->departamento !!}</td>
             <td>{!! $telemarketing->status !!}</td>
             <td>
                 {!! Form::open(['route' => ['telemarketings.destroy', $telemarketing->id], 'method' => 'delete']) !!}

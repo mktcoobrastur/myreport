@@ -4,7 +4,6 @@
             <th>Prioridade</th>
         <th>Tarefa</th>
         <th>Acao</th>
-        <th>Departamento</th>
         <th>Status</th>
             <th colspan="3">Action</th>
         </tr>
@@ -15,7 +14,6 @@
             <td>{!! $triton->prioridade !!}</td>
             <td>{!! $triton->tarefa !!}</td>
             <td>{!! $triton->acao !!}</td>
-            <td>{!! $triton->departamento !!}</td>
             <td>{!! $triton->status !!}</td>
             <td>
                 {!! Form::open(['route' => ['tritons.destroy', $triton->id], 'method' => 'delete']) !!}

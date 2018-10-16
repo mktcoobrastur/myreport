@@ -4,7 +4,6 @@
             <th>Prioridade</th>
         <th>Tarefa</th>
         <th>Acao</th>
-        <th>Departamento</th>
         <th>Status</th>
             <th colspan="3">Action</th>
         </tr>
@@ -15,7 +14,6 @@
             <td>{!! $negocios->prioridade !!}</td>
             <td>{!! $negocios->tarefa !!}</td>
             <td>{!! $negocios->acao !!}</td>
-            <td>{!! $negocios->departamento !!}</td>
             <td>{!! $negocios->status !!}</td>
             <td>
                 {!! Form::open(['route' => ['negocios.destroy', $negocios->id], 'method' => 'delete']) !!}

@@ -1,7 +1,7 @@
 <!-- Prioridade Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('prioridade', 'Prioridade:') !!}
-    {!! Form::text('prioridade', null, ['class' => 'form-control']) !!}
+    {!! Form::select('prioridade', array('A' => 'Alta', 'N' => 'Normal', 'B' => 'Baixa'), 'N', ['class' => 'form-control']) !!}
 </div>
 
 <!-- Tarefa Field -->

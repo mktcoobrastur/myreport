@@ -19,7 +19,6 @@
         <tr class="trHover">
             
             <td>{!! $tarefas->prioridade !!}</td>
-            
             <td>{!! $tarefas->tarefa !!}</td>
             <td>{!! $tarefas->departamento !!}</td>
             <td>{!! $tarefas->created_at->format('d/M/Y') !!}</td>

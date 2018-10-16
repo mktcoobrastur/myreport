@@ -46,3 +46,7 @@
     <a href="{!! route('relacionamentos.index') !!}"><i class="fa fa-edit"></i><span>Relacionamentos</span></a>
 </li>
 
+<li class="{{ Request::is('telemarketings*') ? 'active' : '' }}">
+    <a href="{!! route('telemarketings.index') !!}"><i class="fa fa-edit"></i><span>Telemarketings</span></a>
+</li>
+

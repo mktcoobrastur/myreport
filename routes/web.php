@@ -36,3 +36,5 @@ Route::resource('tritons', 'TritonController');
 Route::resource('negocios', 'NegociosController');
 
 Route::resource('relacionamentos', 'RelacionamentosController');
+
+Route::resource('telemarketings', 'TelemarketingController');

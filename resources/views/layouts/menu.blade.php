@@ -10,23 +10,23 @@
 </li-->
 
 <li class="{{ Request::is('marketings*') ? 'active' : '' }}">
-    <a href="{!! route('marketings.index') !!}"><i class="fa fa-edit"></i><span>Marketing</span></a>
+    <a href="{!! route('marketings.index') !!}"><i class="fa fa-edit"></i> <span>Marketing</span></a>
 </li>
 
 <li class="{{ Request::is('relacionamentos*') ? 'active' : '' }}">
-    <a href="{!! route('relacionamentos.index') !!}"><i class="fa fa-edit"></i><span>Relacionamento</span></a>
+    <a href="{!! route('relacionamentos.index') !!}"><i class="fa fa-edit"></i> <span>Relacionamento</span></a>
 </li>
 
 <li class="{{ Request::is('negocios*') ? 'active' : '' }}">
-    <a href="{!! route('negocios.index') !!}"><i class="fa fa-edit"></i><span>Negócios</span></a>
+    <a href="{!! route('negocios.index') !!}"><i class="fa fa-edit"></i> <span>Negócios</span></a>
 </li>
 
 <li class="{{ Request::is('tritons*') ? 'active' : '' }}">
-    <a href="{!! route('tritons.index') !!}"><i class="fa fa-edit"></i><span>Gestão Triton</span></a>
+    <a href="{!! route('tritons.index') !!}"><i class="fa fa-edit"></i> <span>Gestão Triton</span></a>
 </li>
 
 <li class="{{ Request::is('telemarketings*') ? 'active' : '' }}">
-    <a href="{!! route('telemarketings.index') !!}"><i class="fa fa-edit"></i><span>Telemarketing</span></a>
+    <a href="{!! route('telemarketings.index') !!}"><i class="fa fa-edit"></i> <span>Telemarketing</span></a>
 </li>
 
 <!--li class="{{ Request::is('tarefas*') ? 'active' : '' }}">

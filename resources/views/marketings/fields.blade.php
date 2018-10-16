@@ -12,15 +12,15 @@
 
 <!-- Acao Field -->
 <div class="form-group col-sm-12 col-lg-12">
-    {!! Form::label('acao', 'Acao:') !!}
+    {!! Form::label('acao', 'Ação:') !!}
     {!! Form::textarea('acao', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Departamento Field -->
-<div class="form-group col-sm-6">
+<!--div class="form-group col-sm-6">
     {!! Form::label('departamento', 'Departamento:') !!}
     {!! Form::text('departamento', null, ['class' => 'form-control']) !!}
-</div>
+</div-->
 
 <!-- Status Field -->
 <div class="form-group col-sm-6">

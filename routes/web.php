@@ -42,3 +42,7 @@ Route::resource('vendas', 'VendasController');
 Route::resource('vendasdias', 'VendasdiaController');
 
 Route::resource('metas', 'MetaController');
+
+Route::resource('atendentes', 'AtendenteController');
+
+Route::resource('usuarios', 'UsuarioController');

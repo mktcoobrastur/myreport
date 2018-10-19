@@ -102,3 +102,11 @@
     <a href="{!! route('metas.index') !!}"><i class="fa fa-edit"></i><span>Metas</span></a>
 </li>
 
+<li class="{{ Request::is('atendentes*') ? 'active' : '' }}">
+    <a href="{!! route('atendentes.index') !!}"><i class="fa fa-edit"></i><span>Atendentes</span></a>
+</li>
+
+<li class="{{ Request::is('usuarios*') ? 'active' : '' }}">
+    <a href="{!! route('usuarios.index') !!}"><i class="fa fa-edit"></i><span>Usuarios</span></a>
+</li>
+

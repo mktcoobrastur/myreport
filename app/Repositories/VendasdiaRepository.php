@@ -20,7 +20,8 @@ class VendasdiaRepository extends BaseRepository
      * @var array
      */
     protected $fieldSearchable = [
-        'qnt'
+        'qnt',
+        'representante'
     ];
 
     /**

@@ -8,8 +8,8 @@
           <li><a href="#">Outros</a></li>
         </ul>
 </li-->
-<li class="{{ Request::is('marketings*') ? 'active' : '' }}">
-    <a href="{!! route('marketings.index') !!}"><i class="fa fa-dashboard"></i> <span> Painel Principal</span></a>
+<li class="">
+    <a href=""><i class="fa fa-dashboard"></i> <span> Painel Principal</span></a>
 </li>
 
 <li class="treeview">

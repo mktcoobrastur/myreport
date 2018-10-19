@@ -20,7 +20,7 @@ class Triton extends Model
 {
     use SoftDeletes;
 
-    public $table = 'triton';
+    public $table = 'tarefas';
     
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';

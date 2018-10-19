@@ -33,7 +33,7 @@ class NegociosController extends AppBaseController
         $negocios = $this->negociosRepository->all();
 
         return view('negocios.index')
-            ->with('negocios', $negocios);
+            ->with('negocios', $negocios->where('departamento', '=', 'Negocios'));
     }
 
     /**

@@ -33,7 +33,8 @@ class MarketingController extends AppBaseController
         $marketings = $this->marketingRepository->all();
 
         return view('marketings.index')
-            ->with('marketings', $marketings);
+            ->with('marketings', $marketings->where('departamento', '=', 'Marketing'));
+        
     }
 
     /**

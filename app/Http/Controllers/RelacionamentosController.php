@@ -33,7 +33,7 @@ class RelacionamentosController extends AppBaseController
         $relacionamentos = $this->relacionamentosRepository->all();
 
         return view('relacionamentos.index')
-            ->with('relacionamentos', $relacionamentos);
+            ->with('relacionamentos', $relacionamentos->where('departamento', '=', 'Relacionamento'));
     }
 
     /**

@@ -33,7 +33,7 @@ class TelemarketingController extends AppBaseController
         $telemarketings = $this->telemarketingRepository->all();
 
         return view('telemarketings.index')
-            ->with('telemarketings', $telemarketings);
+            ->with('telemarketings', $telemarketings->where('departamento', '=', 'Telemarketing'));
     }
 
     /**

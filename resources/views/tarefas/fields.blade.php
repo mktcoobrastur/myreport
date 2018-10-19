@@ -19,7 +19,11 @@
 <!-- Departamento Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('departamento', 'Departamento:') !!}
-    {!! Form::text('departamento', null, ['class' => 'form-control']) !!}
+    {!! Form::select('departamento', array('Marketing' => 'MARKETING',
+                                           'Relacionamento' => 'RELACIONAMENTO',
+                                           'Negocios' => 'NEGÓCIOS',
+                                           'Triton' => 'TRITON',
+                                           'Telemarketing' => 'TELEMARKETING'), '', ['class' => 'form-control']) !!}
 </div>
 
 <!-- Status Field -->

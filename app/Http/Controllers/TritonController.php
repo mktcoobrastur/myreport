@@ -33,7 +33,7 @@ class TritonController extends AppBaseController
         $tritons = $this->tritonRepository->all();
 
         return view('tritons.index')
-            ->with('tritons', $tritons);
+            ->with('tritons', $tritons->where('departamento', '=', 'Triton'));
     }
 
     /**

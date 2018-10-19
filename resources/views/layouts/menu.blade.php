@@ -19,6 +19,8 @@
 
 <li class="{{ Request::is('negocios*') ? 'active' : '' }}">
     <a href="{!! route('negocios.index') !!}"><i class="fa fa-edit"></i> <span>Negócios</span></a>
+    <ul><li>
+    <a href="{!! route('marketings.index') !!}"><span>Vendas</span></a></li></ul>
 </li>
 
 <li class="{{ Request::is('tritons*') ? 'active' : '' }}">

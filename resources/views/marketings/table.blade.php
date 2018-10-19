@@ -18,8 +18,8 @@
             <td>
                 {!! Form::open(['route' => ['marketings.destroy', $marketing->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>
-                    <a href="{!! route('marketings.show', [$marketing->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-                    <a href="{!! route('marketings.edit', [$marketing->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+                    <a href="{!! route('tarefas.show', [$marketing->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
+                    <a href="{!! route('tarefas.edit', [$marketing->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
                     {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
                 </div>
                 {!! Form::close() !!}

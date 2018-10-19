@@ -101,6 +101,7 @@ class VendasdiaController extends AppBaseController
             return redirect(route('vendasdias.index'));
         }
 
+
         return view('vendasdias.edit')->with('vendasdia', $vendasdia);
     }
 

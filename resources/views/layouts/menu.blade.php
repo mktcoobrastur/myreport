@@ -8,27 +8,80 @@
           <li><a href="#">Outros</a></li>
         </ul>
 </li-->
-
 <li class="{{ Request::is('marketings*') ? 'active' : '' }}">
-    <a href="{!! route('marketings.index') !!}"><i class="fa fa-edit"></i> <span>Marketing</span></a>
+    <a href="{!! route('marketings.index') !!}"><i class="fa fa-dashboard"></i> <span> Painel Principal</span></a>
 </li>
 
-<li class="{{ Request::is('relacionamentos*') ? 'active' : '' }}">
-    <a href="{!! route('relacionamentos.index') !!}"><i class="fa fa-edit"></i> <span>Relacionamento</span></a>
+<li class="treeview">
+          <a href="#">
+            <i class="fa fa-files-o"></i>
+            <span>Marketing</span>
+            <span class="pull-right-container">
+              <span class="label label-primary pull-right">2</span>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{!! route('marketings.index') !!}"><i class="fa fa-circle-o"></i> Tarefas</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Emarks</a></li>
+          </ul>
 </li>
 
-<li class="{{ Request::is('negocios*') ? 'active' : '' }}">
-    <a href="{!! route('negocios.index') !!}"><i class="fa fa-edit"></i> <span>Negócios</span></a>
-    <ul><li>
-    <a href="{!! route('vendas.index') !!}"><span>Vendas</span></a></li></ul>
+<li class="treeview">
+          <a href="#">
+          <i class="fa fa-book"></i>
+            <span>Relacionamento</span>
+            <span class="pull-right-container">
+              <span class="label label-primary pull-right">4</span>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{!! route('relacionamentos.index') !!}"><i class="fa fa-circle-o"></i> Tarefas</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Índice Reclame Aqui</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Gerenciamento de Chamados</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Fale Conosco</a></li>
+          </ul>
 </li>
 
-<li class="{{ Request::is('tritons*') ? 'active' : '' }}">
-    <a href="{!! route('tritons.index') !!}"><i class="fa fa-edit"></i> <span>Gestão Triton</span></a>
+<li class="treeview">
+          <a href="#">
+          <i class="fa fa-pie-chart"></i>
+            <span>Negócios</span>
+            <span class="pull-right-container">
+              <span class="label label-primary pull-right">4</span>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{!! route('negocios.index') !!}"><i class="fa fa-circle-o"></i> Tarefas</a></li>
+            <li><a href="{!! route('vendasdias.index') !!}"><i class="fa fa-circle-o"></i> Vendas</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Convênios</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Indicação Premiada</a></li>
+          </ul>
 </li>
 
-<li class="{{ Request::is('telemarketings*') ? 'active' : '' }}">
-    <a href="{!! route('telemarketings.index') !!}"><i class="fa fa-edit"></i> <span>Telemarketing</span></a>
+<li class="treeview">
+          <a href="#">
+          <i class="fa fa-laptop"></i>
+            <span>Gestão Triton</span>
+            <span class="pull-right-container">
+              <span class="label label-primary pull-right">1</span>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{!! route('tritons.index') !!}"><i class="fa fa-circle-o"></i> Tarefas</a></li>
+          </ul>
+</li>
+
+<li class="treeview">
+          <a href="#">
+          <i class="fa fa-envelope"></i>
+            <span>Telemarketing</span>
+            <span class="pull-right-container">
+              <span class="label label-primary pull-right">1</span>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{!! route('telemarketings.index') !!}"><i class="fa fa-circle-o"></i> Tarefas</a></li>
+          </ul>
 </li>
 
 <!--li class="{{ Request::is('tarefas*') ? 'active' : '' }}">

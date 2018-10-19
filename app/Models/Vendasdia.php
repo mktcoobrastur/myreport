@@ -25,7 +25,7 @@ class Vendasdia extends Model
 
 
     public $fillable = [
-        'qnt'
+        'qnt', 'representante'
     ];
 
     /**

@@ -10,6 +10,12 @@
     <p>{!! $vendasdia->qnt !!}</p>
 </div>
 
+<!-- Representante Field -->
+<div class="form-group">
+    {!! Form::label('representante', 'Representante:') !!}
+    <p>{!! $vendasdia->representante !!}</p>
+</div>
+
 <!-- Created At Field -->
 <div class="form-group">
     {!! Form::label('created_at', 'Criado em:') !!}

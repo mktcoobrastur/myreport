@@ -4,6 +4,11 @@
     {!! Form::text('qnt', null, ['class' => 'form-control']) !!}
 </div>
 
+<!-- Representante Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('representante', 'Representante:') !!}
+    {!! Form::text('representante', null, ['class' => 'form-control']) !!}
+</div>
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">

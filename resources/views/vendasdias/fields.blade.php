@@ -1,8 +1,9 @@
 <!-- Qnt Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('qnt', 'Qnt:') !!}
+    {!! Form::label('qnt', 'Total de Vendas do dia:') !!}
     {!! Form::text('qnt', null, ['class' => 'form-control']) !!}
 </div>
+
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">

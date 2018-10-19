@@ -16,7 +16,7 @@ class CreateVendasdiaTable extends Migration
         Schema::create('vendasdia', function (Blueprint $table) {
             $table->increments('id');
             $table->string('qnt');
-            //$table->string('representante');
+            $table->string('representante'); //adicionar no Controller!
             $table->timestamps();
         });
     }

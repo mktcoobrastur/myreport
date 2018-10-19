@@ -6,7 +6,7 @@
 
 <!-- Uteis Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('uteis', 'Uteis:') !!}
+    {!! Form::label('uteis', 'Dias Úteis:') !!}
     {!! Form::text('uteis', null, ['class' => 'form-control']) !!}
 </div>
 

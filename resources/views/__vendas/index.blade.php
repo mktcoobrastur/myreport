@@ -55,7 +55,8 @@
 </ul>
 <div class="tab-content" id="pills-tabContent">
   <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-    Acompanhamento de Vendas Diárias Janeiro
+   <br />
+   Acompanhamento de Vendas Diárias Janeiro
 
   </div>
   <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">Vendas de Fevereiro</div>

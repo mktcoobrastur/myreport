@@ -124,7 +124,7 @@ class TarefasController extends AppBaseController
 
         $tarefas = $this->tarefasRepository->update($request->all(), $id);
 
-        Flash::success('Tarefas updated successfully.');
+        Flash::success('Registro salvo com sucesso.');
 
         return redirect(route('tarefas.index'));
     }

@@ -36,19 +36,19 @@
 
 <!-- Created At Field -->
 <div class="form-group">
-    {!! Form::label('created_at', 'Created At:') !!}
+    {!! Form::label('created_at', 'Criado em:') !!}
     <p>{!! $telemarketing->created_at !!}</p>
 </div>
 
 <!-- Updated At Field -->
 <div class="form-group">
-    {!! Form::label('updated_at', 'Updated At:') !!}
+    {!! Form::label('updated_at', 'Atualizado em:') !!}
     <p>{!! $telemarketing->updated_at !!}</p>
 </div>
 
 <!-- Deleted At Field -->
 <div class="form-group">
-    {!! Form::label('deleted_at', 'Deleted At:') !!}
+    {!! Form::label('deleted_at', 'Deletado em:') !!}
     <p>{!! $telemarketing->deleted_at !!}</p>
 </div>
 

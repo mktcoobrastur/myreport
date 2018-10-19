@@ -59,7 +59,7 @@ class RelacionamentosController extends AppBaseController
 
         $relacionamentos = $this->relacionamentosRepository->create($input);
 
-        Flash::success('Relacionamentos saved successfully.');
+        Flash::success('Registro salvo com sucesso.');
 
         return redirect(route('relacionamentos.index'));
     }

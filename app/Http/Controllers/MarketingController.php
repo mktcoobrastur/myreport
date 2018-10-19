@@ -60,7 +60,7 @@ class MarketingController extends AppBaseController
 
         $marketing = $this->marketingRepository->create($input);
 
-        Flash::success('Marketing saved successfully.');
+        Flash::success('Registro salvo com sucesso.');
 
         return redirect(route('marketings.index'));
     }

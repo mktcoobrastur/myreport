@@ -59,7 +59,7 @@ class TelemarketingController extends AppBaseController
 
         $telemarketing = $this->telemarketingRepository->create($input);
 
-        Flash::success('Telemarketing saved successfully.');
+        Flash::success('Registro salvo com sucesso.');
 
         return redirect(route('telemarketings.index'));
     }

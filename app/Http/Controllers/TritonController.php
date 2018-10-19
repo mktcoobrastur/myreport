@@ -59,7 +59,7 @@ class TritonController extends AppBaseController
 
         $triton = $this->tritonRepository->create($input);
 
-        Flash::success('Triton saved successfully.');
+        Flash::success('Registro salvo com sucesso.');
 
         return redirect(route('tritons.index'));
     }

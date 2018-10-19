@@ -20,7 +20,7 @@
 <li class="{{ Request::is('negocios*') ? 'active' : '' }}">
     <a href="{!! route('negocios.index') !!}"><i class="fa fa-edit"></i> <span>Negócios</span></a>
     <ul><li>
-    <a href="{!! route('marketings.index') !!}"><span>Vendas</span></a></li></ul>
+    <a href="{!! route('vendas.index') !!}"><span>Vendas</span></a></li></ul>
 </li>
 
 <li class="{{ Request::is('tritons*') ? 'active' : '' }}">
@@ -38,3 +38,10 @@
 <li class="{{ Request::is('departamentos*') ? 'active' : '' }}">
     <a href="{!! route('departamentos.index') !!}"><i class="fa fa-edit"></i><span>Departamentos</span></a>
 </li-->
+
+<hr>
+
+<li class="{{ Request::is('vendasdias*') ? 'active' : '' }}">
+    <a href="{!! route('vendasdias.index') !!}"><i class="fa fa-edit"></i><span>Vendas</span></a>
+</li>
+

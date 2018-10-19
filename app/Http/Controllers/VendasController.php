@@ -43,7 +43,7 @@ class VendasController extends AppBaseController
      */
     public function create()
     {
-        return view('negocios.create');
+        return view('vendas.create');
     }
 
     /**
@@ -59,7 +59,7 @@ class VendasController extends AppBaseController
 
         $negocios = $this->negociosRepository->create($input);
 
-        Flash::success('Negocios saved successfully.');
+        Flash::success('Registro salvo com sucesso.');
 
         return redirect(route('negocios.index'));
     }

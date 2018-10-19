@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateRelacionamentosTable extends Migration
+class CreateUsersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,15 @@ class CreateRelacionamentosTable extends Migration
      */
     public function up()
     {
-        Schema::create('tarefas', function (Blueprint $table) {
+        Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('prioridade');
-            $table->string('tarefa');
-            $table->longText('acao');
-            $table->string('departamento')->nullable();
-            $table->string('status');
-            
+            $table->string('name');
+            $table->string('email');
+            $table->timestamp('email_verified_at')->nullable();
+            $table->string('password');
+            $table->rememberToken();
             $table->timestamps();
-       });
+        });
     }
 
     /**
@@ -32,6 +31,6 @@ class CreateRelacionamentosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tarefas');
+        Schema::dropIfExists('users');
     }
 }

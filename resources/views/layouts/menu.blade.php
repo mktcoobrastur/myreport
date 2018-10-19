@@ -98,3 +98,7 @@
     <a href="{!! route('vendasdias.index') !!}"><i class="fa fa-edit"></i><span>Vendas</span></a>
 </li>
 
+<li class="{{ Request::is('metas*') ? 'active' : '' }}">
+    <a href="{!! route('metas.index') !!}"><i class="fa fa-edit"></i><span>Metas</span></a>
+</li>
+

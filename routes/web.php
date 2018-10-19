@@ -40,3 +40,5 @@ Route::resource('marketings', 'MarketingController');
 Route::resource('vendas', 'VendasController');
 
 Route::resource('vendasdias', 'VendasdiaController');
+
+Route::resource('metas', 'MetaController');

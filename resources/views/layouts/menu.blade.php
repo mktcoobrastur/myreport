@@ -21,8 +21,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="{!! route('marketings.index') !!}"><i class="fa fa-circle-o"></i> Tarefas</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Emarks</a></li>
+            <li><a href="{!! route('marketings.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
+            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Emarks</a></li>
           </ul>
 </li>
 
@@ -35,10 +35,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="{!! route('relacionamentos.index') !!}"><i class="fa fa-circle-o"></i> Tarefas</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Índice Reclame Aqui</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Gerenciamento de Chamados</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Fale Conosco</a></li>
+            <li><a href="{!! route('relacionamentos.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
+            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Índice Reclame Aqui</a></li>
+            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Gerenciamento de Chamados</a></li>
+            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Fale Conosco</a></li>
           </ul>
 </li>
 
@@ -51,10 +51,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="{!! route('negocios.index') !!}"><i class="fa fa-circle-o"></i> Tarefas</a></li>
-            <li><a href="{!! route('vendasdias.index') !!}"><i class="fa fa-circle-o"></i> Vendas</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Convênios</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Indicação Premiada</a></li>
+            <li><a href="{!! route('negocios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
+            <li><a href="{!! route('vendasdias.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Vendas</a></li>
+            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Convênios</a></li>
+            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Indicação Premiada</a></li>
           </ul>
 </li>
 
@@ -67,7 +67,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="{!! route('tritons.index') !!}"><i class="fa fa-circle-o"></i> Tarefas</a></li>
+            <li><a href="{!! route('tritons.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
           </ul>
 </li>
 
@@ -80,7 +80,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="{!! route('telemarketings.index') !!}"><i class="fa fa-circle-o"></i> Tarefas</a></li>
+            <li><a href="{!! route('telemarketings.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
           </ul>
 </li>
 

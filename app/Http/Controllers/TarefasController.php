@@ -59,7 +59,7 @@ class TarefasController extends AppBaseController
 
         $tarefas = $this->tarefasRepository->create($input);
 
-        Flash::success('Tarefas saved successfully.');
+        Flash::success('Tarefa salva com sucesso.');
 
         return redirect(route('tarefas.index'));
     }
@@ -76,7 +76,7 @@ class TarefasController extends AppBaseController
         $tarefas = $this->tarefasRepository->findWithoutFail($id);
 
         if (empty($tarefas)) {
-            Flash::error('Tarefas not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('tarefas.index'));
         }
@@ -96,7 +96,7 @@ class TarefasController extends AppBaseController
         $tarefas = $this->tarefasRepository->findWithoutFail($id);
 
         if (empty($tarefas)) {
-            Flash::error('Tarefas not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('tarefas.index'));
         }
@@ -117,7 +117,7 @@ class TarefasController extends AppBaseController
         $tarefas = $this->tarefasRepository->findWithoutFail($id);
 
         if (empty($tarefas)) {
-            Flash::error('Tarefas not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('tarefas.index'));
         }
@@ -141,14 +141,14 @@ class TarefasController extends AppBaseController
         $tarefas = $this->tarefasRepository->findWithoutFail($id);
 
         if (empty($tarefas)) {
-            Flash::error('Tarefas not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('tarefas.index'));
         }
 
         $this->tarefasRepository->delete($id);
 
-        Flash::success('Tarefas deleted successfully.');
+        Flash::success('Tarefa deletada com sucesso.');
 
         return redirect(route('tarefas.index'));
     }

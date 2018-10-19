@@ -76,7 +76,7 @@ class TelemarketingController extends AppBaseController
         $telemarketing = $this->telemarketingRepository->findWithoutFail($id);
 
         if (empty($telemarketing)) {
-            Flash::error('Telemarketing not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('telemarketings.index'));
         }
@@ -96,7 +96,7 @@ class TelemarketingController extends AppBaseController
         $telemarketing = $this->telemarketingRepository->findWithoutFail($id);
 
         if (empty($telemarketing)) {
-            Flash::error('Telemarketing not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('telemarketings.index'));
         }
@@ -117,14 +117,14 @@ class TelemarketingController extends AppBaseController
         $telemarketing = $this->telemarketingRepository->findWithoutFail($id);
 
         if (empty($telemarketing)) {
-            Flash::error('Telemarketing not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('telemarketings.index'));
         }
 
         $telemarketing = $this->telemarketingRepository->update($request->all(), $id);
 
-        Flash::success('Telemarketing updated successfully.');
+        Flash::success('Tarefa atualizada com sucesso.');
 
         return redirect(route('telemarketings.index'));
     }
@@ -141,14 +141,14 @@ class TelemarketingController extends AppBaseController
         $telemarketing = $this->telemarketingRepository->findWithoutFail($id);
 
         if (empty($telemarketing)) {
-            Flash::error('Telemarketing not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('telemarketings.index'));
         }
 
         $this->telemarketingRepository->delete($id);
 
-        Flash::success('Telemarketing deleted successfully.');
+        Flash::success('Tarefa deletada com sucesso.');
 
         return redirect(route('telemarketings.index'));
     }

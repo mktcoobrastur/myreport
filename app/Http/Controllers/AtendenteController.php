@@ -59,10 +59,11 @@ class AtendenteController extends AppBaseController
 
         $atendente = $this->atendenteRepository->create($input);
 
-        Flash::success('Atendente saved successfully.');
+        Flash::success('Salvo com Sucesso.');
 
         return redirect(route('atendentes.index'));
     }
+
 
     /**
      * Display the specified Atendente.
@@ -76,7 +77,7 @@ class AtendenteController extends AppBaseController
         $atendente = $this->atendenteRepository->findWithoutFail($id);
 
         if (empty($atendente)) {
-            Flash::error('Atendente not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('atendentes.index'));
         }
@@ -96,7 +97,7 @@ class AtendenteController extends AppBaseController
         $atendente = $this->atendenteRepository->findWithoutFail($id);
 
         if (empty($atendente)) {
-            Flash::error('Atendente not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('atendentes.index'));
         }
@@ -117,14 +118,14 @@ class AtendenteController extends AppBaseController
         $atendente = $this->atendenteRepository->findWithoutFail($id);
 
         if (empty($atendente)) {
-            Flash::error('Atendente not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('atendentes.index'));
         }
 
         $atendente = $this->atendenteRepository->update($request->all(), $id);
 
-        Flash::success('Atendente updated successfully.');
+        Flash::success('Atendente atualizado com sucesso.');
 
         return redirect(route('atendentes.index'));
     }
@@ -141,14 +142,14 @@ class AtendenteController extends AppBaseController
         $atendente = $this->atendenteRepository->findWithoutFail($id);
 
         if (empty($atendente)) {
-            Flash::error('Atendente not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('atendentes.index'));
         }
 
         $this->atendenteRepository->delete($id);
 
-        Flash::success('Atendente deleted successfully.');
+        Flash::success('Atendente deletado com sucesso.');
 
         return redirect(route('atendentes.index'));
     }

@@ -77,7 +77,7 @@ class MarketingController extends AppBaseController
         $marketing = $this->marketingRepository->findWithoutFail($id);
 
         if (empty($marketing)) {
-            Flash::error('Marketing not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('marketings.index'));
         }
@@ -97,7 +97,7 @@ class MarketingController extends AppBaseController
         $marketing = $this->marketingRepository->findWithoutFail($id);
 
         if (empty($marketing)) {
-            Flash::error('Marketing not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('marketings.index'));
         }
@@ -118,14 +118,14 @@ class MarketingController extends AppBaseController
         $marketing = $this->marketingRepository->findWithoutFail($id);
 
         if (empty($marketing)) {
-            Flash::error('Marketing not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('marketings.index'));
         }
 
         $marketing = $this->marketingRepository->update($request->all(), $id);
 
-        Flash::success('Marketing updated successfully.');
+        Flash::success('Tarefa atualizada com sucesso.');
 
         return redirect(route('marketings.index'));
     }
@@ -142,14 +142,14 @@ class MarketingController extends AppBaseController
         $marketing = $this->marketingRepository->findWithoutFail($id);
 
         if (empty($marketing)) {
-            Flash::error('Marketing not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('marketings.index'));
         }
 
         $this->marketingRepository->delete($id);
 
-        Flash::success('Marketing deleted successfully.');
+        Flash::success('Tarefa deletada com sucesso.');
 
         return redirect(route('marketings.index'));
     }

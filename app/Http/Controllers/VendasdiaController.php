@@ -76,7 +76,7 @@ class VendasdiaController extends AppBaseController
         $vendasdia = $this->vendasdiaRepository->findWithoutFail($id);
 
         if (empty($vendasdia)) {
-            Flash::error('Vendasdia not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('vendasdias.index'));
         }
@@ -96,7 +96,7 @@ class VendasdiaController extends AppBaseController
         $vendasdia = $this->vendasdiaRepository->findWithoutFail($id);
 
         if (empty($vendasdia)) {
-            Flash::error('Vendasdia not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('vendasdias.index'));
         }
@@ -117,14 +117,14 @@ class VendasdiaController extends AppBaseController
         $vendasdia = $this->vendasdiaRepository->findWithoutFail($id);
 
         if (empty($vendasdia)) {
-            Flash::error('Vendasdia not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('vendasdias.index'));
         }
 
         $vendasdia = $this->vendasdiaRepository->update($request->all(), $id);
 
-        Flash::success('Vendasdia updated successfully.');
+        Flash::success('Atualizado com Sucesso.');
 
         return redirect(route('vendasdias.index'));
     }
@@ -141,14 +141,14 @@ class VendasdiaController extends AppBaseController
         $vendasdia = $this->vendasdiaRepository->findWithoutFail($id);
 
         if (empty($vendasdia)) {
-            Flash::error('Vendasdia not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('vendasdias.index'));
         }
 
         $this->vendasdiaRepository->delete($id);
 
-        Flash::success('Vendasdia deleted successfully.');
+        Flash::success('Venda deletada com sucesso.');
 
         return redirect(route('vendasdias.index'));
     }

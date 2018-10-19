@@ -59,7 +59,7 @@ class MetaController extends AppBaseController
 
         $meta = $this->metaRepository->create($input);
 
-        Flash::success('Meta saved successfully.');
+        Flash::success('Meta salva com sucesso.');
 
         return redirect(route('metas.index'));
     }
@@ -76,7 +76,7 @@ class MetaController extends AppBaseController
         $meta = $this->metaRepository->findWithoutFail($id);
 
         if (empty($meta)) {
-            Flash::error('Meta not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('metas.index'));
         }
@@ -96,7 +96,7 @@ class MetaController extends AppBaseController
         $meta = $this->metaRepository->findWithoutFail($id);
 
         if (empty($meta)) {
-            Flash::error('Meta not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('metas.index'));
         }
@@ -117,14 +117,14 @@ class MetaController extends AppBaseController
         $meta = $this->metaRepository->findWithoutFail($id);
 
         if (empty($meta)) {
-            Flash::error('Meta not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('metas.index'));
         }
 
         $meta = $this->metaRepository->update($request->all(), $id);
 
-        Flash::success('Meta updated successfully.');
+        Flash::success('Meta atualizada com sucesso.');
 
         return redirect(route('metas.index'));
     }
@@ -141,14 +141,14 @@ class MetaController extends AppBaseController
         $meta = $this->metaRepository->findWithoutFail($id);
 
         if (empty($meta)) {
-            Flash::error('Meta not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('metas.index'));
         }
 
         $this->metaRepository->delete($id);
 
-        Flash::success('Meta deleted successfully.');
+        Flash::success('Meta deletada com sucesso.');
 
         return redirect(route('metas.index'));
     }

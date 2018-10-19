@@ -76,7 +76,7 @@ class RelacionamentosController extends AppBaseController
         $relacionamentos = $this->relacionamentosRepository->findWithoutFail($id);
 
         if (empty($relacionamentos)) {
-            Flash::error('Relacionamentos not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('relacionamentos.index'));
         }
@@ -96,7 +96,7 @@ class RelacionamentosController extends AppBaseController
         $relacionamentos = $this->relacionamentosRepository->findWithoutFail($id);
 
         if (empty($relacionamentos)) {
-            Flash::error('Relacionamentos not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('relacionamentos.index'));
         }
@@ -117,14 +117,14 @@ class RelacionamentosController extends AppBaseController
         $relacionamentos = $this->relacionamentosRepository->findWithoutFail($id);
 
         if (empty($relacionamentos)) {
-            Flash::error('Relacionamentos not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('relacionamentos.index'));
         }
 
         $relacionamentos = $this->relacionamentosRepository->update($request->all(), $id);
 
-        Flash::success('Relacionamentos updated successfully.');
+        Flash::success('Tarefa atualizada com sucesso.');
 
         return redirect(route('relacionamentos.index'));
     }
@@ -141,14 +141,14 @@ class RelacionamentosController extends AppBaseController
         $relacionamentos = $this->relacionamentosRepository->findWithoutFail($id);
 
         if (empty($relacionamentos)) {
-            Flash::error('Relacionamentos not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('relacionamentos.index'));
         }
 
         $this->relacionamentosRepository->delete($id);
 
-        Flash::success('Relacionamentos deleted successfully.');
+        Flash::success('Tarefa deletada com sucesso.');
 
         return redirect(route('relacionamentos.index'));
     }

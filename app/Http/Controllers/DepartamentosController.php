@@ -64,6 +64,7 @@ class DepartamentosController extends AppBaseController
         return redirect(route('departamentos.index'));
     }
 
+
     /**
      * Display the specified Departamentos.
      *

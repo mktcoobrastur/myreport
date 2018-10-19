@@ -76,7 +76,7 @@ class TritonController extends AppBaseController
         $triton = $this->tritonRepository->findWithoutFail($id);
 
         if (empty($triton)) {
-            Flash::error('Triton not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('tritons.index'));
         }
@@ -96,7 +96,7 @@ class TritonController extends AppBaseController
         $triton = $this->tritonRepository->findWithoutFail($id);
 
         if (empty($triton)) {
-            Flash::error('Triton not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('tritons.index'));
         }
@@ -117,14 +117,14 @@ class TritonController extends AppBaseController
         $triton = $this->tritonRepository->findWithoutFail($id);
 
         if (empty($triton)) {
-            Flash::error('Triton not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('tritons.index'));
         }
 
         $triton = $this->tritonRepository->update($request->all(), $id);
 
-        Flash::success('Triton updated successfully.');
+        Flash::success('Tarefa atualizada com sucesso.');
 
         return redirect(route('tritons.index'));
     }
@@ -141,14 +141,14 @@ class TritonController extends AppBaseController
         $triton = $this->tritonRepository->findWithoutFail($id);
 
         if (empty($triton)) {
-            Flash::error('Triton not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('tritons.index'));
         }
 
         $this->tritonRepository->delete($id);
 
-        Flash::success('Triton deleted successfully.');
+        Flash::success('Tarefa deletada com sucesso .');
 
         return redirect(route('tritons.index'));
     }

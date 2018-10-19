@@ -76,7 +76,7 @@ class VendasController extends AppBaseController
         $negocios = $this->negociosRepository->findWithoutFail($id);
 
         if (empty($negocios)) {
-            Flash::error('Negocios not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('negocios.index'));
         }
@@ -96,7 +96,7 @@ class VendasController extends AppBaseController
         $negocios = $this->negociosRepository->findWithoutFail($id);
 
         if (empty($negocios)) {
-            Flash::error('Negocios not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('negocios.index'));
         }
@@ -117,14 +117,14 @@ class VendasController extends AppBaseController
         $negocios = $this->negociosRepository->findWithoutFail($id);
 
         if (empty($negocios)) {
-            Flash::error('Negocios not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('negocios.index'));
         }
 
         $negocios = $this->negociosRepository->update($request->all(), $id);
 
-        Flash::success('Negocios updated successfully.');
+        Flash::success('Venda atualizada com sucesso.');
 
         return redirect(route('negocios.index'));
     }
@@ -141,14 +141,14 @@ class VendasController extends AppBaseController
         $negocios = $this->negociosRepository->findWithoutFail($id);
 
         if (empty($negocios)) {
-            Flash::error('Negocios not found');
+            Flash::error('Sem registro!');
 
             return redirect(route('negocios.index'));
         }
 
         $this->negociosRepository->delete($id);
 
-        Flash::success('Negocios deleted successfully.');
+        Flash::success('Venda deletada com sucesso.');
 
         return redirect(route('negocios.index'));
     }

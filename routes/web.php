@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/teste', function () {
-    return view('teste');
+Route::get('/vendas', function () {
+    return view('vendas');
 });
 
 Route::get('/home', function () {
@@ -40,3 +40,5 @@ Route::resource('relacionamentos', 'RelacionamentosController');
 Route::resource('telemarketings', 'TelemarketingController');
 
 Route::resource('marketings', 'MarketingController');
+
+Route::resource('vendas', 'VendasController');

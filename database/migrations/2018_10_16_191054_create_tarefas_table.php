@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTelemarketingTable extends Migration
+class CreateRelacionamentosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,16 @@ class CreateTelemarketingTable extends Migration
      */
     public function up()
     {
-        Schema::create('telemarketing', function (Blueprint $table) {
+        Schema::create('tarefas', function (Blueprint $table) {
             $table->increments('id');
             $table->string('prioridade');
             $table->string('tarefa');
             $table->longText('acao');
             $table->string('departamento')->nullable();
             $table->string('status');
+            
             $table->timestamps();
-        });
+       });
     }
 
     /**
@@ -31,6 +32,6 @@ class CreateTelemarketingTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('telemarketing');
+        Schema::dropIfExists('tarefas');
     }
 }

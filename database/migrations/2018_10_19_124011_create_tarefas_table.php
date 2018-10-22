@@ -19,7 +19,7 @@ class CreateTarefasTable extends Migration
             $table->string('tarefa');
             $table->longText('acao');
             $table->string('departamento')->nullable();
-            $table->string('status'); 
+            $table->string('status');
             $table->timestamps();
         });
     }

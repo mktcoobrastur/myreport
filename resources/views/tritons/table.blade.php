@@ -11,7 +11,11 @@
     <tbody>
     @foreach($tritons as $triton)
         <tr>
-            <td>{!! $triton->prioridade !!}</td>
+            <td>
+                <?php if ($triton->prioridade == 'B') { echo "<span class='badge badge-success' style='background:#D8D20A;'>BAIXA</span>"; } ?>
+                <?php if ($triton->prioridade == 'N') { echo "<span class='badge badge-warning' style='background:#679419;'>NORMAL</span>"; } ?>
+                <?php if ($triton->prioridade == 'A') { echo "<span class='badge badge-danger' style='background:#CE0005;'>ALTA</span>"; } ?>
+            </td>
             <td>{!! $triton->tarefa !!}</td>
             <td>{!! $triton->acao !!}</td>
             <td>{!! $triton->status !!}</td>

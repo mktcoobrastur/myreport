@@ -84,6 +84,10 @@
           </ul>
 </li>
 
+<li class="{{ Request::is('projetos*') ? 'active' : '' }}">
+    <a href="{!! route('projetos.index') !!}"><i class="fa fa-edit"></i> <span>Projetos</span></a>
+</li>
+
 <!--li class="{{ Request::is('tarefas*') ? 'active' : '' }}">
     <a href="{!! route('tarefas.index') !!}"><i class="fa fa-edit"></i><span>Tarefas</span></a>
 </li>
@@ -117,4 +121,6 @@
 <li class="{{ Request::is('tconvenios*') ? 'active' : '' }}">
     <a href="{!! route('tconvenios.index') !!}"><i class="fa fa-edit"></i><span>Tconvenios</span></a>
 </li>
+
+
 

@@ -19,7 +19,7 @@
 <!-- Acao Field -->
 <div class="form-group">
     {!! Form::label('acao', 'Acao:') !!}
-    <p>{!! $triton->acao !!}</p>
+    <p>{!! nl2br($triton->acao) !!}</p>
 </div>
 
 <!-- Departamento Field -->

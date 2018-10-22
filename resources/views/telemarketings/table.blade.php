@@ -11,7 +11,12 @@
     <tbody>
     @foreach($telemarketings as $telemarketing)
         <tr>
-            <td>{!! $telemarketing->prioridade !!}</td>
+            <td>
+                <?php if ($telemarketing->prioridade == 'B') { echo "<span class='badge badge-success' style='background:#D8D20A;'>BAIXA</span>"; } ?>
+                <?php if ($telemarketing->prioridade == 'N') { echo "<span class='badge badge-warning' style='background:#679419;'>NORMAL</span>"; } ?>
+                <?php if ($telemarketing->prioridade == 'A') { echo "<span class='badge badge-danger' style='background:#CE0005;'>ALTA</span>"; } ?>
+           </td>
+
             <td>{!! $telemarketing->tarefa !!}</td>
             <td>{!! $telemarketing->acao !!}</td>
             <td>{!! $telemarketing->status !!}</td>

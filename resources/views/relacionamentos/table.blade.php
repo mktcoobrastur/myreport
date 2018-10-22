@@ -11,7 +11,12 @@
     <tbody>
     @foreach($relacionamentos as $relacionamentos)
         <tr>
-            <td>{!! $relacionamentos->prioridade !!}</td>
+            <td>
+                <?php if ($relacionamentos->prioridade == 'B') { echo "<span class='badge badge-success' style='background:#D8D20A;'>BAIXA</span>"; } ?>
+                <?php if ($relacionamentos->prioridade == 'N') { echo "<span class='badge badge-warning' style='background:#679419;'>NORMAL</span>"; } ?>
+                <?php if ($relacionamentos->prioridade == 'A') { echo "<span class='badge badge-danger' style='background:#CE0005;'>ALTA</span>"; } ?>
+            </td>
+
             <td>{!! $relacionamentos->tarefa !!}</td>
             <td>{!! $relacionamentos->acao !!}</td>
             <td>{!! $relacionamentos->status !!}</td>

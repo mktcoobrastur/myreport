@@ -37,19 +37,19 @@
 <!-- Mensagem Field -->
 <div class="form-group">
     {!! Form::label('mensagem', 'Mensagem:') !!}
-    <p>{!! $chamado->mensagem !!}</p>
+    <p>{!! nl2br($chamado->mensagem) !!}</p>
 </div>
 
 <!-- Entendimento Field -->
 <div class="form-group">
     {!! Form::label('entendimento', 'Entendimento:') !!}
-    <p>{!! $chamado->entendimento !!}</p>
+    <p>{!! nl2br($chamado->entendimento) !!}</p>
 </div>
 
 <!-- Solucao Field -->
 <div class="form-group">
     {!! Form::label('solucao', 'Solucao:') !!}
-    <p>{!! $chamado->solucao !!}</p>
+    <p>{!! nl2br($chamado->solucao) !!}</p>
 </div>
 
 <!-- Status Field -->

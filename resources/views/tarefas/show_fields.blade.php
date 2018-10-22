@@ -1,53 +1,58 @@
-<!-- Id Field -->
-<div class="form-group">
-    {!! Form::label('id', 'Id:') !!}
-    <p>{!! $tarefas->id !!}</p>
-</div>
-
+<style type="text/css">
+    .boxStatus {
+        float: left;
+        background: #f0f0f0;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px;
+        width: 250px;
+        height: 50px;
+        line-height: 30px;
+        border: 1px dashed #c9c9c9;
+    }
+</style>
 <!-- Prioridade Field -->
 <div class="form-group">
-    {!! Form::label('prioridade', 'Prioridade:') !!}
-    <p>{!! $tarefas->prioridade !!}</p>
-</div>
+    <div class="boxStatus">
+        {!! Form::label('prioridade', 'Prioridade:') !!}
+                <?php if ($tarefas->prioridade == 'B') { echo "<span class='badge badge-success' style='background:#D8D20A;'>BAIXA</span>"; } ?>
+                <?php if ($tarefas->prioridade == 'N') { echo "<span class='badge badge-warning' style='background:#679419;'>NORMAL</span>"; } ?>
+                <?php if ($tarefas->prioridade == 'A') { echo "<span class='badge badge-danger' style='background:#CE0005;'>ALTA</span>"; } ?>
+    </div>
 
+    <!-- Departamento Field -->
+    <div class="boxStatus">
+        {!! Form::label('departamento', 'Departamento:') !!}
+        {!! $tarefas->departamento !!}
+    </div>
+
+    <!-- Status Field -->
+    <div class="boxStatus">
+        {!! Form::label('status', 'Status:') !!}
+        {!! $tarefas->status !!}
+    </div>
+    <!-- Created At Field -->
+    <div class="boxStatus">
+        {!! Form::label('created_at', 'Criado em:') !!}
+        {!! $tarefas->created_at !!}
+    </div>
+
+    <!-- Updated At Field -->
+    <div class="boxStatus">
+        {!! Form::label('updated_at', 'Atualizado em:') !!}
+        {!! $tarefas->updated_at !!}
+    </div>
+</div>
+<div style="clear: both;"></div>
 <!-- Tarefa Field -->
 <div class="form-group">
     {!! Form::label('tarefa', 'Tarefa:') !!}
-    <p>{!! $tarefas->tarefa !!}</p>
+    <h2>{!! $tarefas->tarefa !!}</h2>
 </div>
 
 <!-- Acao Field -->
 <div class="form-group">
     {!! Form::label('acao', 'Acao:') !!}
-    <p>{!! $tarefas->acao !!}</p>
+    <p>{!! nl2br($tarefas->acao) !!}</p>
 </div>
 
-<!-- Departamento Field -->
-<div class="form-group">
-    {!! Form::label('departamento', 'Departamento:') !!}
-    <p>{!! $tarefas->departamento !!}</p>
-</div>
-
-<!-- Status Field -->
-<div class="form-group">
-    {!! Form::label('status', 'Status:') !!}
-    <p>{!! $tarefas->status !!}</p>
-</div>
-
-<!-- Created At Field -->
-<div class="form-group">
-    {!! Form::label('created_at', 'Criado em:') !!}
-    <p>{!! $tarefas->created_at !!}</p>
-</div>
-
-<!-- Updated At Field -->
-<div class="form-group">
-    {!! Form::label('updated_at', 'Atualizado em:') !!}
-    <p>{!! $tarefas->updated_at !!}</p>
-</div>
-
-<!-- Deleted At Field -->
-<div class="form-group">
-    {!! Form::label('deleted_at', 'Deletado em:') !!}
-    <p>{!! $tarefas->deleted_at !!}</p>
-</div>

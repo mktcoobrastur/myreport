@@ -18,7 +18,11 @@
     @foreach($tarefas as $tarefas)
         <tr class="trHover">
             
-            <td>{!! $tarefas->prioridade !!}</td>
+            <td>
+                <?php if ($tarefas->prioridade == 'B') { echo "<span class='badge badge-success' style='background:#D8D20A;'>BAIXA</span>"; } ?>
+                <?php if ($tarefas->prioridade == 'N') { echo "<span class='badge badge-warning' style='background:#679419;'>NORMAL</span>"; } ?>
+                <?php if ($tarefas->prioridade == 'A') { echo "<span class='badge badge-danger' style='background:#CE0005;'>ALTA</span>"; } ?>
+            </td>
             <td>{!! $tarefas->tarefa !!}</td>
             <td>{!! $tarefas->departamento !!}</td>
             <td>{!! $tarefas->created_at->format('d/M/Y') !!}</td>

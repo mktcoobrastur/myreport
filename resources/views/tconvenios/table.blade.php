@@ -12,7 +12,12 @@
     <tbody>
     @foreach($tconvenios as $tconvenio)
         <tr>
-            <td>{!! $tconvenio->prioridade !!}</td>
+            <td>
+                <?php if ($tconvenio->prioridade == 'B') { echo "<span class='badge badge-success' style='background:#D8D20A;'>BAIXA</span>"; } ?>
+                <?php if ($tconvenio->prioridade == 'N') { echo "<span class='badge badge-warning' style='background:#679419;'>NORMAL</span>"; } ?>
+                <?php if ($tconvenio->prioridade == 'A') { echo "<span class='badge badge-danger' style='background:#CE0005;'>ALTA</span>"; } ?>
+            </td>
+
             <td>{!! $tconvenio->tarefa !!}</td>
             <td>{!! $tconvenio->acao !!}</td>
             <td>{!! $tconvenio->departamento !!}</td>

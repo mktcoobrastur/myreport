@@ -3,10 +3,10 @@
         <tr>
             <th>Prioridade</th>
         <th>Tarefa</th>
-        <th>Acao</th>
+        <th>Ação</th>
         <th>Departamento</th>
         <th>Status</th>
-            <th colspan="3">Action</th>
+            <th colspan="3">Ações</th>
         </tr>
     </thead>
     <tbody>
@@ -22,7 +22,7 @@
                 <div class='btn-group'>
                     <a href="{!! route('tconvenios.show', [$tconvenio->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
                     <a href="{!! route('tconvenios.edit', [$tconvenio->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
-                    {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
+                    {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Tem certeza?')"]) !!}
                 </div>
                 {!! Form::close() !!}
             </td>

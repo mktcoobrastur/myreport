@@ -54,3 +54,5 @@ Route::resource('convenios', 'ConvenioController');
 Route::resource('tconvenios', 'TconvenioController');
 
 Route::resource('projetos', 'ProjetoController');
+
+Route::resource('tprojetos', 'TprojetoController');

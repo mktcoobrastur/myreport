@@ -124,3 +124,7 @@
 
 
 
+<li class="{{ Request::is('tprojetos*') ? 'active' : '' }}">
+    <a href="{!! route('tprojetos.index') !!}"><i class="fa fa-edit"></i><span>Tprojetos</span></a>
+</li>
+

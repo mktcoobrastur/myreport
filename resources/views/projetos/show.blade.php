@@ -5,6 +5,10 @@
         <h1>
             Projeto
         </h1>
+        <h1 class="pull-right">
+           <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="http://localhost/sistema/public/tprojetos/create?c={!! $projeto->id !!}">Nova Tarefa</a>
+        </h1>
+        <br />
     </section>
     <div class="content">
         <div class="box box-primary">

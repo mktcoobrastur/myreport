@@ -17,7 +17,7 @@
                 <?php if ($triton->prioridade == 'A') { echo "<span class='badge badge-danger' style='background:#CE0005;'>ALTA</span>"; } ?>
             </td>
             <td>{!! $triton->tarefa !!}</td>
-            <td>{!! $triton->acao !!}</td>
+            <td>{!! substr($triton->acao, 0, 150) !!}</td>
             <td>
                 <?php if ($triton->status == 'E') { echo "EM ESPERA"; } ?>
                 <?php if ($triton->status == 'A') { echo "EM ANDAMENTO"; } ?>

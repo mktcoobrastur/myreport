@@ -18,7 +18,7 @@
            </td>
 
             <td>{!! $telemarketing->tarefa !!}</td>
-            <td>{!! $telemarketing->acao !!}</td>
+            <td>{!! substr($telemarketing->acao, 0, 150) !!}...</td>
             <td>
                 <?php if ($telemarketing->status == 'E') { echo "EM ESPERA"; } ?>
                 <?php if ($telemarketing->status == 'A') { echo "EM ANDAMENTO"; } ?>

@@ -18,7 +18,7 @@
             </td>
 
             <td>{!! $negocios->tarefa !!}</td>
-            <td>{!! $negocios->acao !!}</td>
+            <td>{!! substr($negocios->acao, 0, 150) !!}...</td>
             <td>
                 <?php if ($negocios->status == 'E') { echo "EM ESPERA"; } ?>
                 <?php if ($negocios->status == 'A') { echo "EM ANDAMENTO"; } ?>

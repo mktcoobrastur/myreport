@@ -17,7 +17,7 @@
                 <?php if ($marketing->prioridade == 'A') { echo "<span class='badge badge-danger' style='background:#CE0005;'>ALTA</span>"; } ?>
             </td>
             <td>{!! $marketing->tarefa !!}</td>
-            <td>{!! $marketing->acao !!}</td>
+            <td>{!! substr($marketing->acao, 0, 150) !!}...</td>
             <td>
                 <?php if ($marketing->status == 'E') { echo "EM ESPERA"; } ?>
                 <?php if ($marketing->status == 'A') { echo "EM ANDAMENTO"; } ?>

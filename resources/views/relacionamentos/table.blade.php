@@ -18,7 +18,7 @@
             </td>
 
             <td>{!! $relacionamentos->tarefa !!}</td>
-            <td>{!! $relacionamentos->acao !!}</td>
+            <td>{!! substr($relacionamentos->acao, 0, 150) !!}...</td>
             <td>
                 <?php if ($relacionamentos->status == 'E') { echo "EM ESPERA"; } ?>
                 <?php if ($relacionamentos->status == 'A') { echo "EM ANDAMENTO"; } ?>

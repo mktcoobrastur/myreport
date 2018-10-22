@@ -44,7 +44,7 @@
                 <?php if ($linha['prioridade'] == 'A') { echo "<span class='badge badge-danger' style='background:#CE0005;'>ALTA</span>"; } ?>
             </td>
             <td><?php echo $linha['tarefa']; ?></td>
-            <td><?php echo utf8_encode($linha['acao']); ?></td>
+            <td><?php echo utf8_encode(substr($linha['acao'], 0, 150)); ?>...</td>
             <td>
                 <?php if ($linha['status'] == 'E') { echo "EM ESPERA"; } ?>
                 <?php if ($linha['status'] == 'A') { echo "EM ANDAMENTO"; } ?>

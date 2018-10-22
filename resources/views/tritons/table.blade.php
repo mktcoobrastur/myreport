@@ -18,7 +18,11 @@
             </td>
             <td>{!! $triton->tarefa !!}</td>
             <td>{!! $triton->acao !!}</td>
-            <td>{!! $triton->status !!}</td>
+            <td>
+                <?php if ($triton->status == 'E') { echo "EM ESPERA"; } ?>
+                <?php if ($triton->status == 'A') { echo "EM ANDAMENTO"; } ?>
+                <?php if ($triton->status == 'F') { echo "FINALIZADO"; } ?>
+            </td>
             <td>
                 {!! Form::open(['route' => ['tritons.destroy', $triton->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

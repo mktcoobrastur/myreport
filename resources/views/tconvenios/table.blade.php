@@ -21,7 +21,11 @@
             <td>{!! $tconvenio->tarefa !!}</td>
             <td>{!! $tconvenio->acao !!}</td>
             <td>{!! $tconvenio->departamento !!}</td>
-            <td>{!! $tconvenio->status !!}</td>
+            <td>
+                <?php if ($tconvenio->status == 'E') { echo "EM ESPERA"; } ?>
+                <?php if ($tconvenio->status == 'A') { echo "EM ANDAMENTO"; } ?>
+                <?php if ($tconvenio->status == 'F') { echo "FINALIZADO"; } ?>
+            </td>
             <td>
                 {!! Form::open(['route' => ['tconvenios.destroy', $tconvenio->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

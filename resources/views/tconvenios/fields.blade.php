@@ -22,10 +22,9 @@
     {!! Form::select('status', array('E' => 'ESPERA', 'A' => 'EM ANDAMENTO', 'F' => 'FINALIZADO'), 'N', ['class' => 'form-control']) !!}
 </div>
 
-<input type="hidden" name="departamento" value="<?php echo $_GET['c']; ?>" />
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
     {!! Form::submit('Salvar', ['class' => 'btn btn-primary']) !!}
-    <a href="{!! route('tconvenios.index') !!}" class="btn btn-default">Cancelar</a>
+    <a href="#" class="btn btn-default">Cancelar</a>
 </div>

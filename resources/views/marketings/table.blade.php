@@ -18,7 +18,12 @@
             </td>
             <td>{!! $marketing->tarefa !!}</td>
             <td>{!! $marketing->acao !!}</td>
-            <td>{!! $marketing->status !!}</td>
+            <td>
+                <?php if ($marketing->status == 'E') { echo "EM ESPERA"; } ?>
+                <?php if ($marketing->status == 'A') { echo "EM ANDAMENTO"; } ?>
+                <?php if ($marketing->status == 'F') { echo "FINALIZADO"; } ?>
+            </td>
+
             <td>
                 {!! Form::open(['route' => ['marketings.destroy', $marketing->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

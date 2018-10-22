@@ -37,9 +37,68 @@
         }
     </style>
 
+<div class="box box-primary">
+    <div class="box-body">
 
-	
-   <h3 style='margin-left: 10px;'>Anexos</h3>
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Comentários</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Anexos</a>
+        </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+   <br />
+ 
+        <!--#####################-->
+
+<div class="alert"><h3> Comentários</h3>
+</div>
+
+        <?php
+            $conexao  = mysqli_connect("localhost","root","","sistema");
+            $query    = "SELECT * FROM comentarios WHERE tarefa = $tarefas->id;";
+            $query    = mysqli_query($conexao, $query);
+            
+    	    while ($linha = mysqli_fetch_array($query)) {
+        ?>
+                <div class="alert">
+                <div class="card">
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                    <p><?php echo utf8_encode($linha['comentario']); ?></p>
+                    <footer class="blockquote-footer"><?php echo $linha['usuario']; ?></cite> <i class="small"><?php echo $linha['created_at']; ?></i></footer>
+                    </blockquote>
+                </div>
+                </div>
+                </div>
+	    <?php } ?>
+
+
+
+    <div class="alert">
+        <form action="http://localhost/sistema/public/comentar.php" method="post" enctype="multipart/form-data">
+    		<label>Adicionar comentário:</label> <br />
+	 		<input type="hidden" name="idChamado" value="{!! $tarefas->id !!}" />
+	 		<input type="hidden" name="usuario" value="{{ Auth::user()->name}}" />
+    	    <textarea name="comentario" class="form-control"></textarea>
+            <br>
+            <input type="submit" name="enviaArquivo" value="Comentar">
+        </form>
+	</div>
+
+        <!--#####################-->
+
+        <br />
+  </div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+   <br />
+
+        <!--#####################-->
+
+ <h3 style='margin-left: 10px;'>Anexos</h3>
     <div class="alert">
         <?php
             $conexao  = mysqli_connect("localhost","root","","sistema");
@@ -67,41 +126,9 @@
         </form>
 	</div>
 
+        <!--#####################-->
 
-<div class="alert"><h3> Comentários</h3>
-</div>
-
-        <?php
-            $conexao  = mysqli_connect("localhost","root","","sistema");
-            $query    = "SELECT * FROM comentarios WHERE tarefa = $tarefas->id;";
-            $query    = mysqli_query($conexao, $query);
-            
-    	    while ($linha = mysqli_fetch_array($query)) {
-        ?>
-                <div class="alert">
-                <div class="card">
-                <div class="card-body">
-                    <blockquote class="blockquote mb-0">
-                    <p><?php echo utf8_encode($linha['comentario']); ?></p>
-                    <footer class="blockquote-footer"><?php echo $linha['usuario']; ?></cite> <i class="small"><?php echo $linha['created_at']; ?></i></footer>
-                    </blockquote>
-                </div>
-                </div>
-                </div>
-	    <?php } ?>
-
-</div>
-
-    <div class="alert">
-        <form action="http://localhost/sistema/public/comentar.php" method="post" enctype="multipart/form-data">
-    		<label>Adicionar comentário:</label> <br />
-	 		<input type="hidden" name="idChamado" value="{!! $tarefas->id !!}" />
-	 		<input type="hidden" name="usuario" value="{{ Auth::user()->name}}" />
-    	    <textarea name="comentario" class="form-control"></textarea>
-            <br>
-            <input type="submit" name="enviaArquivo" value="Comentar">
-        </form>
-	        </div>
-
+   <br />
+  </div>
     </div>
 @endsection

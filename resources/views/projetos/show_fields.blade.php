@@ -49,9 +49,3 @@
     {!! Form::label('acao', 'Acao:') !!}
     <p>{!! nl2br($projeto->acao) !!}</p>
 </div>
-
-<!-- Departamento Field -->
-<div class="form-group">
-    {!! Form::label('departamento', 'Departamento:') !!}
-    <p>{!! $projeto->departamento !!}</p>
-</div>

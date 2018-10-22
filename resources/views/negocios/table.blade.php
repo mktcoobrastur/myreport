@@ -19,7 +19,11 @@
 
             <td>{!! $negocios->tarefa !!}</td>
             <td>{!! $negocios->acao !!}</td>
-            <td>{!! $negocios->status !!}</td>
+            <td>
+                <?php if ($negocios->status == 'E') { echo "EM ESPERA"; } ?>
+                <?php if ($negocios->status == 'A') { echo "EM ANDAMENTO"; } ?>
+                <?php if ($negocios->status == 'F') { echo "FINALIZADO"; } ?>
+            </td>
             <td>
                 {!! Form::open(['route' => ['negocios.destroy', $negocios->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

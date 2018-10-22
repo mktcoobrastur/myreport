@@ -19,7 +19,11 @@
 
             <td>{!! $relacionamentos->tarefa !!}</td>
             <td>{!! $relacionamentos->acao !!}</td>
-            <td>{!! $relacionamentos->status !!}</td>
+            <td>
+                <?php if ($relacionamentos->status == 'E') { echo "EM ESPERA"; } ?>
+                <?php if ($relacionamentos->status == 'A') { echo "EM ANDAMENTO"; } ?>
+                <?php if ($relacionamentos->status == 'F') { echo "FINALIZADO"; } ?>
+            </td>
             <td>
                 {!! Form::open(['route' => ['relacionamentos.destroy', $relacionamentos->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

@@ -19,7 +19,11 @@
 
             <td>{!! $telemarketing->tarefa !!}</td>
             <td>{!! $telemarketing->acao !!}</td>
-            <td>{!! $telemarketing->status !!}</td>
+            <td>
+                <?php if ($telemarketing->status == 'E') { echo "EM ESPERA"; } ?>
+                <?php if ($telemarketing->status == 'A') { echo "EM ANDAMENTO"; } ?>
+                <?php if ($telemarketing->status == 'F') { echo "FINALIZADO"; } ?>
+            </td>
             <td>
                 {!! Form::open(['route' => ['telemarketings.destroy', $telemarketing->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

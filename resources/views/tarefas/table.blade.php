@@ -26,7 +26,11 @@
             <td>{!! $tarefas->tarefa !!}</td>
             <td>{!! $tarefas->departamento !!}</td>
             <td>{!! $tarefas->created_at->format('d/M/Y') !!}</td>
-            <td>{!! $tarefas->status !!}</td>
+            <td>
+                <?php if ($tarefas->status == 'E') { echo "EM ESPERA"; } ?>
+                <?php if ($tarefas->status == 'A') { echo "EM ANDAMENTO"; } ?>
+                <?php if ($tarefas->status == 'F') { echo "FINALIZADO"; } ?>
+            </td>
             <td>
                 {!! Form::open(['route' => ['tarefas.destroy', $tarefas->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

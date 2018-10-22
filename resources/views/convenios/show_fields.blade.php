@@ -38,14 +38,22 @@
         ?>
 
         <tr>
-            <td><?php echo $linha['prioridade']; ?></td>
-            <td><?php echo $linha['tarefa']; ?></td>
-            <td><?php echo $linha['acao']; ?></td>
-            <td><?php echo $linha['status']; ?></td>
             <td>
-            <a href="#" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-                    <a href="#" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
-                    {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Tem certeza?')"]) !!}
+                <?php if ($linha['prioridade'] == 'B') { echo "<span class='badge badge-success' style='background:#D8D20A;'>BAIXA</span>"; } ?>
+                <?php if ($linha['prioridade'] == 'N') { echo "<span class='badge badge-warning' style='background:#679419;'>NORMAL</span>"; } ?>
+                <?php if ($linha['prioridade'] == 'A') { echo "<span class='badge badge-danger' style='background:#CE0005;'>ALTA</span>"; } ?>
+            </td>
+            <td><?php echo $linha['tarefa']; ?></td>
+            <td><?php echo utf8_encode($linha['acao']); ?></td>
+            <td>
+                <?php if ($linha['status'] == 'E') { echo "EM ESPERA"; } ?>
+                <?php if ($linha['status'] == 'A') { echo "EM ANDAMENTO"; } ?>
+                <?php if ($linha['status'] == 'F') { echo "FINALIZADO"; } ?>
+            </td>
+            <td>
+            <a href="http://localhost/sistema/public/tconvenios/<?php echo $linha['id'];?>" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
+            <a href="http://localhost/sistema/public/tconvenios/<?php echo $linha['id'];?>/edit" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+            {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Tem certeza?')"]) !!}
             </td>
         </tr>
 

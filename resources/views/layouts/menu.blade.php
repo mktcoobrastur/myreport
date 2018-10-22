@@ -37,7 +37,7 @@
           <ul class="treeview-menu">
             <li><a href="{!! route('relacionamentos.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
             <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Índice Reclame Aqui</a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Gerenciamento de Chamados</a></li>
+            <li><a href="{!! route('chamados.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Gerenciamento de Chamados</a></li>
             <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Fale Conosco</a></li>
           </ul>
 </li>
@@ -53,7 +53,7 @@
           <ul class="treeview-menu">
             <li><a href="{!! route('negocios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
             <li><a href="{!! route('vendasdias.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Vendas</a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Convênios</a></li>
+            <li><a href="{!! route('convenios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Convênios</a></li>
             <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Indicação Premiada</a></li>
           </ul>
 </li>
@@ -108,5 +108,9 @@
 
 <li class="{{ Request::is('usuarios*') ? 'active' : '' }}">
     <a href="{!! route('usuarios.index') !!}"><i class="fa fa-edit"></i><span>Usuarios</span></a>
+</li>
+
+<li class="{{ Request::is('convenios*') ? 'active' : '' }}">
+    <a href="{!! route('convenios.index') !!}"><i class="fa fa-edit"></i><span>Convenios</span></a>
 </li>
 

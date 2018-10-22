@@ -46,3 +46,7 @@ Route::resource('metas', 'MetaController');
 Route::resource('atendentes', 'AtendenteController');
 
 Route::resource('usuarios', 'UsuarioController');
+
+Route::resource('chamados', 'ChamadoController');
+
+Route::resource('convenios', 'ConvenioController');

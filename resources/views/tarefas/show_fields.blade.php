@@ -51,4 +51,3 @@
     {!! Form::label('deleted_at', 'Deletado em:') !!}
     <p>{!! $tarefas->deleted_at !!}</p>
 </div>
-

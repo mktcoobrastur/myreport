@@ -114,3 +114,7 @@
     <a href="{!! route('convenios.index') !!}"><i class="fa fa-edit"></i><span>Convenios</span></a>
 </li>
 
+<li class="{{ Request::is('tconvenios*') ? 'active' : '' }}">
+    <a href="{!! route('tconvenios.index') !!}"><i class="fa fa-edit"></i><span>Tconvenios</span></a>
+</li>
+

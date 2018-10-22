@@ -1,13 +1,6 @@
-<!-- Id Field -->
-<div class="form-group">
-    {!! Form::label('id', 'Id:') !!}
-    <p>{!! $convenio->id !!}</p>
-</div>
-
 <!-- Nome Field -->
 <div class="form-group">
-    {!! Form::label('nome', 'Nome:') !!}
-    <p>{!! $convenio->nome !!}</p>
+    <h2>{!! $convenio->nome !!}</h2>
 </div>
 
 <!-- Img Field -->
@@ -19,30 +12,6 @@
 <!-- Site Field -->
 <div class="form-group">
     {!! Form::label('site', 'Site:') !!}
-    <p>{!! $convenio->site !!}</p>
-</div>
-
-<!-- Texto Field -->
-<div class="form-group">
-    {!! Form::label('texto', 'Texto:') !!}
-    <p>{!! $convenio->texto !!}</p>
-</div>
-
-<!-- Created At Field -->
-<div class="form-group">
-    {!! Form::label('created_at', 'Criado em:') !!}
-    <p>{!! $convenio->created_at !!}</p>
-</div>
-
-<!-- Updated At Field -->
-<div class="form-group">
-    {!! Form::label('updated_at', 'Atualizado em:') !!}
-    <p>{!! $convenio->updated_at !!}</p>
-</div>
-
-<!-- Deleted At Field -->
-<div class="form-group">
-    {!! Form::label('deleted_at', 'Deletado em:') !!}
-    <p>{!! $convenio->deleted_at !!}</p>
+    <p><a href="{!! $convenio->site !!}" target="blank">{!! $convenio->site !!}</a></p>
 </div>
 

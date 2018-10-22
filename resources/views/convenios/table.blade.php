@@ -2,7 +2,7 @@
     .conveniosOut {
         float: left;
         width: 380px;
-        height: 230px;
+        height: 240px;
         background: #f0f0f0;
         padding: 10px;
         margin: 10px;
@@ -13,9 +13,11 @@
         background: #f9f9f9;
     }
     .conveniosOut img {
-
-        width: 160px;
-        height: 120px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+        width: 180px;
+        height: 130px;
     }
     .conveniosOut h4 {
         display: block;

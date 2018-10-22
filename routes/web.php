@@ -50,3 +50,5 @@ Route::resource('usuarios', 'UsuarioController');
 Route::resource('chamados', 'ChamadoController');
 
 Route::resource('convenios', 'ConvenioController');
+
+Route::resource('tconvenios', 'TconvenioController');

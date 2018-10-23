@@ -1,7 +1,7 @@
 <style type="text/css">
     .boxStatus {
         float: left;
-        background: #f0f0f0;
+        background: #f5f5f5;
         border-radius: 5px;
         margin: 10px;
         padding: 10px;
@@ -9,6 +9,15 @@
         height: 50px;
         line-height: 30px;
         border: 1px dashed #c9c9c9;
+    }
+    .imgPromo {
+        float: left;
+        width: 400px;
+        border: 1px dashed #c9c9c9;
+        background: #f5f5f5;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px;
     }
 </style>
 <!-- Codigo Field -->
@@ -59,13 +68,79 @@
 </div>
 
 <!-- Imgprincipal Field -->
-<div class="form-group">
-    {!! Form::label('imgPrincipal', 'Imgprincipal:') !!}
+<div class="imgPromo">
+    {!! Form::label('imgPrincipal', 'Imagem Principal:') !!}
     <p>{!! $promocoe->imgPrincipal !!}</p>
+
+        <!--#####################-->
+
+
+        <?php
+            $conexao  = mysqli_connect("localhost","root","","sistema");
+            $query    = "SELECT * FROM anexos WHERE tarefa = $promocoe->codigo;";
+            $query    = mysqli_query($conexao, $query);
+            
+    	    while ($linha = mysqli_fetch_array($query)) {
+        ?>
+		<a href="http://localhost/sistema/public/promo/<?php echo $linha['anexo']; ?>" target="blank" class="anexos">
+			<img width="20" src="https://png.icons8.com/metro/1600/attach.png" />
+			<?php echo $linha['anexo']; ?>
+            <i class="fa fa-download pull-right" style='margin-top: 4px;' aria-hidden="true"></i>
+		</a>
+
+	    <?php } ?>
+
+
+    <div class="alert">
+        <form action="http://localhost/sistema/public/uploadPromo1.php" method="post" enctype="multipart/form-data">
+    		<label>Enviar Arquivos:</label> <br />
+	 		<input type="hidden" name="idChamado" value="{!! $promocoe->codigo !!}" />
+    	    <input class="form-control" type="file" name="arquivos[]" multiple>
+            <br>
+            <input type="submit" name="enviaArquivo" value="Enviar">
+        </form>
+	</div>
+
+        <!--#####################-->
+
 </div>
 
 <!-- Imglamina Field -->
-<div class="form-group">
-    {!! Form::label('imgLamina', 'Imglamina:') !!}
+<div class="imgPromo">
+    {!! Form::label('imgLamina', 'Lâmina:') !!}
     <p>{!! $promocoe->imgLamina !!}</p>
+
+        <!--#####################-->
+
+
+        <?php
+            $varG =  'g'.$promocoe->codigo;
+            $conexao  = mysqli_connect("localhost","root","","sistema");
+            $query    = "SELECT * FROM anexos WHERE tarefa = '$varG'";
+            $query    = mysqli_query($conexao, $query);
+            
+    	    while ($linha = mysqli_fetch_array($query)) {
+        ?>
+		<a href="http://localhost/sistema/public/promo/<?php echo $linha['anexo']; ?>" target="blank" class="anexos">
+			<img width="20" src="https://png.icons8.com/metro/1600/attach.png" />
+			<?php echo $linha['anexo']; ?>
+            <i class="fa fa-download pull-right" style='margin-top: 4px;' aria-hidden="true"></i>
+		</a>
+
+	    <?php } ?>
+
+
+    <div class="alert">
+        <form action="http://localhost/sistema/public/uploadPromo2.php" method="post" enctype="multipart/form-data">
+    		<label>Enviar Arquivos:</label> <br />
+	 		<input type="hidden" name="idChamado" value="g{!! $promocoe->codigo !!}" />
+    	    <input class="form-control" type="file" name="arquivos[]" multiple>
+            <br>
+            <input type="submit" name="enviaArquivo" value="Enviar">
+        </form>
+	</div>
+
+        <!--#####################-->
+
 </div>
+<div style="clear: both;"></div>

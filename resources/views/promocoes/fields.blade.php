@@ -25,19 +25,7 @@
 <!-- Plano Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('plano', 'Plano:') !!}
-    {!! Form::text('plano', null, ['class' => 'form-control']) !!}
-</div>
-
-<!-- Imgprincipal Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('imgPrincipal', 'Imgprincipal:') !!}
-    {!! Form::text('imgPrincipal', null, ['class' => 'form-control']) !!}
-</div>
-
-<!-- Imglamina Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('imgLamina', 'Imglamina:') !!}
-    {!! Form::text('imgLamina', null, ['class' => 'form-control']) !!}
+    {!! Form::select('plano', array('1' => 'DIAMANTE', '2' => 'GOLD', '3' => 'CONVENCIONAL'), ['class' => 'form-control']) !!}
 </div>
 
 <!-- Submit Field -->

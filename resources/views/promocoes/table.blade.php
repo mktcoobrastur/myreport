@@ -28,7 +28,7 @@
         <?php
             $campo = $_GET['q'];
             $conexao  = mysqli_connect("localhost","root","","sistema");
-            $query    = "SELECT * from promocoes WHERE hotel LIKE '%".$campo."%'";
+            $query    = "SELECT * from promocoes WHERE hotel LIKE '%".$campo."%' OR codigo LIKE '%".$campo."%'";
             $query    = mysqli_query($conexao, $query);
             
     	    while ($linha = mysqli_fetch_array($query)) {
@@ -70,7 +70,7 @@
         <th>Codigo</th>
         <th>Estado</th>
         <th>Plano</th>
-            <th colspan="3">Action</th>
+            <th colspan="3">Ações</th>
         </tr>
     </thead>
     <tbody>
@@ -91,7 +91,7 @@
                 <div class='btn-group'>
                     <a href="{!! route('promocoes.show', [$promocoe->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
                     <a href="{!! route('promocoes.edit', [$promocoe->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
-                    {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
+                    {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Tem certeza?')"]) !!}
                 </div>
                 {!! Form::close() !!}
             </td>

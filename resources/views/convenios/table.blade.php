@@ -34,7 +34,7 @@
 <div class="conveniosOut">
     <h4>{!! $convenio->nome !!}</h4>
 
-    <img src="http://localhost/sistema/public/img/3.jpg" />
+    <img src="http://localhost/sistema/public/convenio/3.jpg" />
     <a class="linkSite" href="{!! $convenio->site !!}" target="blank">{!! $convenio->site !!}</a>
                 {!! Form::open(['route' => ['convenios.destroy', $convenio->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

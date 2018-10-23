@@ -60,6 +60,20 @@
 
 <li class="treeview">
           <a href="#">
+          <i class="fa fa-h-square"></i> 
+            <span>Hotéis</span>
+            <span class="pull-right-container">
+              <span class="label label-primary pull-right">2</span>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{!! route('negocios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
+            <li><a href="{!! route('promocoes.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Promoções</a></li>
+          </ul>
+</li>
+
+<li class="treeview">
+          <a href="#">
           <i class="fa fa-laptop"></i>
             <span>Gestão Triton</span>
             <span class="pull-right-container">
@@ -126,5 +140,9 @@
 
 <li class="{{ Request::is('tprojetos*') ? 'active' : '' }}">
     <a href="{!! route('tprojetos.index') !!}"><i class="fa fa-edit"></i><span>Tprojetos</span></a>
+</li>
+
+<li class="{{ Request::is('promocoes*') ? 'active' : '' }}">
+    <a href="{!! route('promocoes.index') !!}"><i class="fa fa-edit"></i><span>Promocoes</span></a>
 </li>
 

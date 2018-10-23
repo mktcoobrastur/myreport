@@ -5,8 +5,35 @@
 
 <!-- Img Field -->
 <div class="form-group">
-    {!! Form::label('img', 'Img:') !!}
-    <p>{!! $convenio->img !!}</p>
+
+        <!--#####################-->
+
+ <h3 style='margin-left: 10px;'>Anexos</h3>
+    <div class="alert">
+        <?php
+            $conexao  = mysqli_connect("localhost","root","","sistema");
+            $query    = "SELECT * FROM convenios WHERE id = $convenio->id;";
+            $query    = mysqli_query($conexao, $query);
+            
+    	    while ($linha = mysqli_fetch_array($query)) {
+        ?>
+			<img width="20" src="http://localhost/sistema/public/convenios/<?php echo $linha['img']; ?>" />
+		</a>
+
+	    <?php } ?>
+    </div>
+
+    <div class="alert">
+        <form action="http://localhost/sistema/public/uploadConvenio.php" method="post" enctype="multipart/form-data">
+    		<label>Enviar Foto:</label> <br />
+	 		<input type="hidden" name="idChamado" value="{!! $convenio->id !!}" />
+    	    <input class="form-control" type="file" name="arquivos[]" multiple>
+            <br>
+            <input type="submit" name="enviaArquivo" value="Enviar">
+        </form>
+	</div>
+
+        <!--#####################-->
 </div>
 
 <!-- Site Field -->
@@ -52,7 +79,7 @@
             </td>
             <td>
             <a href="http://localhost/sistema/public/tconvenios/<?php echo $linha['id'];?>" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-            <a href="http://localhost/sistema/public/tconvenios/<?php echo $linha['id'];?>/edit" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+            <a href="http://localhost/sistema/public/tconvenios/<?php echo $linha['id'];?>/edit?c=0" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
             {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Tem certeza?')"]) !!}
             </td>
         </tr>

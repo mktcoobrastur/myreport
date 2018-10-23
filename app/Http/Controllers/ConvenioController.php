@@ -14,7 +14,10 @@ use Response;
 class ConvenioController extends AppBaseController
 {
     /** @var  ConvenioRepository */
-    private $convenioRepository;
+    public $convenioRepository;
+    public $convenio;
+    public $anexo;
+    public $img;
 
     public function __construct(ConvenioRepository $convenioRepo)
     {

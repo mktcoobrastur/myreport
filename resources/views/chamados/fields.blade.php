@@ -25,7 +25,13 @@
 <!-- Motivo Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('motivo', 'Motivo:') !!}
-    {!! Form::text('motivo', null, ['class' => 'form-control']) !!}
+    {!! Form::select('motivo', array('Elogios' => 'Elogios  ',
+                                           'Informacoes' => 'Informações',
+                                           'Reclamacoes' => 'Reclamações',
+                                           'Servicos' => 'Serviços ou Solicitações',
+                                           'Sugestoes' => 'Sugestões',
+                                           'Outros' => 'Outros'
+                                           ), '', ['class' => 'form-control']) !!}
 </div>
 
 <!-- Mensagem Field -->

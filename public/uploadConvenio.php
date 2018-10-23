@@ -3,7 +3,7 @@
 $conexao = mysqli_connect("localhost","root","","sistema");
 
 // diretório de destino do arquivo
-define('DEST_DIR', __DIR__ . '/upload');
+define('DEST_DIR', __DIR__ . '/convenios');
  
 if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
 {
@@ -58,8 +58,9 @@ if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
 
 			
 			
-			 $sql = "INSERT INTO anexos (id, anexo, tarefa)
-			 VALUES('0000','$anexo','$idChamado')";
+			 //$sql = "INSERT INTO anexos (id, anexo, tarefa) VALUES('0000','$anexo','$idChamado')";
+             
+             $query = "UPDATE convenios SET imagem='$anexo' WHERE id=$idChamado";
 			
 			
 			if (mysqli_query($conn, $sql)) {
@@ -70,7 +71,7 @@ if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
 			
 
 			echo "ok!";
-        	header("Location:http://localhost/sistema/public/tarefas/$idChamado");
+        	header("Location:http://localhost/sistema/public/convenios/$idChamado");
 
 
 

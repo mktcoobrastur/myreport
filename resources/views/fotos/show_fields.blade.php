@@ -108,11 +108,11 @@
             $query    = mysqli_query($conexao, $query);
             
     	    while ($linha = mysqli_fetch_array($query)) {
-                $cssP = "position: absolute; margin-top: -80px; margin-left: 50px; font-size: 55px; color: #ffffff; font-weight: bold;";
+                $cssP = "position: absolute; margin-top: -80px; margin-left: 50px; font-size: 55px; color: #ffffff; font-weight: bold; text-shadow: 2px 2px 20px #000000;";
         ?>  <div style="float: left; margin: 5px;">
             <a class="linkPrincipal">
                 <div class="tooltips">
-                    <input type="radio" name="marcar" style="position: absolute; margin-left: 3px;" onclick="window.location='http://localhost/sistema/public/marcaFotos.php?id=<?php echo $linha['id']; ?>&item={!! $foto->id !!}';" />
+                    <input type="radio" name="marcar" style="position: absolute; margin-left: 3px;" onclick="window.location='http://localhost/sistema/public/marcaFotos.php?id=<?php echo $linha['id']; ?>&item={!! $foto->id !!}&cod={!! $foto->codigo !!}';" />
                     <span class="tooltiptext">Marcar como Foto Principal</span>
                 </div>
                <a href="../excluiFotos.php?id=<?php echo $linha['id']; ?>&item={!! $foto->id !!}" onclick="return confirm('Tem certeza?')" class="btn btn-danger excluirBtn" alt="Excluir" data-toggle="tooltip" data-placement="top" title="Excluir">x</a>

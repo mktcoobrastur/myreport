@@ -2,6 +2,7 @@
 
     $id         = $_GET['id'];
     $redirect   = $_GET['item'];
+    $cod        = $_GET['cod'];
 
     $servername = "localhost";
     $username = "root";
@@ -22,7 +23,7 @@
         die("Connection failed: " . mysqli_connect_error());
     }
         // ALTERA O ÍNDICE DAS DEMAIS;
-        $sql2 = "UPDATE galeria SET principal = '0' WHERE id != $id AND cod = $redirect";
+        $sql2 = "UPDATE galeria SET principal = '0' WHERE id != $id AND cod = $cod";
 
         if (mysqli_query($conn2, $sql2)) {
             echo "ok";
@@ -39,8 +40,7 @@
             echo "Error: " . $sql . "<br>" . mysqli_error($conn); 
         }
 
-        
+        echo $redirect." - ".$id;
 
-
-    header("Location:http://localhost/sistema/public/fotos/$redirect");
+        header("Location:http://localhost/sistema/public/fotos/$redirect");
 ?>

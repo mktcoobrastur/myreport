@@ -108,14 +108,16 @@
             $query    = mysqli_query($conexao, $query);
             
     	    while ($linha = mysqli_fetch_array($query)) {
+                $cssP = "position: absolute; margin-top: -80px; margin-left: 50px; font-size: 55px; color: #ffffff; font-weight: bold;";
         ?>  <div style="float: left; margin: 5px;">
             <a class="linkPrincipal">
                 <div class="tooltips">
                     <input type="radio" name="marcar" style="position: absolute; margin-left: 3px;" onclick="window.location='http://localhost/sistema/public/marcaFotos.php?id=<?php echo $linha['id']; ?>&item={!! $foto->id !!}';" />
                     <span class="tooltiptext">Marcar como Foto Principal</span>
                 </div>
-               <a href="../excluiFotos.php?id=<?php echo $linha['id']; ?>&item={!! $foto->id !!}" class="btn btn-danger excluirBtn" alt="Excluir" data-toggle="tooltip" data-placement="top" title="Excluir">x</a>
+               <a href="../excluiFotos.php?id=<?php echo $linha['id']; ?>&item={!! $foto->id !!}" onclick="return confirm('Tem certeza?')" class="btn btn-danger excluirBtn" alt="Excluir" data-toggle="tooltip" data-placement="top" title="Excluir">x</a>
                 <img width="130" height="90" src="http://localhost/sistema/public/hoteis/{!! $foto->codigo !!}/<?php echo $linha['img']; ?>" />
+            <?php if($linha['principal'] == 1) { ?><span style="<?php echo $cssP; ?>">P</span><?php } ?>
 		    </a></div>
         <?php } ?>
 

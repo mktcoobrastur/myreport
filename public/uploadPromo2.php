@@ -1,7 +1,5 @@
 <?php
 
-$conexao = mysqli_connect("localhost","root","","sistema");
-
 // diretório de destino do arquivo
 define('DEST_DIR', __DIR__ . '/promoG');
  
@@ -31,8 +29,9 @@ if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
 
        
 
-        $anexo = $arquivos['name'][0];
-        $idChamado = $_POST['idChamado'];
+        $anexo          = $arquivos['name'][0];
+        $idChamado      = $_POST['idChamado'];
+        $redirect       = $_POST['idRedirect'];
         //$query = "UPDATE anexos SET anexo='$anexo' WHERE id=$idChamado";
         //$query = "INSERT INTO anexos (Id, anexo, id_anexo) VALUES('0000','$anexo','$idChamado')";
 
@@ -58,7 +57,7 @@ if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
 
 			
 			
-            $sql = "UPDATE promocoes SET imgLamina = '$anexo' where codigo = '$idChamado'";
+            $sql = "UPDATE promocoes SET imgLamina = '$anexo' WHERE codigo = '$idChamado'";
 			
 			
 			if (mysqli_query($conn, $sql)) {
@@ -68,11 +67,6 @@ if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
 			}
 			
 
-			echo "ok!";
-        	header("Location:http://localhost/sistema/public/promocoes/$idChamado");
-
-
-
-
+        	header("Location:http://localhost/sistema/public/promocoes/$redirect");
 }
 ?>

@@ -25,7 +25,11 @@ $conexao = mysqli_connect("localhost","root","","sistema");
     	    while ($linha = mysqli_fetch_array($query)) {
                 
                 $cod = $linha['codigo'];
-                $sql = "UPDATE promocoes SET imgLamina = '$cod.jpg' where codigo = '$cod'";
+                $hotel = $linha['hotel'];
+                //$sql = "UPDATE promocoes SET imgLamina = '$cod.jpg' where codigo = '$cod'";
+
+				$sql = "INSERT INTO fotos (hotel, codigo)
+				VALUES('$hotel','$cod')";
 
                 if (mysqli_query($conn, $sql)) {
                     echo "";

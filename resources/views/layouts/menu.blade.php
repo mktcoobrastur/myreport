@@ -69,7 +69,7 @@
           <ul class="treeview-menu">
             <li><a href="{!! route('negocios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
             <li><a href="{!! route('promocoes.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Promoções</a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Fotos Site</a></li>
+            <li><a href="{!! route('fotos.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Fotos Site</a></li>
           </ul>
 </li>
 
@@ -145,5 +145,9 @@
 
 <li class="{{ Request::is('promocoes*') ? 'active' : '' }}">
     <a href="{!! route('promocoes.index') !!}"><i class="fa fa-edit"></i><span>Promocoes</span></a>
+</li>
+
+<li class="{{ Request::is('fotos*') ? 'active' : '' }}">
+    <a href="{!! route('fotos.index') !!}"><i class="fa fa-edit"></i><span>Fotos</span></a>
 </li>
 

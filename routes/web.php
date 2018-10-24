@@ -56,3 +56,5 @@ Route::resource('projetos', 'ProjetoController');
 Route::resource('tprojetos', 'TprojetoController');
 
 Route::resource('promocoes', 'PromocoeController');
+
+Route::resource('fotos', 'FotoController');

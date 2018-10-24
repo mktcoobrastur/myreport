@@ -49,13 +49,14 @@
             </td>
         </tr>
             
-        <?php
-            } 
-        }
-        ?>
+
     </tbody>
 </table>
     </div>
+    <?php
+            } 
+        }
+        ?>
 <!--################## FIM BUSCA ################-->
 
 <table class="table table-responsive" id="fotos-table">

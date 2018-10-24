@@ -32,6 +32,44 @@
         padding-left: 8px;
         text-decoration: none !important;
     }
+
+    /*##########  TOOLTIP  ##########*/
+
+ .tooltips {
+    display: block;
+    position: absolute;
+    color: #000;
+}
+
+.tooltips .tooltiptext {
+    visibility: hidden;
+    width: 110px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 6px;
+    padding: 5px;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin: 0;
+    
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltips:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltiptext {
+    margin-left: -40px !important;
+    top: -25px !important;
+    position: relative;
+}
 </style>
 
 <!-- Codigo Field -->
@@ -61,7 +99,7 @@
 <!-- Galeria Field -->
 <div class="form-group">
 <div class="imgPromo">
-    {!! Form::label('galeria', 'Galeria: (MARQUE A FOTO DE CAPA)') !!}
+    {!! Form::label('galeria', 'Galeria: (MARQUE A FOTO PRINCIPAL)') !!}
     <!--#####################-->
     <div class="alert">
         <?php
@@ -70,19 +108,23 @@
             $query    = mysqli_query($conexao, $query);
             
     	    while ($linha = mysqli_fetch_array($query)) {
-        ?>
-            <a href="<?php echo $linha['id']; ?>" class="linkPrincipal" data-toggle="tooltip" data-placement="top" title="Marque para Foto Principal">
-                <input type="radio" name="p" style="position: absolute; margin-left: 3px;" />
-                <a href="#" class="btn btn-danger excluirBtn" alt="Excluir" data-toggle="tooltip" data-placement="top" title="Excluir">x</a>
-                <img width="130" height="90" src="http://localhost/sistema/public/hoteis/<?php echo $linha['img']; ?>" />
-		    </a>
-	    <?php } ?>
+        ?>  <div style="float: left; margin: 5px;">
+            <a class="linkPrincipal">
+                <div class="tooltips">
+                    <input type="radio" name="marcar" style="position: absolute; margin-left: 3px;" onclick="window.location='http://localhost/sistema/public/marcaFotos.php?id=<?php echo $linha['id']; ?>&item={!! $foto->id !!}';" />
+                    <span class="tooltiptext">Marcar como Foto Principal</span>
+                </div>
+               <a href="../excluiFotos.php?id=<?php echo $linha['id']; ?>&item={!! $foto->id !!}" class="btn btn-danger excluirBtn" alt="Excluir" data-toggle="tooltip" data-placement="top" title="Excluir">x</a>
+                <img width="130" height="90" src="http://localhost/sistema/public/hoteis/{!! $foto->codigo !!}/<?php echo $linha['img']; ?>" />
+		    </a></div>
+        <?php } ?>
+
     </div>
-
-
+    <div style="clear: both;"></div>
         <form action="http://localhost/sistema/public/uploadFotos.php" method="post" enctype="multipart/form-data">
     		<label>Enviar Fotos:</label> <br />
 	 		<input type="hidden" name="idChamado" value="{!! $foto->id !!}" />
+	 		<input type="hidden" name="codigo" value="{!! $foto->codigo !!}" />
     	    <input class="form-control" type="file" name="arquivos[]" multiple>
             <br>
             <input type="submit" name="enviaArquivo" value="Enviar">
@@ -90,6 +132,8 @@
 
 
 </div>        <!--#####################-->
-
 </div>
 <div style="clear: both;"></div>
+
+<?php $next = $foto->id + 1; ?>
+<a href="{!!$next!!}" class="btn btn-default">Próximo</a>

@@ -17,6 +17,7 @@ class CreateGaleriaTable extends Migration
             $table->increments('id');
             $table->string('img');
             $table->string('ref');
+            $table->string('cod');
             $table->string('principal');
             $table->timestamps();
         });

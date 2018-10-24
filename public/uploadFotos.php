@@ -1,14 +1,15 @@
 <?php
-
-// diretório de destino do arquivo
-define('DEST_DIR', __DIR__ . '/hoteis');
- 
 if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
 {
 
+
     $idChamado      = $_POST['idChamado'];
-    //$query = "UPDATE anexos SET anexo='$anexo' WHERE id=$idChamado";
-    //$query = "INSERT INTO anexos (Id, anexo, id_anexo) VALUES('0000','$anexo','$idChamado')";
+    $cod            = $_POST['codigo'];
+
+    // CRIA PASTA COM O CÓDIGO DO HOTEL
+// diretório de destino do arquivo
+    define('DEST_DIR', __DIR__ . '/hoteis/'.$cod);
+    mkdir(__DIR__.'/hoteis/'.$cod.'/', 0777, true);
 
     $servername = "localhost";
     $username = "root";
@@ -46,8 +47,8 @@ if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
         }
         $anexo          = $arquivos['name'][0];
 
-        $sql = "INSERT INTO galeria (id, img, ref)
-        VALUES('0000','$arquivo','$idChamado')";
+        $sql = "INSERT INTO galeria (id, img, ref, cod)
+        VALUES('0000','$arquivo','$idChamado','$cod')";
        
         if (mysqli_query($conn, $sql)) {
             echo "";

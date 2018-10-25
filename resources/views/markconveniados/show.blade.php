@@ -11,7 +11,7 @@
             <div class="box-body">
                 <div class="row" style="padding-left: 20px">
                     @include('markconveniados.show_fields')
-                    <a href="{!! route('markconveniados.index') !!}" class="btn btn-default">Voltar</a>
+                    <a href="/sistema/public/mark" class="btn btn-default">Voltar</a>
                 </div>
             </div>
         </div>

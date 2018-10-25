@@ -111,6 +111,9 @@
     <a href="{!! route('departamentos.index') !!}"><i class="fa fa-edit"></i><span>Departamentos</span></a>
 </li-->
 
+
+<?php if(Auth::user()->name == 'Leonardo Colombo') { ?>
+
 <hr>
 
 <li class="{{ Request::is('vendasdias*') ? 'active' : '' }}">
@@ -163,3 +166,4 @@
     <a href="{!! route('markcampanhas.index') !!}"><i class="fa fa-edit"></i><span>Markcampanhas</span></a>
 </li>
 
+<?php } ?>

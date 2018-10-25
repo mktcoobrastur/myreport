@@ -9,7 +9,7 @@
         </ul>
 </li-->
 <li class="">
-    <a href=""><i class="fa fa-dashboard"></i> <span> Painel Principal</span></a>
+    <a href="/sistema/public/home"><i class="fa fa-dashboard"></i> <span> Painel Principal</span></a>
 </li>
 
 <li class="treeview">
@@ -22,7 +22,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="{!! route('marketings.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Emarks</a></li>
+            <li><a href="/sistema/public/mark"><i class="fa fa-circle-o text-aqua"></i> Emarks</a></li>
           </ul>
 </li>
 
@@ -36,7 +36,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="{!! route('relacionamentos.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Índice Reclame Aqui</a></li>
+            <li><a href="/sistema/public/indice"><i class="fa fa-circle-o text-aqua"></i> Índice Reclame Aqui</a></li>
             <li><a href="{!! route('chamados.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Gerenciamento de Chamados</a></li>
             <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Fale Conosco</a></li>
           </ul>
@@ -149,5 +149,17 @@
 
 <li class="{{ Request::is('fotos*') ? 'active' : '' }}">
     <a href="{!! route('fotos.index') !!}"><i class="fa fa-edit"></i><span>Fotos</span></a>
+</li>
+
+<li class="{{ Request::is('markconvenios*') ? 'active' : '' }}">
+    <a href="{!! route('markconvenios.index') !!}"><i class="fa fa-edit"></i><span>Markconvenios</span></a>
+</li>
+
+<li class="{{ Request::is('markconveniados*') ? 'active' : '' }}">
+    <a href="{!! route('markconveniados.index') !!}"><i class="fa fa-edit"></i><span>Markconveniados</span></a>
+</li>
+
+<li class="{{ Request::is('markcampanhas*') ? 'active' : '' }}">
+    <a href="{!! route('markcampanhas.index') !!}"><i class="fa fa-edit"></i><span>Markcampanhas</span></a>
 </li>
 

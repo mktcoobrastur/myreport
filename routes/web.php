@@ -15,11 +15,22 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::get('/indice', function () {
+    return view('indice');
+});
+
+Route::get('/nav', function () {
+    return view('nav');
+});
+
+Route::get('/mark', function () {
+    return view('mark');
+});
+
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('/home', 'HomeController@index');
 
 Route::resource('tarefas', 'TarefasController');
 
@@ -58,3 +69,9 @@ Route::resource('tprojetos', 'TprojetoController');
 Route::resource('promocoes', 'PromocoeController');
 
 Route::resource('fotos', 'FotoController');
+
+Route::resource('markconvenios', 'MarkconvenioController');
+
+Route::resource('markconveniados', 'MarkconveniadoController');
+
+Route::resource('markcampanhas', 'MarkcampanhaController');

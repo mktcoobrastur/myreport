@@ -1,7 +1,12 @@
+<?php
+    if (isset($_GET['c'])) {
+        $c      = $_GET['c'];
+    }
+?>
 <!-- Conveniado Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('conveniado', 'Conveniado:') !!}
-    {!! Form::text('conveniado', null, ['class' => 'form-control']) !!}
+    <input type="text" name="conveniado" class="form-control" value="<?php if (isset($_GET['c'])) { echo $c; } ?>"/>
 </div>
 
 <!-- Nome Field -->
@@ -30,6 +35,6 @@
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
-    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-    <a href="{!! route('markcampanhas.index') !!}" class="btn btn-default">Cancel</a>
+    {!! Form::submit('Salvar', ['class' => 'btn btn-primary']) !!}
+    <a href="{!! route('markcampanhas.index') !!}" class="btn btn-default">Cancelar</a>
 </div>

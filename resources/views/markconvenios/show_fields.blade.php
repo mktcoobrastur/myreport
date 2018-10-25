@@ -21,7 +21,7 @@
             while ($linha = mysqli_fetch_array($query)) {
             ?>
                 <div class="tabelaM">
-                <a href=""><?php echo strtoupper($linha['nome']); ?></a><br />
+                <a href=""><?php echo utf8_encode(strtoupper($linha['nome'])); ?></a><br />
                 </div>
 	    <?php } ?> 
         <br />

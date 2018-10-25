@@ -3,7 +3,7 @@
 @section('content')
     <section class="content-header">
         <h1>
-            Markconveniado
+        {!! $markconveniado->nome !!}
         </h1>
     </section>
     <div class="content">
@@ -11,7 +11,7 @@
             <div class="box-body">
                 <div class="row" style="padding-left: 20px">
                     @include('markconveniados.show_fields')
-                    <a href="{!! route('markconveniados.index') !!}" class="btn btn-default">Back</a>
+                    <a href="{!! route('markconveniados.index') !!}" class="btn btn-default">Voltar</a>
                 </div>
             </div>
         </div>

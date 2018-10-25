@@ -16,6 +16,7 @@ class CreateMarkconveniosTable extends Migration
         Schema::create('markconvenios', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nome');
+            $table->string('tipo');
             $table->string('status');
             $table->timestamps();
         });

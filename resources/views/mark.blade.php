@@ -13,27 +13,34 @@
         padding-left: 25px;
     }
     .tabelaM {
-        background: #f5f5f5;
-        width: 400px;
+        background: ;
+        width: 200px;
+        margin: 20px;
         float: left;
+    }
+    .align {
         margin: 20px;
     }
 </style>
-    <section class="content-header">
-        <h1>
-            Marketing
-        </h1>
-    </section>
     <div class="content">
-        <div class="box box-primary">
+        <div class="box">
 
     <div class="box-body">
 
-        <?php
+<div class="align">
+<ul class="timeline">
+<!-- timeline time label -->
+<li class="time-label">
+    <span class="bg-green btn-lg">
+        Convênios
+    </span>
+</li>
+<!-- /.timeline-label -->       
+<?php
             $conexao  = mysqli_connect("localhost","root","","sistema");
 
             //query1
-            $query    = "SELECT * FROM markconvenios";
+            $query    = "SELECT * FROM markconvenios where tipo = 'C'";
             $query    = mysqli_query($conexao, $query);
             
             //query2
@@ -43,15 +50,82 @@
                 $query2    = "SELECT * FROM markconveniados where convenio = $idMark";
                 $query2    = mysqli_query($conexao, $query2);
             ?>
-                <div class="tabelaM">
-                    <b class="Mtitulo"><?php echo strtoupper($linha['nome']); ?></b><br />
-                    <?php while ($linha2 = mysqli_fetch_array($query2)) { ?>
-                        <a class='linkM' href=""><?php echo strtoupper($linha2['nome']); ?></a>
-                    <?php } ?>                
-                </div>
-	    <?php } ?>                
+
+<!-- timeline item -->
+<li>
+    <!-- timeline icon -->
+    <i class="fa fa-user-o bg-blue"></i>
+    <div class="timeline-item" style="background: #f0f0f0; box-shadow: 3px 3px 8px #ccc;">
+        <h3 class="timeline-header"><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <?php echo strtoupper($linha['nome']); ?></a>
+        <a href="#" class="btn btn-default btn-xs pull-right"><i class="fa fa-plus" aria-hidden="true"></i></a>
+    </h3>
+        <div class="timeline-body">
+        <div class="timeline-footer">
+            <?php while ($linha2 = mysqli_fetch_array($query2)) { ?>
+                <a class="btn btn-primary btn-xs" href="/sistema/public/markconveniados/<?php echo $linha2['id']; ?>"><?php echo strtoupper($linha2['nome']); ?></a>
+            <?php } ?>                
+        </div>
         </div>
 
+    </div>
+</li>
+<!-- END timeline item -->
+
+	    <?php } ?>
+              
+ <!-- timeline time label -->
+<li class="time-label">
+    <span class="bg-red btn-lg">
+        Promoções
+    </span>
+</li>
+<!-- /.timeline-label -->
+
+<?php
+            $conexao  = mysqli_connect("localhost","root","","sistema");
+
+            //query1
+            $query    = "SELECT * FROM markconvenios where tipo = 'P'";
+            $query    = mysqli_query($conexao, $query);
+            
+            //query2
+
+            while ($linha = mysqli_fetch_array($query)) {
+                $idMark        = $linha['id'];
+                $query2    = "SELECT * FROM markconveniados where convenio = $idMark";
+                $query2    = mysqli_query($conexao, $query2);
+            ?>
+
+<!-- timeline item -->
+<li>
+    <!-- timeline icon -->
+    <i class="fa fa-user-o bg-red"></i>
+    <div class="timeline-item" style="background: #f0f0f0;">
+        <h3 class="timeline-header"><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> <?php echo utf8_encode(strtoupper($linha['nome'])); ?></a>
+        <a href="#" class="btn btn-default btn-xs pull-right"><i class="fa fa-plus" aria-hidden="true"></i></a>
+        </h3>
+
+        <div class="timeline-body">
+        <div class="timeline-footer">
+            <?php while ($linha2 = mysqli_fetch_array($query2)) { ?>
+                <a class="btn btn-danger btn-xs"><?php echo utf8_encode(strtoupper($linha2['nome'])); ?></a>
+            <?php } ?>                
+        </div>
+        </div>
+
+    </div>
+</li>
+<!-- END timeline item -->
+
+	    <?php } ?>
+
+
+       </div>
+
+
+</ul>
+</div>          
+            <br />
         </div>
     </div>
 

@@ -92,7 +92,6 @@
             $query    = mysqli_query($conexao, $query);
             
             //query2
-
             while ($linha = mysqli_fetch_array($query)) {
                 $idMark        = $linha['id'];
                 $query2    = "SELECT * FROM markconveniados where convenio = $idMark";

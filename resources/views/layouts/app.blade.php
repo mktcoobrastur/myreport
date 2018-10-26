@@ -50,7 +50,48 @@
 
                 <!-- Navbar Right Menu -->
                 <div class="navbar-custom-menu">
-                    <ul class="nav navbar-nav">
+
+                <ul class="nav navbar-nav">
+                <li class="dropdown messages-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-envelope-o"></i>
+              <span class="label label-success">1</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">Você tem 1 mensagens!</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+ 
+                <!-- start message -->
+
+        <?php
+            $conexao  = mysqli_connect("localhost","root","","sistema");
+            $userID   = Auth::user()->email;
+            $sql    = "SELECT * FROM recados order by id desc";
+            $query    = mysqli_query($conexao, $sql);
+            while ($linha = mysqli_fetch_array($query)) {
+        ?>
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                      <i class="fa fa-envelope-o"></i>
+                      </div>
+                      <h4>
+                      <?php echo $linha['from']; ?>
+                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                      </h4>
+                      <p><?php echo $linha['recado']; ?></p>
+                    </a>
+                  </li>
+        <?php } ?>
+                <!-- end message -->
+            </ul>
+              </li>
+              <li class="footer"><a href="#">Ver todos os recados</a></li>
+            </ul>
+          </li>
+          <!-- Notifications: style can be found in dropdown.less -->
                         <!-- User Account Menu -->
                         <li class="dropdown user user-menu">
                             <!-- Menu Toggle Button -->

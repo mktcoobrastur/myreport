@@ -78,3 +78,5 @@ Route::resource('markcampanhas', 'MarkcampanhaController');
 Route::resource('hoteis', 'HoteiController');
 
 Route::resource('departamentos', 'DepartamentoController');
+
+Route::resource('recados', 'RecadoController');

@@ -31,12 +31,12 @@ class MarketingController extends AppBaseController
     {
         $this->marketingRepository->pushCriteria(new RequestCriteria($request));
         $marketings = $this->marketingRepository->all();
+        
 
         return view('marketings.index')
             ->with('marketings', $marketings->where('departamento', '=', 'Marketing'));
-        
+   
     }
-
     /**
      * Show the form for creating a new Marketing.
      *

@@ -170,3 +170,7 @@
     <a href="{!! route('departamentos.index') !!}"><i class="fa fa-edit"></i><span>Departamentos</span></a>
 </li>
 
+<li class="{{ Request::is('recados*') ? 'active' : '' }}">
+    <a href="{!! route('recados.index') !!}"><i class="fa fa-edit"></i><span>Recados</span></a>
+</li>
+

@@ -58,7 +58,7 @@
 </table>
     </div>
 <!--################## FIM BUSCA ################-->
-
+<div class="alert">
 <table class="table table-responsive" id="fotos-table">
     <thead>
         <tr>
@@ -87,3 +87,4 @@
     @endforeach
     </tbody>
 </table>
+</div>

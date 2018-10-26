@@ -58,12 +58,11 @@
     </tbody>
 </table>
 
-
+<div class="alert">
 <table class="table table-responsive" id="promocoes-table" <?php if(isset($_GET['q'])) { echo "style='display: none;'"; } ?>>
     <thead>
         <tr>
         <th>Hotel</th>
-        <th>Resumo</th>
         <th>Codigo</th>
         <th>Estado</th>
         <th>Plano</th>
@@ -75,7 +74,6 @@
     @foreach($promocoes as $promocoe)
         <tr>
             <td>{!! $promocoe->hotel !!}</td>
-            <td>{!! $promocoe->resumo !!}</td>
             <td>{!! $promocoe->codigo !!}</td>
             <td>{!! $promocoe->estado !!}</td>
             <td style="font-size: 11px; text-align: center; font-weight: bold;">
@@ -96,3 +94,4 @@
     @endforeach
     </tbody>
 </table>
+</div>

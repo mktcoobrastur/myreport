@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>InfyOm Laravel Generator | Registration Page</title>
+    <title>Coobrastur Turismo | Registro</title>
 
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -43,6 +43,24 @@
         <form method="post" action="{{ url('/register') }}">
 
             {!! csrf_field() !!}
+
+            <div class="form-group has-feedback{{ $errors->has('depto') ? ' has-error' : '' }}">
+                <select class="form-control" name="depto">
+                    <option>Departamento</option>
+                    <option name="Telemarketing">Marketing</option>
+                    <option name="Relacionamento">Relacionamento</option>
+                    <option name="Negocios">Negócios</option>
+                    <option name="Hoteis">Hotéis</option>
+                    <option name="Triton">Triton</option>
+                    <option name="Telemarketing">Telemarketing</option>
+                </select>
+
+                @if ($errors->has('depto'))
+                    <span class="help-block">
+                        <strong>{{ $errors->first('depto') }}</strong>
+                    </span>
+                @endif
+            </div>
 
             <div class="form-group has-feedback{{ $errors->has('name') ? ' has-error' : '' }}">
                 <input type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="Nome Completo">

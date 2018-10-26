@@ -1,19 +1,19 @@
-<!-- Departamento Field -->
+<!-- Depto Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('departamento', 'Departamento:') !!}
-    {!! Form::text('departamento', null, ['class' => 'form-control']) !!}
+    {!! Form::label('depto', 'Departamento') !!}
+    {!! Form::text('depto', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Descricao Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('descricao', 'Breve descrição:') !!}
+    {!! Form::text('descricao', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Gerente Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('gerente', 'Gerente:') !!}
     {!! Form::text('gerente', null, ['class' => 'form-control']) !!}
-</div>
-
-<!-- Status Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('status', 'Status:') !!}
-    {!! Form::select('status', array('A' => 'ATIVO', 'D' => 'DESATIVADO'), ['class' => 'form-control']) !!}
 </div>
 
 <!-- Submit Field -->

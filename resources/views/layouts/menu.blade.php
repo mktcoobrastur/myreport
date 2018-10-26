@@ -63,11 +63,11 @@
           <i class="fa fa-h-square"></i> 
             <span>Hotéis</span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right">2</span>
+              <span class="label label-primary pull-right">3</span>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="{!! route('negocios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
+            <li><a href="{!! route('hoteis.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
             <li><a href="{!! route('promocoes.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Promoções</a></li>
             <li><a href="{!! route('fotos.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Fotos Site</a></li>
           </ul>
@@ -166,4 +166,7 @@
     <a href="{!! route('markcampanhas.index') !!}"><i class="fa fa-edit"></i><span>Markcampanhas</span></a>
 </li>
 
-<?php } ?>
+<?php } ?><li class="{{ Request::is('departamentos*') ? 'active' : '' }}">
+    <a href="{!! route('departamentos.index') !!}"><i class="fa fa-edit"></i><span>Departamentos</span></a>
+</li>
+

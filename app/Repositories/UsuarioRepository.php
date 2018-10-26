@@ -20,6 +20,7 @@ class UsuarioRepository extends BaseRepository
      * @var array
      */
     protected $fieldSearchable = [
+        'depto',
         'name',
         'email',
         'email_verified_at',

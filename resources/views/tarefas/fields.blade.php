@@ -22,6 +22,7 @@
     {!! Form::select('departamento', array('Marketing' => 'MARKETING',
                                            'Relacionamento' => 'RELACIONAMENTO',
                                            'Negocios' => 'NEGÓCIOS',
+                                           'Hoteis' => 'HOTÉIS',
                                            'Triton' => 'TRITON',
                                            'Telemarketing' => 'TELEMARKETING'), '', ['class' => 'form-control']) !!}
 </div>

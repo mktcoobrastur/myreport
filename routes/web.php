@@ -31,7 +31,6 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 
-
 Route::resource('tarefas', 'TarefasController');
 
 Route::resource('departamentos', 'DepartamentosController');
@@ -75,3 +74,7 @@ Route::resource('markconvenios', 'MarkconvenioController');
 Route::resource('markconveniados', 'MarkconveniadoController');
 
 Route::resource('markcampanhas', 'MarkcampanhaController');
+
+Route::resource('hoteis', 'HoteiController');
+
+Route::resource('departamentos', 'DepartamentoController');

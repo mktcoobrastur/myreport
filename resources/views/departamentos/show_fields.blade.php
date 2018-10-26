@@ -1,42 +1,36 @@
 <!-- Id Field -->
 <div class="form-group">
     {!! Form::label('id', 'Id:') !!}
-    <p>{!! $departamentos->id !!}</p>
+    <p>{!! $departamento->id !!}</p>
 </div>
 
-<!-- Departamento Field -->
+<!-- Depto Field -->
 <div class="form-group">
-    {!! Form::label('departamento', 'Departamento:') !!}
-    <p>{!! $departamentos->departamento !!}</p>
+    {!! Form::label('depto', 'Depto:') !!}
+    <p>{!! $departamento->depto !!}</p>
+</div>
+
+<!-- Descricao Field -->
+<div class="form-group">
+    {!! Form::label('descricao', 'Descricao:') !!}
+    <p>{!! $departamento->descricao !!}</p>
 </div>
 
 <!-- Gerente Field -->
 <div class="form-group">
     {!! Form::label('gerente', 'Gerente:') !!}
-    <p>{!! $departamentos->gerente !!}</p>
-</div>
-
-<!-- Status Field -->
-<div class="form-group">
-    {!! Form::label('status', 'Status:') !!}
-    <p>{!! $departamentos->status !!}</p>
+    <p>{!! $departamento->gerente !!}</p>
 </div>
 
 <!-- Created At Field -->
 <div class="form-group">
-    {!! Form::label('created_at', 'Criado em:') !!}
-    <p>{!! $departamentos->created_at !!}</p>
+    {!! Form::label('created_at', 'Created At:') !!}
+    <p>{!! $departamento->created_at !!}</p>
 </div>
 
 <!-- Updated At Field -->
 <div class="form-group">
-    {!! Form::label('updated_at', 'Atualizado em:') !!}
-    <p>{!! $departamentos->updated_at !!}</p>
-</div>
-
-<!-- Deleted At Field -->
-<div class="form-group">
-    {!! Form::label('deleted_at', 'Deletado em:') !!}
-    <p>{!! $departamentos->deleted_at !!}</p>
+    {!! Form::label('updated_at', 'Updated At:') !!}
+    <p>{!! $departamento->updated_at !!}</p>
 </div>
 

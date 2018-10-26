@@ -16,6 +16,7 @@ class ConvenioController extends AppBaseController
     /** @var  ConvenioRepository */
     public $convenioRepository;
     public $convenio;
+    public $convenios;
     public $anexo;
     public $img;
 

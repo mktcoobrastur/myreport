@@ -30,6 +30,7 @@ class Usuario extends Model
 
 
     public $fillable = [
+        'depto',
         'name',
         'email',
         'email_verified_at',
@@ -44,6 +45,7 @@ class Usuario extends Model
      */
     protected $casts = [
         'id' => 'integer',
+        'depto' => 'depto',
         'name' => 'string',
         'email' => 'string',
         'password' => 'string',

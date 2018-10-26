@@ -8,11 +8,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Class Foto
  * @package App\Models
- * @version October 24, 2018, 1:34 pm UTC
+ * @version October 26, 2018, 6:58 pm UTC
  *
- * @property string hotel
- * @property string codigo
- * @property string galeria
+ * @property int id
  */
 class Foto extends Model
 {
@@ -20,15 +18,12 @@ class Foto extends Model
 
     public $table = 'fotos';
     
-    const CREATED_AT = 'created_at';
-    const UPDATED_AT = 'updated_at';
 
     protected $dates = ['deleted_at'];
 
+
     public $fillable = [
-        'hotel',
-        'codigo',
-        'galeria'
+        'id'
     ];
 
     /**
@@ -37,10 +32,7 @@ class Foto extends Model
      * @var array
      */
     protected $casts = [
-        'id' => 'integer',
-        'hotel' => 'string',
-        'codigo' => 'string',
-        'galeria' => 'string'
+        
     ];
 
     /**

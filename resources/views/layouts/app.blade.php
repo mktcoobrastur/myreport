@@ -73,7 +73,7 @@
             while ($linha = mysqli_fetch_array($query)) {
         ?>
                   <li>
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target=".bd-example-modal-lgrecados">
                       <div class="pull-left">
                       <i class="fa fa-envelope-o"></i>
                       </div>
@@ -133,6 +133,57 @@
                 </div>
             </nav>
         </header>
+
+    <!--##############  MODAL RECADOS  ##############-->
+
+    <div class="modal fade bd-example-modal-lgrecados" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                    <div class="modal-header">
+                            <h5 class="modal-title pull-left" id="exampleModalLabel">Recados</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+
+<!-- CONTEUDO MODAL -->
+<div class="alert">
+              <div class="table-responsive mailbox-messages">
+                <table class="table table-hover table-striped">
+                  <tbody>
+                  <?php
+                    $conexao  = mysqli_connect("localhost","root","","sistema");
+                    $userID   = Auth::user()->email;
+                    $sql    = "SELECT * FROM recados order by id desc";
+                    $query    = mysqli_query($conexao, $sql);
+                   while ($linha = mysqli_fetch_array($query)) { ?>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                    <td class="mailbox-name"><a href="#"><?php echo $linha['from']; ?></a></td>
+                    <td class="mailbox-subject"><?php echo $linha['recado']; ?>
+                    </td>
+                    <td class="mailbox-attachment"></td>
+                    <td class="mailbox-date"><?php echo $linha['created_at']; ?></td>
+                  </tr>
+                  <?php } ?>
+                 
+
+
+                </tbody>
+                </table>
+                <!-- /.table -->
+              </div>
+</div>
+<!--  FIM CONTEUDO MODAL  -->
+
+            </div>
+        </div>
+    </div>
+
+    <!--##############  FIM RECADOS  ##############-->
+
 
         <!-- Left side column. contains the logo and sidebar -->
         @include('layouts.sidebar')

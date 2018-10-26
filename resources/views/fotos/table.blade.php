@@ -5,8 +5,13 @@
 </style>
 <form action="<?php $_PHPSELF; ?>" method="get" class="sidebar-form">
             <div class="input-group">
+            <?php if(isset($_GET['q'])) { ?>
                 <input type="text" name="q" class="form-control" placeholder="Pesquisa rápida..."/>
-          <span class="input-group-btn">
+            <?php } else { ?>
+                <input type="text" name="q"  class="form-control" placeholder="Pesquisa rápida..." />
+            <?php } ?>
+
+                <span class="input-group-btn">
             <button type='submit' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i>
             </button>
           </span>
@@ -58,33 +63,3 @@
 </table>
     </div>
 <!--################## FIM BUSCA ################-->
-<div class="alert">
-<table class="table table-responsive" id="fotos-table">
-    <thead>
-        <tr>
-            <th>Hotel</th>
-        <th>Codigo</th>
-        <th>Galeria</th>
-            <th colspan="3">Action</th>
-        </tr>
-    </thead>
-    <tbody>
-    @foreach($fotos as $foto)
-        <tr>
-            <td>{!! $foto->hotel !!}</td>
-            <td>{!! $foto->codigo !!}</td>
-            <td>{!! $foto->galeria !!}</td>
-            <td>
-                {!! Form::open(['route' => ['fotos.destroy', $foto->id], 'method' => 'delete']) !!}
-                <div class='btn-group'>
-                    <a href="{!! route('fotos.show', [$foto->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-                    <a href="{!! route('fotos.edit', [$foto->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
-                    {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
-                </div>
-                {!! Form::close() !!}
-            </td>
-        </tr>
-    @endforeach
-    </tbody>
-</table>
-</div>

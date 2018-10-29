@@ -56,11 +56,12 @@
 <div class="form-group col-sm-6">
     {!! Form::label('status', 'Status:') !!}
     {!! Form::select('status', array('aberto' => 'ABERTO  ',
-                                           'andamento' => 'EM ANDAMENTO',
-                                           'encerrado' => 'ENCERRADO',
-                                           'pausa' => 'EM PAUSA'
-                                           ), '', ['class' => 'form-control']) !!}
+                                     'andamento' => 'EM ANDAMENTO',
+                                     'encerrado' => 'ENCERRADO',
+                                     'pausa' => 'EM PAUSA'
+                                     ), $chamado->status, ['class' => 'form-control']) !!}
 </div>
+
 
 <div style="clear: both;"></div>
 

@@ -87,7 +87,7 @@
                     
             <form action="/send.php" method="post">
               <div class="input-group">
-                        <input type="hidden" name="de" value="{!! $userName !!}" class="form-control">
+                        <input type="hidden" name="de" value="{!! utf8_encode($userName) !!}" class="form-control">
                         <input type="hidden" name="para" value="<?php echo utf8_encode($linha['de']); ?>" class="form-control">
                         <input type="text" name="recado" placeholder="Resposta rápida..." class="form-control">
                         <span class="input-group-btn">

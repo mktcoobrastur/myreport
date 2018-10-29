@@ -8,8 +8,8 @@ if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
 
     // CRIA PASTA COM O CÓDIGO DO HOTEL
 // diretório de destino do arquivo
-    define('DEST_DIR', __DIR__ . '/hoteis/'.$cod);
-    mkdir(__DIR__.'/hoteis/'.$cod.'/', 0777, true);
+    define('DEST_DIR', __DIR__ . '/imghoteis/'.$cod);
+    mkdir(__DIR__.'/imghoteis/'.$cod.'/', 0777, true);
 
     $servername = "localhost";
     $username = "root";

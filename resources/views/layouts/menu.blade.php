@@ -22,7 +22,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="{!! route('marketings.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
-            <li><a href="/sistema/public/mark"><i class="fa fa-circle-o text-aqua"></i> Emarks</a></li>
+            <li><a href="/mark"><i class="fa fa-circle-o text-aqua"></i> Emarks</a></li>
           </ul>
 </li>
 

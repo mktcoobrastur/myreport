@@ -35,12 +35,12 @@
 <body class="hold-transition login-page">
 <div class="login-box">
     <div class="login-logo">
-    <a href="{{ url('/home') }}">my<b>Report</b></a>
+        <img src="/img/myreport.png" />
     </div>
 
     <!-- /.login-logo -->
     <div class="login-box-body">
-        <p class="login-box-msg">Enter Email to reset password</p>
+        <p class="login-box-msg">Digite seu e-mail para redefinir a senha</p>
 
         @if (session('status'))
             <div class="alert alert-success">
@@ -64,7 +64,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <button type="submit" class="btn btn-primary pull-right">
-                        <i class="fa fa-btn fa-envelope"></i> Send Password Reset Link
+                        <i class="fa fa-btn fa-envelope"></i> Enviar link de redefinição
                     </button>
                 </div>
             </div>

@@ -68,7 +68,7 @@
         <?php
             $conexao  = mysqli_connect("localhost","root","","sistema");
             $userName   = Auth::user()->name;
-            $sql    = "SELECT * FROM recados where para = '$userName' order by id desc limit 0,5";
+            $sql    = "SELECT * FROM recados where para = '$userName' order by id desc limit 0,3";
             $query    = mysqli_query($conexao, $sql);
             while ($linha = mysqli_fetch_array($query)) {
         ?>
@@ -109,7 +109,7 @@
                             <!-- Menu Toggle Button -->
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <!-- The user image in the navbar-->
-                                <img src="http://infyom.com/images/logo/blue_logo_150x150.jpg"
+                                <img src="img/logo.jpg"
                                      class="user-image" alt="User Image"/>
                                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
                                 <span class="hidden-xs">{!! Auth::user()->name !!}</span>
@@ -117,7 +117,7 @@
                             <ul class="dropdown-menu">
                                 <!-- The user image in the menu -->
                                 <li class="user-header">
-                                    <img src="http://infyom.com/images/logo/blue_logo_150x150.jpg"
+                                    <img src="img/logo.jpg"
                                          class="img-circle" alt="User Image"/>
                                     <p>
                                         {!! Auth::user()->name !!}
@@ -127,7 +127,7 @@
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
                                     <div class="pull-left">
-                                        <a href="#" class="btn btn-default btn-flat">Perfil</a>
+                                        <a href="#" class="btn btn-default btn-flat" disabled>Perfil</a>
                                     </div>
                                     <div class="pull-right">
                                         <a href="{!! url('/logout') !!}" class="btn btn-default btn-flat"

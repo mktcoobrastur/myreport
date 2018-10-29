@@ -28,7 +28,7 @@ class Recado extends Model
 
 
     public $fillable = [
-        'from',
+        'de',
         'para',
         'recado'
     ];
@@ -40,7 +40,7 @@ class Recado extends Model
      */
     protected $casts = [
         'id' => 'integer',
-        'from' => 'string',
+        'de' => 'string',
         'para' => 'string',
         'recado' => 'string'
     ];

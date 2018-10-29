@@ -34,7 +34,7 @@
 <body class="hold-transition register-page">
 <div class="register-box">
     <div class="register-logo">
-    <a href="{{ url('/home') }}">my<b>Report</b></a>
+        <img src="/img/myreport.png" />
     </div>
 
     <div class="register-box-body">

@@ -33,9 +33,9 @@
 
 </head>
 <body class="hold-transition login-page">
-<div class="login-box">
+<div class="login-box" style="margin-top: 250px;">
     <div class="login-logo">
-        <a href="{{ url('/home') }}">my<b>Report</b></a>
+        <img src="/img/myreport.png" />
     </div>
 
     <!-- /.login-logo -->

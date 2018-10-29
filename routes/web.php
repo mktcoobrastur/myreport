@@ -55,10 +55,6 @@ Route::resource('atendentes', 'AtendenteController');
 
 Route::resource('usuarios', 'UsuarioController');
 
-Route::resource('chamados', 'ChamadoController');
-
-Route::resource('convenios', 'ConvenioController');
-
 Route::resource('tconvenios', 'TconvenioController');
 
 Route::resource('projetos', 'ProjetoController');
@@ -80,3 +76,7 @@ Route::resource('hoteis', 'HoteiController');
 Route::resource('departamentos', 'DepartamentoController');
 
 Route::resource('recados', 'RecadoController');
+
+Route::resource('chamados', 'ChamadoController');
+
+Route::resource('convenios', 'ConvenioController');

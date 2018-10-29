@@ -17,7 +17,7 @@
             
     	    while ($linha = mysqli_fetch_array($query)) {
         ?>
-			<img width="20" src="http://localhost/sistema/public/convenios/<?php echo $linha['img']; ?>" />
+			<img width="20" src="http://localhost/sistema/public/imgconvenios/<?php echo $linha['img']; ?>" />
 		</a>
 
 	    <?php } ?>

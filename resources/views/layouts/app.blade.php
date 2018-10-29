@@ -57,8 +57,8 @@
               <i class="fa fa-envelope-o"></i>
               <span class="label label-success">1</span>
             </a>
-            <ul class="dropdown-menu">
-              <li class="header">Você tem 1 mensagens!</li>
+            <ul class="dropdown-menu" style="box-shadow: 2px 2px 20px #333;">
+              <li class="header" style="text-align: center;">Você tem novas mensagens!</li>
               <li>
                 <!-- inner menu: contains the actual data -->
                 <ul class="menu">
@@ -67,28 +67,40 @@
 
         <?php
             $conexao  = mysqli_connect("localhost","root","","sistema");
-            $userID   = Auth::user()->email;
-            $sql    = "SELECT * FROM recados order by id desc";
+            $userName   = Auth::user()->name;
+            $sql    = "SELECT * FROM recados where para = '$userName' order by id desc limit 0,5";
             $query    = mysqli_query($conexao, $sql);
             while ($linha = mysqli_fetch_array($query)) {
         ?>
                   <li>
-                    <a href="#" data-toggle="modal" data-target=".bd-example-modal-lgrecados">
+                    <!--  data-toggle="modal" data-target=".bd-example-modal-lgrecados" -->
+                    <a href="">
                       <div class="pull-left">
-                      <i class="fa fa-envelope-o"></i>
+                      <i class="fa fa-comment-o" aria-hidden="true"></i>
                       </div>
-                      <h4>
-                      <?php echo $linha['from']; ?>
+                      <h4 style="font-size: 13px;">
+                      <?php echo utf8_encode($linha['de']); ?>
                         <small><i class="fa fa-clock-o"></i> 5 mins</small>
                       </h4>
-                      <p><?php echo $linha['recado']; ?></p>
+                      <p><?php echo utf8_encode($linha['recado']); ?></p>
                     </a>
-                  </li>
+                    
+            <form action="/send.php" method="post">
+              <div class="input-group">
+                        <input type="hidden" name="de" value="{!! $userName !!}" class="form-control">
+                        <input type="hidden" name="para" value="<?php echo utf8_encode($linha['de']); ?>" class="form-control">
+                        <input type="text" name="recado" placeholder="Resposta rápida..." class="form-control">
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-primary btn-flat">Enviar</button>
+                        </span>
+                </div>
+            </form>
+</li>
         <?php } ?>
                 <!-- end message -->
             </ul>
               </li>
-              <li class="footer"><a href="#">Ver todos os recados</a></li>
+              <li class="footer"><a href="/recados">Ver todos os recados</a></li>
             </ul>
           </li>
           <!-- Notifications: style can be found in dropdown.less -->
@@ -155,13 +167,13 @@
                   <?php
                     $conexao  = mysqli_connect("localhost","root","","sistema");
                     $userID   = Auth::user()->email;
-                    $sql    = "SELECT * FROM recados order by id desc";
+                    $sql    = "SELECT * FROM recados ";
                     $query    = mysqli_query($conexao, $sql);
                    while ($linha = mysqli_fetch_array($query)) { ?>
                   <tr>
                     <td><input type="checkbox"></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="#"><?php echo $linha['from']; ?></a></td>
+                    <td class="mailbox-name"><a href="#"><?php echo $linha['de']; ?></a></td>
                     <td class="mailbox-subject"><?php echo $linha['recado']; ?>
                     </td>
                     <td class="mailbox-attachment"></td>

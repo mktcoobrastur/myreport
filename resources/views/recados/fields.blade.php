@@ -4,12 +4,23 @@
     {!! Form::text('from', null, ['class' => 'form-control']) !!}
 </div-->
 
-<input type="hidden" name="from" value="{!! auth()->user()->name !!}" />
+<input type="hidden" name="de" value="{!! auth()->user()->name !!}" />
 
 <!-- To Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('to', 'Para:') !!}
-    {!! Form::text('to', null, ['class' => 'form-control']) !!}
+    <select name="para" class="form-control">
+<?php
+        $conexao  = mysqli_connect("localhost","root","","sistema");
+        $query    = "SELECT * FROM users";
+        $query    = mysqli_query($conexao, $query);
+        while ($linha = mysqli_fetch_array($query)) {
+?>
+            <option value="<?php echo $linha['name']; ?>"><?php echo utf8_encode($linha['name']); ?> (<?php echo utf8_encode($linha['depto']); ?>)</option>
+<?php
+        }
+?>
+</select>
 </div>
 
 <!-- Recado Field -->

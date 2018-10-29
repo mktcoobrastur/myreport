@@ -2,7 +2,8 @@
 
 @section('content')
     <section class="content-header">
-        <h1>
+    @include('chamados.topo')
+       <h1>
             Chamados
         </h1>
     </section>

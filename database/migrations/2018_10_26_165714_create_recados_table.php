@@ -16,7 +16,7 @@ class CreateRecadosTable extends Migration
         Schema::create('recados', function (Blueprint $table) {
             $table->increments('id');
             $table->string('from');
-            $table->string('to');
+            $table->string('para');
             $table->string('recado');
             $table->timestamps();
         });

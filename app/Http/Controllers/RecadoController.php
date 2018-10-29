@@ -33,7 +33,7 @@ class RecadoController extends AppBaseController
         $recados = $this->recadoRepository->all();
 
         return view('recados.index')
-            ->with('recados', $recados->where('to', '=', auth()->user()->email));
+            ->with('recados', $recados->where('para', '=', auth()->user()->name ));
     }
 
     /**

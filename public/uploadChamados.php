@@ -3,7 +3,7 @@
 $conexao = mysqli_connect("localhost","root","","sistema");
 
 // diretório de destino do arquivo
-define('DEST_DIR', __DIR__ . '/upload');
+define('DEST_DIR', __DIR__ . '/imgchamados');
  
 if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
 {
@@ -68,9 +68,9 @@ if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
 				echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 			}
 			
-
-			echo "ok!";
-        	header("Location:http://localhost/sistema/public/chamados");
+            echo $idChamado;
+			echo "<br />ok!";
+        	//header("Location:http://localhost/sistema/public/chamados");
 
 
 

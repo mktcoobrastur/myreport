@@ -3,7 +3,7 @@
 $conexao = mysqli_connect("localhost","root","","sistema");
 
 // diretório de destino do arquivo
-define('DEST_DIR', __DIR__ . '/convenios');
+define('DEST_DIR', __DIR__ . '/imgconvenios');
  
 if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
 {

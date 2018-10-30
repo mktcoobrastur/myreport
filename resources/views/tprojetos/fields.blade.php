@@ -17,7 +17,7 @@
 </div>
 
 <!-- Departamento Field -->
-    <input type="hidden" name="departamento" value="<?php echo $_GET['c']; ?>" />
+    <input type="hidden" name="departamento" value="<?php if (isset($_GET['c'])) { echo $_GET['c']; } ?>" />
 
 <!-- Status Field -->
 <div class="form-group col-sm-6">

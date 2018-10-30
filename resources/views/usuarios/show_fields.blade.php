@@ -10,6 +10,12 @@
     <p>{!! $usuario->name !!}</p>
 </div>
 
+<!-- Name Field -->
+<div class="form-group">
+    {!! Form::label('depto', 'Departamento:') !!}
+    <p>{!! $usuario->depto !!}</p>
+</div>
+
 <!-- Email Field -->
 <div class="form-group">
     {!! Form::label('email', 'Email:') !!}

@@ -8,7 +8,10 @@
         width: 250px;
         height: 50px;
         line-height: 30px;
-        border: 1px dashed #c9c9c9;
+        border-top: 4px solid #3C8CBB;
+        border-left: 1px solid #CCC;
+        border-bottom: 1px solid #CCC;
+        border-right: 1px solid #CCC;
     }
 </style>
 
@@ -86,8 +89,8 @@
                 <?php if ($linha['status'] == 'F') { echo "FINALIZADO"; } ?>
             </td>
             <td>
-            <a href="http://localhost/sistema/public/tprojetos/<?php echo $linha['id'];?>" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-            <a href="http://localhost/sistema/public/tprojetos/<?php echo $linha['id'];?>/edit" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+            <a href="/tprojetos/<?php echo $linha['id'];?>" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
+            <a href="/tprojetos/<?php echo $linha['id'];?>/edit" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
             {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Tem certeza?')"]) !!}
             </td>
         </tr>

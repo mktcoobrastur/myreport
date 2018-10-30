@@ -7,8 +7,11 @@
         padding: 10px;
         width: 250px;
         height: 50px;
-        line-height: 30px;
-        border: 1px dashed #c9c9c9;
+        line-height: 25px;
+        border-top: 4px solid #3C8CBB;
+        border-left: 1px solid #CCC;
+        border-bottom: 1px solid #CCC;
+        border-right: 1px solid #CCC;
     }
 </style>
 <!-- Prioridade Field -->

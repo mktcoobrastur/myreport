@@ -58,7 +58,7 @@ class UsuarioController extends AppBaseController
         $input = $request->all();
 
         $usuario = $this->usuarioRepository->create($input);
-
+        
         Flash::success('Usuario salvo com sucesso.');
 
         return redirect(route('usuarios.index'));

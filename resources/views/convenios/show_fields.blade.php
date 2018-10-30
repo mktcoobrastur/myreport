@@ -3,13 +3,16 @@
     <h2>{!! $convenio->nome !!}</h2>
 </div>
 
-<!-- Img Field -->
-<div class="form-group">
+    <div class="alert" style="width: 250px;">
+        <form action="/uploadConvenio.php" method="post" enctype="multipart/form-data">
+    		<label>Enviar Imagem:</label>
+	 		<input type="hidden" name="idChamado" value="{!! $convenio->id !!}" />
+    	    <input type="file" name="arquivos[]" multiple>
+            <input type="submit" name="enviaArquivo" value="Enviar">
+        </form>
+	</div>
 
-        <!--#####################-->
-
- <h3 style='margin-left: 10px;'>Anexos</h3>
-    <div class="alert">
+    <div class="alert" >
         <?php
             $conexao  = mysqli_connect("localhost","root","","sistema");
             $query    = "SELECT * FROM convenios WHERE id = $convenio->id;";
@@ -17,26 +20,13 @@
             
     	    while ($linha = mysqli_fetch_array($query)) {
         ?>
-			<img width="20" src="http://localhost/sistema/public/imgconvenios/<?php echo $linha['img']; ?>" />
+			<img style="position: absolute; top: 50px; right: 50px;" width="200" src="/imgconvenios/<?php echo $linha['img']; ?>" />
 		</a>
 
 	    <?php } ?>
     </div>
 
-    <div class="alert">
-        <form action="http://localhost/sistema/public/uploadConvenio.php" method="post" enctype="multipart/form-data">
-    		<label>Enviar Foto:</label> <br />
-	 		<input type="hidden" name="idChamado" value="{!! $convenio->id !!}" />
-    	    <input class="form-control" type="file" name="arquivos[]" multiple>
-            <br>
-            <input type="submit" name="enviaArquivo" value="Enviar">
-        </form>
-	</div>
-
-        <!--#####################-->
-</div>
-
-<!-- Site Field -->
+    <!-- Site Field -->
 <div class="form-group">
     {!! Form::label('site', 'Site:') !!}
     <p><a href="{!! $convenio->site !!}" target="blank">{!! $convenio->site !!}</a></p>

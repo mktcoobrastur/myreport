@@ -9,7 +9,7 @@
         </ul>
 </li-->
 <li class="">
-    <a href="/sistema/public/home"><i class="fa fa-dashboard"></i> <span> Painel Principal</span></a>
+    <a href="/home"><i class="fa fa-dashboard"></i> <span> Painel Principal</span></a>
 </li>
 
 <li class="treeview">
@@ -36,7 +36,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="{!! route('relacionamentos.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
-            <li><a href="/sistema/public/indice"><i class="fa fa-circle-o text-aqua"></i> Índice Reclame Aqui</a></li>
+            <li><a href="/indice"><i class="fa fa-circle-o text-aqua"></i> Índice Reclame Aqui</a></li>
             <li><a href="{!! route('chamados.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Gerenciamento de Chamados</a></li>
             <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Fale Conosco</a></li>
           </ul>
@@ -114,63 +114,37 @@
 
 <?php if(Auth::user()->name == 'Leonardo Colombo') { ?>
 
-<hr>
 
-<li class="{{ Request::is('vendasdias*') ? 'active' : '' }}">
-    <a href="{!! route('vendasdias.index') !!}"><i class="fa fa-edit"></i><span>Vendas</span></a>
-</li>
+<li class="treeview">
+          <a href="#">
+          <i class="fa fa-laptop"></i>
+            <span>Menu Programador</span>
+            <span class="pull-right-container">
+              <span class="label label-primary pull-right">11</span>
+            </span>
+          </a>
 
-<li class="{{ Request::is('metas*') ? 'active' : '' }}">
-    <a href="{!! route('metas.index') !!}"><i class="fa fa-edit"></i><span>Metas</span></a>
-</li>
+  <ul class="treeview-menu">
 
-<li class="{{ Request::is('atendentes*') ? 'active' : '' }}">
-    <a href="{!! route('atendentes.index') !!}"><i class="fa fa-edit"></i><span>Atendentes</span></a>
-</li>
+    <li class="{{ Request::is('metas*') ? 'active' : '' }}">
+        <a href="{!! route('metas.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Metas</span></a>
+    </li>
 
-<li class="{{ Request::is('usuarios*') ? 'active' : '' }}">
-    <a href="{!! route('usuarios.index') !!}"><i class="fa fa-edit"></i><span>Usuarios</span></a>
-</li>
+    <li class="{{ Request::is('atendentes*') ? 'active' : '' }}">
+        <a href="{!! route('atendentes.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Atendentes</span></a>
+    </li>
 
-<li class="{{ Request::is('convenios*') ? 'active' : '' }}">
-    <a href="{!! route('convenios.index') !!}"><i class="fa fa-edit"></i><span>Convenios</span></a>
-</li>
+    <li class="{{ Request::is('usuarios*') ? 'active' : '' }}">
+        <a href="{!! route('usuarios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Usuarios</span></a>
+    </li>
 
-<li class="{{ Request::is('tconvenios*') ? 'active' : '' }}">
-    <a href="{!! route('tconvenios.index') !!}"><i class="fa fa-edit"></i><span>Tconvenios</span></a>
-</li>
+    <li class="{{ Request::is('departamentos*') ? 'active' : '' }}">
+        <a href="{!! route('departamentos.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Departamentos</span></a>
+    </li>
 
+    <li class="{{ Request::is('recados*') ? 'active' : '' }}">
+        <a href="{!! route('recados.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Recados</span></a>
+    </li>
+</ul>
 
-
-<li class="{{ Request::is('tprojetos*') ? 'active' : '' }}">
-    <a href="{!! route('tprojetos.index') !!}"><i class="fa fa-edit"></i><span>Tprojetos</span></a>
-</li>
-
-<li class="{{ Request::is('promocoes*') ? 'active' : '' }}">
-    <a href="{!! route('promocoes.index') !!}"><i class="fa fa-edit"></i><span>Promocoes</span></a>
-</li>
-
-<li class="{{ Request::is('fotos*') ? 'active' : '' }}">
-    <a href="{!! route('fotos.index') !!}"><i class="fa fa-edit"></i><span>Fotos</span></a>
-</li>
-
-<li class="{{ Request::is('markconvenios*') ? 'active' : '' }}">
-    <a href="{!! route('markconvenios.index') !!}"><i class="fa fa-edit"></i><span>Markconvenios</span></a>
-</li>
-
-<li class="{{ Request::is('markconveniados*') ? 'active' : '' }}">
-    <a href="{!! route('markconveniados.index') !!}"><i class="fa fa-edit"></i><span>Markconveniados</span></a>
-</li>
-
-<li class="{{ Request::is('markcampanhas*') ? 'active' : '' }}">
-    <a href="{!! route('markcampanhas.index') !!}"><i class="fa fa-edit"></i><span>Markcampanhas</span></a>
-</li>
-
-<?php } ?><li class="{{ Request::is('departamentos*') ? 'active' : '' }}">
-    <a href="{!! route('departamentos.index') !!}"><i class="fa fa-edit"></i><span>Departamentos</span></a>
-</li>
-
-<li class="{{ Request::is('recados*') ? 'active' : '' }}">
-    <a href="{!! route('recados.index') !!}"><i class="fa fa-edit"></i><span>Recados</span></a>
-</li>
-
+</li><?php } ?>

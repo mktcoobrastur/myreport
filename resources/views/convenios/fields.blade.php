@@ -4,12 +4,6 @@
     {!! Form::text('nome', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Img Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('img', 'Img:') !!}
-    {!! Form::file('img', null, ['class' => 'form-control']) !!}
-</div>
-
 <!-- Site Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('site', 'Site:') !!}

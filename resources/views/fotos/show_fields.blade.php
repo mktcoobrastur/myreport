@@ -8,12 +8,18 @@
         width: 250px;
         height: 50px;
         line-height: 30px;
-        border: 1px dashed #c9c9c9;
+        border-top: 4px solid #3C8CBB;
+        border-left: 1px solid #CCC;
+        border-bottom: 1px solid #CCC;
+        border-right: 1px solid #CCC;
     }
     .imgPromo {
         float: left;
         width: 98%;
-        border: 1px dashed #c9c9c9;
+        border-top: 4px solid #3C8CBB;
+        border-left: 1px solid #CCC;
+        border-bottom: 1px solid #CCC;
+        border-right: 1px solid #CCC;
         background: #f5f5f5;
         border-radius: 5px;
         margin: 10px;

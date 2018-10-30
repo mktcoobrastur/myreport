@@ -1,13 +1,18 @@
 <style type="text/css">
     .conveniosOut {
         float: left;
-        width: 380px;
+        width: 250px;
         height: 240px;
         background: #f0f0f0;
         padding: 10px;
         margin: 10px;
         border-radius: 5px;
         cursor: pointer;
+        text-align: center;
+        border-top: 4px solid #3C8CBB;
+        border-left: 1px solid #CCC;
+        border-bottom: 1px solid #CCC;
+        border-right: 1px solid #CCC;
     }
     .conveniosOut:hover {
         background: #f9f9f9;
@@ -18,6 +23,7 @@
         padding: 5px;
         width: 180px;
         height: 130px;
+        margin-bottom: 16px;
     }
     .conveniosOut h4 {
         display: block;
@@ -34,8 +40,18 @@
 <div class="conveniosOut">
     <h4>{!! $convenio->nome !!}</h4>
 
-    <img src="http://localhost/sistema/public/imgconvenios/2.jpg" />
-    <a class="linkSite" href="{!! $convenio->site !!}" target="blank">{!! $convenio->site !!}</a>
+        <?php
+            $conexao  = mysqli_connect("localhost","root","","sistema");
+            $query    = "SELECT * FROM convenios WHERE id = $convenio->id;";
+            $query    = mysqli_query($conexao, $query);
+            
+    	    while ($linha = mysqli_fetch_array($query)) {
+        ?>
+			<img src="/imgconvenios/<?php echo $linha['img']; ?>" />
+		</a>
+
+	    <?php } ?>
+
                 {!! Form::open(['route' => ['convenios.destroy', $convenio->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>
                     <a href="{!! route('convenios.show', [$convenio->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>

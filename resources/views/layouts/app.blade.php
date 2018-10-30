@@ -130,7 +130,7 @@
                             <!-- Menu Toggle Button -->
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <!-- The user image in the navbar-->
-                                <img src="img/logo.jpg"
+                                <img src="/img/logo.jpg"
                                      class="user-image" alt="User Image"/>
                                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
                                 <span class="hidden-xs">{!! Auth::user()->name !!}</span>
@@ -138,11 +138,12 @@
                             <ul class="dropdown-menu" style="box-shadow: 2px 2px 50px #999; background: #ffffff;">
                                 <!-- The user image in the menu -->
                                 <li class="user-header">
-                                    <img src="img/logo.jpg"
+                                    <img src="/img/logo.jpg"
                                          class="img-circle" alt="User Image"/>
                                     <p>
                                         {!! Auth::user()->name !!}
-                                        <small>Menbro desde {!! Auth::user()->created_at->format('M. Y') !!}</small>
+                                        <small>({!! Auth::user()->depto !!})</small>
+                                        <!--small>Menbro desde {!! Auth::user()->created_at->format('M. Y') !!}</small-->
                                     </p>
                                 </li>
                                 <!-- Menu Footer-->
@@ -343,7 +344,6 @@
 
     <!-- AdminLTE App -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/js/adminlte.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
 

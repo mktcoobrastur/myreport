@@ -60,17 +60,17 @@ if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
 			
 			 //$sql = "INSERT INTO anexos (id, anexo, tarefa) VALUES('0000','$anexo','$idChamado')";
              
-             $query = "UPDATE convenios SET imagem='$anexo' WHERE id=$idChamado";
+             $query = "UPDATE convenios SET img='$anexo' WHERE id=$idChamado";
 			
 			
-			if (mysqli_query($conn, $sql)) {
+			if (mysqli_query($conn, $query)) {
 				echo "";
 			} else {
-				echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+				echo "Error: " . $query . "<br>" . mysqli_error($conn);
 			}
 			
 
-			echo "ok!";
+			//echo "ok!";
         	header("Location:convenios/$idChamado");
 
 

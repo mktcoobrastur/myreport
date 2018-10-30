@@ -61,7 +61,7 @@ class TconvenioController extends AppBaseController
 
         Flash::success('Tconvenio saved successfully.');
 
-        return redirect(route('tconvenios.index'));
+        return redirect(route('convenios.index'));
     }
 
     /**

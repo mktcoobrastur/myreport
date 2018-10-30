@@ -31,14 +31,14 @@
           <i class="fa fa-book"></i>
             <span>Relacionamento</span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right">4</span>
+              <span class="label label-primary pull-right">3</span>
             </span>
           </a>
           <ul class="treeview-menu">
             <li><a href="{!! route('relacionamentos.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
             <li><a href="/indice"><i class="fa fa-circle-o text-aqua"></i> Índice Reclame Aqui</a></li>
             <li><a href="{!! route('chamados.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Gerenciamento de Chamados</a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Fale Conosco</a></li>
+            <!--li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Fale Conosco</a></li-->
           </ul>
 </li>
 

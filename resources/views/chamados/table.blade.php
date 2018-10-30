@@ -27,7 +27,7 @@ if (isset($_GET['c'])) {
 
         <tr>
             <td><i class="fa fa-handshake-o"></i></td>
-            <td><a href="/chamados/<?php echo $linha['id']; ?>/edit"><?php echo $linha['usuario']; ?></a></td>
+            <td><a href="/chamados/<?php echo $linha['id']; ?>/edit"><?php echo utf8_encode($linha['usuario']); ?></a></td>
             <td><?php echo $linha['email']; ?></td>
             <td><?php echo $linha['fone']; ?></td>
             <td><b class='btn btn-default btn-xs'><?php echo $linha['motivo']; ?></b></td>

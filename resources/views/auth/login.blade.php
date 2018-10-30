@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Description" content="Software de Gestão Coobrastur">
     <title>Coobrastur</title>
 
     <!-- Tell the browser to be responsive to screen width -->
@@ -35,7 +36,7 @@
 <body class="hold-transition login-page">
 <div class="login-box" style="margin-top: 250px;">
     <div class="login-logo">
-        <img src="/img/myreport.png" />
+        <img src="/img/myreport.png" alt="Imagem" />
     </div>
 
     <!-- /.login-logo -->

@@ -11,8 +11,8 @@
             <div class="box-body">
                 <div class="row" style="padding-left: 20px">
                     @include('markconvenios.show_fields')
-                    <a href="{!! route('markconvenios.index') !!}" class="btn btn-default">Voltar</a>
-                    <a href="/sistema/public/markconveniados/create?r={!! $markconvenio->id !!}" class="btn btn-default">Adicionar Convênio</a>
+                    <a href="/mark" class="btn btn-default">Voltar</a>
+                    <a href="/markconveniados/create?r={!! $markconvenio->id !!}" class="btn btn-default">Adicionar Convênio</a>
                 </div>
             </div>
         </div>

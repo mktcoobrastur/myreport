@@ -25,5 +25,5 @@
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
     {!! Form::submit('Salvar', ['class' => 'btn btn-primary']) !!}
-    <a href="#" class="btn btn-default">Voltar</a>
+    <a href="/markconvenios/<?php if (isset($_GET['r'])) { $r = $_GET['r']; echo $r; } ?>" class="btn btn-default">Voltar</a>
 </div>

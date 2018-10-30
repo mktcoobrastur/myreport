@@ -42,5 +42,5 @@
 
         echo $redirect." - ".$id;
 
-        header("Location:http://localhost/sistema/public/fotos/$redirect");
+        header("Location:fotos/$redirect");
 ?>

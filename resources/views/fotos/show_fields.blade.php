@@ -112,18 +112,18 @@
         ?>  <div style="float: left; margin: 5px;">
             <a class="linkPrincipal">
                 <div class="tooltips">
-                    <input type="radio" name="marcar" style="position: absolute; margin-left: 3px;" onclick="window.location='http://localhost/sistema/public/marcaFotos.php?id=<?php echo $linha['id']; ?>&item={!! $foto->id !!}&cod={!! $foto->codigo !!}';" />
+                    <input type="radio" name="marcar" style="position: absolute; margin-left: 3px;" onclick="window.location='/marcaFotos.php?id=<?php echo $linha['id']; ?>&item={!! $foto->id !!}&cod={!! $foto->codigo !!}';" />
                     <span class="tooltiptext">Marcar como Foto Principal</span>
                 </div>
                <a href="../excluiFotos.php?id=<?php echo $linha['id']; ?>&item={!! $foto->id !!}" onclick="return confirm('Tem certeza?')" class="btn btn-danger excluirBtn" alt="Excluir" data-toggle="tooltip" data-placement="top" title="Excluir">x</a>
-                <img width="130" height="90" src="http://localhost/sistema/public/imghoteis/{!! $foto->codigo !!}/<?php echo $linha['img']; ?>" />
+                <img width="130" height="90" src="/imghoteis/{!! $foto->codigo !!}/<?php echo $linha['img']; ?>" />
             <?php if($linha['principal'] == 1) { ?><span style="<?php echo $cssP; ?>">P</span><?php } ?>
 		    </a></div>
         <?php } ?>
 
     </div>
     <div style="clear: both;"></div>
-        <form action="http://localhost/sistema/public/uploadFotos.php" method="post" enctype="multipart/form-data">
+        <form action="/uploadFotos.php" method="post" enctype="multipart/form-data">
     		<label>Enviar Fotos:</label> <br />
 	 		<input type="hidden" name="idChamado" value="{!! $foto->id !!}" />
 	 		<input type="hidden" name="codigo" value="{!! $foto->codigo !!}" />

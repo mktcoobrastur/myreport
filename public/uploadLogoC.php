@@ -1,7 +1,9 @@
 <?php
 
+$conexao = mysqli_connect("localhost","root","","sistema");
+
 // diretório de destino do arquivo
-define('DEST_DIR', __DIR__ . '/promoG');
+define('DEST_DIR', __DIR__ . '/imgmktconv');
  
 if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
 {
@@ -57,7 +59,7 @@ if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
 
 			
 			
-            $sql = "UPDATE promocoes SET imgLamina = '$anexo' WHERE codigo = '$idChamado'";
+			$sql = "UPDATE markconveniados SET img = '$anexo' where id = '$redirect'";
 			
 			
 			if (mysqli_query($conn, $sql)) {
@@ -67,6 +69,11 @@ if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
 			}
 			
 
-        	header("Location:promocoes/$redirect");
+			echo "ok!";
+        	header("Location:markconveniados/$redirect");
+
+
+
+
 }
 ?>

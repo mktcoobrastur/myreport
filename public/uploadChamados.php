@@ -68,9 +68,9 @@ if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
 				echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 			}
 			
-            echo $idChamado;
-			echo "<br />ok!";
-        	//header("Location:http://localhost/sistema/public/chamados");
+            //echo $idChamado;
+			//echo "<br />ok!";
+        	header("Location:chamados/$idChamado");
 
 
 

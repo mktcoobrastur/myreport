@@ -37,7 +37,7 @@ $conexao = mysqli_connect("localhost","root","","sistema");
 			
 
 			echo "ok!";
-        	header("Location:http://localhost/sistema/public/tarefas/$idChamado");
+        	header("Location:tarefas/$idChamado");
 
 
 

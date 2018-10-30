@@ -15,6 +15,11 @@
                                            'vladimir' => 'VLADIMIR CANGUSU'), '', ['class' => 'form-control']) !!}
 </div>
 
+<div class="form-group col-sm-6">
+    {!! Form::label('created_at', 'Data:') !!}
+    {!! Form::date('created_at', null, ['class' => 'form-control']) !!}
+</div>
+
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
     {!! Form::submit('Salvar', ['class' => 'btn btn-primary']) !!}

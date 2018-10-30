@@ -71,45 +71,28 @@
     {!! $markconveniado->created_at !!}
 </div>
 <div style="clear: both;"></div>
-<!-- Nome Field -->
+    <!-- Nome Field -->
 <div class="form-group">
     {!! Form::label('nome', 'Nome:') !!}
     <p>{!! $markconveniado->nome !!}</p>
+    
+    <img width="200"class="" style="position: absolute; right: 50px; top: 50px;" src="/imgmktconv/{!! $markconveniado->img !!}" />
+
 </div>
 
 <!-- Imgprincipal Field -->
-<div class="imgPromo">
-    {!! Form::label('img', 'Imagem:') !!}
-
-        <!--#####################-->
-
-        <p>
-
-        <?php if ($markconveniado->img != null) { ?>
-
-		<a data-toggle="modal" data-target=".bd-example-modal-lg1" target="blank" class="anexos">
-			<img width="20" src="https://png.icons8.com/metro/1600/attach.png" />
-			{!! $markconveniado->img !!}
-            <i class="fa fa-download pull-right" style='margin-top: 4px;' aria-hidden="true"></i>
-		</a>
-
-        <?php }?>
-
-    <div class="alert">
-        <form name="up1" action="http://localhost/sistema/public/uploadPromo1.php" method="post" enctype="multipart/form-data">
-    		<label>Enviar Arquivos:</label> <br />
+<div class="alert" style="width: 200px; float: left;">
+        <form name="up1" action="/uploadLogoC.php" method="post" enctype="multipart/form-data">
+    		<label>Enviar Imagem:</label> <br />
             <input type="hidden" name="idRedirect" value="{!! $markconveniado->id !!}" />
-    	    <input class="form-control" type="file" name="arquivos[]" multiple>
-            <br>
+    	    <input class="" type="file" name="arquivos[]">
             <input type="submit" name="enviaArquivo" value="Enviar">
         </form>
 	</div>
-    </p>
-        <!--#####################-->
 
 </div>
-</div>
-<a href="/sistema/public/markcampanhas/create?c={!! $markconveniado->id !!}" class="btn btn-primary">Nova Campanha</a>
+
+<a href="/markcampanhas/create?c={!! $markconveniado->id !!}" class="btn btn-primary">Nova Campanha</a>
 <br />
 <br />
 <h3>Acompanhamento de Campanhas</h3>

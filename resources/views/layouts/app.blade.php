@@ -135,7 +135,7 @@
                                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
                                 <span class="hidden-xs">{!! Auth::user()->name !!}</span>
                             </a>
-                            <ul class="dropdown-menu" style="box-shadow: 2px 2px 50px #999;">
+                            <ul class="dropdown-menu" style="box-shadow: 2px 2px 50px #999; background: #ffffff;">
                                 <!-- The user image in the menu -->
                                 <li class="user-header">
                                     <img src="img/logo.jpg"
@@ -201,7 +201,7 @@
         $query    = mysqli_query($conexao, $query);
         while ($linha = mysqli_fetch_array($query)) {
 ?>
-            <li class="list-group-item" style="height: 42px;">
+            <li class="list-group-item" style="height: 42px; background: #F8F8F8;">
             <a href="#">
                 <b style="font-size: 11px;"> <?php echo utf8_encode($linha['name']); ?></b> <a class="pull-right"><i class="fa fa-comment" aria-hidden="true"></i></a>
             </a>

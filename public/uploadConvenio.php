@@ -71,7 +71,7 @@ if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
 			
 
 			echo "ok!";
-        	header("Location:http://localhost/sistema/public/convenios/$idChamado");
+        	header("Location:convenios/$idChamado");
 
 
 

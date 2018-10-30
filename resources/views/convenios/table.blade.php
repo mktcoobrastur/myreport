@@ -19,6 +19,7 @@
     }
     .conveniosOut img {
         border: 1px solid #ccc;
+        background: #ffffff;
         border-radius: 5px;
         padding: 5px;
         width: 180px;
@@ -38,7 +39,7 @@
 @foreach($convenios as $convenio)
 
 <div class="conveniosOut">
-    <h4>{!! $convenio->nome !!}</h4>
+    <h4>{!! strtoupper($convenio->nome) !!}</h4>
 
         <?php
             $conexao  = mysqli_connect("localhost","root","","sistema");

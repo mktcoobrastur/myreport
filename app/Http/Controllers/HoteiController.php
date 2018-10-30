@@ -94,7 +94,6 @@ class HoteiController extends AppBaseController
     public function edit($id)
     {
         $hotei = $this->hoteiRepository->findWithoutFail($id);
-        $foto = $this->hoteiRepository->saveImage('img');
 
         if (empty($hotei)) {
             Flash::error('Hotei not found');

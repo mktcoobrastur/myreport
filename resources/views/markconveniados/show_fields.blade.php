@@ -24,7 +24,7 @@
         width: 212px;
         border: 1px solid #ccc;
         padding: 5px;
-        margin: 15px;
+        margin: 8px;
         box-shadow: 2px 2px 10px #ccc;
         cursor: pointer;
     }
@@ -107,8 +107,8 @@
             ?>
                 <div class="tabelaC">
                 <span class="datetime"><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php echo $linha['created_at']; ?></span>
-                <img src="<?php echo $linha['img']; ?>" />
-                <a href="#"><?php echo utf8_encode(strtoupper($linha['nome'])); ?></a><br />
+                    <div style="width: 200px; height: 230px; overflow: hidden;"><img src="/imgmarketing/<?php echo $linha['img']; ?>" /></div>
+                <a href="/markcampanhas/<?php echo $linha['id']; ?>/edit"><?php echo utf8_encode(strtoupper($linha['nome'])); ?></a><br />
                 </div>
 <?php } ?> 
         <br />

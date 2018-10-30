@@ -27,10 +27,31 @@
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
     @yield('css')
-</head>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	jQuery(document).ready(function(){
+		jQuery('#ajax_form').submit(function(){
+			var dados = jQuery( this ).serialize();
+
+			jQuery.ajax({
+				type: "POST",
+				url: "send.php",
+				data: dados,
+				success: function( data )
+				{   
+                    $('#ajax_form').hide();
+					alert( data );
+				}
+			});
+			
+			return false;
+		});
+	});
+	</script></head>
 
 <body class="skin-blue sidebar-mini">
 @if (!Auth::guest())
+<!--div style="width: 50px; height: 50px; background: red; position: fixed; right: 0; bottom: 0; z-index: 9999;"></div-->
     <div class="wrapper">
         <!-- Main Header -->
         <header class="main-header">
@@ -85,7 +106,7 @@
                       <p><?php echo utf8_encode($linha['recado']); ?></p>
                     </a>
                     
-            <form action="/send.php" method="post">
+            <form action="" method="post" id="ajax_form">
               <div class="input-group">
                         <input type="hidden" name="de" value="{!! utf8_encode($userName) !!}" class="form-control">
                         <input type="hidden" name="para" value="<?php echo utf8_encode($linha['de']); ?>" class="form-control">
@@ -114,7 +135,7 @@
                                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
                                 <span class="hidden-xs">{!! Auth::user()->name !!}</span>
                             </a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu" style="box-shadow: 2px 2px 50px #999;">
                                 <!-- The user image in the menu -->
                                 <li class="user-header">
                                     <img src="img/logo.jpg"
@@ -137,6 +158,65 @@
                                         <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
                                         </form>
+                                    </div>
+
+<style type="text/css">
+    .ooter {
+        display: block;
+        float: left;
+        width: 100%;
+        padding: 10px;
+    }
+    .indiceC {
+        display: block;
+        background: #3C8CBB;
+        color: #ffffff;
+        padding: 10px;
+        font-family: 'Open Sans';
+    }
+    .nomeC {
+        display: block;
+        margin: 5px;
+    }
+    .imgC {
+        border: 1px solid #999;
+        padding: 2px;
+    }
+</style>
+                                           <div class="ooter">
+                                    
+          <!-- Profile Image -->
+          <div class="">
+            <div class="box-body box-profile">
+
+              <h3 class="profile-username text-center">Contatos</h3>
+
+              <p class="text-muted text-center">Clique para conversar.</p>
+
+              <ul class="list-group list-group-unbordered">
+
+<?php
+        $conexao  = mysqli_connect("localhost","root","","sistema");
+        $query    = "SELECT * FROM users";
+        $query    = mysqli_query($conexao, $query);
+        while ($linha = mysqli_fetch_array($query)) {
+?>
+            <li class="list-group-item" style="height: 42px;">
+            <a href="#">
+                <b style="font-size: 11px;"> <?php echo utf8_encode($linha['name']); ?></b> <a class="pull-right"><i class="fa fa-comment" aria-hidden="true"></i></a>
+            </a>
+            </li>
+<?php
+        }
+?>
+              </ul>
+
+
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+                                    
                                     </div>
                                 </li>
                             </ul>

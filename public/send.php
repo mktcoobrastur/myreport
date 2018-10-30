@@ -28,6 +28,6 @@
 				echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 			}
 		
-			echo "ok!";
+			echo "Recado Enviado!";
         	//header("Location:http://localhost/sistema/public/tarefas/$idChamado");
 ?>

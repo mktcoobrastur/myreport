@@ -59,7 +59,7 @@
                                      'andamento' => 'EM ANDAMENTO',
                                      'encerrado' => 'ENCERRADO',
                                      'pausa' => 'EM PAUSA'
-                                     ), $chamado->status, ['class' => 'form-control']) !!}
+                                     ), 'E', ['class' => 'form-control']) !!}
 </div>
 
 

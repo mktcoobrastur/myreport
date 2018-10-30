@@ -203,10 +203,20 @@
         while ($linha = mysqli_fetch_array($query)) {
 ?>
             <li class="list-group-item" style="height: 42px; background: #F8F8F8;">
-            <a href="#">
+            <a id="abrirConversa">
                 <b style="font-size: 11px;"> <?php echo utf8_encode($linha['name']); ?></b> <a class="pull-right"><i class="fa fa-comment" aria-hidden="true"></i></a>
             </a>
             </li>
+            <form action="" method="post" id="ajax_form2" style="display: none; z-index: 999; position: absolute;">
+              <div class="input-group">
+                        <input type="hidden" name="de" value="{!! utf8_encode($userName) !!}" class="form-control">
+                        <input type="hidden" name="para" value="" class="form-control">
+                        <input type="text" name="recado" placeholder="Mensagem rápida..." class="form-control">
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-primary btn-flat">Enviar</button>
+                        </span>
+                </div>
+            </form>
 <?php
         }
 ?>

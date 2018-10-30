@@ -47,7 +47,8 @@
 			return false;
 		});
 	});
-	</script></head>
+	</script>
+</head>
 
 <body class="skin-blue sidebar-mini">
 @if (!Auth::guest())

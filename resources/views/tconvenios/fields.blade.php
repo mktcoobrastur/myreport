@@ -19,10 +19,11 @@
 <!-- Status Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('status', 'Status:') !!}
+    {!! Form::label('status', 'Status:') !!}
     {!! Form::select('status', array('E' => 'ESPERA', 'A' => 'EM ANDAMENTO', 'F' => 'FINALIZADO'), 'N', ['class' => 'form-control']) !!}
 </div>
 
-<input type="hidden" value="<?php echo $_GET['c']; ?>" name="departamento" />
+<input type="hidden" value="<?php if (isset($_GET['c'])) { echo $_GET['c']; } ?>" name="departamento" />
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">

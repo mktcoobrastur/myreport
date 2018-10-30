@@ -59,7 +59,7 @@
 
         <?php
             $conexao  = mysqli_connect("localhost","root","","sistema");
-            $query    = "SELECT * FROM comentarios WHERE tarefa = $tarefas->id;";
+            $query    = "SELECT * FROM comentarios WHERE tarefa = $tarefas->id order by id desc;";
             $query    = mysqli_query($conexao, $query);
             
     	    while ($linha = mysqli_fetch_array($query)) {
@@ -79,7 +79,7 @@
 
 
     <div class="alert">
-        <form action="http://localhost/sistema/public/comentar.php" method="post" enctype="multipart/form-data">
+        <form action="/comentar.php" method="post" enctype="multipart/form-data">
     		<label>Adicionar comentário:</label> <br />
 	 		<input type="hidden" name="idChamado" value="{!! $tarefas->id !!}" />
 	 		<input type="hidden" name="usuario" value="{{ Auth::user()->name}}" />
@@ -107,7 +107,7 @@
             
     	    while ($linha = mysqli_fetch_array($query)) {
         ?>
-		<a href="http://localhost/sistema/public/upload/<?php echo $linha['anexo']; ?>" target="blank" class="anexos">
+		<a href="/upload/<?php echo $linha['anexo']; ?>" target="blank" class="anexos">
 			<img width="20" src="https://png.icons8.com/metro/1600/attach.png" />
 			<?php echo $linha['anexo']; ?>
             <i class="fa fa-download pull-right" style='margin-top: 4px;' aria-hidden="true"></i>
@@ -117,7 +117,7 @@
     </div>
 
     <div class="alert">
-        <form action="http://localhost/sistema/public/upload.php" method="post" enctype="multipart/form-data">
+        <form action="/upload.php" method="post" enctype="multipart/form-data">
     		<label>Enviar Arquivos:</label> <br />
 	 		<input type="hidden" name="idChamado" value="{!! $tarefas->id !!}" />
     	    <input class="form-control" type="file" name="arquivos[]" multiple>

@@ -70,7 +70,7 @@ if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
 			
 
 			echo "ok!";
-        	header("Location:chamados");
+        	header("Location:tarefas/$idChamado");
 
 
 

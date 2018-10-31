@@ -6,7 +6,7 @@
 <!-- Conveniado Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('conveniado', 'Conveniado:') !!}
-    <input type="text" name="conveniado" class="form-control" value="<?php if (isset($_GET['c'])) { echo $c; } ?>"/>
+    <input type="text" name="conveniado" class="form-control" value="<?php if (isset($_GET['c'])) { echo $c; } ?>" />
 </div>
 
 <!-- Nome Field -->

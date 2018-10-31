@@ -32,8 +32,8 @@
 	</div>
 
     <div class="alert">
-		<a href="/imgmarketing/{!! $markcampanha->img !!}" target="blank" class="anexos">
-			<img width="200" src="/imgmarketing/{!! $markcampanha->img !!}" style="border: 1px solid #cccccc; padding: 2px;" />
+		<a href="/imgmarketing/{!! $markcampanha->img !!}?c=" target="blank" class="anexos">
+			<img width="200" src="/imgmarketing/{!! $markcampanha->img !!}" alt="{!! $markcampanha->nome !!}" style="border: 1px solid #cccccc; padding: 2px;" />
             <i class="fa fa-download pull-right" style='margin-top: 4px;' aria-hidden="true"></i>
 		</a>
     </div>

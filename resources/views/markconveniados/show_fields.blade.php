@@ -108,7 +108,7 @@
                 <div class="tabelaC">
                 <span class="datetime"><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php echo $linha['created_at']; ?></span>
                     <div style="width: 200px; height: 230px; overflow: hidden;"><img src="/imgmarketing/<?php echo $linha['img']; ?>" /></div>
-                <a href="/markcampanhas/<?php echo $linha['id']; ?>/edit"><?php echo utf8_encode(strtoupper($linha['nome'])); ?></a><br />
+                <a href="/markcampanhas/<?php echo $linha['id']; ?>/edit?c={!! $markconveniado->id !!}"><?php echo utf8_encode(strtoupper($linha['nome'])); ?></a><br />
                 </div>
 <?php } ?> 
         <br />

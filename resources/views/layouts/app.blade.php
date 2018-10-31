@@ -25,9 +25,10 @@
 
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-
+    
     @yield('css')
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="/css/pace.min.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript">
 	jQuery(document).ready(function(){
 		jQuery('#ajax_form').submit(function(){
@@ -69,8 +70,8 @@
       <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
         <span class="sr-only">Toggle navigation</span>
       </a>
-
-                <!-- Navbar Right Menu -->
+    <button type="button" class="btn btn-default btn-lrg ajax hidden" title="Ajax Request"><i class="fa fa-spin fa-refresh"></i></button>
+           <!-- Navbar Right Menu -->
                 <div class="navbar-custom-menu">
 
                 <ul class="nav navbar-nav">
@@ -348,8 +349,21 @@
         </div>
     </div>
     @endif
-
+<script type="text/javascript">
+  // To make Pace works on Ajax calls
+  $(document).ajaxStart(function () {
+    Pace.restart()
+  })
+  $('.ajax').click(function () {
+    $.ajax({
+      url: '#', success: function (result) {
+        $('.ajax-content').html('<hr>Ajax Request Completed !')
+      }
+    })
+  })
+</script>
     <!-- jQuery 3.1.1 -->
+    <script src="/js/pace.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 

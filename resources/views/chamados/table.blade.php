@@ -67,7 +67,7 @@ if (isset($_GET['c'])) {
     <tbody>
     @foreach($chamados as $chamado)
         <tr>
-            <td><i class="fa fa-handshake-o" aria-hidden="true"></i></td>
+            <td><a href="{!! route('chamados.edit', [$chamado->id]) !!}" class='btn btn-primary btn-xs' alt="Atender Chamado"><i class="fa fa-handshake-o" aria-hidden="true"></i></a></td>
             <td><a href="{!! route('chamados.edit', [$chamado->id]) !!}">{!! $chamado->usuario !!}</a></td>
             <td>{!! $chamado->email !!}</td>
             <td>{!! $chamado->fone !!}</td>

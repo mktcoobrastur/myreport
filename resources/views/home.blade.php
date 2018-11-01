@@ -216,6 +216,5 @@
       <!-- /.row -->
 </section>
     <!-- /.content -->
-
 <script src="/js/jquery.knob.js"></script>
 @endsection

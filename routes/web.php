@@ -19,10 +19,6 @@ Route::get('/indice', function () {
     return view('indice');
 });
 
-Route::get('/nav', function () {
-    return view('nav');
-});
-
 Route::get('/mark', function () {
     return view('mark');
 });

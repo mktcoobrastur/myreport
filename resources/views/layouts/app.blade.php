@@ -67,11 +67,11 @@
             <nav class="navbar navbar-static-top" role="navigation">
                 <!-- Sidebar toggle button-->
 
-      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-        <span class="sr-only">Toggle navigation</span>
-      </a>
-    <button type="button" class="btn btn-default btn-lrg ajax hidden" title="Ajax Request"><i class="fa fa-spin fa-refresh"></i></button>
-           <!-- Navbar Right Menu -->
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                    <button type="button" class="btn btn-default btn-lrg ajax hidden" title="Ajax Request"><i class="fa fa-spin fa-refresh"></i></button>
+                <!-- Navbar Right Menu -->
                 <div class="navbar-custom-menu">
 
                 <ul class="nav navbar-nav">

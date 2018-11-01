@@ -8,7 +8,7 @@
           <li><a href="#">Outros</a></li>
         </ul>
 </li-->
-<li class="">
+<li>
     <a href="/home"><i class="fa fa-dashboard"></i> <span> Painel Principal</span></a>
 </li>
 

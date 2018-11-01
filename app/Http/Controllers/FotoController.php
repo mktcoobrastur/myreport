@@ -80,9 +80,6 @@ class FotoController extends AppBaseController
 
             return redirect(route('fotos.index'));
         }
-            $imgF       = find($id, $columns = ['*']).crop($foto->img);
-            $newSize    = $this->fotoRepository->imageFall($imgF);
-            $idF        = $this->fotoRepository->get($newSize);
         return view('fotos.show')->with('foto', $foto->where("id", "=", $idF));
     }
 

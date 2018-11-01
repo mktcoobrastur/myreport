@@ -50,7 +50,7 @@
 <!-- Tarefa Field -->
 <div class="form-group">
     {!! Form::label('tarefa', 'Tarefa:') !!}
-    <h2>{!! $tarefas->tarefa !!}</h2>
+    <h3>{!! $tarefas->tarefa !!}</h3>
 </div>
 
 <!-- Acao Field -->

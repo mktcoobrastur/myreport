@@ -17,7 +17,6 @@ if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
     for ($i = 0; $i < $total; $i++)
     {
         // podemos acessar os dados de cada arquivo desta forma:
-            // - $arquivos['name'][$i]
             // - $arquivos['tmp_name'][$i]
             // - $arquivos['size'][$i]
             // - $arquivos['error'][$i]
@@ -31,10 +30,10 @@ if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
 
        
 
-        $anexo = $arquivos['name'][0];
-        $idChamado = $_POST['idChamado'];
-        //$query = "UPDATE anexos SET anexo='$anexo' WHERE id=$idChamado";
-        //$query = "INSERT INTO anexos (Id, anexo, id_anexo) VALUES('0000','$anexo','$idChamado')";
+            $anexo = $arquivos['name'][0];
+            $idChamado = $_POST['idChamado'];
+            //$query = "UPDATE anexos SET anexo='$anexo' WHERE id=$idChamado";
+            //$query = "INSERT INTO anexos (Id, anexo, id_anexo) VALUES('0000','$anexo','$idChamado')";
 
 
 
@@ -58,8 +57,7 @@ if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
 
 			
 			
-			 $sql = "INSERT INTO anexos (id, anexo, tarefa)
-			 VALUES('0000','$anexo','$idChamado')";
+    		$sql = "INSERT INTO anexos (id, anexo, tarefa) VALUES('0000','$anexo','$idChamado')";
 			
 			
 			if (mysqli_query($conn, $sql)) {
@@ -69,11 +67,7 @@ if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
 			}
 			
 
-			echo "ok!";
+			//echo "ok!";
         	header("Location:tarefas/$idChamado");
-
-
-
-
 }
 ?>

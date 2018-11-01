@@ -104,9 +104,9 @@
 
       <!-- callout -->
       <div class="callout callout-info">
-        <h4>Gerenciamento de tarefas por departamento.</h4>
+        <h4>Gerenciamento de tarefas.</h4>
 
-        <p>O gerenciador foi projetado para otimizar o tempo de resposta entre os departamentos.</p>
+        <p>O gerenciador de tarefas myReport foi projetado para otimizar o tempo de resposta entre os departamentos.</p>
       </div>
       <!-- /.callout -->
 

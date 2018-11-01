@@ -23,6 +23,7 @@ if (isset($_GET['c'])) {
         $query    = "SELECT * FROM chamados WHERE status = '$c';";
         $query    = mysqli_query($conexao, $query);
         while ($linha = mysqli_fetch_array($query)) {
+
 ?>
 
         <tr>
@@ -66,7 +67,7 @@ if (isset($_GET['c'])) {
     </thead>
     <tbody>
     @foreach($chamados as $chamado)
-        <tr>
+        <tr>            
             <td><a href="{!! route('chamados.edit', [$chamado->id]) !!}" class='btn btn-primary btn-xs' alt="Atender Chamado"><i class="fa fa-handshake-o" aria-hidden="true"></i></a></td>
             <td><a href="{!! route('chamados.edit', [$chamado->id]) !!}">{!! $chamado->usuario !!}</a></td>
             <td>{!! $chamado->email !!}</td>

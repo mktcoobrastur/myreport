@@ -21,6 +21,7 @@ class AtendenteRepository extends BaseRepository
      */
     protected $fieldSearchable = [
         'nome',
+        'img', //add
         'representante'
     ];
 

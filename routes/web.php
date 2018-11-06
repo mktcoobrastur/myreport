@@ -23,6 +23,10 @@ Route::get('/mark', function () {
     return view('mark');
 });
 
+Route::get('/api', function () {
+    return route('FotoAPIController');
+});
+
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');

@@ -80,7 +80,7 @@ class FotoController extends AppBaseController
 
             return redirect(route('fotos.index'));
         }
-        return view('fotos.show')->with('foto', $foto->where("id", "=", $idF));
+        return view('fotos.show')->with('foto', $foto);
     }
 
     /**

@@ -33,7 +33,7 @@ class VendasdiaController extends AppBaseController
         $vendasdias = $this->vendasdiaRepository->all();
 
         return view('vendasdias.index')
-            ->with('vendasdias', $vendasdias);
+            ->with('vendasdias', $vendasdias->where('created_at','=','NOW()'));
     }
 
     /**

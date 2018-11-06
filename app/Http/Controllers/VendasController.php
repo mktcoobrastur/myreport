@@ -33,7 +33,7 @@ class VendasController extends AppBaseController
         $negocios = $this->negociosRepository->all();
 
         return view('vendas.index')
-            ->with('negocios', $negocios);
+            ->with('negocios', $negocios->where('created_at','=','NOW()'));
     }
 
     /**

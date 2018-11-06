@@ -16,12 +16,12 @@ class CreatePromocoesTable extends Migration
         Schema::create('promocoes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('hotel');
-            $table->string('resumo');
+            $table->string('resumo')->nullable();
             $table->string('codigo');
             $table->string('estado');
             $table->string('plano');
-            $table->string('imgPrincipal');
-            $table->string('imgLamina');
+            $table->string('imgPrincipal')->nullable();
+            $table->string('imgLamina')->nullable();
             $table->string('status');
             $table->timestamps();
         });

@@ -18,8 +18,8 @@ class CreateAtendentesTable extends Migration
             $table->string('nome');
             $table->string('img')->nullable();
             $table->string('mp3')->nullable();
-            $table->string('qnt_vendas');
-            $table->string('representante');
+            $table->string('qnt_vendas')->nullable();
+            $table->string('representante')->nullable();
             $table->timestamps();
         });
     }

@@ -17,7 +17,7 @@ class CreateMarkconveniosTable extends Migration
             $table->increments('id');
             $table->string('nome');
             $table->string('tipo');
-            $table->string('status');
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }

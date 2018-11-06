@@ -17,7 +17,7 @@ class CreateProjetosTable extends Migration
             $table->increments('id');
             $table->string('prioridade');
             $table->string('tarefa');
-            $table->longText('acao');
+            $table->longText('acao')->nullable();
             $table->string('departamento')->nullable();
             $table->string('status'); 
             $table->timestamps();

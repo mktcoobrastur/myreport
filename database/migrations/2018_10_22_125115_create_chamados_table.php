@@ -16,13 +16,13 @@ class CreateChamadosTable extends Migration
         Schema::create('chamados', function (Blueprint $table) {
             $table->increments('id');
             $table->string('usuario');
-            $table->string('cpf');
-            $table->string('email');
-            $table->string('fone');
+            $table->string('cpf')->nullable();
+            $table->string('email')->nullable();
+            $table->string('fone')->nullable();
             $table->string('motivo');
-            $table->longText('mensagem');
-            $table->longText('entendimento');
-            $table->longText('solucao');
+            $table->longText('mensagem')->nullable();
+            $table->longText('entendimento')->nullable();
+            $table->longText('solucao')->nullable();
             $table->string('status');
             $table->timestamps();
         });

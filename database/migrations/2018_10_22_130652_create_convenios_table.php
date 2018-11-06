@@ -16,9 +16,9 @@ class CreateConveniosTable extends Migration
         Schema::create('convenios', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nome');
-            $table->string('img');
-            $table->string('site');
-            $table->longText('texto');
+            $table->string('img')->nullable();
+            $table->string('site')->nullable();
+            $table->longText('texto')->nullable();
             $table->timestamps();
         });
     }

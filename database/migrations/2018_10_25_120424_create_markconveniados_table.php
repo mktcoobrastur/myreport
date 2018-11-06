@@ -18,7 +18,7 @@ class CreateMarkconveniadosTable extends Migration
             $table->string('convenio');
             $table->string('nome');
             $table->string('img')->nullable();
-            $table->string('status');
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }

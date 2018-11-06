@@ -16,6 +16,9 @@ class CreateAtendentesTable extends Migration
         Schema::create('atendentes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nome');
+            $table->string('img')->nullable();
+            $table->string('mp3')->nullable();
+            $table->string('qnt_vendas');
             $table->string('representante');
             $table->timestamps();
         });

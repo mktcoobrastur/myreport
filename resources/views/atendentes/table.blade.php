@@ -2,7 +2,8 @@
     <thead>
         <tr>
             <th>Nome Atendente</th>
-        <th>Representante</th>
+            <th>Representante</th>
+            <th>Vendas Acumuladas</th>
             <th colspan="3">Ações</th>
         </tr>
     </thead>
@@ -10,7 +11,8 @@
     @foreach($atendentes as $atendente)
         <tr>
             <td>{!! $atendente->nome !!}</td>
-            <td>{!! $atendente->representante !!}</td>
+            <td>{!! strtoupper($atendente->representante) !!}</td>
+            <td>{!! $atendente->qnt_vendas !!}</td>
             <td>
                 {!! Form::open(['route' => ['atendentes.destroy', $atendente->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

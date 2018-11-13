@@ -15,8 +15,11 @@
     //TOTAL Do MÊS
     $consultaT = mysqli_query($con, "SELECT SUM(qnt) qnt FROM vendasdia WHERE MONTH(created_at) = $dataget");
     $totalMes = mysqli_fetch_array($consultaT);
+    //META Do MÊS
+    $consultaM = mysqli_query($con, "SELECT meta FROM metas WHERE mes = $dataget");
+    $meta = mysqli_fetch_array($consultaM);
 
-
+    //CONSULTA PESQUISA
     $consulta = mysqli_query($con, "SELECT * FROM vendasdia WHERE MONTH(created_at) = $dataget");
     $datac = mysqli_fetch_array($consulta)
 ?>
@@ -66,9 +69,9 @@
   </tbody>
 </table>
 </div>
-<div style="float: left; width: 40%; margin: 38px; background: #fff; font-size: 12px;">
+<div style="float: left; width: 40%; margin: 38px; background: #fff; font-size: 14px; font-family: 'Open Sans';">
     <div class="alert" style="font-size: 13px;">
-        Total do Mês <?php echo $dataget; ?>: <b><?php echo $totalMes['qnt']; ?></b>
+        Total do Mês: <b><?php echo $totalMes['qnt']; ?></b> | Meta: <?php echo $meta['meta']; ?> | <b style="color: red;"> -<?php echo $meta['meta'] - $totalMes['qnt']; ?></b>
     </div>
     <div class="alert">
         <span class="btn " style="background: #165C81; color: #fff;">DIAMANTE = <span class="badge badge-light"><?php echo $diamantes; ?></span></span>       

@@ -16,6 +16,7 @@ class CreateRepresentantesTable extends Migration
         Schema::create('representantes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nome');
+            $table->integer('qnt');
             $table->timestamps();
         });
     }

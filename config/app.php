@@ -232,6 +232,7 @@ return [
         'Html'      => Collective\Html\HtmlFacade::class,
         'Flash'     => Laracasts\Flash\Flash::class,
         'Form'      => Collective\Html\FormFacade::class,
+        'DataTables' => Yajra\DataTables\Facades\DataTables::class,
         
 
     ],

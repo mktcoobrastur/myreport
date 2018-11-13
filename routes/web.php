@@ -80,3 +80,7 @@ Route::resource('recados', 'RecadoController');
 Route::resource('chamados', 'ChamadoController');
 
 Route::resource('convenios', 'ConvenioController');
+
+Route::resource('representantes', 'RepresentanteController');
+
+Route::resource('representantes', 'RepresentanteController');

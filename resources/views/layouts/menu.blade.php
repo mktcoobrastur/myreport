@@ -147,4 +147,11 @@
     </li>
 </ul>
 
-</li><?php } ?>
+</li><?php } ?><li class="{{ Request::is('representantes*') ? 'active' : '' }}">
+    <a href="{!! route('representantes.index') !!}"><i class="fa fa-edit"></i><span>Representantes</span></a>
+</li>
+
+<li class="{{ Request::is('representantes*') ? 'active' : '' }}">
+    <a href="{!! route('representantes.index') !!}"><i class="fa fa-edit"></i><span>Representantes</span></a>
+</li>
+

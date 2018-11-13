@@ -40,10 +40,12 @@
   <form action="/relatorio.php" method="post" target="blank">
     <label>Por Representante:</label>
     <select name="mes" class="form-control">
-      <option value="01">Janeiro</option>
-      <option value="02">Fevereiro</option>
-      <option value="03">Março</option>
-      <option value="04">Abril</option>
+      <option value="01">NACIONAL VENDA DIRETA</option>
+      <option value="02">NACIONAL TELEMARKETING</option>
+      <option value="03">REALIZE</option>
+      <option value="04">TELEVENDA</option>
+      <option value="04">LUCAS E FREITAS</option>
+      <option value="04">VLADIMIR CANGUSU</option>
     </select>
     <input type="submit" name="busca" value="Filtrar">
   </form>
@@ -53,7 +55,160 @@
           </div>
         </div>
 
-        <div class="text-center">        
+        <div class="text-center"> 
+          
+        
+        <div class="box" style="float: left; box-shadow: 2px 2px 15px #999; width: 50%;">
+            <div class="box-header">
+              <h3 class="box-title">Vendas por Atendente</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body no-padding">
+              <table class="table table-striped">
+                <tr>
+                  <th style="width: 10px">#</th>
+                  <th>Nome</th>
+                  <th>Progresso</th>
+                  <th style="width: 40px">%</th>
+                </tr>
+
+
+                <?php
+                    $con = new mysqli("localhost", "root", "", "sistema");
+                    $consulta = mysqli_query($con, "SELECT * FROM atendentes ORDER BY qnt_vendas DESC");
+                
+                    while ($l = mysqli_fetch_array($consulta)) {
+                ?>
+                            
+                <tr>
+                  <td><?php echo $l['id']; ?></td>
+                  <td align="left"><?php echo $l['nome']; ?></td>
+                  <td>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-primary progress-bar-striped" style="width:<?php echo $l['qnt_vendas']; ?>%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-default"><?php echo $l['qnt_vendas']; ?></span></td>
+                </tr>
+
+                <?php
+                    }
+                ?>
+
+            </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+    </div>
+
+    <div class="infoBlocoI" style="float: left; width: 45%; margin-left: 2%; background: #fff; box-shadow: 2px 2px 15px #999;">
+
+    <div class="box-header">
+        <h3 class="box-title">Visão geral</h3>
+    </div>
+            <!-- /.box-header -->
+            <div class="box-body no-padding">
+              <table class="table table-striped">
+                <tr>
+                  <th style="width: 10px">#</th>
+                  <th>Nome</th>
+                  <th>Progresso</th>
+                  <th style="width: 40px">Total</th>
+                </tr>
+
+<?php
+    //Consulta DIAMANTE
+    $consultaT = mysqli_query($con, "SELECT * FROM vendasdia");
+    $total = mysqli_num_rows($consultaT);
+?>
+                            
+                <tr>
+                  <td>#</td>
+                  <td align="left">Televenda</td>
+                  <td>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-primary progress-bar-striped" style="width:37%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-default"><?php echo $total; ?></span></td>
+                </tr>
+
+
+            </table>
+            </div>
+            <!-- /.box-body -->
+    </div>
+
+
+
+
+    <div class="infoBlocoI" style="float: left; width: 45%; margin-left: 2%; margin-top: 30px; background: #fff; box-shadow: 2px 2px 15px #999;">
+
+<div class="box-header">
+    <h3 class="box-title">Visão geral ( por planos )</h3>
+</div>
+        <!-- /.box-header -->
+        <div class="box-body no-padding">
+          <table class="table table-striped">
+            <tr>
+              <th style="width: 10px">#</th>
+              <th>Nome</th>
+              <th>Progresso</th>
+              <th style="width: 40px">Total</th>
+            </tr>
+<?php
+    //Consulta DIAMANTE
+    $consultaD = mysqli_query($con, "SELECT * FROM vendasdia WHERE plano = 1");
+    $diamante = mysqli_num_rows($consultaD);
+    //Consulta GOLD
+    $consultaG = mysqli_query($con, "SELECT * FROM vendasdia WHERE plano = 2");
+    $gold = mysqli_num_rows($consultaG);
+    //Consulta CONVENCIONAL
+    $consultaC = mysqli_query($con, "SELECT * FROM vendasdia WHERE plano = 3");
+    $convencional = mysqli_num_rows($consultaC);
+?>
+            <tr>
+              <td>1</td>
+              <td align="left">DIAMANTE</td>
+              <td>
+                <div class="progress progress-xs">
+                  <div class="progress-bar progress-bar-primary progress-bar-striped" style="width:<?php echo $diamante; ?>%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </td>
+              <td><span class="badge bg-default"><?php echo $diamante; ?></span></td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td align="left">GOLD</td>
+              <td>
+                <div class="progress progress-xs">
+                  <div class="progress-bar progress-bar-primary progress-bar-striped" style="width:<?php echo $gold; ?>%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </td>
+              <td><span class="badge bg-default"><?php echo $gold; ?></span></td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td align="left">CONVENCIONAL</td>
+              <td>
+                <div class="progress progress-xs">
+                  <div class="progress-bar progress-bar-primary progress-bar-striped" style="width:<?php echo $convencional; ?>%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </td>
+              <td><span class="badge bg-default"><?php echo $convencional; ?></span></td>
+            </tr>
+
+        </table>
+        </div>
+        <!-- /.box-body -->
+</div>
+<div style="clear: both;"></div>      
+
+
         </div>
     </div>
 

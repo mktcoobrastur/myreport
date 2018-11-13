@@ -36,6 +36,18 @@
   </form>
   </div>
 
+<div class="form-group">
+  <form action="/relatorio.php" method="post" target="blank">
+    <label>Por Representante:</label>
+    <select name="mes" class="form-control">
+      <option value="01">Janeiro</option>
+      <option value="02">Fevereiro</option>
+      <option value="03">Março</option>
+      <option value="04">Abril</option>
+    </select>
+    <input type="submit" name="busca" value="Filtrar">
+  </form>
+  </div>
 
 
           </div>

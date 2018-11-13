@@ -151,4 +151,7 @@
     </li>
 </ul>
 
-</li><?php } ?>
+</li><?php } ?><li class="{{ Request::is('vendasres*') ? 'active' : '' }}">
+    <a href="{!! route('vendasres.index') !!}"><i class="fa fa-edit"></i><span>Vendasres</span></a>
+</li>
+

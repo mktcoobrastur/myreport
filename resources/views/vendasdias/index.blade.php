@@ -62,7 +62,7 @@
         <div class="text-center"> 
           
         
-        <div class="box" style="float: left; box-shadow: 2px 2px 15px #999; width: 50%;">
+        <div class="box" style="float: left; box-shadow: 2px 2px 15px #ccc; width: 50%;">
             <div class="box-header">
               <h3 class="box-title">Vendas por Atendente</h3>
             </div>
@@ -93,7 +93,7 @@
                       <div class="progress-bar progress-bar-primary progress-bar-striped" style="width:<?php echo $l['qnt_vendas']; ?>%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </td>
-                  <td><span class="badge bg-default"><?php echo $l['qnt_vendas']; ?></span></td>
+                  <td><span class="badge bg-default" style="background: #f0f0f0; color: #000;"><?php echo $l['qnt_vendas']; ?></span></td>
                 </tr>
 
                 <?php
@@ -108,9 +108,9 @@
 
     </div>
 
-    <div class="infoBlocoI" style="float: left; width: 45%; margin-left: 2%; background: #fff; box-shadow: 2px 2px 15px #999;">
+    <div class="infoBlocoI" style="float: left; width: 45%; margin-left: 2%; background: #fff; box-shadow: 2px 2px 15px #ccc;">
 
-    <div class="box-header">
+    <div class="box-header" style="text-align: center;">
         <h3 class="box-title">Visão geral</h3>
     </div>
             <!-- /.box-header -->
@@ -137,7 +137,7 @@
                       <div class="progress-bar progress-bar-primary progress-bar-striped" style="width:37%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </td>
-                  <td><span class="badge bg-default"><?php echo $total; ?></span></td>
+                  <td><span class="badge bg-default" style="background: #f0f0f0; color: #000;"><?php echo $total; ?></span></td>
                 </tr>
 
 
@@ -149,9 +149,9 @@
 
 
 
-    <div class="infoBlocoI" style="float: left; width: 45%; margin-left: 2%; margin-top: 30px; background: #fff; box-shadow: 2px 2px 15px #999;">
+    <div class="infoBlocoI" style="float: left; width: 45%; margin-left: 2%; margin-top: 30px; background: #fff; box-shadow: 2px 2px 15px #ccc;">
 
-<div class="box-header">
+<div class="box-header" style="text-align: center;">
     <h3 class="box-title">Visão geral ( por planos )</h3>
 </div>
         <!-- /.box-header -->
@@ -182,7 +182,7 @@
                   <div class="progress-bar progress-bar-primary progress-bar-striped" style="width:<?php echo $diamante; ?>%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </td>
-              <td><span class="badge bg-default"><?php echo $diamante; ?></span></td>
+              <td><span class="badge bg-default" style="background: #f0f0f0; color: #000;"><?php echo $diamante; ?></span></td>
             </tr>
 
             <tr>
@@ -193,7 +193,7 @@
                   <div class="progress-bar progress-bar-primary progress-bar-striped" style="width:<?php echo $gold; ?>%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </td>
-              <td><span class="badge bg-default"><?php echo $gold; ?></span></td>
+              <td><span class="badge bg-default" style="background: #f0f0f0; color: #000;"><?php echo $gold; ?></span></td>
             </tr>
 
             <tr>
@@ -204,10 +204,50 @@
                   <div class="progress-bar progress-bar-primary progress-bar-striped" style="width:<?php echo $convencional; ?>%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </td>
-              <td><span class="badge bg-default"><?php echo $convencional; ?></span></td>
+              <td><span class="badge bg-default" style="background: #f0f0f0; color: #000;"><?php echo $convencional; ?></span></td>
             </tr>
 
         </table>
+        </div>
+        <!-- /.box-body -->
+</div>
+
+    <div class="infoBlocoI" style="float: left; width: 45%; margin-left: 2%; margin-top: 30px; background: #fff; box-shadow: 2px 2px 15px #ccc;">
+
+<div class="box-header" style="text-align: center;">
+    <h3 class="box-title">Por Representante</h3>
+</div>
+        <!-- /.box-header -->
+        <div class="box-body no-padding">
+          <table class="table table-striped">
+            <tr>
+              <th style="width: 10px">#</th>
+              <th>Nome</th>
+              <th>Progresso</th>
+              <th style="width: 40px">Total</th>
+            </tr>
+            <?php
+                    // CONSULTA ATENDENTES
+                    $con = new mysqli("localhost", "root", "", "sistema");
+                    $consulta = mysqli_query($con, "SELECT * FROM representantes");
+                
+                    while ($l = mysqli_fetch_array($consulta)) {
+                ?>
+                            
+                <tr>
+                  <td><?php echo $l['id']; ?></td>
+                  <td align="left"><?php echo $l['nome']; ?></td>
+                  <td>-
+                  </td>
+                  <td><span class="badge bg-default" style="background: #f0f0f0; color: #000;"><?php echo $l['qnt']; ?></span></td>
+                </tr>
+
+                <?php
+                    }
+                ?>
+
+
+          </table>
         </div>
         <!-- /.box-body -->
 </div>

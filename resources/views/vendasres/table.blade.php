@@ -9,7 +9,14 @@
     <tbody>
     @foreach($vendasres as $vendasre)
         <tr>
-            <td>{!! $vendasre->representante !!}</td>
+            <td>
+                <?php
+                    $con = new mysqli("localhost", "root", "", "sistema");
+                    $consultaH = mysqli_query($con, "SELECT * FROM representantes where id = '$vendasre->representante'");
+                    $lH = mysqli_fetch_array($consultaH);
+                    echo $lH['nome'];
+                ?>
+            </td>
             <td>{!! $vendasre->qnt !!}</td>
             <td>
                 {!! Form::open(['route' => ['vendasres.destroy', $vendasre->id], 'method' => 'delete']) !!}

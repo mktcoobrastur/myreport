@@ -15,6 +15,7 @@ class CreateVendasreTable extends Migration
     {
         Schema::create('vendasre', function (Blueprint $table) {
             $table->increments('id');
+            $table->date('indice');
             $table->string('representante');
             $table->integer('qnt');
             $table->timestamps();

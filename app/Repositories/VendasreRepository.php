@@ -21,7 +21,8 @@ class VendasreRepository extends BaseRepository
      */
     protected $fieldSearchable = [
         'representante',
-        'qnt'
+        'qnt',
+        'created_at'
     ];
 
     /**

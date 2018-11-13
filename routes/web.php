@@ -23,10 +23,6 @@ Route::get('/mark', function () {
     return view('mark');
 });
 
-Route::get('/api', function () {
-    return route('FotoAPIController');
-});
-
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
@@ -80,7 +76,5 @@ Route::resource('recados', 'RecadoController');
 Route::resource('chamados', 'ChamadoController');
 
 Route::resource('convenios', 'ConvenioController');
-
-Route::resource('representantes', 'RepresentanteController');
 
 Route::resource('representantes', 'RepresentanteController');

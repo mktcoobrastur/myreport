@@ -134,6 +134,10 @@
         <a href="{!! route('atendentes.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Atendentes</span></a>
     </li>
 
+    <li class="{{ Request::is('representantes*') ? 'active' : '' }}">
+        <a href="{!! route('representantes.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Representantes</span></a>
+    </li>
+
     <li class="{{ Request::is('usuarios*') ? 'active' : '' }}">
         <a href="{!! route('usuarios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Usuarios</span></a>
     </li>
@@ -147,11 +151,4 @@
     </li>
 </ul>
 
-</li><?php } ?><li class="{{ Request::is('representantes*') ? 'active' : '' }}">
-    <a href="{!! route('representantes.index') !!}"><i class="fa fa-edit"></i><span>Representantes</span></a>
-</li>
-
-<li class="{{ Request::is('representantes*') ? 'active' : '' }}">
-    <a href="{!! route('representantes.index') !!}"><i class="fa fa-edit"></i><span>Representantes</span></a>
-</li>
-
+</li><?php } ?>

@@ -40,12 +40,16 @@
   <form action="/relatorio.php" method="post" target="blank">
     <label>Por Representante:</label>
     <select name="mes" class="form-control">
-      <option value="01">NACIONAL VENDA DIRETA</option>
-      <option value="02">NACIONAL TELEMARKETING</option>
-      <option value="03">REALIZE</option>
-      <option value="04">TELEVENDA</option>
-      <option value="04">LUCAS E FREITAS</option>
-      <option value="04">VLADIMIR CANGUSU</option>
+<?php
+    //Consulta SELECT representantes
+    $con = new mysqli("localhost", "root", "", "sistema");
+    $consulta = mysqli_query($con, "SELECT * FROM representantes ORDER BY id ASC");
+    while ($l = mysqli_fetch_array($consulta)) {
+?>
+    <option value="<?php echo $l['id']; ?>"><?php echo $l['nome']; ?></option>
+<?php
+    }
+?>
     </select>
     <input type="submit" name="busca" value="Filtrar">
   </form>
@@ -74,6 +78,7 @@
 
 
                 <?php
+                    // CONSULTA ATENDENTES
                     $con = new mysqli("localhost", "root", "", "sistema");
                     $consulta = mysqli_query($con, "SELECT * FROM atendentes ORDER BY qnt_vendas DESC");
                 

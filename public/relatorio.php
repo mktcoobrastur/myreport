@@ -1,3 +1,11 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Relatório Televenda</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <meta name="Description" content="Software de Gestão Coobrastur">
+
+</head>
 <body style="background: #EBEFF4; padding: 20px; text-align: center;">
 <div style="width: 80%; margin: 0 auto;">
 <?php
@@ -84,3 +92,4 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </div>
 </body>
+</html>

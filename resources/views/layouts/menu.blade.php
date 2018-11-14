@@ -138,6 +138,10 @@
         <a href="{!! route('representantes.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Representantes</span></a>
     </li>
 
+    <li class="{{ Request::is('vendasres*') ? 'active' : '' }}">
+        <a href="{!! route('vendasres.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span>Vendas Representantes</span></a>
+    </li>
+
     <li class="{{ Request::is('usuarios*') ? 'active' : '' }}">
         <a href="{!! route('usuarios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Usuarios</span></a>
     </li>
@@ -151,7 +155,5 @@
     </li>
 </ul>
 
-</li><?php } ?><li class="{{ Request::is('vendasres*') ? 'active' : '' }}">
-    <a href="{!! route('vendasres.index') !!}"><i class="fa fa-edit"></i><span>Vendasres</span></a>
 </li>
-
+<?php } ?>

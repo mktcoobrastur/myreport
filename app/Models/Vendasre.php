@@ -27,6 +27,7 @@ class Vendasre extends Model
 
 
     public $fillable = [
+        'indice',
         'representante',
         'qnt'
     ];

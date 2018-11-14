@@ -20,9 +20,6 @@
     $consultaM = mysqli_query($con, "SELECT meta FROM metas WHERE mes = $dataget");
     $meta = mysqli_fetch_array($consultaM);
 
-    //CONSULTA PESQUISA
-    $consulta = mysqli_query($con, "SELECT * FROM vendasdia WHERE MONTH(created_at) = $dataget");
-    $datac = mysqli_fetch_array($consulta)
 ?>
   <div style="width: 100%; height: 120px; background: #165C81; color: #f0f0f0; margin-bottom: 20px; text-align:center; font-family: 'Open Sans'; font-size: 35px; line-height: 120px;">
   Relatório Televenda mês <span style="text-decoration: underline;"><?php echo $dataget; ?><span></div>
@@ -33,7 +30,7 @@
 <table class="table" style="font-size: 11px; background: #ffffff;">
   <thead>
     <tr>
-      <th scope="col">#</th>
+      <th scope="col">Data</th>
       <th scope="col">Atendente</th>
       <th scope="col">Qnt</th>
       <th scope="col">Plano</th>
@@ -42,10 +39,12 @@
   <tbody>
 
 <?php
+    //CONSULTA PESQUISA
+    $consulta = mysqli_query($con, "SELECT * FROM vendasdia WHERE MONTH(created_at) = $dataget ORDER BY created_at ASC");
     while($l = mysqli_fetch_array($consulta)) {
 ?>
     <tr>
-      <th scope="row">#</th>
+      <th scope="row"><?php echo date("d/m/Y", strtotime($l['created_at'])); ?></th>
       <td>
         <?php 
         $atend = $l['atendente'];

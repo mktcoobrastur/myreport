@@ -89,7 +89,7 @@
 <li class="treeview">
           <a href="#">
           <i class="fa fa-envelope"></i>
-            <span>Telemarketing</span>
+            <span>Televenda</span>
             <span class="pull-right-container">
               <span class="label label-primary pull-right">1</span>
             </span>

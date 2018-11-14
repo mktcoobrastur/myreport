@@ -193,7 +193,7 @@
             <div class="box-body box-profile">
 
               <h3 class="profile-username text-center">Contatos</h3>
-
+                <img src="/img/beta.png" width="40" alt="Beta" style="position: absolute; margin-top: -30px; margin-left: 25px;" />
               <p class="text-muted text-center">Clique para conversar.</p>
 
               <ul class="list-group list-group-unbordered">

@@ -2,7 +2,7 @@
     <thead>
         <tr>
             <th>Nome</th>
-        <th>Qnt</th>
+        <th>Vendas Acumuladas</th>
             <th colspan="3">Ações</th>
         </tr>
     </thead>

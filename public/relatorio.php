@@ -1,4 +1,5 @@
-<body style="background: #EBEFF4; padding: 20px;">
+<body style="background: #EBEFF4; padding: 20px; text-align: center;">
+<div style="width: 80%; margin: 0 auto;">
 <?php
     require "../../televenda/conn.php";
     $dataget = $_POST['mes'];
@@ -23,9 +24,11 @@
     $consulta = mysqli_query($con, "SELECT * FROM vendasdia WHERE MONTH(created_at) = $dataget");
     $datac = mysqli_fetch_array($consulta)
 ?>
+  <div style="width: 100%; height: 120px; background: #165C81; color: #f0f0f0; margin-bottom: 20px; text-align:center; font-family: 'Open Sans'; font-size: 35px; line-height: 120px;">
+  Relatório Televenda mês <span style="text-decoration: underline;"><?php echo $dataget; ?><span></div>
 
 <div style="float: left; width:40%; text-align: center;">
-<h4>Vendas do mês <?php echo $dataget; ?></h4>
+<h4>&nbsp;</h4>
 
 <table class="table" style="font-size: 11px; background: #ffffff;">
   <thead>
@@ -80,4 +83,5 @@
     </div>
 </div>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</div>
 </body>

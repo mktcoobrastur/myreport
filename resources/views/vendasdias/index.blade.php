@@ -60,6 +60,22 @@
           </div>
         </div>
 
+        <div class="text-center">
+        <a href="#" class="btn btn-primary">Relatório Televenda</a>
+        <a href="#" class="btn btn-primary">Relatório Representantes</a>
+        <a href="javascript:newPopup()" class="btn btn-primary">Relatório Geral</a>
+<script language=javascript type="text/javascript">
+  function newPopup(){
+  varWindow = window.open ('http://localhost/sistema/public/relGeral.php', 'popup', "width=800, height=500, left=0, top=0, scrollbars=no ")
+  }
+</script>
+        </div>
+
+        <div class="atualiza">
+
+        </div>
+
+        <br />
         <div class="text-center"> 
           
         

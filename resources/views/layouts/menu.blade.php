@@ -139,7 +139,7 @@
     </li>
 
     <li class="{{ Request::is('vendasres*') ? 'active' : '' }}">
-        <a href="{!! route('vendasres.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span>Vendas Representantes</span></a>
+        <a href="{!! route('vendasres.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Vendas Representantes</span></a>
     </li>
 
     <li class="{{ Request::is('usuarios*') ? 'active' : '' }}">
@@ -153,7 +153,15 @@
     <li class="{{ Request::is('recados*') ? 'active' : '' }}">
         <a href="{!! route('recados.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Recados</span></a>
     </li>
-</ul>
 
+    <li class="">
+        <a href="javascript:newPopup()"><i class="fa fa-circle-o text-aqua"></i> <span>Acesso Televenda</span></a>
+    </li>
+</ul>
+<script language=javascript type="text/javascript">
+function newPopup(){
+varWindow = window.open ('http://localhost/televenda/users/', 'popup', "width=500, height=300, right=100, bottom=100, scrollbars=no ")
+}
+</script>
 </li>
 <?php } ?>

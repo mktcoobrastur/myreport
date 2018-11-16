@@ -1,14 +1,16 @@
 <table class="table table-responsive" id="vendasres-table">
     <thead>
         <tr>
+            <th>Data</th>
             <th>Representante</th>
-        <th>Qnt</th>
-            <th colspan="3">Action</th>
+            <th style="text-align: center;">Qnt</th>
+            <th colspan="3" style="text-align: right;">Ações</th>
         </tr>
     </thead>
     <tbody>
     @foreach($vendasres as $vendasre)
         <tr>
+        <td style="font-weight: bold; color: #165C80;"><?php echo date("d/m/Y", strtotime($vendasre->indice)); ?></td>
             <td>
                 <?php
                     $con = new mysqli("localhost", "root", "", "sistema");
@@ -17,8 +19,8 @@
                     echo $lH['nome'];
                 ?>
             </td>
-            <td>{!! $vendasre->qnt !!}</td>
-            <td>
+            <td style="font-weight: bold; color: #165C80; text-align: center;">{!! $vendasre->qnt !!}</td>
+            <td style="text-align: right;">
                 {!! Form::open(['route' => ['vendasres.destroy', $vendasre->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>
                     <a href="{!! route('vendasres.show', [$vendasre->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>

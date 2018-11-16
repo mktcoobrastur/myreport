@@ -79,16 +79,20 @@
 </script>
         </div>
 
-        <div class="atualiza">
 
-        </div>
+<div class="buscaAtendentes">
 
-        <br />
+<strong>Atendentes:</strong><br />
+<input type="text" id="busca" onkeyup="buscarNoticias(this.value)" />
+<div id="resultado"></div>
+<br /><br />
+<div id="conteudo"></div>
 
+</div>
+<script type="text/javascript" src="/funcs.js"></script>
 <div style="clear: both;"></div>      
 
-
-        </div>
+    </div>
     </div>
 
     

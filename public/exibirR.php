@@ -44,7 +44,7 @@ $valorV         = mysqli_num_rows($consultaVendas);
   <thead>
     <tr>
       <th scope="col">Data</th>
-      <th scope="col">Atendente</th>
+      <th scope="col">Representante</th>
       <th scope="col">Qnt</th>
     </tr>
   </thead>
@@ -55,7 +55,11 @@ while($row = mysqli_fetch_array($consultaVendas)) {
     <tr>
       <th scope="row"><?php echo date("d/m/Y", strtotime($row['created_at'])); ?></th>
       <td>
-        <?php echo $row['representante']; ?>
+      <?php
+        $consultaRe = mysqli_query($con, "SELECT * FROM representantes WHERE id = $id");
+        $dataRe = mysqli_fetch_array($consultaRe);
+        echo $dataRe['nome'];
+        ?>
       </td>
       <td><?php echo $row['qnt']; ?></td>
     </tr>

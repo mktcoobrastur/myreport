@@ -81,7 +81,7 @@
 
 <br />
 
-<div class="divR">Pesquisa detalhada</div>
+<div class="divR">Pesquisa rápida</div>
 
 <div class="buscaAtendentes">
     <strong>Atendentes:</strong><br />

@@ -1,7 +1,6 @@
 <?php
 // Incluir aquivo de conex�o
 include("conn.php");
-
  
 // Recebe a id enviada no m�todo GET
 $id = $_GET['id'];
@@ -56,7 +55,11 @@ while($row = mysqli_fetch_array($consultaVendas)) {
     <tr>
       <th scope="row"><?php echo date("d/m/Y", strtotime($row['created_at'])); ?></th>
       <td>
-        <?php echo $row['atendente']; ?>
+        <?php
+        $consultaAt = mysqli_query($con, "SELECT * FROM atendentes WHERE id = $id");
+        $dataA = mysqli_fetch_array($consultaAt);
+        echo $dataA['nome'];
+        ?>
       </td>
       <td><?php echo $row['qnt']; ?></td>
       <td>

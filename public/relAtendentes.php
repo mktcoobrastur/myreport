@@ -19,7 +19,7 @@
                       font-family: 'Open Sans';
                       font-size: 30px;
                       color: #f0f0f0;
-                      text-shadow: 2px 2px 15px #333;">Relatório geral TELEVENDA</div>
+                      text-shadow: 2px 2px 15px #333;">Relatório TELEVENDA</div>
 
 <div class="text-center" style="margin: 2%;"> 
           <div class="box" style="float: left; box-shadow: 2px 2px 15px #ccc; width: 50%;">

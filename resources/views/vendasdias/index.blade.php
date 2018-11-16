@@ -79,16 +79,27 @@
 </script>
         </div>
 
+<br />
+
+<div class="divR">Pesquisa detalhada</div>
 
 <div class="buscaAtendentes">
-
-<strong>Atendentes:</strong><br />
-<input type="text" id="busca" onkeyup="buscarNoticias(this.value)" class="form-control" />
-<div id="resultado"></div>
-<br /><br />
-<div id="conteudo"></div>
-
+    <strong>Atendentes:</strong><br />
+    <input type="text" id="busca" onkeyup="buscarNoticias(this.value)" class="form-control" />
+    <div id="resultado"></div>
+    <br /><br />
+    <div id="conteudo"></div>
 </div>
+
+<div class="buscaAtendentes">
+    <strong>Representantes:</strong><br />
+    <input type="text" id="busca" onkeyup="buscarR(this.value)" class="form-control" />
+    <div id="resultadoR"></div>
+    <br /><br />
+    <div id="conteudoR"></div>
+</div>
+
+
 <script type="text/javascript" src="/funcs.js"></script>
 <div style="clear: both;"></div>      
 

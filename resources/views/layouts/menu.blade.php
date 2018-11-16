@@ -164,4 +164,7 @@ varWindow = window.open ('http://localhost/televenda/users/', 'popup', "width=50
 }
 </script>
 </li>
-<?php } ?>
+<?php } ?><li class="{{ Request::is('tables*') ? 'active' : '' }}">
+    <a href="{!! route('tables.index') !!}"><i class="fa fa-edit"></i><span>Tables</span></a>
+</li>
+

@@ -83,7 +83,7 @@
 <div class="buscaAtendentes">
 
 <strong>Atendentes:</strong><br />
-<input type="text" id="busca" onkeyup="buscarNoticias(this.value)" />
+<input type="text" id="busca" onkeyup="buscarNoticias(this.value)" class="form-control" />
 <div id="resultado"></div>
 <br /><br />
 <div id="conteudo"></div>

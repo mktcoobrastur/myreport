@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4216fc84e4a186fc2fd6d81c6599f727",
+    "content-hash": "c505284bfddf3e954ad00bd4a4922f70",
     "packages": [
         {
             "name": "amranidev/ajaxis",
@@ -839,53 +839,6 @@
                 "templates"
             ],
             "time": "2018-06-05T18:07:35+00:00"
-        },
-        {
-            "name": "infyomlabs/generator-builder",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/InfyOmLabs/generator-builder.git",
-                "reference": "acd07ef38668920fef1fda1d6d1d62dadbef4efb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/InfyOmLabs/generator-builder/zipball/acd07ef38668920fef1fda1d6d1d62dadbef4efb",
-                "reference": "acd07ef38668920fef1fda1d6d1d62dadbef4efb",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "~5.0",
-                "php": ">=5.5.9"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "InfyOm\\GeneratorBuilder\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mitul Golakiya",
-                    "email": "me@mitul.me"
-                }
-            ],
-            "description": "InfyOm Laravel Generator GUI Builder",
-            "keywords": [
-                "api",
-                "builder",
-                "crud",
-                "generator",
-                "gui",
-                "interface",
-                "laravel",
-                "view"
-            ],
-            "time": "2017-10-12T02:36:15+00:00"
         },
         {
             "name": "infyomlabs/laravel-generator",
@@ -3234,77 +3187,6 @@
                 "environment"
             ],
             "time": "2018-07-29T20:33:41+00:00"
-        },
-        {
-            "name": "yajra/laravel-datatables-oracle",
-            "version": "v8.9.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yajra/laravel-datatables.git",
-                "reference": "3b084b9b7b4aac46f0bfc2d71b9b3a67d794f4e9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/3b084b9b7b4aac46f0bfc2d71b9b3a67d794f4e9",
-                "reference": "3b084b9b7b4aac46f0bfc2d71b9b3a67d794f4e9",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/database": "5.4.*|5.5.*|5.6.*|5.7.*",
-                "illuminate/filesystem": "5.4.*|5.5.*|5.6.*|5.7.*",
-                "illuminate/http": "5.4.*|5.5.*|5.6.*|5.7.*",
-                "illuminate/support": "5.4.*|5.5.*|5.6.*|5.7.*",
-                "illuminate/view": "5.4.*|5.5.*|5.6.*|5.7.*",
-                "php": ">=7.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": "~3.5"
-            },
-            "suggest": {
-                "yajra/laravel-datatables-buttons": "Plugin for server-side exporting of dataTables.",
-                "yajra/laravel-datatables-editor": "Plugin to use DataTables Editor (requires a license).",
-                "yajra/laravel-datatables-fractal": "Plugin for server-side response using Fractal.",
-                "yajra/laravel-datatables-html": "Plugin for server-side HTML builder of dataTables."
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "8.0-dev"
-                },
-                "laravel": {
-                    "providers": [
-                        "Yajra\\DataTables\\DataTablesServiceProvider"
-                    ],
-                    "aliases": {
-                        "DataTables": "Yajra\\DataTables\\Facades\\DataTables"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Yajra\\DataTables\\": "src/"
-                },
-                "files": [
-                    "src/helper.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Arjay Angeles",
-                    "email": "aqangeles@gmail.com"
-                }
-            ],
-            "description": "jQuery DataTables API for Laravel 4|5",
-            "keywords": [
-                "datatables",
-                "jquery",
-                "laravel"
-            ],
-            "time": "2018-10-30T14:23:18+00:00"
         }
     ],
     "packages-dev": [
@@ -5069,8 +4951,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "infyomlabs/adminlte-templates": 20,
-        "infyomlabs/laravel-generator": 20,
-        "infyomlabs/generator-builder": 20
+        "infyomlabs/laravel-generator": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

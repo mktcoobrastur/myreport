@@ -71,15 +71,15 @@
                     $consulta = mysqli_query($con, "SELECT * FROM permissoes WHERE user = $id_user");
                     while($linha = mysqli_fetch_array($consulta)) {
                 ?>
-                    <span class="badge badge-pill badge-primary">
+                    <span class="badge badge-primary" style="font-weight: 100; font-size: 13px;">
                     <?php
                     $acesso = $linha['acesso'];
                     $consultaF = mysqli_query($con, "SELECT * FROM departamentos WHERE id = $acesso");
                     while($linhaF = mysqli_fetch_array($consultaF)) {
-                        echo utf8_encode($linhaF['depto']);
+                        echo "&nbsp;&nbsp;".utf8_encode($linhaF['depto'])."&nbsp;&nbsp;";
                     }
                 ?>
-                     <a href="../excluiPermissao.php?id=<?php echo $linha['id']; ?>&item={!! $usuario->id !!}" onclick="return confirm('Tem certeza que deseja excluir esta permissão para este usuário?')" class="btn btn-danger btn-sm botaoe" alt="Excluir" data-toggle="tooltip" data-placement="top" title="Excluir">x</a>
+                     <a href="../excluiPermissao.php?id=<?php echo $linha['id']; ?>&item={!! $usuario->id !!}" onclick="return confirm('Tem certeza que deseja excluir esta permissão para este usuário?')" class="btn btn-danger btn-sm botaoe" alt="Excluir" data-toggle="tooltip" data-placement="top" title="Excluir" style="text-decoration: none;">x</a>
                     </span>
                 <?php
                     }

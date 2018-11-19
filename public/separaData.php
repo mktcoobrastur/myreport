@@ -24,7 +24,7 @@
 
 ?>
     <tr>
-        <th><?php echo $l->created_at; ?></th>
+        <th><?php echo date("d/m/Y", strtotime($l->created_at)); ?></th>
         <th><?php echo $l->atendente; ?></th>
         <th><?php echo $l->qnt; ?></th>
         <th><?php echo $l->plano; ?></th>

@@ -13,6 +13,13 @@
         border-bottom: 1px solid #CCC;
         border-right: 1px solid #CCC;
     }
+
+    .botaoe {
+        width: 15px;
+        height: 15px;
+        line-height: 0px;
+        padding-left: 6px;
+    }
 </style>
 <!-- Id Field -->
 <div class="boxStatus">
@@ -55,6 +62,7 @@
 <!-- Check List -->
 <div class="form-group alert">
     {!! Form::label('permissao', 'Permissões:') !!} 
+        <a href="/fullPermissao.php?idUser={!! $usuario->id !!}" class="btn btn-danger btn-sm">Permissão Total</a>
 
 
                 <?php
@@ -71,6 +79,7 @@
                         echo utf8_encode($linhaF['depto']);
                     }
                 ?>
+                     <a href="../excluiPermissao.php?id=<?php echo $linha['id']; ?>&item={!! $usuario->id !!}" onclick="return confirm('Tem certeza que deseja excluir esta permissão para este usuário?')" class="btn btn-danger btn-sm botaoe" alt="Excluir" data-toggle="tooltip" data-placement="top" title="Excluir">x</a>
                     </span>
                 <?php
                     }

@@ -53,13 +53,6 @@
 
 <div class="bt"></div>
 
-        <!--div class="player">
-            <audio autoplay="autoplay">
-                <source src="javascript:tocamp3();" type="audio/mp3" />
-                seu navegador não suporta HTML5
-            </audio>
-        </div-->
-
     <script src="ajax.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script></head>
 <script>

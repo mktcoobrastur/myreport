@@ -31,7 +31,7 @@ while($rows = mysqli_fetch_array($consultaData)) {
 
 ?>
 
-<form action="geral.php" method="post">
+<form action="/televenda/geral.php" method="post">
   <input type="date" name="mes">
   <input type="submit" name="submit" value="Ir">
 </form>

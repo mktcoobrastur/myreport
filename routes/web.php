@@ -19,6 +19,10 @@ Route::get('/indice', function () {
     return view('indice');
 });
 
+Route::get('/profile', function () {
+    return view('profile');
+});
+
 Route::get('/mark', function () {
     return view('mark');
 });

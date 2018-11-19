@@ -205,9 +205,9 @@
         $query    = mysqli_query($conexao, $query);
         while ($linha = mysqli_fetch_array($query)) {
 ?>
-            <li class="list-group-item" style="height: 42px; background: #F8F8F8;">
+            <li class="list-group-item" style="height: 38px; background: #F8F8F8;">
             <a id="abrirConversa">
-                <b style="font-size: 13px; cursor:not-allowed;"> <?php echo utf8_encode($linha['name']); ?></b> <a class="pull-right"><i class="fa fa-circle text-success"></i></a>
+                <b style="font-size: 11px; cursor:not-allowed;"> <?php echo utf8_encode($linha['name']); ?></b> <a class="pull-right"><i class="fa fa-circle text-success"></i></a>
             </a>
             </li>
             <form action="" method="post" id="ajax_form2" style="display: none; z-index: 999; position: absolute;">

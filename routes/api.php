@@ -18,3 +18,17 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::resource('tables', 'tableAPIController');
+
+Route::resource('permissoes', 'PermissoesAPIController');
+
+Route::resource('permissoes', 'PermissoesAPIController');
+
+Route::resource('permissoes', 'PermissoesAPIController');
+
+Route::resource('permissoes', 'PermissoesAPIController');
+
+Route::resource('permissoes_es', 'PermissoesEsAPIController');
+
+Route::resource('permissoes_es', 'PermissoesEsAPIController');
+
+Route::resource('permissoes_es', 'PermissoesEsAPIController');

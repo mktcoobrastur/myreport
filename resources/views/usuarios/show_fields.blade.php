@@ -50,6 +50,8 @@
     <p>{!! $usuario->updated_at !!}</p>
 </div>
 
+
+
 <!-- Check List -->
 <div class="form-group alert">
     {!! Form::label('permissao', 'Permissões:') !!} 

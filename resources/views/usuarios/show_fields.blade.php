@@ -51,7 +51,7 @@
 </div>
 
 <!-- Check List -->
-<div class="form-group">
+<div class="form-group alert">
     {!! Form::label('permissao', 'Permissões:') !!} 
 
 
@@ -61,7 +61,7 @@
                     $consulta = mysqli_query($con, "SELECT * FROM permissoes WHERE user = $id_user");
                     while($linha = mysqli_fetch_array($consulta)) {
                 ?>
-                    <span class="badge badge-info">
+                    <span class="badge badge-pill badge-primary">
                     <?php
                     $acesso = $linha['acesso'];
                     $consultaF = mysqli_query($con, "SELECT * FROM departamentos WHERE id = $acesso");
@@ -76,7 +76,7 @@
 
 
 
-            <form action="/permissao.php" method="post">    
+            <form action="/permissao.php" method="post">
             <input type="hidden" name="idUser" value="{!! $usuario->id !!}">
             <select name="acesso" class="form-control" style="width: 180px;">
                 <?php

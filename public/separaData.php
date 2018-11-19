@@ -13,8 +13,15 @@
     $con = new mysqli("localhost", "root", "", "sistema");
     $mes = '11';
     // Filtro mês
-    $consulta = mysqli_query($con, "SELECT * FROM vendasdia WHERE MONTH(created_at) = $mes ORDER BY created_at DESC");
+    $consulta   = mysqli_query($con, "SELECT * FROM vendasdia WHERE MONTH(created_at) = $mes ORDER BY created_at DESC");
+    $totalMeta  = $r->meta  * $r->uteis;
+    $totalCa    = $l->qnt   * $l->plano;
+
+        if($totalVendas > $totalMeta) {
+            $totalVendas = $totalMeta - $totalV;
+        }
         while($l = mysqli_fetch_object($consulta)) {
+
 ?>
     <tr>
         <th><?php echo $l->created_at; ?></th>

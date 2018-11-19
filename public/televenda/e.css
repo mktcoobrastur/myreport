@@ -1,0 +1,368 @@
+body {
+    /*background: #E5B35E;*/
+    background-image: url(img/bg.jpg);
+    margin: 0;
+    text-align: center;
+}
+
+.tp, .bt {
+    width: 100%;
+    height: 20px;
+    background: #004E78;
+    opacity: 0.9;
+}
+
+.tp {
+    height: 20px !important;
+}
+
+.contTp {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid blue;
+}
+
+.bt {
+    position: fixed;
+    bottom: 0;
+}
+.auto {
+    width: 1000px;
+    margin: 0 auto;
+    height: 600px;
+}
+.topo {
+    margin-top: 30px;
+}
+
+.logoCobrastur {
+    position: absolute;
+    left: 350px;
+    top: 50px;
+    opacity: 0.3;
+}
+
+/* LOGO COOBRASTUR */
+.logoCobrastur img {
+    width: 300px;
+}
+
+/* LISTAGEM */
+.outLista {
+    margin-top: 50px;
+    height: 600px;
+}
+
+#lista {
+    display: block;
+    width: 1300px;
+}
+
+.linha {
+    float: left;
+    width: 480px;
+    height: 60px;
+    line-height: 45px;
+    padding-left: 15px;
+    margin-left: 10px;
+    margin-top: 0px;
+    list-style-type: decimal;
+    list-style-position: outside;
+    background: #f0f0f0;
+    border: 1px solid #d9d9d9;
+    font-family: 'Open Sans';
+    border-radius: 2px;
+    color: #666;
+    opacity: 0.97;
+    font-size: 15px;
+    text-align: left;
+    position: relative;
+    /*-webkit-animation: bounceIn 2s;*/
+}
+
+.linha { transition: 0.5s; } /* Transitions linha */
+
+.linha:hover {
+    background: #185874;
+    color: #fff;
+}
+
+.ftAtendente {
+    width: 55px;
+    /*border: 1px solid #fff;*/
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.nVendas { /* Número de Vendas */
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 7px;
+    text-align: center;
+    border-left: 1px solid #c0c0c0;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Open Sans';
+}
+
+.campeao {
+    position: absolute;
+    right: 50px;
+    top: 0px;
+    width: 400px;
+    height: 279px;
+    background-image: url(img/1o.png);
+    background-repeat: no-repeat;
+}
+
+.campeao img {
+    width: 150px;
+    height: 150px;
+    margin-top: 53px;
+    margin-left: -9px;
+}
+
+.campeao span {
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background: #154F75;
+    font-size: 20px;
+    bottom: 3px;
+    left: 50px;
+}
+
+/* BOUNCE EFFECT CAMPEÃO */
+
+.campeao {
+    margin-top: 70px;
+    animation: bounce 0.5s infinite alternate;
+    -webkit-animation: bounce 0.5s infinite alternate;
+  }
+  @keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(10px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-10px);
+    }
+  }
+
+  .Tvendas {
+      width: 316px;
+      height: 110px;
+      border: 1px solid #154F75;
+      margin-left: 42px;
+      margin-top: 90px;
+  }
+  
+  .Tvendas b {
+    font-size: 25px;
+  }
+
+  .progressMeta {
+      position: absolute;
+      left: 50px;
+      top: 180px;
+  }
+
+  .progressMeta h4 {
+      font-size: 25px !important;
+      font-weight: bold;
+      font-family: 'Open Sans';
+  }
+
+  .nomeV {
+    width: 400px;
+}
+ 
+  /***** Transitions Ranking *****/
+  .rankingTitulo { transition: 0.7s infinite; }
+  .rankingTitulo:hover { transition: 0.7s infinite; }
+  @keyframes bounce {
+    from {
+      transform: translateY(5px);
+    }
+    to {
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+  }
+  @-webkit-keyframes bounce {
+    from {
+        transform: translateY(5px);
+    }
+    to {
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+  }
+  /***** Fim Transitions Ranking *****/
+
+
+  /****** PLAYER ******/
+
+  .player {
+      display: hidden;
+      width: 1px;
+      height: 1px;
+  }
+
+  /* EFFECT RANKING */
+
+.rank {
+    animation: opacity 0.5s infinite alternate;
+    -webkit-animation: opacity 0.5s infinite alternate;
+}
+
+/***** USERS *****/
+
+.bUsers {
+    background: #154F74;
+}
+
+.topoUsers {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.loginUsers {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.loginUsers img {
+    margin-bottom: 25px;
+}
+
+.spc {
+    width: 100%;
+    height: 30px;
+}
+
+.conteudoUsers {
+    color: #ffffff;
+    width: 85%;
+    margin: 0 auto;
+    padding: 15px;
+    border-left: 5px solid #043A57;
+    background: #f0f0f0;
+    margin-top: 20px;
+    box-shadow: 2px 2px 7px 1px #444;
+}
+
+.quadroUsers {
+    display: block;
+    width: 100px;
+    float: left;
+}
+
+.nan {
+    float: left;
+}
+
+.nomeUser {
+    display: block;
+    position: absolute;
+    color: #fff;
+    font-family: 'Open Sans';
+    line-height: 40px;
+    top: 10px;
+    left: 10px;
+}
+
+.mensagem {
+    width: 84%;
+    margin-left: -15px;
+    margin-top: -15px;
+    height: 100px;
+    background: #81C3A8;
+    position: absolute;
+    font-family: 'Open Sans';
+    font-size: 17px;
+    line-height: 60px;
+}
+
+.sair {
+    color: #f9f9f9;
+    position: absolute;
+    font-size: 10px;
+    right: 8px;
+    top: 8px;
+}
+.sair:hover { color: #ccc; text-decoration: none; }
+
+#lgUser {
+    animation: animUser 0.5s infinite alternate;
+    -webkit-animation: animUser 0.5s infinite alternate;
+  }
+  @keyframes animUser {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(10px);
+    }
+  }
+  @-webkit-keyframes animUser {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-10px);
+    }
+  }
+
+  #copy {
+      display: block;
+      position: absolute;
+      color: #888 !important;
+      font-family: 'Open Sans';
+      font-size: 10px;
+      width: 100%;
+      bottom: 0;
+  }
+
+  /********** INDICE **********/
+
+  .conteudoI {
+    margin: 0 auto;
+    width: 80%;
+    opacity: 0.7;
+  }
+
+  .infoGeraisI {
+      float: left;
+      width: 50%;
+    }
+
+  .infoBlocoI {
+    float: left;
+    width:48%;
+    margin-left: 1%;
+    background: #ffffff;
+    box-shadow: 2px 2px 15px #555;
+    }
+
+.boxResultado {
+    float: left;
+    width: 49%;
+}

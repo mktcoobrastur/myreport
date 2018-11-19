@@ -112,7 +112,7 @@
 </li-->
 
 
-<?php if(Auth::user()->name == 'Leonardo Colombo') { ?>
+<?php if(Auth::user()->email == 'designer@coobrastur.com.br') { ?>
 
 
 <li class="treeview">

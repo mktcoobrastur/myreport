@@ -3,7 +3,7 @@
         <tr>
             <th>Nome Atendente</th>
             <th>Representante</th>
-            <th>Vendas Acumuladas</th>
+            <th style="text-align: center;">Vendas Acumuladas</th>
             <th colspan="3">Ações</th>
         </tr>
     </thead>
@@ -12,7 +12,7 @@
         <tr>
             <td>{!! $atendente->nome !!}</td>
             <td>{!! strtoupper($atendente->representante) !!}</td>
-            <td>{!! $atendente->qnt_vendas !!}</td>
+            <td style="text-align: center;">{!! $atendente->qnt_vendas !!}</td>
             <td>
                 {!! Form::open(['route' => ['atendentes.destroy', $atendente->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>
@@ -24,5 +24,21 @@
             </td>
         </tr>
     @endforeach
+
+            <tr>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th style="text-align: center;">
+                <?php
+                    $con = new mysqli("localhost", "root", "", "sistema");
+                    $consultaTotal = mysqli_query($con, "SELECT SUM(qnt_vendas) qnt_vendas FROM atendentes");
+                    $total = mysqli_fetch_array($consultaTotal);
+                    ?>
+                    Total: <?php echo $total['qnt_vendas'];
+                ?>
+            </th>
+            <th colspan="3">&nbsp;</th>
+        </tr>
+
     </tbody>
 </table>

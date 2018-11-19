@@ -31,5 +31,19 @@
             </td>
         </tr>
     @endforeach
+        <tr>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th style="text-align: center;">
+                <?php
+                    $consultaTotal = mysqli_query($con, "SELECT SUM(qnt) qnt FROM vendasre");
+                    $total = mysqli_fetch_array($consultaTotal);
+                    ?>
+                    Total: <?php echo $total['qnt'];
+                ?>
+            </th>
+            <th colspan="3">&nbsp;</th>
+        </tr>
+
     </tbody>
 </table>

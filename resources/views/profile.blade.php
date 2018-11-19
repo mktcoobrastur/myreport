@@ -34,10 +34,11 @@
 
                 <h3 class="profile-username text-center">
                     <?php 
-                    $consultaUser = mysqli_query($con, "SELECT * FROM users WHERE id = $user");
-                    $nomeUser = mysqli_fetch_array($consultaUser);
+                        $consultaUser = mysqli_query($con, "SELECT * FROM users WHERE id = $user");
+                        while($nomeUser = mysqli_fetch_array($consultaUser)) {
+                            echo $nomeUser['name']; 
+                        }
                     ?>
-                    <?php echo $nomeUser; ?>
                 </h3>
 
               <p class="text-muted text-center"><?php echo $l['cargo']; ?></p>
@@ -54,7 +55,7 @@
                 </li>
               </ul>
 
-              <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>
+              <a href="#" class="btn btn-primary btn-block"><b>Mensagem</b></a>
             </div>
             <!-- /.box-body -->
           </div>
@@ -63,31 +64,23 @@
           <!-- About Me Box -->
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">About Me</h3>
+              <h3 class="box-title">Sobre</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <strong><i class="fa fa-book margin-r-5"></i> Education</strong>
-
-              <p class="text-muted">
-                B.S. in Computer Science from the University of Tennessee at Knoxville
-              </p>
-
-              <hr>
-
               <strong><i class="fa fa-map-marker margin-r-5"></i> Location</strong>
 
-              <p class="text-muted">Malibu, California</p>
+              <p class="text-muted">Canela, Rio Grande do Sul</p>
 
               <hr>
 
               <strong><i class="fa fa-pencil margin-r-5"></i> Skills</strong>
 
               <p>
-                <span class="label label-danger">UI Design</span>
-                <span class="label label-success">Coding</span>
+                <span class="label label-danger">PHP</span>
+                <span class="label label-success">MYSQL</span>
                 <span class="label label-info">Javascript</span>
-                <span class="label label-warning">PHP</span>
+                <span class="label label-warning">Vue.JS</span>
                 <span class="label label-primary">Node.js</span>
               </p>
 

@@ -52,24 +52,43 @@
 
 <!-- Check List -->
 <div class="form-group">
-    {!! Form::label('permissao', 'Permissões:') !!}
-    <table style="margin: 20px;">
+    {!! Form::label('permissao', 'Permissões:') !!} 
+
+
+                <?php
+                    $id_user = $usuario->id;
+                    $con = new mysqli("localhost", "root", "", "sistema");
+                    $consulta = mysqli_query($con, "SELECT * FROM permissoes WHERE user = $id_user");
+                    while($linha = mysqli_fetch_array($consulta)) {
+                ?>
+                    <span class="badge badge-info">
+                    <?php
+                    $acesso = $linha['acesso'];
+                    $consultaF = mysqli_query($con, "SELECT * FROM departamentos WHERE id = $acesso");
+                    while($linhaF = mysqli_fetch_array($consultaF)) {
+                        echo utf8_encode($linhaF['depto']);
+                    }
+                ?>
+                    </span>
+                <?php
+                    }
+                ?>
+
+
+
+            <form action="/permissao.php" method="post">    
+            <input type="hidden" name="idUser" value="{!! $usuario->id !!}">
+            <select name="acesso" class="form-control" style="width: 180px;">
                 <?php
                     $con = new mysqli("localhost", "root", "", "sistema");
                     $consulta = mysqli_query($con, "SELECT * FROM departamentos");
                     while($linha = mysqli_fetch_array($consulta)) {
-                        ?>
-    <tr>
-            <th><input name="genero[]" type="checkbox" value="1" /> <br></th>
-            <th> <?php echo utf8_encode($linha['depto']); ?></th>
-        </tr>
-                        
-                        <?php
+                ?>
+                    <option value="<?php echo $linha['id']; ?>"><?php echo utf8_encode($linha['depto']); ?></option>
+                <?php
                     }
-                    ?>
-    <tr>
-            
-            <th colspan="2"><input type="submit" name="atualizarP" value="Atualizar Permissões" class="btn btn-primary btn-sm" /></th>
-        </tr>
-    </table>
+                ?>
+            </select>
+            <input type="submit" name="atualizarP" value="Adicionar" class="btn btn-primary btn-sm" />
+            </form>
 </div>

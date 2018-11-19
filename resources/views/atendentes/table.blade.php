@@ -3,7 +3,7 @@
         <tr>
             <th>Nome Atendente</th>
             <th>Representante</th>
-            <th style="text-align: center;">Vendas Acumuladas</th>
+            <th>Vendas Acumuladas</th>
             <th colspan="3">Ações</th>
         </tr>
     </thead>

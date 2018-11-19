@@ -13,7 +13,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        User Profile
+        Perfil
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Usuários</a></li>
@@ -45,13 +45,7 @@
 
               <ul class="list-group list-group-unbordered">
                 <li class="list-group-item">
-                  <b>Followers</b> <a class="pull-right">1,322</a>
-                </li>
-                <li class="list-group-item">
-                  <b>Following</b> <a class="pull-right">543</a>
-                </li>
-                <li class="list-group-item">
-                  <b>Friends</b> <a class="pull-right">13,287</a>
+                  <b>Tarefas finalizadas</b> <a class="pull-right">82</a>
                 </li>
               </ul>
 
@@ -98,9 +92,9 @@
         <div class="col-md-9">
           <div class="nav-tabs-custom">
             <ul class="nav nav-tabs">
-              <li class="active"><a href="#activity" data-toggle="tab">Activity</a></li>
-              <li><a href="#timeline" data-toggle="tab">Timeline</a></li>
-              <li><a href="#settings" data-toggle="tab">Settings</a></li>
+              <li class="active"><a href="#activity" data-toggle="tab">Atividade</a></li>
+              <li><a href="#timeline" data-toggle="tab">Linha do tempo</a></li>
+              <li><a href="#settings" data-toggle="tab">Configurações</a></li>
             </ul>
             <div class="tab-content">
               <div class="active tab-pane" id="activity">

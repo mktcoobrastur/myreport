@@ -893,12 +893,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/InfyOmLabs/laravel-generator.git",
-                "reference": "13d61b563c6872e19787a7418eeb2a81fbc0628a"
+                "reference": "c1941c8004aaca0a9e581f325470b3c662ff1fbe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/InfyOmLabs/laravel-generator/zipball/13d61b563c6872e19787a7418eeb2a81fbc0628a",
-                "reference": "13d61b563c6872e19787a7418eeb2a81fbc0628a",
+                "url": "https://api.github.com/repos/InfyOmLabs/laravel-generator/zipball/c1941c8004aaca0a9e581f325470b3c662ff1fbe",
+                "reference": "c1941c8004aaca0a9e581f325470b3c662ff1fbe",
                 "shasum": ""
             },
             "require": {
@@ -951,7 +951,7 @@
                 "test",
                 "view"
             ],
-            "time": "2018-09-24T03:16:04+00:00"
+            "time": "2018-11-18T06:17:02+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",

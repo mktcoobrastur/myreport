@@ -320,7 +320,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{!! url('/') !!}">
-                    InfyOm Generator
+                    Coobrastur
                 </a>
             </div>
 

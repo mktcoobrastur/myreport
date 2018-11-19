@@ -18,6 +18,7 @@
 			}
 
 			$consulta = mysqli_query($con, "SELECT * FROM departamentos");
+			// Loop preenche todos os acessos
 			while($r = mysqli_fetch_array($consulta)) {
 				$acesso = $r['id'];
 				$sql = "INSERT INTO permissoes (id, user, acesso)

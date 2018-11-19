@@ -16,19 +16,3 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-Route::resource('tables', 'tableAPIController');
-
-Route::resource('permissoes', 'PermissoesAPIController');
-
-Route::resource('permissoes', 'PermissoesAPIController');
-
-Route::resource('permissoes', 'PermissoesAPIController');
-
-Route::resource('permissoes', 'PermissoesAPIController');
-
-Route::resource('permissoes_es', 'PermissoesEsAPIController');
-
-Route::resource('permissoes_es', 'PermissoesEsAPIController');
-
-Route::resource('permissoes_es', 'PermissoesEsAPIController');

@@ -360,7 +360,7 @@
       url: '#', success: function (result) {
         $('.ajax-content').html('<hr>Ajax Request Completed !')
       }
-    })
+    })  
   })
 </script>
     <!-- jQuery 3.1.1 -->

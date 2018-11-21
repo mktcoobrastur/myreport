@@ -27,6 +27,10 @@ Route::get('/mark', function () {
     return view('mark');
 });
 
+Route::get('/notificacoes', function () {
+    return view('notificacoes');
+});
+
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');

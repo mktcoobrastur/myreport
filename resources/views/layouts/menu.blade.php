@@ -162,6 +162,9 @@
     <li class="{{ Request::is('laminas*') ? 'active' : '' }}">
         <a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span>Solicitação de Lâminas</span></a>
     </li>
+    <li>
+        <a href="/notificacoes"><i class="fa fa-circle-o text-aqua"></i><span>Notificações</span></a>
+    </li>
 </ul>
 <script language=javascript type="text/javascript">
 function newPopup(){

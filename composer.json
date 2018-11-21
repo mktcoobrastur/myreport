@@ -9,7 +9,6 @@
         "Amranidev/scaffold-interface": "v1.6.*",
         "appzcoder/crud-generator": "^3.0",
         "doctrine/dbal": "~2.3",
-        "dompdf/dompdf": "^0.8.2",
         "fideloper/proxy": "^4.0",
         "infyomlabs/adminlte-templates": "5.7.x-dev",
         "infyomlabs/generator-builder": "dev-master",

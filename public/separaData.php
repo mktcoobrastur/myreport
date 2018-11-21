@@ -16,6 +16,7 @@
     $consulta   = mysqli_query($con, "SELECT * FROM vendasdia WHERE MONTH(created_at) = $mes ORDER BY created_at DESC");
     if(Null) {
     $row        = mysqli_fetch_object($consulta);
+    //Cria OBJ 'resultado' para usar o índice no comparativo
     $row->mountObject('resultadoMes');
     $resultadoMes->getParam($id, $atendente, $qnt, string);
         if(badRequest($resultadoMes)){

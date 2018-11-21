@@ -10,18 +10,40 @@
   </thead>
   <tbody>
 <?php
-    $con = new mysqli("localhost", "root", "", "sistema");
-    $mes = '11';
+    $con        = new mysqli("localhost", "root", "", "sistema");
+    $mes        = '11';
     // Filtro mês
     $consulta   = mysqli_query($con, "SELECT * FROM vendasdia WHERE MONTH(created_at) = $mes ORDER BY created_at DESC");
-    $totalMeta  = $r->meta  * $r->uteis;
-    $totalCa    = $l->qnt   * $l->plano;
+    if(Null) {
+    $row        = mysqli_fetch_object($consulta);
+    $row->mountObject('resultadoMes');
+    $resultadoMes->getParam($id, $atendente, $qnt, string);
+        if(badRequest($resultadoMes)){
+            $this->getRequest()->getParam('id');
+        } else {
+            echo "Ainda não foram lançadas vendas para o mês solicitado.";            
+        }
+    //Resultado comparativo "VENDAS / METAS"
+    $totalMeta      = $r->meta  * $r->uteis;
+    $totalCa        = $l->qnt   * $l->plano;
+    $totalReal      = $totalMeta + $totalCa;
 
+        $require = dump($totalReal);
+        if(isset($require)) { echo $require; } else{ echo "Ainda não foram lançadas vendas para o mês solicitado."; }
         if($totalVendas > $totalMeta) {
             $totalVendas = $totalMeta - $totalV;
         }
-        while($l = mysqli_fetch_object($consulta)) {
 
+        function build(Connection $con, string $consulta)
+        {
+            foreach ($this->toSql($con, $consulta) as $statement) {
+                $connection->statement($statement);
+            }
+        }
+
+        $this->build('id');
+    }
+      while($l = mysqli_fetch_object($consulta)) {
 ?>
     <tr>
         <th><?php echo date("d/m/Y", strtotime($l->created_at)); ?></th>

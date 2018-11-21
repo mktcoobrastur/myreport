@@ -9,13 +9,14 @@
         "Amranidev/scaffold-interface": "v1.6.*",
         "appzcoder/crud-generator": "^3.0",
         "doctrine/dbal": "~2.3",
+        "dompdf/dompdf": "^0.8.2",
         "fideloper/proxy": "^4.0",
         "infyomlabs/adminlte-templates": "5.7.x-dev",
+        "infyomlabs/generator-builder": "dev-master",
         "infyomlabs/laravel-generator": "5.7.x-dev",
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
-        "laravelcollective/html": "^5.7.0",
-        "infyomlabs/generator-builder": "dev-master"
+        "laravelcollective/html": "^5.7.0"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

@@ -3,9 +3,6 @@
         <tr>
             <th>Hotel</th>
         <th>Texto</th>
-        <th>Obs</th>
-        <th>1</th>
-        <th>2</th>
             <th colspan="3">Action</th>
         </tr>
     </thead>
@@ -14,9 +11,6 @@
         <tr>
             <td>{!! $lamina->hotel !!}</td>
             <td>{!! $lamina->texto !!}</td>
-            <td>{!! $lamina->obs !!}</td>
-            <td>{!! $lamina->1 !!}</td>
-            <td>{!! $lamina->2 !!}</td>
             <td>
                 {!! Form::open(['route' => ['laminas.destroy', $lamina->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

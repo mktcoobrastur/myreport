@@ -33,8 +33,8 @@ class Lamina extends Model
         'hotel',
         'texto',
         'obs',
-        '1',
-        '2'
+        'lamina1',
+        'lamina2'
     ];
 
     /**
@@ -47,8 +47,8 @@ class Lamina extends Model
         'hotel' => 'integer',
         'texto' => 'string',
         'obs' => 'string',
-        '1' => 'string',
-        '2' => 'string'
+        'lamina1' => 'string',
+        'lamina2' => 'string'
     ];
 
     /**

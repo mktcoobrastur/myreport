@@ -1,7 +1,25 @@
+<script type="text/javascript" src="/lib/jquery.bgiframe.min.js"></script>
+<script type="text/javascript" src="/lib/jquery.ajaxQueue.js"></script>
+<script type="text/javascript" src="/lib/thickbox-compressed.js"></script>
+<script type="text/javascript" src="/lib/jquery.autocomplete.js"></script>
+<!--css -->
+<link rel="stylesheet" type="text/css" href="/lib/jquery.autocomplete.css"/>
+<link rel="stylesheet" type="text/css" href="/lib/thickbox.css"/>
+
+<script type="text/javascript">
+ 	$(document).ready(function(){
+		$("#txtNome").autocomplete("completar.php", {
+			width:310,
+			selectFirst: false
+		});
+	});
+ </script>
+
 <!-- Hotel Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('hotel', 'Hotel:') !!}
-    {!! Form::number('hotel', null, ['class' => 'form-control']) !!}
+    {!! Form::text('hotel', null, ['class' => 'form-control']) !!}
+    <input type="text" name="txtNome" id="txtNome" class="form-control input_forms" >
 </div>
 
 <!-- Texto Field -->
@@ -18,14 +36,14 @@
 
 <!-- 1 Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('1', '1:') !!}
-    {!! Form::text('1', null, ['class' => 'form-control']) !!}
+    {!! Form::label('lamina1', 'Lamina 1:') !!}
+    {!! Form::text('lamina1', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- 2 Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('2', '2:') !!}
-    {!! Form::text('2', null, ['class' => 'form-control']) !!}
+    {!! Form::label('lamina2', 'Lamina 2:') !!}
+    {!! Form::text('lamina2', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Submit Field -->

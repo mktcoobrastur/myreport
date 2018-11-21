@@ -19,7 +19,7 @@
 <div class="form-group col-sm-6">
     {!! Form::label('hotel', 'Hotel:') !!}
     {!! Form::text('hotel', null, ['class' => 'form-control']) !!}
-    <input type="text" name="txtNome" id="txtNome" class="form-control input_forms" >
+    <input type="text" name="txtNome" id="txtNome" class="input_forms" >
 </div>
 
 <!-- Texto Field -->
@@ -48,6 +48,6 @@
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
-    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-    <a href="{!! route('laminas.index') !!}" class="btn btn-default">Cancel</a>
+    {!! Form::submit('Salvar', ['class' => 'btn btn-primary']) !!}
+    <a href="{!! route('laminas.index') !!}" class="btn btn-default">Cancelar</a>
 </div>

@@ -29,6 +29,8 @@
     
     @yield('css')
 	<link rel="stylesheet" href="/css/pace.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript">
 	jQuery(document).ready(function(){
@@ -371,6 +373,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/js/adminlte.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
+
+
+<script type="text/javascript" src="/lib/jquery.bgiframe.min.js"></script>
+<script type="text/javascript" src="/lib/jquery.ajaxQueue.js"></script>
+<script type="text/javascript" src="/lib/thickbox-compressed.js"></script>
+<script type="text/javascript" src="/lib/jquery.autocomplete.js"></script>
+<!--css -->
+<link rel="stylesheet" type="text/css" href="/lib/jquery.autocomplete.css"/>
+<link rel="stylesheet" type="text/css" href="/lib/thickbox.css"/>
 
     @yield('scripts')
 </body>

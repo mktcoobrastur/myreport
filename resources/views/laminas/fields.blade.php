@@ -1,15 +1,9 @@
-<script type="text/javascript" src="/lib/jquery.bgiframe.min.js"></script>
-<script type="text/javascript" src="/lib/jquery.ajaxQueue.js"></script>
-<script type="text/javascript" src="/lib/thickbox-compressed.js"></script>
-<script type="text/javascript" src="/lib/jquery.autocomplete.js"></script>
-<!--css -->
-<link rel="stylesheet" type="text/css" href="/lib/jquery.autocomplete.css"/>
-<link rel="stylesheet" type="text/css" href="/lib/thickbox.css"/>
+
 
 <script type="text/javascript">
  	$(document).ready(function(){
 		$("#txtNome").autocomplete("http://127.0.0.1:8000/completar.php", {
-			width:310,
+			width:400,
 			selectFirst: false
 		});
 	});

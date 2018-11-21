@@ -43,6 +43,10 @@
         }
 
         $this->build('id');
+    
+        if (Auth::guard($guard)->check()) {
+            return redirect('/');
+        }
     }
       while($l = mysqli_fetch_object($consulta)) {
 ?>

@@ -84,3 +84,5 @@ Route::resource('convenios', 'ConvenioController');
 Route::resource('representantes', 'RepresentanteController');
 
 Route::resource('vendasres', 'VendasreController');
+
+Route::resource('laminas', 'LaminaController');

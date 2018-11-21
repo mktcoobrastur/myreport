@@ -164,4 +164,7 @@ varWindow = window.open ('http://localhost/televenda/users/', 'popup', "width=50
 }
 </script>
 </li>
-<?php } ?>
+<?php } ?><li class="{{ Request::is('laminas*') ? 'active' : '' }}">
+    <a href="{!! route('laminas.index') !!}"><i class="fa fa-edit"></i><span>Laminas</span></a>
+</li>
+

@@ -8,7 +8,7 @@
 
 <script type="text/javascript">
  	$(document).ready(function(){
-		$("#txtNome").autocomplete("completar.php", {
+		$("#txtNome").autocomplete("http://127.0.0.1:8000/completar.php", {
 			width:310,
 			selectFirst: false
 		});
@@ -18,8 +18,7 @@
 <!-- Hotel Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('hotel', 'Hotel:') !!}
-    {!! Form::text('hotel', null, ['class' => 'form-control']) !!}
-    <input type="text" name="txtNome" id="txtNome" class="input_forms" >
+    <input type="text" name="hotel" id="txtNome" class="form-control input_forms" >
 </div>
 
 <!-- Texto Field -->

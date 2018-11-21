@@ -24,25 +24,24 @@
 
 <!-- 1 Field -->
 <div class="form-group">
-    {!! Form::label('1', '1:') !!}
-    <p>{!! $lamina->1 !!}</p>
+    {!! Form::label('lamina11', 'Lâmina 1:') !!}
+    <p>{!! $lamina->lamina1 !!}</p>
 </div>
 
 <!-- 2 Field -->
 <div class="form-group">
-    {!! Form::label('2', '2:') !!}
-    <p>{!! $lamina->2 !!}</p>
+    {!! Form::label('lamina12', 'Lâmina 2:') !!}
+    <p>{!! $lamina->lamina2 !!}</p>
 </div>
 
 <!-- Created At Field -->
 <div class="form-group">
-    {!! Form::label('created_at', 'Created At:') !!}
+    {!! Form::label('created_at', 'Solicitado em:') !!}
     <p>{!! $lamina->created_at !!}</p>
 </div>
 
 <!-- Updated At Field -->
 <div class="form-group">
-    {!! Form::label('updated_at', 'Updated At:') !!}
+    {!! Form::label('updated_at', 'Última atualização:') !!}
     <p>{!! $lamina->updated_at !!}</p>
 </div>
-

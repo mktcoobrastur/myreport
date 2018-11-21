@@ -44,7 +44,7 @@ class Lamina extends Model
      */
     protected $casts = [
         'id' => 'integer',
-        'hotel' => 'integer',
+        'hotel' => 'string',
         'texto' => 'string',
         'obs' => 'string',
         'lamina1' => 'string',

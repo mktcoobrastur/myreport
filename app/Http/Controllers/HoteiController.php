@@ -59,7 +59,7 @@ class HoteiController extends AppBaseController
 
         $hotei = $this->hoteiRepository->create($input);
 
-        Flash::success('Hotei saved successfully.');
+        Flash::success('Salvo com sucesso.');
 
         return redirect(route('hoteis.index'));
     }

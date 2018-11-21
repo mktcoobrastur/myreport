@@ -17,8 +17,9 @@
 
 <!-- Hotel Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('hotel', 'Hotel:') !!}
-    <input type="text" name="hotel" id="txtNome" class="form-control input_forms" >
+    {!! Form::label('hotel', 'Hotel:') !!}<br />
+    <i class="opaque">Pesquise pelo código ou pelo nome do hotel.</i>
+    {!! Form::text('hotel', null, ['class' => 'form-control', 'id' => 'txtNome']) !!}
 </div>
 
 <!-- Texto Field -->

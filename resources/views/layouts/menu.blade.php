@@ -23,6 +23,7 @@
           <ul class="treeview-menu">
             <li><a href="{!! route('marketings.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
             <li><a href="/mark"><i class="fa fa-circle-o text-aqua"></i> Emarks</a></li>
+            <li><a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i>Solicitação de Lâminas</a></li>
           </ul>
 </li>
 
@@ -70,6 +71,7 @@
             <li><a href="{!! route('hoteis.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
             <li><a href="{!! route('promocoes.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Promoções</a></li>
             <li><a href="{!! route('fotos.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Fotos Site</a></li>
+            <li><a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i>Solicitação de Lâminas</a></li>
           </ul>
 </li>
 
@@ -157,6 +159,9 @@
     <li class="">
         <a href="javascript:newPopup()"><i class="fa fa-circle-o text-aqua"></i> <span>Acesso Televenda</span></a>
     </li>
+    <li class="{{ Request::is('laminas*') ? 'active' : '' }}">
+        <a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span>Solicitação de Lâminas</span></a>
+    </li>
 </ul>
 <script language=javascript type="text/javascript">
 function newPopup(){
@@ -164,7 +169,4 @@ varWindow = window.open ('http://localhost/televenda/users/', 'popup', "width=50
 }
 </script>
 </li>
-<?php } ?><li class="{{ Request::is('laminas*') ? 'active' : '' }}">
-    <a href="{!! route('laminas.index') !!}"><i class="fa fa-edit"></i><span>Laminas</span></a>
-</li>
-
+<?php } ?>

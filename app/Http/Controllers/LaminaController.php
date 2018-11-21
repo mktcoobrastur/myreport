@@ -59,7 +59,7 @@ class LaminaController extends AppBaseController
 
         $lamina = $this->laminaRepository->create($input);
 
-        Flash::success('Lamina saved successfully.');
+        Flash::success('Solicitação salva com sucesso.');
 
         return redirect(route('laminas.index'));
     }
@@ -76,7 +76,7 @@ class LaminaController extends AppBaseController
         $lamina = $this->laminaRepository->findWithoutFail($id);
 
         if (empty($lamina)) {
-            Flash::error('Lamina not found');
+            Flash::error('Solicitação não existe!');
 
             return redirect(route('laminas.index'));
         }
@@ -96,7 +96,7 @@ class LaminaController extends AppBaseController
         $lamina = $this->laminaRepository->findWithoutFail($id);
 
         if (empty($lamina)) {
-            Flash::error('Lamina not found');
+            Flash::error('Solicitação não existe!');
 
             return redirect(route('laminas.index'));
         }
@@ -117,14 +117,14 @@ class LaminaController extends AppBaseController
         $lamina = $this->laminaRepository->findWithoutFail($id);
 
         if (empty($lamina)) {
-            Flash::error('Lamina not found');
+            Flash::error('Solicitação não existe!');
 
             return redirect(route('laminas.index'));
         }
 
         $lamina = $this->laminaRepository->update($request->all(), $id);
 
-        Flash::success('Lamina updated successfully.');
+        Flash::success('Solicitação atualizada com sucesso.');
 
         return redirect(route('laminas.index'));
     }
@@ -141,14 +141,14 @@ class LaminaController extends AppBaseController
         $lamina = $this->laminaRepository->findWithoutFail($id);
 
         if (empty($lamina)) {
-            Flash::error('Lamina not found');
+            Flash::error('Solicitação não existe!');
 
             return redirect(route('laminas.index'));
         }
 
         $this->laminaRepository->delete($id);
 
-        Flash::success('Lamina deleted successfully.');
+        Flash::success('Solicitação apagada com sucesso.');
 
         return redirect(route('laminas.index'));
     }

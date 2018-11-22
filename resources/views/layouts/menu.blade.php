@@ -3,6 +3,12 @@
     <a href="/home"><i class="fa fa-dashboard"></i> <span> Painel Principal</span></a>
 </li>
 
+<?php
+    $idUser   = Auth::user()->id;
+    $con      = new mysqli("localhost", "root", "", "sistema");
+    $consulta = mysqli_query($con, "SELECT * FROM permissoes WHERE user = $idUser");
+    $obj      = mysqli_fetch_object($consulta);
+?>
 <li class="treeview">
           <a href="#">
             <i class="fa fa-files-o"></i>

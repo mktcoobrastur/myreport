@@ -64,15 +64,11 @@
             
     	    while ($linha = mysqli_fetch_array($query)) {
         ?>
-                <div class="alert">
-                <div class="card">
                 <div class="card-body">
                     <blockquote class="blockquote mb-0">
                     <p><?php echo utf8_encode($linha['comentario']); ?></p>
                     <footer class="blockquote-footer"><?php echo $linha['usuario']; ?></cite> <i class="small"><?php echo $linha['created_at']; ?></i></footer>
                     </blockquote>
-                </div>
-                </div>
                 </div>
 	    <?php } ?>
 
@@ -80,12 +76,12 @@
 
     <div class="alert">
         <form action="/comentar.php" method="post" enctype="multipart/form-data">
-    		<label>Adicionar comentário:</label> <br />
+    		<label style="color: #999;">Adicionar comentário:</label> <br />
 	 		<input type="hidden" name="idChamado" value="{!! $tarefas->id !!}" />
 	 		<input type="hidden" name="usuario" value="{{ Auth::user()->name}}" />
     	    <textarea name="comentario" class="form-control"></textarea>
             <br>
-            <input type="submit" name="enviaArquivo" value="Comentar">
+            <input type="submit" name="enviaArquivo" class="btn btn-primary" value="Comentar">
         </form>
 	</div>
 
@@ -120,9 +116,9 @@
         <form action="/upload.php" method="post" enctype="multipart/form-data">
     		<label>Enviar Arquivos:</label> <br />
 	 		<input type="hidden" name="idChamado" value="{!! $tarefas->id !!}" />
-    	    <input class="form-control" type="file" name="arquivos[]" multiple>
+    	    <input type="file" name="arquivos[]" class="form-control" multiple>
             <br>
-            <input type="submit" name="enviaArquivo" value="Enviar">
+            <input type="submit" name="enviaArquivo" class="btn btn-primary" value="Enviar">
         </form>
 	</div>
 

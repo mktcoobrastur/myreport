@@ -1,13 +1,4 @@
 <br />
-<!--li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Marketing
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Tarefas</a></li>
-          <li><a href="#">Emarks</a></li>
-          <li><a href="#">Outros</a></li>
-        </ul>
-</li-->
 <li>
     <a href="/home"><i class="fa fa-dashboard"></i> <span> Painel Principal</span></a>
 </li>
@@ -170,6 +161,9 @@
     </li>
     <li>
         <a href="/relatorio-televenda"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Televenda</span></a>
+    </li>
+    <li>
+        <a href="/vendas"><i class="fa fa-circle-o text-aqua"></i><span>Vendas Coobrastur</span></a>
     </li>
 </ul>
 <script language=javascript type="text/javascript">

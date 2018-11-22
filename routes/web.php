@@ -27,6 +27,10 @@ Route::get('/mark', function () {
     return view('mark');
 });
 
+Route::get('/vendas', function () {
+    return view('vendas');
+});
+
 Route::get('/notificacoes', function () {
     return view('notificacoes');
 });
@@ -56,8 +60,6 @@ Route::resource('relacionamentos', 'RelacionamentosController');
 Route::resource('telemarketings', 'TelemarketingController');
 
 Route::resource('marketings', 'MarketingController');
-
-Route::resource('vendas', 'VendasController');
 
 Route::resource('vendasdias', 'VendasdiaController');
 

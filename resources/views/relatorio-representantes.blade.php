@@ -6,7 +6,7 @@
     display: block;
     background: #3C8DBB;
     color: #fff;
-    padding: 5px;
+    padding: 10px;
     font-size: 20px;
 }
 </style>

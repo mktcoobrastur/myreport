@@ -12,6 +12,7 @@
 </style>
 
 <?php 
+        $array = ['']
         function getVendas($id, $array) {
             $row = mysqli_fetch_object($query);
             $object = $this->params($id);
@@ -19,9 +20,9 @@
             return $array;
         }
         $query = mysqli_query($con, "SELECT * FROM vendasdia WHERE id = $id ORDER BY id DESC");
-        while($row = mysqli_fetch_object($query)){
-            $obj = getVendas($row)->fetch($id)->belongsTo('vendasre');
-            var_dump($obj);
+        while($obj = mysqli_fetch_object($query)){
+            $array[] = getVendas($obj)->fetch($id)->belongsTo('vendasre');
+            var_dump($array);
         }
 ?>
 

@@ -1,4 +1,39 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<style type="text/css">
+.container {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    z-index: 997;
+}
+.header {
+    display: inline-block;
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    background: #3C8DBB;
+}
+.panel-header {
+    display: inline-block;
+}
+.repeatClv {
+    float: left;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+}
+</style>
+
+<section class="header">
+    <div class="panel-header">
+        
+    </div>
+</section>
+
+<div class="container">
 <table class="table table-bordered">
 <thead>
     <tr>
@@ -22,7 +57,7 @@
         if(badRequest($resultadoMes)){
             $this->getRequest()->getParam('id');
         } else {
-            echo "Ainda não foram lançadas vendas para o mês solicitado.";            
+            echo "<span class='repeatClv'>Ainda não foram lançadas vendas para o mês solicitado.</span>";
         }
     //Resultado comparativo "VENDAS / METAS"
     $totalMeta      = $r->meta  * $r->uteis;
@@ -40,6 +75,7 @@
             foreach ($this->toSql($con, $consulta) as $statement) {
                 $connection->statement($statement);
             }
+            return $array;
         }
 
         $this->build('id');
@@ -59,3 +95,4 @@
 <?php } ?>   
 </tbody>
 </table>
+</div>

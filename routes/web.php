@@ -27,9 +27,9 @@ Route::get('/mark', function () {
     return view('mark');
 });
 
-Route::get('/vendas', function () {
+/*Route::get('/vendas', function () {
     return view('vendas');
-});
+});*/
 
 Route::get('/notificacoes', function () {
     return view('notificacoes');

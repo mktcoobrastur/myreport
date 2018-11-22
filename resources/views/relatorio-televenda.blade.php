@@ -68,8 +68,6 @@ for ($i=1; $i < 12; $i++) {
         <th><?php echo $l->qnt; ?></th>
     </tr>
 <?php } ?>
-
-
 </tbody>
 </table>
 

@@ -165,6 +165,12 @@
     <li>
         <a href="/notificacoes"><i class="fa fa-circle-o text-aqua"></i><span>Notificações</span></a>
     </li>
+    <li>
+        <a href="/relatorio-representantes"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Representantes</span></a>
+    </li>
+    <li>
+        <a href="/relatorio-televenda"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Televenda</span></a>
+    </li>
 </ul>
 <script language=javascript type="text/javascript">
 function newPopup(){

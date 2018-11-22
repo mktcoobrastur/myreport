@@ -18,7 +18,7 @@
     <div class="alert">
 <?php
     $con = new mysqli("localhost", "root", "", "sistema");
-    $consulta = mysqli_query($con, "SELECT * FROM notificacoes ORDER BY id ASC");
+    $consulta = mysqli_query($con, "SELECT * FROM notificacoes ORDER BY id DESC");
     while ($l = mysqli_fetch_array($consulta)) {
 ?>
       <li class=""><i class="opaque"><?php echo $l['tabela']; ?></i></li>

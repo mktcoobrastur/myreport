@@ -1,3 +1,4 @@
+<?php require "inc/vars.php"; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +29,7 @@
     <link rel="stylesheet" href="/i.css">
     
     @yield('css')
-	<link rel="stylesheet" href="/css/pace.min.css">
+	<link rel="stylesheet" href="<?php echo $URL; ?>css/pace.min.css">
     <?php if(Request::segment(1) == 'laminas') { ?>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -60,8 +61,8 @@
 </head>
 
 <body class="skin-blue sidebar-mini">
-
 @if (!Auth::guest())
+
 <!--div style="width: 50px; height: 50px; background: red; position: fixed; right: 0; bottom: 0; z-index: 9999;"></div-->
     <div class="wrapper">
         <!-- Main Header -->
@@ -132,7 +133,7 @@
                 <!-- end message -->
             </ul>
               </li>
-              <li class="footer"><a href="/recados">Ver todos os recados</a></li>
+              <li class="footer"><a href="<?php echo $URL; ?>   recados">Ver todos os recados</a></li>
             </ul>
           </li>
           <!-- Notifications: style can be found in dropdown.less -->
@@ -372,7 +373,7 @@
   })
 </script>
     <!-- jQuery 3.1.1 -->
-    <script src="/js/pace.min.js"></script>
+    <script src="<?php echo $URL; ?>js/pace.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- AdminLTE App -->
@@ -381,13 +382,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
 
 
-<script type="text/javascript" src="/lib/jquery.bgiframe.min.js"></script>
-<script type="text/javascript" src="/lib/jquery.ajaxQueue.js"></script>
-<script type="text/javascript" src="/lib/thickbox-compressed.js"></script>
-<script type="text/javascript" src="/lib/jquery.autocomplete.js"></script>
+<script type="text/javascript" src="<?php echo $URL; ?>lib/jquery.bgiframe.min.js"></script>
+<script type="text/javascript" src="<?php echo $URL; ?>lib/jquery.ajaxQueue.js"></script>
+<script type="text/javascript" src="<?php echo $URL; ?>lib/thickbox-compressed.js"></script>
+<script type="text/javascript" src="<?php echo $URL; ?>lib/jquery.autocomplete.js"></script>
 <!--css -->
-<link rel="stylesheet" type="text/css" href="/lib/jquery.autocomplete.css"/>
-<link rel="stylesheet" type="text/css" href="/lib/thickbox.css"/>
+<link rel="stylesheet" type="text/css" href="<?php echo $URL; ?>lib/jquery.autocomplete.css"/>
+<link rel="stylesheet" type="text/css" href="<?php echo $URL; ?>lib/thickbox.css"/>
 
     @yield('scripts')
 </body>

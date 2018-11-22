@@ -54,6 +54,7 @@ for ($i=1; $i < 12; $i++) {
     $qntLinhas = 12;
     $con = new mysqli("localhost", "root", "", "sistema");
     $consulta = mysqli_query($con, "SELECT * FROM vendasdia WHERE MONTH(created_at) = $i ORDER BY created_at ASC");
+    if(Request::segment(1) == 'users') { $row = mysqli_fetch_array($consulta); }
     while ($l = mysqli_fetch_object($consulta)) {
 ?>
     <tr>

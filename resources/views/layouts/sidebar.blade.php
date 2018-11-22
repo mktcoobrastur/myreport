@@ -1,5 +1,4 @@
 <aside class="main-sidebar" id="sidebar-wrapper">
-
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
 

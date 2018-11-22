@@ -1,14 +1,8 @@
 <br />
 <li>
-    <a href="/home"><i class="fa fa-dashboard"></i> <span> Painel Principal</span></a>
+    <a href="<?php echo $URL; ?>home"><i class="fa fa-dashboard"></i> <span> Painel Principal</span></a>
 </li>
 
-<?php
-    $idUser   = Auth::user()->id;
-    $con      = new mysqli("localhost", "root", "", "sistema");
-    $consulta = mysqli_query($con, "SELECT * FROM permissoes WHERE user = $idUser");
-    $obj      = mysqli_fetch_object($consulta);
-?>
 <li class="treeview">
           <a href="#">
             <i class="fa fa-files-o"></i>
@@ -19,7 +13,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="{!! route('marketings.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
-            <li><a href="/mark"><i class="fa fa-circle-o text-aqua"></i> Emarks</a></li>
+            <li><a href="<?php echo $URL; ?>mark"><i class="fa fa-circle-o text-aqua"></i> Emarks</a></li>
             <li><a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i>Solicitação de Lâminas</a></li>
           </ul>
 </li>
@@ -35,11 +29,10 @@
           <ul class="treeview-menu">
             <li><a href="{!! route('relacionamentos.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
             <li><a href="{!! route('chamados.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Gerenciamento de Chamados</a></li>
-            <li><a href="/indice"><i class="fa fa-circle-o text-aqua"></i> Índice ( Chamados )</a></li>
+            <li><a href="<?php echo $URL; ?>indice"><i class="fa fa-circle-o text-aqua"></i> Índice ( Chamados )</a></li>
             <!--li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Fale Conosco</a></li-->
           </ul>
 </li>
-
 <li class="treeview">
           <a href="#">
           <i class="fa fa-pie-chart"></i>
@@ -160,13 +153,13 @@
         <a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span>Solicitação de Lâminas</span></a>
     </li>
     <li>
-        <a href="/notificacoes"><i class="fa fa-circle-o text-aqua"></i><span>Notificações</span></a>
+        <a href="<?php echo $URL; ?>notificacoes"><i class="fa fa-circle-o text-aqua"></i><span>Notificações</span></a>
     </li>
     <li>
-        <a href="/relatorio-representantes"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Representantes</span></a>
+        <a href="<?php echo $URL; ?>relatorio-representantes"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Representantes</span></a>
     </li>
     <li>
-        <a href="/relatorio-televenda"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Televenda</span></a>
+        <a href="<?php echo $URL; ?>relatorio-televenda"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Televenda</span></a>
     </li>
 </ul>
 <script language=javascript type="text/javascript">

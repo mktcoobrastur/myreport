@@ -1,3 +1,4 @@
+var hotels = 
 {
 	/* DATA DE INSERÇÃO.CODHOTEL        :     [ 0 - NOME DO HOTEL,
 	*                                           1 - CÓDIGO DO HOTEL (SERÁ USADO PARA TIRINHA COMO 0 + CÓDIGO),

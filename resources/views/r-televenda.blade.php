@@ -1,10 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
+<style type="text/css">
+
+</style>
 
 <section class="content-header">
       <h1>
-        Notificações
+        Televenda
         <small>coobrastur</small>
       </h1>
       <ol class="breadcrumb">
@@ -16,14 +19,6 @@
 <section class="content">
 <div class="box">
     <div class="alert">
-<?php
-    $con = new mysqli("localhost", "root", "", "sistema");
-    $consulta = mysqli_query($con, "SELECT * FROM notificacoes ORDER BY id DESC");
-    while ($l = mysqli_fetch_array($consulta)) {
-?>
-      <li class=""><i class="opaque"><?php echo $l['tabela']; ?></i></li>
-<?php } ?>
-
     </div>
 </div>
 </section>

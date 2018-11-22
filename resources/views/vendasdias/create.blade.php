@@ -6,6 +6,7 @@
             Vendasdia
         </h1>
     </section>
+
     <div class="content">
         @include('adminlte-templates::common.errors')
         <div class="box box-primary">
@@ -15,6 +16,7 @@
                     {!! Form::open(['route' => 'vendasdias.store'], ['class' => 'form-control']) !!}
 
                         @include('vendasdias.fields')
+
 
                     {!! Form::close() !!}
                 </div>

@@ -162,9 +162,6 @@
     <li>
         <a href="/relatorio-televenda"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Televenda</span></a>
     </li>
-    <li>
-        <a href="/vendas"><i class="fa fa-circle-o text-aqua"></i><span>Vendas Coobrastur</span></a>
-    </li>
 </ul>
 <script language=javascript type="text/javascript">
 function newPopup(){

@@ -10,7 +10,7 @@
     {!! Form::select('representante', array('nacionalvd' => 'NACIONAL VENDA DIRETA',
                                            'nacionalt' => 'NACIONAL TELEMARKETING',
                                            'realize' => 'REALIZE',
-                                           'telemarketing' => 'TELEMARKETING',
+                                           'telemarketing' => 'TELEVENDA',
                                            'lucasefreitas' => 'LUCAS E FREITAS',
                                            'vladimir' => 'VLADIMIR CANGUSU'), '', ['class' => 'form-control']) !!}
 </div>

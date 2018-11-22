@@ -1,14 +1,9 @@
 <?php
 
-			$conexao 	= mysqli_connect("localhost","root","","sistema");
             $from  	 	= utf8_decode($_POST['de']);
             $para    	= utf8_decode($_POST['para']);
             $recado    	= utf8_decode($_POST['recado']);
 
-			$servername = "localhost";
-			$username 	= "root";
-			$password 	= "";
-			$banco 		= "sistema";
 			
 			// Create connection
 			$conn = mysqli_connect($servername, $username, $password, $banco);
@@ -27,8 +22,5 @@
 			} else {
 				echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 			}
-
-			
-		
 			echo "Recado Enviado!";
 ?>

@@ -1,7 +1,4 @@
 <?php
-
-$conexao = mysqli_connect("localhost","root","","sistema");
-
 // diretório de destino do arquivo
 define('DEST_DIR', __DIR__ . '/upload');
  

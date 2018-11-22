@@ -1,5 +1,4 @@
 <?php
-
 // diretório de destino do arquivo
 define('DEST_DIR', __DIR__ . '/promoG');
  

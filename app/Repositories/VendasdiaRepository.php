@@ -21,7 +21,7 @@ class VendasdiaRepository extends BaseRepository
      */
     protected $fieldSearchable = [
         'qnt',
-        'representante'
+        'atendente'
     ];
 
     /**

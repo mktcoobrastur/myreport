@@ -11,21 +11,6 @@
 }
 </style>
 
-<?php 
-        $array = [''];
-        function getVendas($id, $array) {
-            $row = mysqli_fetch_object($query);
-            $object = $this->params($id);
-            if(isset($id)) { echo $object->render(); }
-            return $array;
-        }
-        $query = mysqli_query($con, "SELECT * FROM vendasdia WHERE id = $id ORDER BY id DESC");
-        while($obj = mysqli_fetch_object($query)){
-            $array[] = getVendas($obj)->fetch($id)->belongsTo('vendasre');
-            var_dump($array);
-        }
-?>
-
 <section class="content-header">
       <h1>
         Relatório Televenda

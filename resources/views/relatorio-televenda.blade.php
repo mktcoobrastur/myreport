@@ -12,7 +12,7 @@
 </style>
 
 <?php 
-        $array = ['']
+        $array = [''];
         function getVendas($id, $array) {
             $row = mysqli_fetch_object($query);
             $object = $this->params($id);

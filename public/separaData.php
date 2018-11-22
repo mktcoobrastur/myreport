@@ -77,6 +77,22 @@
             }
             return $array;
         }
+        
+        $array = [''];
+        
+        function getVendas($id, $array) {
+            $row = mysqli_fetch_object($query);
+            $object = $this->params($id);
+            if(isset($id)) { echo $object->render(); }
+            return $array;
+        }
+        
+        $query = mysqli_query($con, "SELECT * FROM $tabela WHERE $this->id = $id ORDER BY $this->id DESC");
+        
+        while($obj = mysqli_fetch_object($query)){
+            $array[] = getVendas($obj)->fetch($id)->belongsTo('vendasre');
+            var_dump($array);
+        }
 
         $this->build('id');
     

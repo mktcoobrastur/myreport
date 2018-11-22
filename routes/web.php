@@ -31,6 +31,14 @@ Route::get('/notificacoes', function () {
     return view('notificacoes');
 });
 
+Route::get('/relatorio-representantes', function () {
+    return view('relatorio-representantes');
+});
+
+Route::get('/relatorio-televenda', function () {
+    return view('relatorio-televenda');
+});
+
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');

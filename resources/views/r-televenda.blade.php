@@ -2,7 +2,9 @@
 
 @section('content')
 <style type="text/css">
-
+.pad {
+    padding: 10px; 
+}
 </style>
 
 <section class="content-header">
@@ -18,7 +20,8 @@
 <!-- Main content -->
 <section class="content">
 <div class="box">
-    <div class="alert">
+    <div class="pad">
+        <a href="#">-</a>
     </div>
 </div>
 </section>

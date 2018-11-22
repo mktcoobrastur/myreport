@@ -33,7 +33,7 @@ req.onreadystatechange = function() {
  
 	// Abaixo colocamos a(s) resposta(s) na div resultado
 	document.getElementById('resultado').innerHTML = resposta;
-	}
+	}git add .ActiveXObject
 }
 	req.send(null);
 }
@@ -154,5 +154,5 @@ function buscarR(valor) {
 		document.getElementById('conteudoR').innerHTML = resposta;
 		}
 	}
-	req.send(null);
+		req.send(null);
 	}

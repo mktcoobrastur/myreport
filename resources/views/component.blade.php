@@ -21,10 +21,10 @@
                 <ul>
                     <?php 
                         $con = new mysqli("localhost", "root", "", "sistema");
-                        $consulta   = mysqli_query($con, "SELECT * FROM vendasdia");
+                        $consulta   = mysqli_query($con, "SELECT * FROM vendasdia WHERE indice = $i");
                         $obj = mysqli_fetch_object($consulta);
-                            $obj->id;
-                    ?>
+                        ?>
+                        <li class="line"><i><?php echo $obj->indice; ?></i></li>
                 </ul>
             </span>
         </div>

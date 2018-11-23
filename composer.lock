@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "77808b2abb89fa1a82140cada2d87ddf",
+    "content-hash": "f8e3da1421b42fe90e61100a6d3e9a6a",
     "packages": [
         {
             "name": "amranidev/ajaxis",

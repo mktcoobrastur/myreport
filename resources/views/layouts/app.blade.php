@@ -1,4 +1,7 @@
+<<<<<<< HEAD
+=======
 <?php require "inc/vars.php"; ?>
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,6 +32,13 @@
     <link rel="stylesheet" href="/i.css">
     
     @yield('css')
+<<<<<<< HEAD
+	<link rel="stylesheet" href="/css/pace.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+=======
 	<link rel="stylesheet" href="<?php echo $URL; ?>css/pace.min.css">
     <?php if(Request::segment(1) == 'laminas') { ?>
 
@@ -39,6 +49,7 @@
     
 	
     <script type="text/javascript">
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
 	jQuery(document).ready(function(){
 		jQuery('#ajax_form').submit(function(){
 			var dados = jQuery( this ).serialize();
@@ -62,7 +73,10 @@
 
 <body class="skin-blue sidebar-mini">
 @if (!Auth::guest())
+<<<<<<< HEAD
+=======
 
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
 <!--div style="width: 50px; height: 50px; background: red; position: fixed; right: 0; bottom: 0; z-index: 9999;"></div-->
     <div class="wrapper">
         <!-- Main Header -->
@@ -88,7 +102,11 @@
                 <li class="dropdown messages-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-envelope-o"></i>
+<<<<<<< HEAD
+              <span class="label label-success">1</span>
+=======
               <span class="label label-success"></span>
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
             </a>
             <ul class="dropdown-menu" style="box-shadow: 2px 2px 20px #333;">
               <li class="header" style="text-align: center;">Você tem novas mensagens!</li>
@@ -133,7 +151,11 @@
                 <!-- end message -->
             </ul>
               </li>
+<<<<<<< HEAD
+              <li class="footer"><a href="/recados">Ver todos os recados</a></li>
+=======
               <li class="footer"><a href="<?php echo $URL; ?>   recados">Ver todos os recados</a></li>
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
             </ul>
           </li>
           <!-- Notifications: style can be found in dropdown.less -->
@@ -373,7 +395,11 @@
   })
 </script>
     <!-- jQuery 3.1.1 -->
+<<<<<<< HEAD
+    <script src="/js/pace.min.js"></script>
+=======
     <script src="<?php echo $URL; ?>js/pace.min.js"></script>
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- AdminLTE App -->
@@ -382,6 +408,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
 
 
+<<<<<<< HEAD
+<script type="text/javascript" src="/lib/jquery.bgiframe.min.js"></script>
+<script type="text/javascript" src="/lib/jquery.ajaxQueue.js"></script>
+<script type="text/javascript" src="/lib/thickbox-compressed.js"></script>
+<script type="text/javascript" src="/lib/jquery.autocomplete.js"></script>
+<!--css -->
+<link rel="stylesheet" type="text/css" href="/lib/jquery.autocomplete.css"/>
+<link rel="stylesheet" type="text/css" href="/lib/thickbox.css"/>
+=======
 <script type="text/javascript" src="<?php echo $URL; ?>lib/jquery.bgiframe.min.js"></script>
 <script type="text/javascript" src="<?php echo $URL; ?>lib/jquery.ajaxQueue.js"></script>
 <script type="text/javascript" src="<?php echo $URL; ?>lib/thickbox-compressed.js"></script>
@@ -389,6 +424,7 @@
 <!--css -->
 <link rel="stylesheet" type="text/css" href="<?php echo $URL; ?>lib/jquery.autocomplete.css"/>
 <link rel="stylesheet" type="text/css" href="<?php echo $URL; ?>lib/thickbox.css"/>
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
 
     @yield('scripts')
 </body>

@@ -53,7 +53,10 @@
                     <option name="Hoteis">Hotéis</option>
                     <option name="Triton">Triton</option>
                     <option name="Telemarketing">Telemarketing</option>
+<<<<<<< HEAD
+=======
                     <option name="Geral">Geral</option>
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
                 </select>
 
                 @if ($errors->has('depto'))

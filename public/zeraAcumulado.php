@@ -21,5 +21,22 @@
 				echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 			}
 
+<<<<<<< HEAD
+						 // Cadastra notificação
+						 $tabela = "atendentes";
+						 date_default_timezone_set('America/Sao_Paulo');
+						 $date = date('d/m/Y H:i');
+						 echo $date;
+						 $tabela = "O acumulado de vendas dos atendentes foi zerado em ".$date.".";
+						 $sql = "INSERT INTO notificacoes (id, user, tabela, mensagem, created_at) VALUES('0000','1','$tabela','$mensagem', NOW())";
+						 if (mysqli_query($conn, $sql)) {
+							 echo "";
+						 } else {
+							 echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+						 }
+			
+			echo "ok!";
+=======
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
         	header("Location:atendentes/");
 ?>

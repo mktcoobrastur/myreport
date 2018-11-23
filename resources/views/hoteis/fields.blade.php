@@ -30,6 +30,11 @@
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
+<<<<<<< HEAD
+    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
+    <a href="{!! route('hoteis.index') !!}" class="btn btn-default">Cancel</a>
+=======
     {!! Form::submit('Salvar', ['class' => 'btn btn-primary']) !!}
     <a href="{!! route('hoteis.index') !!}" class="btn btn-default">Cancelar</a>
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
 </div>

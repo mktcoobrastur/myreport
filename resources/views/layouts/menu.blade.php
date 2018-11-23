@@ -153,9 +153,6 @@
         <a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span>Solicitação de Lâminas</span></a>
     </li>
     <li>
-        <a href="<?php echo $URL; ?>notificacoes"><i class="fa fa-circle-o text-aqua"></i><span>Notificações</span></a>
-    </li>
-    <li>
         <a href="<?php echo $URL; ?>relatorio-representantes"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Representantes</span></a>
     </li>
     <li>
@@ -163,9 +160,9 @@
     </li>
 </ul>
 <script language=javascript type="text/javascript">
-function newPopup(){
-varWindow = window.open ('http://localhost/televenda/users/', 'popup', "width=500, height=300, right=100, bottom=100, scrollbars=no ")
-}
+  function newPopup(){
+    varWindow = window.open ('http://localhost/televenda/users/', 'popup', "width=500, height=300, right=100, bottom=100, scrollbars=no ")
+  }
 </script>
 </li>
 <?php } ?>

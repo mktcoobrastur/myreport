@@ -1,4 +1,4 @@
-<?php require "inc/vars.php"; ?>
+<?php  require "inc/vars.php"; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -88,7 +88,7 @@
                 <li class="dropdown messages-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-envelope-o"></i>
-              <span class="label label-success">1</span>
+              <span class="label label-success"></span>
             </a>
             <ul class="dropdown-menu" style="box-shadow: 2px 2px 20px #333;">
               <li class="header" style="text-align: center;">Você tem novas mensagens!</li>

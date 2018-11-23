@@ -19,40 +19,38 @@ Route::get('/indice', function () {
     return view('indice');
 });
 
-Route::get('/profile', function () {
-    return view('profile');
-});
-
 Route::get('/mark', function () {
     return view('mark');
 });
-
-/*Route::get('/vendas', function () {
-    return view('vendas');
-});*/
 
 Route::get('/notificacoes', function () {
     return view('notificacoes');
 });
 
+Route::get('/component', function () {
+    return view('component');
+});
+
+
 /* Relatórios */
-Route::get('/r-televenda', function () {
-    return view('r-televenda');
-});
 
-Route::get('/r-representantes', function () {
-    return view('r-representantes');
-});
+        Route::get('/r-televenda', function () {
+            return view('r-televenda');
+        });
 
-Route::get('/relatorio-representantes', function () {
-    return view('relatorio-representantes');
-});
+        Route::get('/r-representantes', function () {
+            return view('r-representantes');
+        });
 
-Route::get('/relatorio-televenda', function () {
-    return view('relatorio-televenda');
-});
+        Route::get('/relatorio-representantes', function () {
+            return view('relatorio-representantes');
+        });
+
+        Route::get('/relatorio-televenda', function () {
+            return view('relatorio-televenda');
+        });
+
 /* Fim Relatórios */
-
 
 Auth::routes();
 

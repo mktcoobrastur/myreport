@@ -10,7 +10,7 @@
     <tbody>
     @foreach($atendentes as $atendente)
         <tr>
-            <td>{!! $atendente->nome !!}</td>
+            <td><i class="fa fa-user" aria-hidden="true"></i> &nbsp; &nbsp; <a href="{!! route('atendentes.show', [$atendente->id]) !!}">{!! $atendente->nome !!}</a></td>
             <td>{!! strtoupper($atendente->representante) !!}</td>
             <td style="text-align: center;">{!! $atendente->qnt_vendas !!}</td>
             <td>

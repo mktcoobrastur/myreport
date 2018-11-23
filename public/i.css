@@ -78,6 +78,17 @@
     text-align: center;
 }
 
+.component {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    line-height: auto;
+    font-size: 11px;
+    font-variant: small-caps;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+}
+
 .opaque {
     color: #999;
 }

@@ -64,28 +64,42 @@
             
     	    while ($linha = mysqli_fetch_array($query)) {
         ?>
+<<<<<<< HEAD
                 <div class="alert">
                 <div class="card">
+=======
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
                 <div class="card-body">
                     <blockquote class="blockquote mb-0">
                     <p><?php echo utf8_encode($linha['comentario']); ?></p>
                     <footer class="blockquote-footer"><?php echo $linha['usuario']; ?></cite> <i class="small"><?php echo $linha['created_at']; ?></i></footer>
                     </blockquote>
                 </div>
+<<<<<<< HEAD
                 </div>
                 </div>
+=======
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
 	    <?php } ?>
 
 
 
     <div class="alert">
         <form action="/comentar.php" method="post" enctype="multipart/form-data">
+<<<<<<< HEAD
     		<label>Adicionar comentário:</label> <br />
+=======
+    		<label style="color: #999;">Adicionar comentário:</label> <br />
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
 	 		<input type="hidden" name="idChamado" value="{!! $tarefas->id !!}" />
 	 		<input type="hidden" name="usuario" value="{{ Auth::user()->name}}" />
     	    <textarea name="comentario" class="form-control"></textarea>
             <br>
+<<<<<<< HEAD
             <input type="submit" name="enviaArquivo" value="Comentar">
+=======
+            <input type="submit" name="enviaArquivo" class="btn btn-primary" value="Comentar">
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
         </form>
 	</div>
 
@@ -120,9 +134,15 @@
         <form action="/upload.php" method="post" enctype="multipart/form-data">
     		<label>Enviar Arquivos:</label> <br />
 	 		<input type="hidden" name="idChamado" value="{!! $tarefas->id !!}" />
+<<<<<<< HEAD
     	    <input class="form-control" type="file" name="arquivos[]" multiple>
             <br>
             <input type="submit" name="enviaArquivo" value="Enviar">
+=======
+    	    <input type="file" name="arquivos[]" class="form-control" multiple>
+            <br>
+            <input type="submit" name="enviaArquivo" class="btn btn-primary" value="Enviar">
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
         </form>
 	</div>
 

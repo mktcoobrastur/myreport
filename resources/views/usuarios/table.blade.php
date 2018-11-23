@@ -10,9 +10,15 @@
     <tbody>
     @foreach($usuarios as $usuario)
         <tr>
+<<<<<<< HEAD
             <td>{!! $usuario->name !!}</td>
             <td>{!! $usuario->email !!}</td>
             <td>{!! $usuario->created_at !!}</td>
+=======
+            <td><i class="fa fa-user" aria-hidden="true"></i> &nbsp; &nbsp; <a href="{!! route('usuarios.show', [$usuario->id]) !!}">{!! $usuario->name !!}</a></td>
+            <td>{!! $usuario->email !!}</td>
+            <td><?php echo date("d/m/Y", strtotime($usuario->created_at)); ?></td>
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
             <td>
                 {!! Form::open(['route' => ['usuarios.destroy', $usuario->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

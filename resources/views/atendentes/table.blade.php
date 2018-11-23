@@ -10,7 +10,11 @@
     <tbody>
     @foreach($atendentes as $atendente)
         <tr>
+<<<<<<< HEAD
             <td>{!! $atendente->nome !!}</td>
+=======
+            <td><i class="fa fa-user" aria-hidden="true"></i> &nbsp; &nbsp; <a href="{!! route('atendentes.show', [$atendente->id]) !!}">{!! $atendente->nome !!}</a></td>
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
             <td>{!! strtoupper($atendente->representante) !!}</td>
             <td style="text-align: center;">{!! $atendente->qnt_vendas !!}</td>
             <td>
@@ -41,4 +45,16 @@
         </tr>
 
     </tbody>
+<<<<<<< HEAD
 </table>
+=======
+</table>
+
+<?php
+    $con = new mysqli("localhost", "root", "", "sistema");
+    $consultaTotal = mysqli_query($con, "SELECT id, nome, qnt_vendas FROM atendentes");
+    while($total = mysqli_fetch_array($consultaTotal)) {
+        print_r($total).'<br />';
+    }
+?>
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef

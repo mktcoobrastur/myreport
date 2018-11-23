@@ -78,6 +78,20 @@
     text-align: center;
 }
 
+<<<<<<< HEAD
+=======
+.component {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    line-height: auto;
+    font-size: 11px;
+    font-variant: small-caps;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+}
+
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
 .opaque {
     color: #999;
 }

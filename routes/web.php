@@ -19,10 +19,13 @@ Route::get('/indice', function () {
     return view('indice');
 });
 
+<<<<<<< HEAD
 Route::get('/profile', function () {
     return view('profile');
 });
 
+=======
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
 Route::get('/mark', function () {
     return view('mark');
 });
@@ -31,6 +34,34 @@ Route::get('/notificacoes', function () {
     return view('notificacoes');
 });
 
+<<<<<<< HEAD
+=======
+Route::get('/component', function () {
+    return view('component');
+});
+
+
+/* Relatórios */
+
+        Route::get('/r-televenda', function () {
+            return view('r-televenda');
+        });
+
+        Route::get('/r-representantes', function () {
+            return view('r-representantes');
+        });
+
+        Route::get('/relatorio-representantes', function () {
+            return view('relatorio-representantes');
+        });
+
+        Route::get('/relatorio-televenda', function () {
+            return view('relatorio-televenda');
+        });
+
+/* Fim Relatórios */
+
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
@@ -49,8 +80,11 @@ Route::resource('telemarketings', 'TelemarketingController');
 
 Route::resource('marketings', 'MarketingController');
 
+<<<<<<< HEAD
 Route::resource('vendas', 'VendasController');
 
+=======
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
 Route::resource('vendasdias', 'VendasdiaController');
 
 Route::resource('metas', 'MetaController');

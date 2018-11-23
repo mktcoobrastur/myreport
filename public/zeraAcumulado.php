@@ -21,6 +21,7 @@
 				echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 			}
 
+<<<<<<< HEAD
 						 // Cadastra notificação
 						 $tabela = "atendentes";
 						 date_default_timezone_set('America/Sao_Paulo');
@@ -35,5 +36,7 @@
 						 }
 			
 			echo "ok!";
+=======
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
         	header("Location:atendentes/");
 ?>

@@ -1,5 +1,8 @@
 <?php
+<<<<<<< HEAD
 
+=======
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
 // diretório de destino do arquivo
 define('DEST_DIR', __DIR__ . '/promoG');
  

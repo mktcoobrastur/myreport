@@ -1,5 +1,8 @@
 <aside class="main-sidebar" id="sidebar-wrapper">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
 

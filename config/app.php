@@ -52,7 +52,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'url' => env('APP_URL', 'http://myreport.marketingcoobrastur.com.br'),
+=======
+    'url' => env('APP_URL', 'http://localhost'),
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
 
     /*
     |--------------------------------------------------------------------------

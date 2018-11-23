@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <table class="table table-bordered">
 <thead>
@@ -55,3 +56,13 @@
 <?php } ?>   
 </tbody>
 </table>
+=======
+<?php
+    $json_file = file_get_contents("http://127.0.0.1:8000/sync.js");   
+    $json_str = json_decode($json_file, true);
+    $itens = $json_str[0];
+    
+    foreach ( $itens as $e ) 
+        { echo $e[0]."<br>"; } 
+?>
+>>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef

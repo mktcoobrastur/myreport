@@ -42,3 +42,11 @@
 
     </tbody>
 </table>
+
+<?php
+    $con = new mysqli("localhost", "root", "", "sistema");
+    $consultaTotal = mysqli_query($con, "SELECT id, nome, qnt_vendas FROM atendentes");
+    while($total = mysqli_fetch_array($consultaTotal)) {
+        print_r($total).'<br />';
+    }
+?>

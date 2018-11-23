@@ -1,4 +1,4 @@
-<?php  require "inc/vars.php"; ?>
+<?php require "inc/vars.php"; ?>
 <!DOCTYPE html>
 <html>
 <head>

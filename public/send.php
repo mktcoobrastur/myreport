@@ -1,20 +1,14 @@
 <?php
 
-<<<<<<< HEAD
 			$conexao 	= mysqli_connect("localhost","root","","sistema");
-=======
->>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
             $from  	 	= utf8_decode($_POST['de']);
             $para    	= utf8_decode($_POST['para']);
             $recado    	= utf8_decode($_POST['recado']);
 
-<<<<<<< HEAD
 			$servername = "localhost";
 			$username 	= "root";
 			$password 	= "";
 			$banco 		= "sistema";
-=======
->>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
 			
 			// Create connection
 			$conn = mysqli_connect($servername, $username, $password, $banco);
@@ -33,9 +27,6 @@
 			} else {
 				echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 			}
-<<<<<<< HEAD
 		
-=======
->>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
 			echo "Recado Enviado!";
 ?>

@@ -1,20 +1,6 @@
 <br />
-<<<<<<< HEAD
-<!--li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Marketing
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Tarefas</a></li>
-          <li><a href="#">Emarks</a></li>
-          <li><a href="#">Outros</a></li>
-        </ul>
-</li-->
-<li>
-    <a href="/home"><i class="fa fa-dashboard"></i> <span> Painel Principal</span></a>
-=======
 <li>
     <a href="<?php echo $URL; ?>home"><i class="fa fa-dashboard"></i> <span> Painel Principal</span></a>
->>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
 </li>
 
 <li class="treeview">
@@ -27,11 +13,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="{!! route('marketings.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
-<<<<<<< HEAD
-            <li><a href="/mark"><i class="fa fa-circle-o text-aqua"></i> Emarks</a></li>
-=======
             <li><a href="<?php echo $URL; ?>mark"><i class="fa fa-circle-o text-aqua"></i> Emarks</a></li>
->>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
             <li><a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i>Solicitação de Lâminas</a></li>
           </ul>
 </li>
@@ -47,18 +29,10 @@
           <ul class="treeview-menu">
             <li><a href="{!! route('relacionamentos.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
             <li><a href="{!! route('chamados.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Gerenciamento de Chamados</a></li>
-<<<<<<< HEAD
-            <li><a href="/indice"><i class="fa fa-circle-o text-aqua"></i> Índice ( Chamados )</a></li>
-            <!--li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Fale Conosco</a></li-->
-          </ul>
-</li>
-
-=======
             <li><a href="<?php echo $URL; ?>indice"><i class="fa fa-circle-o text-aqua"></i> Índice ( Chamados )</a></li>
             <!--li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Fale Conosco</a></li-->
           </ul>
 </li>
->>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
 <li class="treeview">
           <a href="#">
           <i class="fa fa-pie-chart"></i>
@@ -179,15 +153,6 @@
         <a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span>Solicitação de Lâminas</span></a>
     </li>
     <li>
-<<<<<<< HEAD
-        <a href="/notificacoes"><i class="fa fa-circle-o text-aqua"></i><span>Notificações</span></a>
-    </li>
-</ul>
-<script language=javascript type="text/javascript">
-function newPopup(){
-varWindow = window.open ('http://localhost/televenda/users/', 'popup', "width=500, height=300, right=100, bottom=100, scrollbars=no ")
-}
-=======
         <a href="<?php echo $URL; ?>relatorio-representantes"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Representantes</span></a>
     </li>
     <li>
@@ -198,7 +163,6 @@ varWindow = window.open ('http://localhost/televenda/users/', 'popup', "width=50
   function newPopup(){
     varWindow = window.open ('http://localhost/televenda/users/', 'popup', "width=500, height=300, right=100, bottom=100, scrollbars=no ")
   }
->>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
 </script>
 </li>
 <?php } ?>

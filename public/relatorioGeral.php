@@ -13,6 +13,8 @@
     require "../../televenda/conn.php";
     $dataget = $_POST['mes'];
 
+    ini_set('display_errors', 'Off'); //Não mostra os erros de cálculo caso não tenha venda cadastrada.
+
     //METAGERAL
     $consultaMeta = mysqli_query($con, "SELECT SUM(meta) meta FROM metas WHERE mes = $dataget");
     $metageral = mysqli_fetch_array($consultaMeta);

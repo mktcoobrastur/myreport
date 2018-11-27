@@ -17,7 +17,7 @@
           <div class="alert">
 
   <div class="form-group" style="float: left;width: 500px;">
-  <form action="/relatorio.php" method="post" target="blank">
+  <form action="http://webdesigner2/sistema/public/relatorio.php" method="post" target="blank">
     <label>Mensal por representante:</label>
     <select name="mes" class="form-control">
       <option value="01">Janeiro</option>
@@ -51,7 +51,7 @@
 
 
   <div class="form-group" style="float: left; width: 500px; margin-left: 10px;">
-  <form action="/relatorioGeral.php" method="post" target="blank">
+  <form action="http://webdesigner2/sistema/public/relatorioGeral.php" method="post" target="blank">
     <label>Mensal Geral:</label>
     <select name="mes" class="form-control">
       <option value="01">Janeiro</option>

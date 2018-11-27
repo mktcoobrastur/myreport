@@ -26,10 +26,10 @@
 
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="/i.css">
+    <link rel="stylesheet" href="http://webdesigner2/sistema/public/i.css">
     
     @yield('css')
-	<link rel="stylesheet" href="<?php echo $URL; ?>css/pace.min.css">
+	<link rel="stylesheet" href="http://webdesigner2/sistema/public/css/pace.min.css">
     <?php if(Request::segment(1) == 'laminas') { ?>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -141,7 +141,7 @@
                             <!-- Menu Toggle Button -->
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <!-- The user image in the navbar-->
-                                <img src="/img/logo.jpg"
+                                <img src="http://webdesigner2/sistema/public/img/logo.jpg"
                                      class="user-image" alt="User Image"/>
                                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
                                 <span class="hidden-xs">{!! Auth::user()->name !!}</span>
@@ -149,7 +149,7 @@
                             <ul class="dropdown-menu" style="box-shadow: 2px 2px 50px #999; background: #ffffff;">
                                 <!-- The user image in the menu -->
                                 <li class="user-header">
-                                    <img src="/img/logo.jpg"
+                                    <img src="http://webdesigner2/sistema/public/img/logo.jpg"
                                          class="img-circle" alt="User Image"/>
                                     <p>
                                         {!! Auth::user()->name !!}
@@ -202,7 +202,7 @@
             <div class="box-body box-profile">
 
               <h3 class="profile-username text-center">Contatos</h3>
-                <img src="/img/beta.png" width="40" alt="Beta" style="position: absolute; margin-top: -30px; margin-left: 25px;" />
+                <img src="http://webdesigner2/sistema/public/img/beta.png" width="40" alt="Beta" style="position: absolute; margin-top: -30px; margin-left: 25px;" />
               <p class="text-muted text-center">Clique para conversar.</p>
 
               <ul class="list-group list-group-unbordered">
@@ -382,20 +382,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
 
 
-<script type="text/javascript" src="/lib/jquery.bgiframe.min.js"></script>
-<script type="text/javascript" src="/lib/jquery.ajaxQueue.js"></script>
-<script type="text/javascript" src="/lib/thickbox-compressed.js"></script>
-<script type="text/javascript" src="/lib/jquery.autocomplete.js"></script>
+<script type="text/javascript" src="http://webdesigner2/sistema/public/lib/jquery.bgiframe.min.js"></script>
+<script type="text/javascript" src="http://webdesigner2/sistema/public/lib/jquery.ajaxQueue.js"></script>
+<script type="text/javascript" src="http://webdesigner2/sistema/public/lib/thickbox-compressed.js"></script>
+<script type="text/javascript" src="http://webdesigner2/sistema/public/lib/jquery.autocomplete.js"></script>
 <!--css -->
-<link rel="stylesheet" type="text/css" href="/lib/jquery.autocomplete.css"/>
-<link rel="stylesheet" type="text/css" href="/lib/thickbox.css"/>
-<script type="text/javascript" src="<?php echo $URL; ?>lib/jquery.bgiframe.min.js"></script>
-<script type="text/javascript" src="<?php echo $URL; ?>lib/jquery.ajaxQueue.js"></script>
-<script type="text/javascript" src="<?php echo $URL; ?>lib/thickbox-compressed.js"></script>
-<script type="text/javascript" src="<?php echo $URL; ?>lib/jquery.autocomplete.js"></script>
+<link rel="stylesheet" type="text/css" href="http://webdesigner2/sistema/public/lib/jquery.autocomplete.css"/>
+<link rel="stylesheet" type="text/css" href="http://webdesigner2/sistema/public/lib/thickbox.css"/>
+<script type="text/javascript" src="http://webdesigner2/sistema/public/lib/jquery.bgiframe.min.js"></script>
+<script type="text/javascript" src="http://webdesigner2/sistema/public/lib/jquery.ajaxQueue.js"></script>
+<script type="text/javascript" src="http://webdesigner2/sistema/public/lib/thickbox-compressed.js"></script>
+<script type="text/javascript" src="http://webdesigner2/sistema/public/lib/jquery.autocomplete.js"></script>
 <!--css -->
-<link rel="stylesheet" type="text/css" href="<?php echo $URL; ?>lib/jquery.autocomplete.css"/>
-<link rel="stylesheet" type="text/css" href="<?php echo $URL; ?>lib/thickbox.css"/>
+<link rel="stylesheet" type="text/css" href="http://webdesigner2/sistema/public/lib/jquery.autocomplete.css"/>
+<link rel="stylesheet" type="text/css" href="http://webdesigner2/sistema/public/lib/thickbox.css"/>
 
     @yield('scripts')
 </body>

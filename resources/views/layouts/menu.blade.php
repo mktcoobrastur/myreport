@@ -13,7 +13,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="{!! route('marketings.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
-            <li><a href="<?php echo $URL; ?>mark"><i class="fa fa-circle-o text-aqua"></i> Emarks</a></li>
+            <li><a href="http://webdesigner2/sistema/public/mark"><i class="fa fa-circle-o text-aqua"></i> Emarks</a></li>
             <li><a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i>Solicitação de Lâminas</a></li>
           </ul>
 </li>
@@ -29,8 +29,8 @@
           <ul class="treeview-menu">
             <li><a href="{!! route('relacionamentos.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
             <li><a href="{!! route('chamados.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Gerenciamento de Chamados</a></li>
-            <li><a href="<?php echo $URL; ?>indice"><i class="fa fa-circle-o text-aqua"></i> Índice ( Chamados )</a></li>
-            <li><a href="<?php echo $URL; ?>reclameaqui"><i class="fa fa-circle-o text-aqua"></i> Índice ( ReclameAqui )</a></li>
+            <li><a href="http://webdesigner2/sistema/public/indice"><i class="fa fa-circle-o text-aqua"></i> Índice ( Chamados )</a></li>
+            <li><a href="http://webdesigner2/sistema/public/reclameaqui"><i class="fa fa-circle-o text-aqua"></i> Índice ( ReclameAqui )</a></li>
           </ul>
 </li>
 <li class="treeview">
@@ -53,8 +53,8 @@
       <li><a href="{!! route('metas.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Metas</span></a></li>
       <li><a href="{!! route('representantes.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Representantes</span></a></li>
       <li><a href="{!! route('vendasres.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Vendas Representantes</span></a></li>
-      <li><a href="<?php echo $URL; ?>relatorio-representantes"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Representantes</span></a></li>
-      <li><a href="<?php echo $URL; ?>relatorio-televenda"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Televenda</span></a></li>
+      <li><a href="http://webdesigner2/sistema/public/relatorio-representantes"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Representantes</span></a></li>
+      <li><a href="http://webdesigner2/sistema/public/relatorio-televenda"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Televenda</span></a></li>
       <li><a href="javascript:newPopup()"><i class="fa fa-circle-o text-aqua"></i> <span>Acesso Televenda</span></a></li>
     </ul>
 </li>
@@ -135,7 +135,7 @@
   </ul>
 <script language=javascript type="text/javascript">
   function newPopup(){
-    varWindow = window.open ('http://localhost/televenda/users/', 'popup', "width=500, height=300, right=100, bottom=100, scrollbars=no ")
+    varWindow = window.open ('http://webdesigner2/televenda/users/', 'popup', "width=500, height=300, right=100, bottom=100, scrollbars=no ")
   }
 </script>
 </li>

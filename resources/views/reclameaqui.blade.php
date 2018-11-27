@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<script src="/js/jquery.knob.js"></script>
+<script src="http://webdesigner2/sistema/public/js/jquery.knob.js"></script>
      
 <script>
             $(function($) {

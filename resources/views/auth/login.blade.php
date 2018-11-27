@@ -36,7 +36,7 @@
 <body class="hold-transition login-page">
 <div class="login-box" style="margin-top: 250px;">
     <div class="login-logo">
-        <img src="/img/myreport.png" alt="Imagem" />
+        <img src="http://webdesigner2/sistema/public/img/myreport.png" alt="Imagem" />
     </div>
 
     <!-- /.login-logo -->

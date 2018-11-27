@@ -16,7 +16,7 @@
     }
 </style>
 <div class="boxCentral">
-            <img class="logoCentral" src="/img/logo-fale-conosco.png" alt="Central do Usuário" />
+            <img class="logoCentral" src="http://webdesigner2/sistema/public/img/logo-fale-conosco.png" alt="Central do Usuário" />
             <div class="botoes">
                 <a class="btn btn-default" href="/chamados?c=aberto">
                    ABERTOS <span class="badge">1</span>

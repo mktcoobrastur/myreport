@@ -36,7 +36,7 @@
     $consulta12 = mysqli_query($con, "SELECT SUM(qnt) qnt FROM vendasre WHERE MONTH(indice) = 12");
     $dezembro       = mysqli_fetch_object($consulta12); $dezembro->qnt;
 ?>
-    <script src="/js/Chart.min.js"></script>
+    <script src="http://webdesigner2/sistema/public/js/Chart.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">
     google.charts.load('current', {'packages':['corechart']});

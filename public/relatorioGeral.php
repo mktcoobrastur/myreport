@@ -70,15 +70,19 @@
 </div>
 
 
-<div style="float: left; width:60%; text-align: center;">
+<div style="float: left; width:70%; text-align: center;">
 <h4>&nbsp;</h4>
 
-<table class="table" style="font-size: 11px; background: #ffffff;">
+<table class="table" style="font-size: 12px; background: #ffffff; box-shadow: 1px 1px 10px #ccc;">
   <thead>
     <tr style="text-align: center;">
       <th scope="col" style="text-align: left;">Representante</th>
       <th scope="col">Meta Mensal</th>
       <th scope="col">Meta Diária</th>
+      <th scope="col" style="background: #D3E4FE;">1ª Semana</th>
+      <th scope="col" style="background: #f0f0f0;">2ª Semana</th>
+      <th scope="col" style="background: #D3E4FE;">3ª Semana</th>
+      <th scope="col" style="background: #f0f0f0;">4ª Semana</th>
       <th scope="col">Venda Total</th>
       <th scope="col">Total Defasagem</th>
     </tr>
@@ -114,6 +118,21 @@
     $resultado =  $t['qnt'] - $d['meta']
 ?>
 
+  <?php
+    $consulta1 = mysqli_query($con, "SELECT SUM(qnt) qnt FROM vendasre WHERE MONTH(indice) = $dataget AND DAY(indice) >= 1 AND DAY(indice) <= 6 AND representante = $id ORDER BY indice ASC");
+    $semana1 = mysqli_fetch_array($consulta1);
+    $consulta2 = mysqli_query($con, "SELECT SUM(qnt) qnt FROM vendasre WHERE MONTH(indice) = $dataget AND DAY(indice) >= 7 AND DAY(indice) <= 13 AND representante = $id ORDER BY indice ASC");
+    $semana2 = mysqli_fetch_array($consulta2);
+    $consulta3 = mysqli_query($con, "SELECT SUM(qnt) qnt FROM vendasre WHERE MONTH(indice) = $dataget AND DAY(indice) >= 14 AND DAY(indice) <= 21 AND representante = $id ORDER BY indice ASC");
+    $semana3 = mysqli_fetch_array($consulta3);
+    $consulta4 = mysqli_query($con, "SELECT SUM(qnt) qnt FROM vendasre WHERE MONTH(indice) = $dataget AND DAY(indice) >= 22 AND DAY(indice) <= 31 AND representante = $id ORDER BY indice ASC");
+    $semana4 = mysqli_fetch_array($consulta4);
+?>
+      <td style="background: #D3E4FE;"><?php echo $semana1['qnt'];?></td>
+      <td style="background: #f0f0f0;"><?php echo $semana2['qnt'];?></td>
+      <td style="background: #D3E4FE;"><?php echo $semana3['qnt'];?></td>
+      <td style="background: #f0f0f0;"><?php echo $semana4['qnt'];?></td>
+
       <td>
         <?php echo $t['qnt']; ?>
       </td>
@@ -137,6 +156,9 @@
   </tbody>
 </table>
 </div>
+
+
+
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </div>

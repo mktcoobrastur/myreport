@@ -142,6 +142,45 @@
       </div>
       <!-- /.callout -->
 
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawVisualization);
+
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var data = google.visualization.arrayToDataTable([
+         ['Month', '1ª Semana', '2ª Semana', '3ª Semana', '4ª Semana', '5ª Semana', 'Desempenho'],
+         ['Janeiro',    <?=$Total_primeira_semana?>,      <?=$Total_segunda_semana?>,         <?=$Total_terceira_semana?>,    <?=$Total_quarta_semana?>,  <?=$Total_quinta_semana?>,    <?=$Total_mes_vaneiro = $Total_primeira_semana + $Total_segunda_semana + $Total_terceira_semana + $Total_quarta_semana + $Total_quinta_semana;?>],
+         ['Fevereiro',   <?=$Total_primeira_semana_fev?>,      <?=$Total_segunda_semana_fev?>,         <?=$Total_terceira_semana_fev?>,    <?=$Total_quarta_semana_fev?>,  <?=$Total_quinta_semana_fev?>,    <?=$Total_mes_fevereiro = $Total_primeira_semana_fev + $Total_segunda_semana_fev + $Total_terceira_semana_fev + $Total_quarta_semana_fev + $Total_quinta_semana_fev;?>],
+         ['Março',       <?=$Total_primeira_semana_mar?>,      <?=$Total_segunda_semana_mar?>,         <?=$Total_terceira_semana_mar?>,    <?=$Total_quarta_semana_mar?>,  <?=$Total_quinta_semana_mar?>,    <?=$Total_mes_marco = $Total_primeira_semana_mar + $Total_segunda_semana_mar + $Total_terceira_semana_mar + $Total_quarta_semana_mar + $Total_quinta_semana_mar;?>],
+         ['Abril',        <?=$Total_primeira_semana_abr?>,      <?=$Total_segunda_semana_abr?>,         <?=$Total_terceira_semana_abr?>,    <?=$Total_quarta_semana_abr?>,  <?=$Total_quinta_semana_abr?>,    <?=$Total_mes_abril = $Total_primeira_semana_abr + $Total_segunda_semana_abr + $Total_terceira_semana_abr + $Total_quarta_semana_abr + $Total_quinta_semana_abr;?>],
+         ['Maio',           <?=$Total_primeira_semana_mai?>,      <?=$Total_segunda_semana_mai?>,         <?=$Total_terceira_semana_mai?>,    <?=$Total_quarta_semana_mai?>,  <?=$Total_quinta_semana_mai?>,    <?=$Total_mes_maio = $Total_primeira_semana_mai + $Total_segunda_semana_mai + $Total_terceira_semana_mai + $Total_quarta_semana_mai + $Total_quinta_semana_mai;?>],
+         ['Junho',     <?=$Total_primeira_semana_jun?>,      <?=$Total_segunda_semana_jun?>,         <?=$Total_terceira_semana_jun?>,    <?=$Total_quarta_semana_jun?>,  <?=$Total_quinta_semana_jun?>,    <?=$Total_mes_junho = $Total_primeira_semana_jun + $Total_segunda_semana_jun + $Total_terceira_semana_jun + $Total_quarta_semana_jun + $Total_quinta_semana_jun;?>],
+         ['Julho',   <?=$Total_primeira_semana_jul?>,      <?=$Total_segunda_semana_jul?>,         <?=$Total_terceira_semana_jul?>,    <?=$Total_quarta_semana_jul?>,  <?=$Total_quinta_semana_jul?>,    <?=$Total_mes_julho = $Total_primeira_semana_jul + $Total_segunda_semana_jul + $Total_terceira_semana_jul + $Total_quarta_semana_jul + $Total_quinta_semana_jul;?>],
+         ['Agosto',    <?=$Total_primeira_semana_ago?>,      <?=$Total_segunda_semana_ago?>,         <?=$Total_terceira_semana_ago?>,    <?=$Total_quarta_semana_ago?>,  <?=$Total_quinta_semana_ago?>,    <?=$Total_mes_agosto = $Total_primeira_semana_ago + $Total_segunda_semana_ago + $Total_terceira_semana_ago + $Total_quarta_semana_ago + $Total_quinta_semana_ago;?>],
+         ['Setembro',    <?=$Total_primeira_semana_set?>,      <?=$Total_segunda_semana_set?>,         <?=$Total_terceira_semana_set?>,    <?=$Total_quarta_semana_set?>,  <?=$Total_quinta_semana_set?>,    <?=$Total_mes_setembro = $Total_primeira_semana_set + $Total_segunda_semana_set + $Total_terceira_semana_set + $Total_quarta_semana_set + $Total_quinta_semana_set;?>],
+         ['Outubro',    <?=$Total_primeira_semana_out?>,      <?=$Total_segunda_semana_out?>,         <?=$Total_terceira_semana_out?>,    <?=$Total_quarta_semana_out?>,  <?=$Total_quinta_semana_out?>,    <?=$Total_mes_outubro = $Total_primeira_semana_out + $Total_segunda_semana_out + $Total_terceira_semana_out + $Total_quarta_semana_out + $Total_quinta_semana_out;?>],
+         ['Novembro',    <?=$Total_primeira_semana_nov?>,      <?=$Total_segunda_semana_nov?>,         <?=$Total_terceira_semana_nov?>,    <?=$Total_quarta_semana_nov?>,  <?=$Total_quinta_semana_nov?>,    <?=$Total_mes_novembro = $Total_primeira_semana_nov + $Total_segunda_semana_nov + $Total_terceira_semana_nov + $Total_quarta_semana_nov + $Total_quinta_semana_nov;?>],
+          ['Dezembro',    <?=$Total_primeira_semana_dez?>,      <?=$Total_segunda_semana_dez?>,         <?=$Total_terceira_semana_dez?>,    <?=$Total_quarta_semana_dez?>,  <?=$Total_quinta_semana_dez?>,    <?=$Total_mes_dezembro = $Total_primeira_semana_dez + $Total_segunda_semana_dez + $Total_terceira_semana_dez + $Total_quarta_semana_dez + $Total_quinta_semana_dez;?>]
+      ]);
+
+    var options = {
+      title : 'Comparativo Geral de vendas por Mês',
+      vAxis: {title: 'Venda Anual'},
+      hAxis: {title: 'Mês'},
+      seriesType: 'bars',
+      series: {5: {type: 'line'}}
+    };
+
+    var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+  }
+	
+
+	</script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <div id="chart_div" style="width: 1600px; height: 500px;"></div>
+
 
      <div class="row">
         <div class="col-xs-12">

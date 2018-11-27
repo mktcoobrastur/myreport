@@ -67,7 +67,7 @@ if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
 			
 
 			echo "ok!";
-        	header("Location:promocoes/$redirect");
+        	header("Location:http://webdesigner2/sistema/public/promocoes/$redirect");
 
 
 

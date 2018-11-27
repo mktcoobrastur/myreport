@@ -36,5 +36,5 @@
 				 echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 			 }
  
-        	header("Location:tarefas/$idChamado");
+        	header("Location:http://webdesigner2/sistema/public/tarefas/$idChamado");
 ?>

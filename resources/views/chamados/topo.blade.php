@@ -18,16 +18,16 @@
 <div class="boxCentral">
             <img class="logoCentral" src="http://webdesigner2/sistema/public/img/logo-fale-conosco.png" alt="Central do Usuário" />
             <div class="botoes">
-                <a class="btn btn-default" href="/chamados?c=aberto">
+                <a class="btn btn-default" href="http://webdesigner2/sistema/public/chamados?c=aberto">
                    ABERTOS <span class="badge">1</span>
                 </a>
-                <a class="btn btn-default" href="/chamados?c=andamento">
+                <a class="btn btn-default" href="http://webdesigner2/sistema/public/chamados?c=andamento">
                    EM ANDAMENTO <span class="badge">5</span>
                 </a>
-                <a class="btn btn-default" href="/chamados?c=pausa">
+                <a class="btn btn-default" href="http://webdesigner2/sistema/public/chamados?c=pausa">
                    EM PAUSA <span class="badge">0</span>
                 </a>
-                <a class="btn btn-default" href="/chamados?c=encerrado">
+                <a class="btn btn-default" href="http://webdesigner2/sistema/public/chamados?c=encerrado">
                    ENCERRADOS <span class="badge">15</span>
                 </a>
             </div>

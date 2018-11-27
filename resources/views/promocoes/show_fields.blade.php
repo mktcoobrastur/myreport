@@ -86,7 +86,7 @@
         <?php }?>
 
     <div class="alert">
-        <form name="up1" action="http://localhost/sistema/public/uploadPromo1.php" method="post" enctype="multipart/form-data">
+        <form name="up1" action="http://webdesigner2/sistema/public/uploadPromo1.php" method="post" enctype="multipart/form-data">
     		<label>Enviar Arquivos:</label> <br />
             <input type="hidden" name="idRedirect" value="{!! $promocoe->id !!}" />
 	 		<input type="hidden" name="idChamado" value="{!! $promocoe->codigo !!}" />
@@ -110,7 +110,7 @@
                             <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <img style="margin-left: 25%; margin-bottom: 5px;" width="300" src="http://localhost/sistema/public/promo/{!! $promocoe->imgPrincipal !!}" />
+                        <img style="margin-left: 25%; margin-bottom: 5px;" width="300" src="http://webdesigner2/sistema/public/promo/{!! $promocoe->imgPrincipal !!}" />
             </div>
         </div>
     </div>

@@ -141,12 +141,12 @@
 
       <?php if($resultado < 0) { ?>
       <td style="color: red;">
-        <?php echo $resultado; ?>
+        <b><?php echo $resultado; ?></b>
       </td>
       <?php } ?>
       <?php if($resultado > 0) { ?>
       <td style="color: green;">
-        <?php echo $resultado; ?>
+      <b><?php echo $resultado; ?></b>
       </td>
       <?php } ?>
 

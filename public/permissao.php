@@ -36,6 +36,6 @@
 			
 
 			//echo "ok!";
-        	header("Location:usuarios/$idUser");
+        	header("Location:http://webdesigner2/sistema/public/usuarios/$idUser");
 
 ?>

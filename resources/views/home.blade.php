@@ -103,7 +103,7 @@
 
 <section class="content-header">
       <h1>
-        Dashboard
+      <i class="fa fa-dashboard"></i> Dashboard
       </h1>
       <ol class="breadcrumb">
       </ol>
@@ -131,12 +131,12 @@
       </div-->
       <!-- /.box -->
 
-      <!-- callout -->
+      <!-- callout>
       <div class="callout callout-info">
         <h4>Gerenciamento de tarefas por departamento.</h4>
         <p>O gerenciador foi projetado para otimizar o tempo de resposta entre os departamentos.</p>
       </div>
-      <!-- /.callout -->
+      < /.callout -->
 
 
 <div class="box">

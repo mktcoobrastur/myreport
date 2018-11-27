@@ -1,6 +1,6 @@
 <br />
 <li>
-    <a href="<?php echo $URL; ?>home"><i class="fa fa-dashboard"></i> <span> Painel Principal</span></a>
+    <a href="http://webdesigner2/sistema/public/home"><i class="fa fa-dashboard"></i> <span> Painel Principal</span></a>
 </li>
 
 <li class="treeview">

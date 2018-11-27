@@ -66,6 +66,6 @@ if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
             //echo $total;
             //echo "ok!";
 
-        	header("Location:fotos/$idChamado");
+        	header("Location:http://webdesigner2/sistema/public/fotos/$idChamado");
 }
 ?>

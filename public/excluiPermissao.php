@@ -36,7 +36,6 @@
         }
         }
 
-
-    header("Location:usuarios/$redirect");
+    header("Location:http://webdesigner2/sistema/public/usuarios/$redirect");
 
 ?>

@@ -42,5 +42,5 @@
 
         echo $redirect." - ".$id;
 
-        header("Location:fotos/$redirect");
+        header("Location:http://webdesigner2/sistema/public/fotos/$redirect");
 ?>

@@ -18,18 +18,14 @@ $conexao = mysqli_connect("localhost","root","","sistema");
 
 
 
-            $conexao  = mysqli_connect("localhost","root","","sistema");
-            $query    = "SELECT * from promocoes";
-            $query    = mysqli_query($conexao, $query);
             
-    	    while ($linha = mysqli_fetch_array($query)) {
+    	    for ($i=1; $i < 30; $i++) {
+
                 
-                $cod = $linha['codigo'];
-                $hotel = $linha['hotel'];
                 //$sql = "UPDATE promocoes SET imgLamina = '$cod.jpg' where codigo = '$cod'";
 
-				$sql = "INSERT INTO fotos (hotel, codigo)
-				VALUES('$hotel','$cod')";
+				$sql = "INSERT INTO vendasre (indice, representante, qnt)
+				VALUES('2018-12-$i',6,5)";
 
                 if (mysqli_query($conn, $sql)) {
                     echo "";

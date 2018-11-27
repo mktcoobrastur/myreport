@@ -80,7 +80,6 @@
         <div class="text-center">
         <a href="javascript:televenda()" class="btn btn-success">Relatório Televenda</a>
         <a href="javascript:representantes()" class="btn btn-success">Relatório Representantes</a>
-        <a href="javascript:geral()" class="btn btn-success">Relatório Geral</a>
 <script language=javascript type="text/javascript">
   function televenda(){
   varWindow = window.open ('http://localhost/sistema/public/relAtendentes.php', 'popup', "width=800, height=600, left=0, top=0, scrollbars=no ")
@@ -114,17 +113,6 @@
     <div id="resultadoR"></div>
     <br /><br />
     <div id="conteudoR"></div>
-</div>
-
-
-
-<div style="clear: both;"></div>      
-
-<div class="box" style="margin-top: 20px;">
-    <div class="geralQ"></div>
-    <div class="geralQ"></div>
-    <div class="geralQ"></div>
-    <div class="geralQ"></div>
 </div>
 
 <div style="clear: both;"></div>      

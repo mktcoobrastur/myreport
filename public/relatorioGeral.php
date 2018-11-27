@@ -90,7 +90,7 @@
     </div>
     <div class="geralQ">
     <b><?php echo $diasvenda['uteis']; ?></b>
-      <span>Dias de Venda</span>
+      <span>Dias de Vendas</span>
     </div>
 </div>
 

@@ -77,13 +77,14 @@
     <tr>
       <th scope="col">Representante</th>
       <th scope="col">Qnt</th>
+      <th scope="col">&nbsp;</th>
     </tr>
   </thead>
   <tbody>
 
 <?php
     //CONSULTA PESQUISA
-    $consulta = mysqli_query($con, "SELECT * FROM vendasre WHERE MONTH(indice) = $dataget AND representante = $representante ORDER BY indice ASC");
+    $consulta = mysqli_query($con, "SELECT SUM(qnt) qnt FROM vendasre WHERE MONTH(indice) = $dataget AND representante = $representante ORDER BY indice ASC");
     while($l = mysqli_fetch_array($consulta)) {
 ?>
     <tr>
@@ -99,6 +100,7 @@
       <td>
         <?php echo $l['qnt']; ?>
       </td>
+      <td align="right"><a href="#">+ detalhes</a></td>
     </tr>
 
 <?php

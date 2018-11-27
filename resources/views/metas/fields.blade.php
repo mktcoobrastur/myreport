@@ -28,15 +28,18 @@
 </div>
 
 <!-- Representante Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('representante', 'Representante:') !!}
-    {!! Form::select('representante', array('nacionalvd' => 'NACIONAL VENDA DIRETA',
-                                           'nacionalt' => 'NACIONAL TELEMARKETING',
-                                           'realize' => 'REALIZE',
-                                           'telemarketing' => 'TELEMARKETING',
-                                           'lucasefreitas' => 'LUCAS E FREITAS',
-                                           'vladimir' => 'VLADIMIR CANGUSU'), '', ['class' => 'form-control']) !!}
-</div>
+<select name="representante" class="form-control">
+<?php
+    //Consulta SELECT representantes
+    $con = new mysqli("localhost", "root", "", "sistema");
+    $consulta = mysqli_query($con, "SELECT * FROM representantes ORDER BY id ASC");
+    while ($l = mysqli_fetch_array($consulta)) {
+?>
+    <option value="<?php echo $l['id']; ?>"><?php echo $l['nome']; ?></option>
+<?php
+    }
+?>
+    </select>
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">

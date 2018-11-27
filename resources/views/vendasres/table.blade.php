@@ -33,6 +33,8 @@
     @endforeach
         <tr>
             <th>&nbsp;</th>
+
+
             <th>&nbsp;</th>
             <th style="text-align: center;">
                 <?php

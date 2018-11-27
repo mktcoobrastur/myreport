@@ -16,7 +16,7 @@
         <div class="box">
           <div class="alert">
 
-  <div class="form-group">
+  <div class="form-group" style="width: 500px;">
   <form action="/relatorio.php" method="post" target="blank">
     <label>Por mês:</label>
     <select name="mes" class="form-control">
@@ -32,6 +32,18 @@
       <option value="10">Outubro</option>
       <option value="11">Novembro</option>
       <option value="12">Dezembro</option>
+    </select>
+    <select name="representante" class="form-control">
+<?php
+    //Consulta SELECT representantes
+    $con = new mysqli("localhost", "root", "", "sistema");
+    $consulta = mysqli_query($con, "SELECT * FROM representantes ORDER BY id ASC");
+    while ($l = mysqli_fetch_array($consulta)) {
+?>
+    <option value="<?php echo $l['id']; ?>"><?php echo $l['nome']; ?></option>
+<?php
+    }
+?>
     </select>
     <input type="submit" name="busca" value="Filtrar">
   </form>

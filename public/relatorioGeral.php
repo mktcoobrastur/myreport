@@ -55,7 +55,7 @@
 
 ?>
   <div style="width: 100%; height: 120px; background: #165C81; color: #f0f0f0; margin-bottom: 20px; text-align:center; font-family: 'Open Sans'; font-size: 35px; line-height: 120px;">
-  Relatório Geral <?php if($dataget == 1) { echo "Janeiro"; }
+  Relatório Geral <b><?php if($dataget == 1) { echo "Janeiro"; }
                          if($dataget == 2) { echo "Fevereiro"; }
                          if($dataget == 3) { echo "Março"; }
                          if($dataget == 4) { echo "Abril"; }
@@ -67,7 +67,7 @@
                          if($dataget == 10) { echo "Outubro"; }
                          if($dataget == 11) { echo "Novembro"; }
                          if($dataget == 12) { echo "Dezembro"; }
-                          ?> 2018</div>
+                          ?> 2018</b></div>
 <div style="clear: both;"></div>      
 
 <div class="box" style="margin-top: 20px;">

@@ -42,11 +42,15 @@
                 <input type="number" class="form-control nan" value="1" name="qnt" min="0" max="10">
             </span>
             <span class="quadroUsers">
-            <select name="plano" class="form-control nan" style="font-size: 10px;">
-                    <option value="1">DIAMANTE</option>
-                    <option value="2">GOLD</option>
-                    <option value="3">CONVENCIONAL</option>
-            </select>
+
+                <select name="plano" class="form-control nan" style="font-size: 10px;">
+                        <option value="1">MASTER</option>
+                        <option value="2">VIP</option>
+                        <option value="3">GOLD MASTER</option>
+                        <option value="4">GOLD VIP</option>
+                        <option value="5">DIAMANTE</option>
+                </select>
+
             </span>
             <span class="quadroUsers" style="width: 60px; line-height: 40px; text-align: center;">
                 <input type="checkbox" title="Marque para continuar!" class="form-control" id="chBx" style="margin-top: -0px;" required>

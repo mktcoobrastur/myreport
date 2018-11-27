@@ -103,7 +103,15 @@
 <script type="text/javascript" src="/funcs.js"></script>
 <div style="clear: both;"></div>      
 
+ 
+ <div class="box" style="margin-top: 20px;">
+    <div class="alert">
+        <?php require "charts.php"; ?>
     </div>
+</div>
+
+
+</div>
     </div>
 
     

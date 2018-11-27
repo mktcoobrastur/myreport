@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-        <script>
+<script src="/js/jquery.knob.js"></script>
+     
+<script>
             $(function($) {
 
                 $(".knob").knob({
@@ -85,67 +87,55 @@
                                     });
             });
         </script>
-
 <style type="text/css">
-  .labelChart {
-    font-size: 16px !important;
-    font-family: 'Source Sans Pro';
-    color: #316C91 !important;
-    font-weight: 300 !important;
-  }
-  .info-img {
-    font-family: 'Source Sans Pro' !important;
-    font-size: 30px;
-    padding-left: 20px;
-    color: #777;
-  }
+.OutR {
+    width: 100%;
+    height: 500px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px #ccc;
+}
+.infoTop {
+    float: left;
+    width: 20%;
+    height: 120px;
+    /*background: #ccc;*/
+    text-align: center;
+}
+.mtop {
+    margin-top: 30px;
+}
+.estCenter {
+    float: left;
+    width: 90%;
+    border-top: 1px solid #ccc;
+    margin-left: 5%;
+    margin-top: 40px;
+}
+.repeatCenter{
+    float: left;
+    width: 20%;
+    margin-top: 20px;
+    text-align: center;
+}
+.descr {
+    float: left;
+    width: 30%;
+    margin-left: 2.5%;
+    margin-top: 50px;
+    height: 205px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #ccc;
+    padding: 20px;
+    font-size: 18px;
+}
+.descr b {
+    color: #89C053;
+}
 </style>
 
 <section class="content-header">
-      <h1>
-        Início
-        <small>coobrastur</small>
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-      </ol>
-    </section>
-
-    <!-- Main content -->
-    <section class="content">
-
-      <!-- Default box -->
-      <!--div class="box">
-        <div class="box-header with-border">
-          <h3 class="box-title">Dicas</h3>
-
-          <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
-                    title="Collapse">
-              <i class="fa fa-minus"></i></button>
-          </div>
-        </div>
-        <div class="box-body">
-            Bem vindo ao myReport!<br />
-            <img src="/img/info-recado.jpg" style="border: 4px solid #92C0DC; padding: 10px; margin: 5px;" alt="Recados" />
-            <span class="info-img"> <i class="fa fa-hand-o-left" aria-hidden="true"></i> Veja se você tem alguma mensagem na sua caixa de entrada.</span>
-        </div>
-      </div-->
-      <!-- /.box -->
-
-      <!-- callout -->
-      <div class="callout callout-info">
-        <h4>Gerenciamento de tarefas por departamento.</h4>
-        <p>O gerenciador foi projetado para otimizar o tempo de resposta entre os departamentos.</p>
-      </div>
-      <!-- /.callout -->
-
-
-<div class="box">
-    <div class="alert">
-        <?php require "charts.php"; ?>
-    </div>
-</div>
 
      <div class="row">
         <div class="col-xs-12">
@@ -153,7 +143,7 @@
             <div class="box-header">
               <i class="fa fa-bar-chart-o"></i>
 
-              <h3 class="box-title">Índice de Entrada de Chamados</h3>
+              <h3 class="box-title">Índice Reclame Aqui</h3>
 
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-default btn-sm" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -161,54 +151,80 @@
               </div>
             </div>
 
-        <?php
-            $conexao  = mysqli_connect("localhost","root","","sistema");
-            #### ELOGIOS ####
-            $sql    = "SELECT * FROM chamados WHERE motivo = 'Elogios'";
-            $query    = mysqli_query($conexao, $sql); $linhaElogios = mysqli_num_rows($query);
-            #### INFORMAÇÕES ####
-            $sql    = "SELECT * FROM chamados WHERE motivo = 'Informacoes'";
-            $query    = mysqli_query($conexao, $sql); $linhaInfo = mysqli_num_rows($query);
-            #### RECLAMAÇÕES ####
-            $sql    = "SELECT * FROM chamados WHERE motivo = 'Reclamacoes'";
-            $query    = mysqli_query($conexao, $sql); $linhaRecl = mysqli_num_rows($query);
-            #### SERVIÇOS ####
-            $sql    = "SELECT * FROM chamados WHERE motivo = 'Servicos'";
-            $query    = mysqli_query($conexao, $sql); $linhaServ = mysqli_num_rows($query);
-        ?>
+            <div class="alert">
+            <?php 
+                $con = new mysqli("localhost", "root", "", "sistema");
+                $consulta = mysqli_query($con, "SELECT * FROM indices");
+                $l = mysqli_fetch_object($consulta);
+            ?>
 
-            <!-- /.box-header -->
-            <div class="box-body">
-                <!-- ./col -->
-                <div class="row">
-                <div class="col-xs-6 col-md-3 text-center">
-                  <input type="text" class="knob" value="<?php echo $linhaElogios; ?>" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgColor="#3c8dbc" data-readonly="true">
-
-                  <div class="knob-label labelChart">Elogios</div>
+            <div class="OutR">
+                <div class="infoTop"">
+                <img src="<?php echo $l->indice; ?>" width="100" alt="Indice" />
+                <i style="display: block;"><?php echo $l->periodoinicio; ?> - <?php echo $l->periodofinal; ?></i>
                 </div>
-                <!-- ./col -->
-                <div class="row">
-                <div class="col-xs-6 col-md-3 text-center">
-                  <input type="text" class="knob" value="<?php echo $linhaInfo; ?>" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgColor="#3c8dbc" data-readonly="true">
-
-                  <div class="knob-label labelChart">Informações</div>
+                <div class="infoTop">
+                    <div class="text-center mtop">
+                    <input type="text" class="knob" value="<?php echo $l->atendidas; ?>" data-skin="tron" data-thickness="0.2" data-width="70" data-height="70" data-fgColor="#3c8dbc" data-readonly="true">
+                    <div class="knob-label labelChart">Reclamações<br /> respondidas</div>
+                    </div>
                 </div>
-                <!-- ./col -->
-                <div class="row">
-                <div class="col-xs-6 col-md-3 text-center">
-                  <input type="text" class="knob" value="<?php echo $linhaRecl; ?>" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgColor="#3c8dbc" data-readonly="true">
-
-                  <div class="knob-label labelChart">Reclamações</div>
+                <div class="infoTop">
+                <div class="text-center mtop">
+                    <input type="text" class="knob" value="<?php echo $l->voltarianegocio; ?>" data-skin="tron" data-thickness="0.2" data-width="70" data-height="70" data-fgColor="#89C053" data-readonly="true">
+                    <div class="knob-label labelChart">Voltaria a <br />fazer negócio</div>
+                    </div>
                 </div>
-                <!-- ./col -->
-                <div class="row">
-                <div class="col-xs-6 col-md-3 text-center">
-                  <input type="text" class="knob" value="<?php echo $linhaServ; ?>" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgColor="#3c8dbc" data-readonly="true">
-
-                  <div class="knob-label labelChart">Serviços ou Solicitações</div>
+                <div class="infoTop">
+                <div class="text-center mtop">
+                    <input type="text" class="knob" value="<?php echo $l->solucao; ?>" data-skin="tron" data-thickness="0.2" data-width="70" data-height="70" data-fgColor="#3c8dbc" data-readonly="true">
+                    <div class="knob-label labelChart">Índice de <br />solução</div>
+                    </div>
                 </div>
-                <!-- ./col -->
-              </div>
+                <div class="infoTop">
+                <div class="text-center mtop">
+                    <input type="text" class="knob" value="<?php echo $l->notaconsumidor; ?>" data-skin="tron" data-thickness="0.2" data-width="70" data-height="70" data-fgColor="#89C053" data-readonly="true">
+                    <div class="knob-label labelChart">Nota do <br />consumidor</div>
+                    </div>
+                </div>
+                <div class="estCenter">
+                    <div class="repeatCenter">
+                        <b>Reclamações</b><br/> <?php echo $l->reclamacoestotal; ?>
+                    </div>
+                    <div class="repeatCenter">
+                        <b>Respondidas</b><br/> <?php echo $l->reclamacoesatendidas; ?>
+                    </div>
+                    <div class="repeatCenter">
+                        <b>Não respondidas</b><br/> <?php echo $l->reclamacoesnaoatendidas; ?>
+                    </div>
+                    <div class="repeatCenter">
+                        <b>Avaliadas</b><br/> <?php echo $l->avaliacoes; ?>
+                    </div>
+                    <div class="repeatCenter">
+                        <b>Tempo de Resposta</b><br/> <?php echo $l->temporesposta; ?>
+                    </div>
+                </div>
+
+                <div class="descr">
+                <b>Respondeu <?php echo $l->atendidas; ?>%</b> das reclamações e <b>resolveu <?php echo $l->solucao; ?>% dos problemas</b>
+                </div>
+
+                <div class="descr">
+                Esta empresa recebeu <b style="color: #CA090E;"><?php echo $l->reclamacoestotal; ?> reclamações</b> nos últimos 12 meses
+                </div>
+                <div class="descr">
+                De todos que reclamaram, <b><?php echo $l->voltarianegocio; ?>% voltariam a fazer negócio</b> com ela e deram uma nota média de <b style="color: #999;"><?php echo $l->notaconsumidor; ?> para o atendimento recebido</b>
+                </div>
+</div>
+
+
+
+</div>
+
+
+            </div>
+
+
               <!-- /.row -->
             </div>
             <!-- /.box-body -->
@@ -218,7 +234,10 @@
         <!-- /.col -->
       </div>
       <!-- /.row -->
+
+
+
+
 </section>
     <!-- /.content -->
-<script src="/js/jquery.knob.js"></script>
 @endsection

@@ -38,7 +38,6 @@
 <table class="table" style="font-size: 11px; background: #ffffff;">
   <thead>
     <tr>
-      <th scope="col">Data</th>
       <th scope="col">Atendente</th>
       <th scope="col">Qnt</th>
       <th scope="col">Plano</th>
@@ -52,7 +51,6 @@
     while($l = mysqli_fetch_array($consulta)) {
 ?>
     <tr>
-      <th scope="row"><?php echo date("d/m/Y", strtotime($l['created_at'])); ?></th>
       <td>
         <?php 
         $atend = $l['atendente'];

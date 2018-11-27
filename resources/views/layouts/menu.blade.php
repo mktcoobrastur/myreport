@@ -30,6 +30,7 @@
             <li><a href="{!! route('relacionamentos.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
             <li><a href="{!! route('chamados.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Gerenciamento de Chamados</a></li>
             <li><a href="<?php echo $URL; ?>indice"><i class="fa fa-circle-o text-aqua"></i> Índice ( Chamados )</a></li>
+            <li><a href="<?php echo $URL; ?>reclameaqui"><i class="fa fa-circle-o text-aqua"></i> Índice ( ReclameAqui )</a></li>
             <!--li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Fale Conosco</a></li-->
           </ul>
 </li>
@@ -160,6 +161,9 @@
     </li>
     <li class="{{ Request::is('laminas*') ? 'active' : '' }}">
         <a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span>Solicitação de Lâminas</span></a>
+    </li>
+    <li>
+      <a href="{!! route('indices.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span>Indices</span></a>
     </li>
 </ul>
 <script language=javascript type="text/javascript">

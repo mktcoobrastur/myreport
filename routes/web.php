@@ -27,8 +27,8 @@ Route::get('/notificacoes', function () {
     return view('notificacoes');
 });
 
-Route::get('/component', function () {
-    return view('component');
+Route::get('/reclameaqui', function () {
+    return view('reclameaqui');
 });
 
 
@@ -111,3 +111,5 @@ Route::resource('representantes', 'RepresentanteController');
 Route::resource('vendasres', 'VendasreController');
 
 Route::resource('laminas', 'LaminaController');
+
+Route::resource('indices', 'IndiceController');

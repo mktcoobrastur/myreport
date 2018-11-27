@@ -4,7 +4,7 @@
     <title>Relatório</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <meta name="Description" content="Software de Gestão Coobrastur">
-    <link rel="stylesheet" href="/i.css">
+    <link rel="stylesheet" href="http://webdesigner2/sistema/public/i.css">
 </head>
 <body style="background: #EBEFF4; padding: 20px; text-align: center;">
 <div style="width: 80%; margin: 0 auto;">

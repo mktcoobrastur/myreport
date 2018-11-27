@@ -103,11 +103,9 @@
 
 <section class="content-header">
       <h1>
-        Início
-        <small>coobrastur</small>
+        Dashboard
       </h1>
       <ol class="breadcrumb">
-        <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
       </ol>
     </section>
 

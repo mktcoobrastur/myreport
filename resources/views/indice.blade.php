@@ -101,16 +101,6 @@
 
 <section class="content-header">
 
-
-      <!-- callout -->
-      <div class="callout callout-info">
-        <h4>Gerenciamento de tarefas.</h4>
-
-        <p>O gerenciador de tarefas myReport foi projetado para otimizar o tempo de resposta entre os departamentos.</p>
-      </div>
-      <!-- /.callout -->
-
-
      <div class="row">
         <div class="col-xs-12">
           <div class="box box-solid">
@@ -196,5 +186,5 @@
 </section>
     <!-- /.content -->
 
-<script src="/js/jquery.knob.js"></script>
+<script src="http://webdesigner2/sistema/public/js/jquery.knob.js"></script>
 @endsection

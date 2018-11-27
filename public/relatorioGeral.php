@@ -9,6 +9,29 @@
 </head>
 <body style="background: #EBEFF4; padding: 20px; text-align: center;">
 <div style="width: 80%; margin: 0 auto;">
+
+  <div class="form-group" style="float: left; width: 400px; margin-left: 10px; margin-top: 2px;">
+  <form action="http://webdesigner2/sistema/public/relatorioGeral.php" method="post" target="blank">
+    <label style="color:#fff;">Mensal Geral:</label>
+    <select name="mes" class="form-control">
+      <option value="01">Janeiro</option>
+      <option value="02">Fevereiro</option>
+      <option value="03">Março</option>
+      <option value="04">Abril</option>
+      <option value="05">Maio</option>
+      <option value="06">Junho</option>
+      <option value="07">Julho</option>
+      <option value="08">Agosto</option>
+      <option value="09">Setembro</option>
+      <option value="10">Outubro</option>
+      <option value="11">Novembro</option>
+      <option value="12">Dezembro</option>
+    </select>
+    <input type="submit" class="btn btn-primary" style="margin-top: 4px;" name="busca" value="Gerar Relatório">
+  </form>
+  </div>
+
+
 <?php
     require "../../televenda/conn.php";
     $dataget = $_POST['mes'];

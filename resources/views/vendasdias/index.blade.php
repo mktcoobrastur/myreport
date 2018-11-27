@@ -45,7 +45,7 @@
     }
 ?>
     </select>
-    <input type="submit" class="btn btn-primary" name="busca" value="Filtrar">
+    <input type="submit" class="btn btn-primary" name="busca" value="Filtrar" style="margin-top: 2px;">
   </form>
   </div>
 
@@ -67,7 +67,7 @@
       <option value="11">Novembro</option>
       <option value="12">Dezembro</option>
     </select>
-    <input type="submit" class="btn btn-primary" name="busca" value="Filtrar">
+    <input type="submit" class="btn btn-primary" name="busca" value="Gerar Relatório" style="margin-top: 2px;">
   </form>
   </div>
 

@@ -23,7 +23,7 @@
     $consultaC = mysqli_query($con, "SELECT * FROM vendasdia WHERE MONTH(created_at) = $dataget AND plano = 3");
     $convencionais = mysqli_num_rows($consultaC);
     //TOTAL Do MÊS
-    $consultaT = mysqli_query($con, "SELECT SUM(qnt) qnt FROM vendasdia WHERE MONTH(created_at) = $dataget");
+    $consultaT = mysqli_query($con, "SELECT SUM(qnt) qnt FROM vendasre WHERE MONTH(indice) = $dataget AND representante = $representante");
     $totalMes = mysqli_fetch_array($consultaT);
     //META Do MÊS
     $consultaM = mysqli_query($con, "SELECT meta FROM metas WHERE mes = $dataget AND representante = $representante");
@@ -91,7 +91,7 @@
 </div>
 <div style="float: left; width: 40%; margin: 38px; background: #fff; font-size: 14px; font-family: 'Open Sans';">
     <div class="alert" style="font-size: 13px;">
-        Total do Mês: <b><?php echo $totalMes['qnt']; ?></b> | Meta: <?php echo $meta['meta']; ?> | Defasagem: <b style="color: red;"> -<?php echo $meta['meta'] - $totalMes['qnt']; ?></b>
+        Total do Mês: <b><?php echo $totalMes['qnt']; ?></b> | Meta: <?php echo $meta['meta']; ?> | Defasagem: <b style="color: red;"> - <?php echo $meta['meta'] - $totalMes['qnt']; ?></b>
     </div>
     <!--div class="alert">
         <span class="btn " style="background: #165C81; color: #fff;">DIAMANTE = <span class="badge badge-light"><?php echo $diamantes; ?></span></span>       

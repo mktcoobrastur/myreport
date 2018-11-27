@@ -44,6 +44,7 @@
 <?php
     }
 ?>
+      <option value="55">TODOS</option>
     </select>
     <input type="submit" name="busca" value="Filtrar">
   </form>

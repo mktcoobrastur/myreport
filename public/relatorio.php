@@ -20,7 +20,7 @@
     $consultaVenda = mysqli_query($con, "SELECT SUM(qnt) qnt FROM vendasre WHERE MONTH(indice) = $dataget AND representante = $representante");
     $vendageral = mysqli_fetch_array($consultaVenda);
     //DIFERENÇA GERAL
-    $diferencageral = $metageral['meta'] - $vendageral['qnt'];
+    $diferencageral = $vendageral['qnt'] - $metageral['meta'];
     //CONSULTA DIAS DE VENDA 
     $consultaDias = mysqli_query($con, "SELECT * FROM metas WHERE mes = $dataget");
     $diasvenda = mysqli_fetch_array($consultaDias);
@@ -60,7 +60,7 @@
       <span>Venda Geral</span>
     </div>
     <div class="geralQ">
-    <b>-<?php echo $diferencageral; ?></b>
+    <b><?php echo $diferencageral; ?></b>
       <span>Total Diferença</span>
     </div>
     <div class="geralQ">

@@ -89,7 +89,7 @@
         </script>
 <style type="text/css">
 .OutR {
-    width: 100%;
+    width: 60%;
     height: 500px;
     background: #fff;
     border-radius: 5px;
@@ -146,7 +146,7 @@
               <h3 class="box-title">Índice Reclame Aqui</h3>
 
               <div class="box-tools pull-right">
-                <button type="button" class="btn btn-default btn-sm" data-widget="collapse"><i class="fa fa-minus"></i>
+              <a href="/indices/1/edit" class="btn btn-primary">Novo Índice</a>
                 </button>
               </div>
             </div>

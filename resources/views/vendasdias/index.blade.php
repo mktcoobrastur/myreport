@@ -16,9 +16,9 @@
         <div class="box">
           <div class="alert">
 
-  <div class="form-group" style="width: 500px;">
+  <div class="form-group" style="float: left;width: 500px;">
   <form action="/relatorio.php" method="post" target="blank">
-    <label>Por mês:</label>
+    <label>Mensal por representante:</label>
     <select name="mes" class="form-control">
       <option value="01">Janeiro</option>
       <option value="02">Fevereiro</option>
@@ -44,31 +44,35 @@
 <?php
     }
 ?>
-      <option value="55">TODOS</option>
     </select>
-    <input type="submit" name="busca" value="Filtrar">
+    <input type="submit" class="btn btn-primary" name="busca" value="Filtrar">
   </form>
   </div>
 
-<div class="form-group">
-  <form action="/relatorio.php" method="post" target="blank">
-    <label>Por Representante:</label>
+
+  <div class="form-group" style="float: left; width: 500px; margin-left: 10px;">
+  <form action="/relatorioGeral.php" method="post" target="blank">
+    <label>Mensal Geral:</label>
     <select name="mes" class="form-control">
-<?php
-    //Consulta SELECT representantes
-    $con = new mysqli("localhost", "root", "", "sistema");
-    $consulta = mysqli_query($con, "SELECT * FROM representantes ORDER BY id ASC");
-    while ($l = mysqli_fetch_array($consulta)) {
-?>
-    <option value="<?php echo $l['id']; ?>"><?php echo $l['nome']; ?></option>
-<?php
-    }
-?>
+      <option value="01">Janeiro</option>
+      <option value="02">Fevereiro</option>
+      <option value="03">Março</option>
+      <option value="04">Abril</option>
+      <option value="05">Maio</option>
+      <option value="06">Junho</option>
+      <option value="07">Julho</option>
+      <option value="08">Agosto</option>
+      <option value="09">Setembro</option>
+      <option value="10">Outubro</option>
+      <option value="11">Novembro</option>
+      <option value="12">Dezembro</option>
     </select>
-    <input type="submit" name="busca" value="Filtrar">
+    <input type="submit" class="btn btn-primary" name="busca" value="Filtrar">
   </form>
   </div>
 
+
+<div style="clear: both;"></div>
 
           </div>
         </div>
@@ -113,10 +117,18 @@
 </div>
 
 
-<script type="text/javascript" src="/funcs.js"></script>
+
 <div style="clear: both;"></div>      
 
- 
+<div class="box" style="margin-top: 20px;">
+    <div class="geralQ"></div>
+    <div class="geralQ"></div>
+    <div class="geralQ"></div>
+    <div class="geralQ"></div>
+</div>
+
+<div style="clear: both;"></div>      
+<script type="text/javascript" src="/funcs.js"></script>
  <div class="box" style="margin-top: 20px;">
     <div class="alert">
         <?php require "charts.php"; ?>

@@ -31,7 +31,6 @@
             <li><a href="{!! route('chamados.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Gerenciamento de Chamados</a></li>
             <li><a href="<?php echo $URL; ?>indice"><i class="fa fa-circle-o text-aqua"></i> Índice ( Chamados )</a></li>
             <li><a href="<?php echo $URL; ?>reclameaqui"><i class="fa fa-circle-o text-aqua"></i> Índice ( ReclameAqui )</a></li>
-            <!--li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Fale Conosco</a></li-->
           </ul>
 </li>
 <li class="treeview">
@@ -42,36 +41,22 @@
               <span class="label label-primary pull-right">4</span>
             </span>
           </a>
-          <ul class="treeview-menu">
-            <li><a href="{!! route('negocios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
-            <li><a href="{!! route('vendasdias.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Vendas</a></li>
-            <li><a href="{!! route('convenios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Convênios</a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Indicação Premiada</a></li>
-            <li class="{{ Request::is('metas*') ? 'active' : '' }}">
-        <a href="{!! route('metas.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Metas</span></a>
-    </li>
+    <ul class="treeview-menu">
+      <li><a href="{!! route('negocios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
+      <li><a href="{!! route('convenios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Convênios</a></li>
+      <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Indicação Premiada</a></li>
+      <li><a href="{!! route('atendentes.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Atendentes</span></a></li>
 
-    <li class="{{ Request::is('atendentes*') ? 'active' : '' }}">
-        <a href="{!! route('atendentes.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Atendentes</span></a>
-    </li>
+        <hr>
 
-    <li class="{{ Request::is('representantes*') ? 'active' : '' }}">
-        <a href="{!! route('representantes.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Representantes</span></a>
-    </li>
-
-    <li class="{{ Request::is('vendasres*') ? 'active' : '' }}">
-        <a href="{!! route('vendasres.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Vendas Representantes</span></a>
-    </li>
-    <li>
-        <a href="<?php echo $URL; ?>relatorio-representantes"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Representantes</span></a>
-    </li>
-    <li>
-        <a href="<?php echo $URL; ?>relatorio-televenda"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Televenda</span></a>
-    </li>
-    <li class="">
-        <a href="javascript:newPopup()"><i class="fa fa-circle-o text-aqua"></i> <span>Acesso Televenda</span></a>
-    </li>
-         </ul>
+      <li><a href="{!! route('vendasdias.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Vendas</a></li>
+      <li><a href="{!! route('metas.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Metas</span></a></li>
+      <li><a href="{!! route('representantes.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Representantes</span></a></li>
+      <li><a href="{!! route('vendasres.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Vendas Representantes</span></a></li>
+      <li><a href="<?php echo $URL; ?>relatorio-representantes"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Representantes</span></a></li>
+      <li><a href="<?php echo $URL; ?>relatorio-televenda"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Televenda</span></a></li>
+      <li><a href="javascript:newPopup()"><i class="fa fa-circle-o text-aqua"></i> <span>Acesso Televenda</span></a></li>
+    </ul>
 </li>
 
 <li class="treeview">
@@ -142,30 +127,12 @@
           </a>
 
   <ul class="treeview-menu">
-
-
-    <li class="{{ Request::is('usuarios*') ? 'active' : '' }}">
-        <a href="{!! route('usuarios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Usuarios</span></a>
-    </li>
-
-    <li class="{{ Request::is('departamentos*') ? 'active' : '' }}">
-        <a href="{!! route('departamentos.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Departamentos</span></a>
-    </li>
-
-    <li class="{{ Request::is('recados*') ? 'active' : '' }}">
-        <a href="{!! route('recados.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Recados</span></a>
-    </li>
-
-    <li class="">
-        <a href="javascript:newPopup()"><i class="fa fa-circle-o text-aqua"></i> <span>Acesso Televenda</span></a>
-    </li>
-    <li class="{{ Request::is('laminas*') ? 'active' : '' }}">
-        <a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span>Solicitação de Lâminas</span></a>
-    </li>
-    <li>
-      <a href="{!! route('indices.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span>Indices</span></a>
-    </li>
-</ul>
+    <li><a href="{!! route('usuarios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Usuarios</span></a></li>
+    <li><a href="{!! route('departamentos.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Departamentos</span></a></li>
+    <li><a href="{!! route('recados.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Recados</span></a></li>
+    <li><a href="javascript:newPopup()"><i class="fa fa-circle-o text-aqua"></i> <span>Acesso Televenda</span></a></li>
+    <li><a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span>Solicitação de Lâminas</span></a></li>
+  </ul>
 <script language=javascript type="text/javascript">
   function newPopup(){
     varWindow = window.open ('http://localhost/televenda/users/', 'popup', "width=500, height=300, right=100, bottom=100, scrollbars=no ")

@@ -55,7 +55,6 @@
       <li><a href="{!! route('vendasres.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Vendas Representantes</span></a></li>
       <li><a href="http://webdesigner2/sistema/public/relatorio-representantes"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Representantes</span></a></li>
       <li><a href="http://webdesigner2/sistema/public/relatorio-televenda"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Televenda</span></a></li>
-      <li><a href="javascript:newPopup()"><i class="fa fa-circle-o text-aqua"></i> <span>Acesso Televenda</span></a></li>
     </ul>
 </li>
 
@@ -98,6 +97,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="{!! route('telemarketings.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
+            <li><a href="javascript:newPopup()"><i class="fa fa-circle-o text-aqua"></i><span> Lançar Vendas</span></a></li>
           </ul>
 </li>
 

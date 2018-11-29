@@ -70,7 +70,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box hover-zoom-effect">
                         <div class="icon bg-pink">
-                            <i class="material-icons">flight_takeoff</i>
+                            <i class="material-icons">track_changes</i>
                         </div>
                         <div class="content">
                             <div class="text">META GERAL</div>
@@ -82,7 +82,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box hover-zoom-effect">
                         <div class="icon bg-blue">
-                            <i class="material-icons">shopping_cart</i>
+                            <i class="material-icons">call_made</i>
                         </div>
                         <div class="content">
                             <div class="text">VENDA GERAL</div>
@@ -110,7 +110,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box hover-zoom-effect">
                         <div class="icon bg-cyan">
-                            <i class="material-icons">access_alarm</i>
+                            <i class="material-icons">calendar_today</i>
                         </div>
                         <div class="content">
                             <div class="text">DIAS DE VENDAS</div>
@@ -216,7 +216,7 @@ $(function(){
     });
 </script>
 
-  <div style="width: 700px;  float: left; margin-left: 15px; margin-top: 38px;">
+  <div style="width: 700px; float: left; margin-left: 15px; margin-top: 38px;">
 
 <div>
   <div class="box box-solid">

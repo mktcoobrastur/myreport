@@ -35,6 +35,44 @@
 
     $consulta12 = mysqli_query($con, "SELECT SUM(qnt) qnt FROM vendasre WHERE MONTH(indice) = 12");
     $dezembro       = mysqli_fetch_object($consulta12); $dezembro->qnt;
+
+    //METAS
+
+    $consultam1 = mysqli_query($con, "SELECT SUM(meta) meta FROM metas WHERE mes = 1");
+    $mjan = mysqli_fetch_object($consultam1); $mjan->meta;
+
+    $consultam2 = mysqli_query($con, "SELECT SUM(meta) meta FROM metas WHERE mes = 2");
+    $mfev = mysqli_fetch_object($consultam2); $mfev->meta;
+
+    $consultam3 = mysqli_query($con, "SELECT SUM(meta) meta FROM metas WHERE mes = 3");
+    $mmar = mysqli_fetch_object($consultam3); $mmar->meta;
+
+    $consultam4 = mysqli_query($con, "SELECT SUM(meta) meta FROM metas WHERE mes = 4");
+    $mabr = mysqli_fetch_object($consultam4); $mabr->meta;
+
+    $consultam5 = mysqli_query($con, "SELECT SUM(meta) meta FROM metas WHERE mes = 5");
+    $mmai = mysqli_fetch_object($consultam5); $mmai->meta;
+
+    $consultam6 = mysqli_query($con, "SELECT SUM(meta) meta FROM metas WHERE mes = 6");
+    $mjun = mysqli_fetch_object($consultam6); $mjun->meta;
+
+    $consultam7 = mysqli_query($con, "SELECT SUM(meta) meta FROM metas WHERE mes = 7");
+    $mjul = mysqli_fetch_object($consultam7); $mjul->meta;
+
+    $consultam8 = mysqli_query($con, "SELECT SUM(meta) meta FROM metas WHERE mes = 8");
+    $mago = mysqli_fetch_object($consultam8); $mago->meta;
+
+    $consultam9 = mysqli_query($con, "SELECT SUM(meta) meta FROM metas WHERE mes = 9");
+    $mset = mysqli_fetch_object($consultam9); $mset->meta;
+
+    $consultam10 = mysqli_query($con, "SELECT SUM(meta) meta FROM metas WHERE mes = 10");
+    $mout = mysqli_fetch_object($consultam10); $mout->meta;
+
+    $consultam11 = mysqli_query($con, "SELECT SUM(meta) meta FROM metas WHERE mes = 11");
+    $mnov = mysqli_fetch_object($consultam11); $mnov->meta;
+
+    $consultam12 = mysqli_query($con, "SELECT SUM(meta) meta FROM metas WHERE mes = 12");
+    $mdez = mysqli_fetch_object($consultam12); $mdez->meta;
 ?>
     <script src="http://webdesigner2/sistema/public/js/Chart.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -74,5 +112,203 @@
 	
 
 	</script>
-    <div id="chart_div" style="width: 1600px; height: 500px;"></div>
 
+            <div style="width: 100%; height: 50px; float: left;"></div>
+                <!-- Bar Chart -->
+                <div class="" style="float: left; width: 99%; background: #fff;margin: 5px; border-radius: 10px;">
+                    <div class="card">
+                        <div class="body">
+                            <canvas id="bar_chart" height="70"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <!-- #END# Bar Chart -->
+            </div>
+
+            <div style="width: 100%; height: 50px; float: left;"></div>
+            <div class="row clearfix">
+                <!-- Line Chart -->
+                <div class="" style="float:left; width: 99%; background: #fff; border-radius: 10px;">
+                    <div class="card">
+                        <div class="body">
+                            <canvas id="line_chart" height="70"></canvas>
+                        </div>
+                    </div>
+              </div>
+              <!-- #END# Line Chart -->
+
+<script src="http://webdesigner2/sistema/public/lib/jquery.knob.js"></script>
+
+    <script src="http://webdesigner2/sistema/public/lib/jquery.min.js"></script>
+    <script src="http://webdesigner2/sistema/public/lib/Chart.bundle.js"></script>
+
+
+<script type="text/javascript">
+
+$(function () {
+    new Chart(document.getElementById("line_chart").getContext("2d"), getChartJs('line'));
+    new Chart(document.getElementById("bar_chart").getContext("2d"), getChartJs('bar'));
+    new Chart(document.getElementById("radar_chart").getContext("2d"), getChartJs('radar'));
+    new Chart(document.getElementById("pie_chart").getContext("2d"), getChartJs('pie'));
+});
+
+function getChartJs(type) {
+    var config = null;
+
+    if (type === 'line') {
+        config = {
+            type: 'line',
+            data: {
+                labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
+                datasets: [{
+                    label: "Total",
+                    data: [ <?php echo $janeiro->qnt?>, 
+                            <?php echo $fevereiro->qnt?>,
+                            <?php echo $marco->qnt?>, 
+                            <?php echo $abril->qnt?>, 
+                            <?php echo $maio->qnt?>, 
+                            <?php echo $junho->qnt?>, 
+                            <?php echo $julho->qnt?>,
+                            <?php echo $agosto->qnt?>,
+                            <?php echo $setembro->qnt?>,
+                            <?php echo $outubro->qnt?>,
+                            <?php echo $novembro->qnt?>,
+                            <?php echo $dezembro->qnt?>],
+                    borderColor: 'rgba(0, 188, 212, 0.75)',
+                    backgroundColor: 'rgba(0, 188, 212, 0.3)',
+                    pointBorderColor: 'rgba(0, 188, 212, 0)',
+                    pointBackgroundColor: 'rgba(0, 188, 212, 0.9)',
+                    pointBorderWidth: 1
+                }, {
+                        label: "Meta",
+                        data: [ <?php echo $mjan->meta; ?>, 
+                                <?php echo $mfev->meta; ?>, 
+                                <?php echo $mmar->meta; ?>, 
+                                <?php echo $mabr->meta; ?>, 
+                                <?php echo $mmai->meta; ?>, 
+                                <?php echo $mjun->meta; ?>, 
+                                <?php echo $mjul->meta; ?>,
+                                <?php echo $mago->meta; ?>,
+                                <?php echo $mset->meta; ?>,
+                                <?php echo $mout->meta; ?>,
+                                <?php echo $mnov->meta; ?>,
+                                <?php echo $mdez->meta; ?>],
+                        borderColor: 'rgba(233, 30, 99, 0.75)',
+                        backgroundColor: 'rgba(233, 30, 99, 0.3)',
+                        pointBorderColor: 'rgba(233, 30, 99, 0)',
+                        pointBackgroundColor: 'rgba(233, 30, 99, 0.9)',
+                        pointBorderWidth: 1
+                    }]
+            },
+            options: {
+                responsive: true,
+                legend: false
+            }
+        }
+    }
+    else if (type === 'bar') {
+        config = {
+            type: 'bar',
+            data: {
+                labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
+                datasets: [{
+                    label: "Total",
+                    data: [ <?php echo $janeiro->qnt?>, 
+                            <?php echo $fevereiro->qnt?>,
+                            <?php echo $marco->qnt?>, 
+                            <?php echo $abril->qnt?>, 
+                            <?php echo $maio->qnt?>, 
+                            <?php echo $junho->qnt?>, 
+                            <?php echo $julho->qnt?>,
+                            <?php echo $agosto->qnt?>,
+                            <?php echo $setembro->qnt?>,
+                            <?php echo $outubro->qnt?>,
+                            <?php echo $novembro->qnt?>,
+                            <?php echo $dezembro->qnt?>],
+                    backgroundColor: 'rgba(0, 188, 212, 0.8)'
+                }, {
+                        label: "Meta",
+                        data: [ <?php echo $mjan->meta; ?>, 
+                                <?php echo $mfev->meta; ?>, 
+                                <?php echo $mmar->meta; ?>, 
+                                <?php echo $mabr->meta; ?>, 
+                                <?php echo $mmai->meta; ?>, 
+                                <?php echo $mjun->meta; ?>, 
+                                <?php echo $mjul->meta; ?>,
+                                <?php echo $mago->meta; ?>,
+                                <?php echo $mset->meta; ?>,
+                                <?php echo $mout->meta; ?>,
+                                <?php echo $mnov->meta; ?>,
+                                <?php echo $mdez->meta; ?>],
+                        borderColor: 'rgba(233, 30, 99, 0.75)',
+                        backgroundColor: 'rgba(233, 30, 99, 0.3)',
+                        pointBorderColor: 'rgba(233, 30, 99, 0)',
+                        pointBackgroundColor: 'rgba(233, 30, 99, 0.9)',
+                        pointBorderWidth: 1
+                    }]
+            },
+            options: {
+                responsive: true,
+                legend: false
+            }
+        }
+    }
+    else if (type === 'radar') {
+        config = {
+            type: 'radar',
+            data: {
+                labels: ["January", "February", "March", "April", "May", "June", "July"],
+                datasets: [{
+                    label: "My First dataset",
+                    data: [65, 25, 90, 81, 56, 55, 40],
+                    borderColor: 'rgba(0, 188, 212, 0.8)',
+                    backgroundColor: 'rgba(0, 188, 212, 0.5)',
+                    pointBorderColor: 'rgba(0, 188, 212, 0)',
+                    pointBackgroundColor: 'rgba(0, 188, 212, 0.8)',
+                    pointBorderWidth: 1
+                }, {
+                        label: "My Second dataset",
+                        data: [72, 48, 40, 19, 96, 27, 100],
+                        borderColor: 'rgba(233, 30, 99, 0.8)',
+                        backgroundColor: 'rgba(233, 30, 99, 0.5)',
+                        pointBorderColor: 'rgba(233, 30, 99, 0)',
+                        pointBackgroundColor: 'rgba(233, 30, 99, 0.8)',
+                        pointBorderWidth: 1
+                    }]
+            },
+            options: {
+                responsive: true,
+                legend: false
+            }
+        }
+    }
+    else if (type === 'pie') {
+        config = {
+            type: 'pie',
+            data: {
+                datasets: [{
+                    data: [225, 50, 100, 40],
+                    backgroundColor: [
+                        "rgb(233, 30, 99)",
+                        "rgb(255, 193, 7)",
+                        "rgb(0, 188, 212)",
+                        "rgb(139, 195, 74)"
+                    ],
+                }],
+                labels: [
+                    "Pink",
+                    "Amber",
+                    "Cyan",
+                    "Light Green"
+                ]
+            },
+            options: {
+                responsive: true,
+                legend: false
+            }
+        }
+    }
+    return config;
+}
+
+</script>

@@ -7,8 +7,8 @@ use App\Http\Requests\UpdateChamadoRequest;
 use App\Repositories\ChamadoRepository;
 use InfyOm\Generator\Controller\AppBaseController;
 use Illuminate\Http\Request;
-use Flash;
 use Prettus\Repository\Criteria\RequestCriteria;
+use Flash;
 use Response;
 use DB;
 
@@ -33,7 +33,7 @@ class ChamadoController extends AppBaseController
         $this->chamadoRepository->pushCriteria(new RequestCriteria($request));
         $chamados = $this->chamadoRepository->all();
         $chamados = DB::table('chamados')
-        ->orderBy('id', 'desc')  // You can pass as many columns as you required
+        ->orderBy('id', 'desc')  // You can pass as many columns as you required. Required 'use DB';
         ->get();
         return view('chamados.index')
             ->with('chamados', $chamados);

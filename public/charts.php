@@ -112,7 +112,9 @@
 	
 
 	</script>
-
+  <div>
+    <img src="http://webdesigner2/sistema/public/img/legenda.jpg" />
+  </div>
             <div style="width: 100%; height: 50px; float: left;"></div>
                 <!-- Bar Chart -->
                 <div class="" style="float: left; width: 99%; background: #fff;margin: 5px; border-radius: 10px;">

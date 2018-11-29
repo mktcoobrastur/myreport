@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Flash;
 use Prettus\Repository\Criteria\RequestCriteria;
 use Response;
+use DB;
 
 class MetaController extends AppBaseController
 {
@@ -31,7 +32,9 @@ class MetaController extends AppBaseController
     {
         $this->metaRepository->pushCriteria(new RequestCriteria($request));
         $metas = $this->metaRepository->all();
-
+        $metas = DB::table('metas')
+        ->orderBy('representante', 'asc')  // You can pass as many columns as you required
+        ->get();
         return view('metas.index')
             ->with('metas', $metas);
     }

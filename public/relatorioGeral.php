@@ -84,7 +84,7 @@
                         </div>
                         <div class="content">
                             <div class="text">META GERAL</div>
-                            <div class="number"><?php echo $metageral['meta']; ?></div>
+                            <div class="number count-to"><?php echo $metageral['meta']; ?></div>
                         </div>
                     </div>
 
@@ -243,11 +243,25 @@
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+
+
 <script src="http://webdesigner2/sistema/public/lib/jquery.min.js"></script>
 <script src="http://webdesigner2/sistema/public/lib/jquery.knob.js"></script>
 <script src="http://webdesigner2/sistema/public/lib/jquery.sparkline.min.js"></script>
 <!-- page script -->
 <script>
+
+  $(function () {
+    initCounters();
+    initCharts();
+});
+
+//Widgets count plugin
+function initCounters() {
+    $('.count-to').countTo();
+}
+
+
   $(function () {
     /* jQueryKnob */
 
@@ -454,5 +468,6 @@
     setTimeout(mdraw, mrefreshinterval);
   }
 </script>
+
 </body>
 </html>

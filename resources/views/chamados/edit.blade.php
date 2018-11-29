@@ -3,7 +3,7 @@
 @section('content')
     <section class="content-header">
     @include('chamados.topo')
-        <a href="http://http://webdesigner2/sistema/public/print.php?c={!! $chamado->id !!}" target="blank" class="btn btn-default pull-right">
+        <a href="http://webdesigner2/sistema/public/print.php?c={!! $chamado->id !!}" target="blank" class="btn btn-default pull-right">
             <i class="fa fa-print" aria-hidden="true"></i> Imprimir
         </a>
         <h1>

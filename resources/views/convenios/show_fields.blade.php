@@ -20,7 +20,7 @@
             
     	    while ($linha = mysqli_fetch_array($query)) {
         ?>
-			<img style="position: absolute; top: 50px; right: 50px;" width="200" src="/imgconvenios/<?php echo $linha['img']; ?>" />
+			<img style="position: absolute; top: 50px; right: 50px;" width="200" src="http://webdesigner2/sistema/public/imgconvenios/<?php echo $linha['img']; ?>" />
 		</a>
 
 	    <?php } ?>

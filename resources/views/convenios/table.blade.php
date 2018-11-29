@@ -48,7 +48,7 @@
             
     	    while ($linha = mysqli_fetch_array($query)) {
         ?>
-			<img src="/imgconvenios/<?php echo $linha['img']; ?>" alt="<?php echo $linha['nome']; ?>" />
+			<img src="http://webdesigner2/sistema/public/imgconvenios/<?php echo $linha['img']; ?>" alt="<?php echo $linha['nome']; ?>" />
 		</a>
 
 	    <?php } ?>

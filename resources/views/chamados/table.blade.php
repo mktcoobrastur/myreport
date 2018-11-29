@@ -36,8 +36,7 @@ if (isset($_GET['c'])) {
             <td><?php echo strtoupper($linha['status']); ?></td>
             <td>
                 <div class='btn-group'>
-                    <a href="/chamados/<?php echo $linha['id']; ?>" class='btn btn-default btn-xs'><i class="fa fa-eye" aria-hidden="true"></i></a>
-                    <a href="/chamados/<?php echo $linha['id']; ?>/edit" class='btn btn-default btn-xs'><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                    <a href="{!! route('chamados.edit', [$linha['id']]) !!}" class='btn btn-default btn-xs'><i class="fa fa-eye" aria-hidden="true"></i></a>
                 </div>
             </td>
         </tr>

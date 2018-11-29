@@ -6,7 +6,7 @@
             Convênio
     </h1>
     <h1 class="pull-right">
-           <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="/tconvenios/create?c={!! $convenio->id !!}">Nova Tarefa</a>
+           <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="http://webdesigner2/sistema/public/tconvenios/create?c={!! $convenio->id !!}">Nova Tarefa</a>
     </h1><br />
     </section>
     <div class="content">

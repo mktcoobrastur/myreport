@@ -90,7 +90,7 @@
               <span class="label label-success"></span>
             </a>
             <ul class="dropdown-menu" style="box-shadow: 2px 2px 20px #333;">
-              <li class="header" style="text-align: center;">Você tem novas mensagens!</li>
+              <li class="header" style="text-align: center;">Caixa de entrada.</li>
               <li>
                 <!-- inner menu: contains the actual data -->
                 <ul class="menu">
@@ -132,7 +132,6 @@
                 <!-- end message -->
             </ul>
               </li>
-              <li class="footer"><a href="<?php echo $URL; ?>   recados">Ver todos os recados</a></li>
             </ul>
           </li>
           <!-- Notifications: style can be found in dropdown.less -->
@@ -214,7 +213,7 @@
         while ($linha = mysqli_fetch_array($query)) {
 ?>
             <li class="list-group-item" style="height: 38px; background: #F8F8F8;">
-            <a id="abrirConversa">
+            <a id="abrirConversa">  
                 <b style="font-size: 11px; cursor:not-allowed;"> <?php echo utf8_encode($linha['name']); ?></b> <a class="pull-right"><i class="fa fa-circle text-success"></i></a>
             </a>
             </li>

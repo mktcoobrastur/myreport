@@ -1,3 +1,27 @@
+<div class="container">
+    <style type="text/css">
+    .reprLst {
+        float: left;
+        display: block;
+        text-align: center;
+        width: 16%;
+        margin: 2px;
+        color: #fff;
+    }
+    .reprLst a {
+        color: #fff;
+    }
+    </style>
+<ul>
+    <?php
+        $con = new mysqli("localhost", "root", "", "sistema");
+        $queryRepr  = mysqli_query($con, "SELECT id, nome FROM representantes");
+        while($result = mysqli_fetch_array($queryRepr)) {
+            echo "<li class='btn btn-primary reprLst'><a href='?r=".$result['id']."'>".$result['nome']."</a></li>";
+        }
+    ?>
+</ul>
+</div>
 <table class="table table-responsive" id="metas-table">
     <thead>
         <tr>

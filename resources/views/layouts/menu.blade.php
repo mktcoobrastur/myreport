@@ -52,9 +52,9 @@
       <li><a href="{!! route('vendasdias.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Vendas</a></li>
       <li><a href="{!! route('metas.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Metas</span></a></li>
       <li><a href="{!! route('representantes.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Representantes</span></a></li>
-      <li><a href="{!! route('vendasres.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Vendas Representantes</span></a></li>
+      <!--li><a href="{!! route('vendasres.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Vendas Representantes</span></a></li>
       <li><a href="http://webdesigner2/sistema/public/relatorio-representantes"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Representantes</span></a></li>
-      <li><a href="http://webdesigner2/sistema/public/relatorio-televenda"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Televenda</span></a></li>
+      <li><a href="http://webdesigner2/sistema/public/relatorio-televenda"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Televenda</span></a></li-->
     </ul>
 </li>
 

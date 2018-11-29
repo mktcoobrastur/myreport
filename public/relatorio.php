@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="http://webdesigner2/sistema/public/i.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://webdesigner2/sistema/public/lib/AdminLTE.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+    <link href="http://webdesigner2/sistema/public/lib/style.css" rel="stylesheet">
+
 </head>
 <body style="background: #EBEFF4; padding: 20px; text-align: center;">
 <style type="text/css">
@@ -36,7 +40,7 @@
     $meta = mysqli_fetch_array($consultaM);
 
 ?>
-  <div style="width: 100%; height: 120px; background: #165C81; color: #f0f0f0; margin-bottom: 20px; text-align:center; font-family: 'Open Sans'; font-size: 35px; line-height: 120px;">
+  <div style="width: 100%; height: 120px; background: #165C81; color: #f0f0f0; margin-bottom: 20px; text-align:center; font-family: Roboto; font-size: 35px; line-height: 120px;">
   Relatório Vendas <?php if($dataget == 1) { echo "Janeiro"; }
                          if($dataget == 2) { echo "Fevereiro"; }
                          if($dataget == 3) { echo "Março"; }
@@ -57,24 +61,65 @@
                             echo $row['nome'];
                           ?></div>
 
-<div class="box" style="margin-top: 20px;">
-    <div class="geralQ">
-      <b><?php echo $metageral['meta']; ?></b>
-      <span>Meta Geral</span>
-    </div>
-    <div class="geralQ">
-    <b><?php echo $vendageral['qnt']; ?></b>
-      <span>Venda Geral</span>
-    </div>
-    <div class="geralQ">
-    <b><?php echo $diferencageral; ?></b>
-      <span>Total Diferença</span>
-    </div>
-    <div class="geralQ">
-    <b><?php echo $diasvenda['uteis']; ?></b>
-      <span>Dias de Venda</span>
-    </div>
-</div>
+
+
+            <!-- Hover Zoom Effect -->
+            <div class="block-header">
+            </div>
+            <div class="row clearfix">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-pink">
+                            <i class="material-icons">flight_takeoff</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">META GERAL</div>
+                            <div class="number"><?php echo $metageral['meta']; ?></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-blue">
+                            <i class="material-icons">shopping_cart</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">VENDA GERAL</div>
+                            <div class="number"><?php echo $vendageral['qnt']; ?></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-light-blue">
+                            <i class="material-icons">equalizer</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">TOTAL DIFERENÇA</div>
+                            <div class="number">
+    <?php if($diferencageral < 0) { ?>
+    <b style='color: #CA090E;'><?php echo $diferencageral; ?></b>
+    <?php } ?>
+    <?php if($diferencageral > 0) { ?>
+    <b style='color: green;'><?php echo $diferencageral; ?></b>
+    <?php } ?></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="info-box hover-zoom-effect">
+                        <div class="icon bg-cyan">
+                            <i class="material-icons">access_alarm</i>
+                        </div>
+                        <div class="content">
+                            <div class="text">DIAS DE VENDAS</div>
+                            <div class="number"><?php echo $diasvenda['uteis']; ?></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #END# Hover Zoom Effect -->
 
 <div style="float: left; width:50%; text-align: center;">
 <h4>&nbsp;</h4>

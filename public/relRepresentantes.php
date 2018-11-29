@@ -136,7 +136,7 @@
   ?>
               <tr>
                 <td>1</td>
-                <td align="left">DIAMANTE</td>
+                <td align="left">MASTER</td>
                 <td>
                   <div class="progress progress-xs">
                     <div class="progress-bar progress-bar-primary progress-bar-striped" style="width:<?php echo $diamante; ?>%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
@@ -147,7 +147,7 @@
   
               <tr>
                 <td>2</td>
-                <td align="left">GOLD</td>
+                <td align="left">VIP</td>
                 <td>
                   <div class="progress progress-xs">
                     <div class="progress-bar progress-bar-primary progress-bar-striped" style="width:<?php echo $gold; ?>%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
@@ -158,7 +158,7 @@
   
               <tr>
                 <td>3</td>
-                <td align="left">CONVENCIONAL</td>
+                <td align="left">GOLD MASTER</td>
                 <td>
                   <div class="progress progress-xs">
                     <div class="progress-bar progress-bar-primary progress-bar-striped" style="width:<?php echo $convencional; ?>%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
@@ -166,7 +166,28 @@
                 </td>
                 <td><span class="badge bg-default" style="background: #f0f0f0; color: #000;"><?php echo $convencional; ?></span></td>
               </tr>
-  
+
+              <tr>
+                <td>3</td>
+                <td align="left">GOLD VIP</td>
+                <td>
+                  <div class="progress progress-xs">
+                    <div class="progress-bar progress-bar-primary progress-bar-striped" style="width:<?php echo $convencional; ?>%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td><span class="badge bg-default" style="background: #f0f0f0; color: #000;"><?php echo $convencional; ?></span></td>
+              </tr>
+
+                            <tr>
+                <td>3</td>
+                <td align="left">DIAMANTE</td>
+                <td>
+                  <div class="progress progress-xs">
+                    <div class="progress-bar progress-bar-primary progress-bar-striped" style="width:<?php echo $convencional; ?>%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+                <td><span class="badge bg-default" style="background: #f0f0f0; color: #000;"><?php echo $convencional; ?></span></td>
+              </tr>
           </table>
           </div>
           <!-- /.box-body -->

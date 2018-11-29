@@ -21,5 +21,5 @@
 				echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 			}
 
-        	header("Location:atendentes/");
+        	header("Location:http://webdesigner2/sistema/public/atendentes/");
 ?>

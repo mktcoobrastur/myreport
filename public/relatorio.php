@@ -171,7 +171,7 @@ $(function(){
     });
 </script>
 
-          <div style="width: 700px;  float: left; margin-left: 15px; margin-top: 38px;">
+  <div style="width: 700px;  float: left; margin-left: 15px; margin-top: 38px;">
 
 <div>
   <div class="box box-solid">
@@ -184,7 +184,7 @@ $(function(){
     </div>
     <!-- /.box-header -->
     <div class="box-body text-center">
-      <div class="sparkline" data-type="line" data-spot-Radius="6" data-highlight-Spot-Color="#f39c12" data-highlight-Line-Color="#222" data-min-Spot-Color="#f56954" data-max-Spot-Color="#00a65a" data-spot-Color="#39CCCC" data-offset="90" data-width="100%" data-height="200px" data-line-Width="2" data-line-Color="#39CCCC" data-fill-Color="rgba(57, 204, 204, 0.08)">
+      <div class="sparkline" data-type="line" data-spot-Radius="6" data-highlight-Spot-Color="#f39c12" data-highlight-Line-Color="#165C80" data-min-Spot-Color="#f56954" data-max-Spot-Color="#00a65a" data-spot-Color="#39CCCC" data-offset="90" data-width="100%" data-height="200px" data-line-Width="2" data-line-Color="#218BC5" data-fill-Color="rgba(57, 204, 204, 0.08)">
     <?php
       //CONSULTA PESQUISA
       $consultaCh = mysqli_query($con, "SELECT * FROM vendasre WHERE MONTH(indice) = $dataget AND representante = $representante ORDER BY indice ASC");
@@ -302,7 +302,7 @@ $(function(){
     $('#linecustom').sparkline('html',
         {
           height: '1.5em', width: '8em', lineColor: '#f00', fillColor: '#ffa',
-          minSpotColor: false, maxSpotColor: false, spotColor: '#77f', spotRadius: 3
+          minSpotColor: false, maxSpotColor: false, spotColor: '#77f', spotRadius: 5
         });
 
     // Bar charts using inline values

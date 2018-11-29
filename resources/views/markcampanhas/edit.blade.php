@@ -22,7 +22,7 @@
 
 
     <div class="alert">
-        <form action="/uploadMarketing.php" method="post" enctype="multipart/form-data">
+        <form action="http://webdesigner2/sistema/public/uploadMarketing.php" method="post" enctype="multipart/form-data">
     		<label>Anexar arte:</label> <br />
 	 		<input type="hidden" name="idChamado" value="{!! $markcampanha->id !!}" />
     	    <input class="form-control" type="file" name="arquivos[]" multiple>
@@ -32,8 +32,8 @@
 	</div>
 
     <div class="alert">
-		<a href="/imgmarketing/{!! $markcampanha->img !!}?c=" target="blank" class="anexos">
-			<img width="200" src="/imgmarketing/{!! $markcampanha->img !!}" alt="{!! $markcampanha->nome !!}" style="border: 1px solid #cccccc; padding: 2px;" />
+		<a href="http://webdesigner2/sistema/public/imgmarketing/{!! $markcampanha->img !!}?c=" target="blank" class="anexos">
+			<img width="200" src="http://webdesigner2/sistema/public/imgmarketing/{!! $markcampanha->img !!}" alt="{!! $markcampanha->nome !!}" style="border: 1px solid #cccccc; padding: 2px;" />
             <i class="fa fa-download pull-right" style='margin-top: 4px;' aria-hidden="true"></i>
 		</a>
     </div>

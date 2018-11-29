@@ -2,7 +2,12 @@
 <li>
     <a href="http://webdesigner2/sistema/public/home"><i class="fa fa-dashboard"></i> <span> Painel Principal</span></a>
 </li>
-
+<?php 
+  $idUser         = Auth::user()->id; 
+  $consultaAcesso = mysqli_query($con, "SELECT * FROM permissoes WHERE user = $idUser AND acesso =  1");
+  $a              = mysqli_fetch_array($consultaAcesso);
+  if($a != Null) {
+?>
 <li class="treeview">
           <a href="#">
             <i class="fa fa-files-o"></i>
@@ -17,6 +22,12 @@
             <li><a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i>Solicitação de Lâminas</a></li>
           </ul>
 </li>
+<?php } ?>
+<?php 
+  $consultaAcesso = mysqli_query($con, "SELECT * FROM permissoes WHERE user = $idUser AND acesso =  2");
+  $a              = mysqli_fetch_array($consultaAcesso);
+  if($a != Null) {
+?>
 
 <li class="treeview">
           <a href="#">
@@ -33,6 +44,14 @@
             <li><a href="http://webdesigner2/sistema/public/reclameaqui"><i class="fa fa-circle-o text-aqua"></i> Índice ( ReclameAqui )</a></li>
           </ul>
 </li>
+
+<?php } ?>
+<?php 
+  $consultaAcesso = mysqli_query($con, "SELECT * FROM permissoes WHERE user = $idUser AND acesso =  3");
+  $a              = mysqli_fetch_array($consultaAcesso);
+  if($a != Null) {
+?>
+
 <li class="treeview">
           <a href="#">
           <i class="fa fa-pie-chart"></i>
@@ -45,7 +64,6 @@
       <li><a href="{!! route('negocios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
       <li><a href="{!! route('convenios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Convênios</a></li>
       <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Indicação Premiada</a></li>
-      <li><a href="{!! route('atendentes.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Atendentes</span></a></li>
 
         <hr>
 
@@ -57,7 +75,12 @@
       <li><a href="http://webdesigner2/sistema/public/relatorio-televenda"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Televenda</span></a></li-->
     </ul>
 </li>
-
+<?php } ?>
+<?php 
+  $consultaAcesso = mysqli_query($con, "SELECT * FROM permissoes WHERE user = $idUser AND acesso =  4");
+  $a              = mysqli_fetch_array($consultaAcesso);
+  if($a != Null) {
+?>
 <li class="treeview">
           <a href="#">
           <i class="fa fa-h-square"></i> 
@@ -73,7 +96,12 @@
             <li><a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i>Solicitação de Lâminas</a></li>
           </ul>
 </li>
-
+<?php } ?>
+<?php 
+  $consultaAcesso = mysqli_query($con, "SELECT * FROM permissoes WHERE user = $idUser AND acesso =  5");
+  $a              = mysqli_fetch_array($consultaAcesso);
+  if($a != Null) {
+?>
 <li class="treeview">
           <a href="#">
           <i class="fa fa-laptop"></i>
@@ -86,7 +114,12 @@
             <li><a href="{!! route('tritons.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
           </ul>
 </li>
-
+<?php } ?>
+<?php 
+  $consultaAcesso = mysqli_query($con, "SELECT * FROM permissoes WHERE user = $idUser AND acesso =  6");
+  $a              = mysqli_fetch_array($consultaAcesso);
+  if($a != Null) {
+?>
 <li class="treeview">
           <a href="#">
           <i class="fa fa-envelope"></i>
@@ -97,14 +130,24 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="{!! route('telemarketings.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
+            <li><a href="{!! route('atendentes.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Atendentes</span></a></li>
             <li><a href="javascript:newPopup()"><i class="fa fa-circle-o text-aqua"></i><span> Lançar Vendas</span></a></li>
           </ul>
 </li>
-
+<script language=javascript type="text/javascript">
+  function newPopup(){
+    varWindow = window.open ('http://webdesigner2/televenda/users/', 'popup', "width=500, height=300, right=100, bottom=100, scrollbars=no ")
+  }
+</script><?php } ?>
+<?php 
+  $consultaAcesso = mysqli_query($con, "SELECT * FROM permissoes WHERE user = $idUser AND acesso =  7");
+  $a              = mysqli_fetch_array($consultaAcesso);
+  if($a != Null) {
+?>
 <li class="{{ Request::is('projetos*') ? 'active' : '' }}">
     <a href="{!! route('projetos.index') !!}"><i class="fa fa-edit"></i> <span>Projetos</span></a>
 </li>
-
+<?php } ?>
 <!--li class="{{ Request::is('tarefas*') ? 'active' : '' }}">
     <a href="{!! route('tarefas.index') !!}"><i class="fa fa-edit"></i><span>Tarefas</span></a>
 </li>
@@ -133,10 +176,6 @@
     <li><a href="javascript:newPopup()"><i class="fa fa-circle-o text-aqua"></i> <span>Acesso Televenda</span></a></li>
     <li><a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span>Solicitação de Lâminas</span></a></li>
   </ul>
-<script language=javascript type="text/javascript">
-  function newPopup(){
-    varWindow = window.open ('http://webdesigner2/televenda/users/', 'popup', "width=500, height=300, right=100, bottom=100, scrollbars=no ")
-  }
-</script>
+
 </li>
 <?php } ?>

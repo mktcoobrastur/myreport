@@ -76,13 +76,13 @@
     {!! Form::label('nome', 'Nome:') !!}
     <p>{!! $markconveniado->nome !!}</p>
     
-    <img width="200"class="" style="position: absolute; right: 50px; top: 50px;" src="/imgmktconv/{!! $markconveniado->img !!}" />
+    <img width="200"class="" style="position: absolute; right: 50px; top: 50px;" src="http://webdesigner2/sistema/public/imgmktconv/{!! $markconveniado->img !!}" />
 
 </div>
 
 <!-- Imgprincipal Field -->
 <div class="alert" style="width: 200px; float: left;">
-        <form name="up1" action="/uploadLogoC.php" method="post" enctype="multipart/form-data">
+        <form name="up1" action="http://webdesigner2/sistema/public/uploadLogoC.php" method="post" enctype="multipart/form-data">
     		<label>Enviar Imagem:</label> <br />
             <input type="hidden" name="idRedirect" value="{!! $markconveniado->id !!}" />
     	    <input class="" type="file" name="arquivos[]">
@@ -92,7 +92,7 @@
 
 </div>
 
-<a href="/markcampanhas/create?c={!! $markconveniado->id !!}" class="btn btn-primary">Nova Campanha</a>
+<a href="http://webdesigner2/sistema/public/markcampanhas/create?c={!! $markconveniado->id !!}" class="btn btn-primary">Nova Campanha</a>
 <br />
 <br />
 <h3>Acompanhamento de Campanhas</h3>
@@ -107,8 +107,8 @@
             ?>
                 <div class="tabelaC">
                 <span class="datetime"><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php echo $linha['created_at']; ?></span>
-                    <div style="width: 200px; height: 230px; overflow: hidden;"><img src="/imgmarketing/<?php echo $linha['img']; ?>" /></div>
-                <a href="/markcampanhas/<?php echo $linha['id']; ?>/edit?c={!! $markconveniado->id !!}"><?php echo utf8_encode(strtoupper($linha['nome'])); ?></a><br />
+                    <div style="width: 200px; height: 230px; overflow: hidden;"><img src="http://webdesigner2/sistema/public/imgmarketing/<?php echo $linha['img']; ?>" /></div>
+                <a href="http://webdesigner2/sistema/public/markcampanhas/<?php echo $linha['id']; ?>/edit?c={!! $markconveniado->id !!}"><?php echo utf8_encode(strtoupper($linha['nome'])); ?></a><br />
                 </div>
 <?php } ?> 
         <br />

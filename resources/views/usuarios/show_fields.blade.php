@@ -79,7 +79,7 @@
                         echo "&nbsp;&nbsp;".utf8_encode($linhaF['depto'])."&nbsp;&nbsp;";
                     }
                 ?>
-                     <a href="../excluiPermissao.php?id=<?php echo $linha['id']; ?>&item={!! $usuario->id !!}" onclick="return confirm('Tem certeza que deseja excluir esta permissão para este usuário?')" class="btn btn-danger btn-sm botaoe" alt="Excluir" data-toggle="tooltip" data-placement="top" title="Excluir" style="text-decoration: none;">x</a>
+                     <a href="http://webdesigner2/sistema/public/excluiPermissao.php?id=<?php echo $linha['id']; ?>&item={!! $usuario->id !!}" onclick="return confirm('Tem certeza que deseja excluir esta permissão para este usuário?')" class="btn btn-danger btn-sm botaoe" alt="Excluir" data-toggle="tooltip" data-placement="top" title="Excluir" style="text-decoration: none;">x</a>
                     </span>
                 <?php
                     }
@@ -87,7 +87,7 @@
 
 
 
-            <form action="/permissao.php" method="post">
+            <form action="http://webdesigner2/sistema/public/permissao.php" method="post">
             <input type="hidden" name="idUser" value="{!! $usuario->id !!}">
             <select name="acesso" class="form-control" style="width: 180px;">
                 <?php

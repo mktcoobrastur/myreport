@@ -27,7 +27,7 @@
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="http://webdesigner2/sistema/public/i.css">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
     @yield('css')
 	<link rel="stylesheet" href="http://webdesigner2/sistema/public/css/pace.min.css">
 	
@@ -366,7 +366,6 @@
   })
 </script>
    <!-- jQuery 3.1.1 -->
-    <script src="/js/pace.min.js"></script>
     <script src="<?php echo $URL; ?>js/pace.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 

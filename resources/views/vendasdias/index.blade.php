@@ -77,24 +77,6 @@
           </div>
         </div>
 
-        <div class="text-center">
-        <a href="javascript:televenda()" class="btn btn-success">Relatório Televenda</a>
-        <a href="javascript:representantes()" class="btn btn-success">Relatório Representantes</a>
-<script language=javascript type="text/javascript">
-  function televenda(){
-  varWindow = window.open ('http://localhost/sistema/public/relAtendentes.php', 'popup', "width=800, height=600, left=0, top=0, scrollbars=no ")
-  }
-
-  function representantes(){
-  varWindow = window.open ('http://localhost/sistema/public/relRepresentantes.php', 'popup', "width=800, height=600, left=0, top=0, scrollbars=no ")
-  }
-
-  function geral(){
-  varWindow = window.open ('http://localhost/sistema/public/relGeral.php', 'popup', "width=800, height=600, left=0, top=0, scrollbars=no ")
-  }
-</script>
-        </div>
-
 <br />
 
 <div class="divR">Pesquisa rápida</div>

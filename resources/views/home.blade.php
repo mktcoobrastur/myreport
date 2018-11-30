@@ -303,7 +303,7 @@
                  ?>
      
                  <div class="OutR">
-                     <div class="infoTop"">
+                     <div class="infoTop">
                      <img src="<?php echo $l->indice; ?>" width="100" alt="Indice" />
                      <i style="display: block;"><?php echo $l->periodoinicio; ?> - <?php echo $l->periodofinal; ?></i>
                      </div>

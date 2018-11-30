@@ -59,7 +59,7 @@ class PermissoesController extends AppBaseController
 
         $permissoes = $this->permissoesRepository->create($input);
 
-        Flash::success('Permissoes saved successfully.');
+        Flash::success('Salvo.');
 
         return redirect(route('permissoes.index'));
     }
@@ -76,7 +76,7 @@ class PermissoesController extends AppBaseController
         $permissoes = $this->permissoesRepository->findWithoutFail($id);
 
         if (empty($permissoes)) {
-            Flash::error('Permissoes not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('permissoes.index'));
         }
@@ -96,7 +96,7 @@ class PermissoesController extends AppBaseController
         $permissoes = $this->permissoesRepository->findWithoutFail($id);
 
         if (empty($permissoes)) {
-            Flash::error('Permissoes not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('permissoes.index'));
         }
@@ -117,14 +117,14 @@ class PermissoesController extends AppBaseController
         $permissoes = $this->permissoesRepository->findWithoutFail($id);
 
         if (empty($permissoes)) {
-            Flash::error('Permissoes not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('permissoes.index'));
         }
 
         $permissoes = $this->permissoesRepository->update($request->all(), $id);
 
-        Flash::success('Permissoes updated successfully.');
+        Flash::success('Atualizado.');
 
         return redirect(route('permissoes.index'));
     }
@@ -141,14 +141,14 @@ class PermissoesController extends AppBaseController
         $permissoes = $this->permissoesRepository->findWithoutFail($id);
 
         if (empty($permissoes)) {
-            Flash::error('Permissoes not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('permissoes.index'));
         }
 
         $this->permissoesRepository->delete($id);
 
-        Flash::success('Permissoes deleted successfully.');
+        Flash::success('Excluído.');
 
         return redirect(route('permissoes.index'));
     }

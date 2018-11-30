@@ -59,7 +59,7 @@ class TconvenioController extends AppBaseController
 
         $tconvenio = $this->tconvenioRepository->create($input);
 
-        Flash::success('Tconvenio saved successfully.');
+        Flash::success('Salvo.');
 
         return redirect(route('convenios.index'));
     }
@@ -76,7 +76,7 @@ class TconvenioController extends AppBaseController
         $tconvenio = $this->tconvenioRepository->findWithoutFail($id);
 
         if (empty($tconvenio)) {
-            Flash::error('Tconvenio not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('tconvenios.index'));
         }
@@ -96,7 +96,7 @@ class TconvenioController extends AppBaseController
         $tconvenio = $this->tconvenioRepository->findWithoutFail($id);
 
         if (empty($tconvenio)) {
-            Flash::error('Tconvenio not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('tconvenios.index'));
         }
@@ -117,14 +117,14 @@ class TconvenioController extends AppBaseController
         $tconvenio = $this->tconvenioRepository->findWithoutFail($id);
 
         if (empty($tconvenio)) {
-            Flash::error('Tconvenio not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('tconvenios.index'));
         }
 
         $tconvenio = $this->tconvenioRepository->update($request->all(), $id);
 
-        Flash::success('Tconvenio updated successfully.');
+        Flash::success('Atualizado.');
 
         return redirect(route('tconvenios.index'));
     }
@@ -141,14 +141,14 @@ class TconvenioController extends AppBaseController
         $tconvenio = $this->tconvenioRepository->findWithoutFail($id);
 
         if (empty($tconvenio)) {
-            Flash::error('Tconvenio not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('tconvenios.index'));
         }
 
         $this->tconvenioRepository->delete($id);
 
-        Flash::success('Tconvenio deleted successfully.');
+        Flash::success('Excluído.');
 
         return redirect(route('tconvenios.index'));
     }

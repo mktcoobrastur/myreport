@@ -59,7 +59,7 @@ class ProjetoController extends AppBaseController
 
         $projeto = $this->projetoRepository->create($input);
 
-        Flash::success('Projeto saved successfully.');
+        Flash::success('Salvo.');
 
         return redirect(route('projetos.index'));
     }
@@ -76,7 +76,7 @@ class ProjetoController extends AppBaseController
         $projeto = $this->projetoRepository->findWithoutFail($id);
 
         if (empty($projeto)) {
-            Flash::error('Projeto not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('projetos.index'));
         }
@@ -96,7 +96,7 @@ class ProjetoController extends AppBaseController
         $projeto = $this->projetoRepository->findWithoutFail($id);
 
         if (empty($projeto)) {
-            Flash::error('Projeto not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('projetos.index'));
         }
@@ -117,14 +117,14 @@ class ProjetoController extends AppBaseController
         $projeto = $this->projetoRepository->findWithoutFail($id);
 
         if (empty($projeto)) {
-            Flash::error('Projeto not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('projetos.index'));
         }
 
         $projeto = $this->projetoRepository->update($request->all(), $id);
 
-        Flash::success('Projeto updated successfully.');
+        Flash::success('Atualizado.');
 
         return redirect(route('projetos.index'));
     }
@@ -141,14 +141,14 @@ class ProjetoController extends AppBaseController
         $projeto = $this->projetoRepository->findWithoutFail($id);
 
         if (empty($projeto)) {
-            Flash::error('Projeto not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('projetos.index'));
         }
 
         $this->projetoRepository->delete($id);
 
-        Flash::success('Projeto deleted successfully.');
+        Flash::success('Excluído.');
 
         return redirect(route('projetos.index'));
     }

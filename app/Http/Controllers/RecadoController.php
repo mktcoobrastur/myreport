@@ -59,7 +59,7 @@ class RecadoController extends AppBaseController
 
         $recado = $this->recadoRepository->create($input);
 
-        Flash::success('Recado saved successfully.');
+        Flash::success('Salvo.');
 
         return redirect(route('recados.index'));
     }
@@ -76,7 +76,7 @@ class RecadoController extends AppBaseController
         $recado = $this->recadoRepository->findWithoutFail($id);
 
         if (empty($recado)) {
-            Flash::error('Recado not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('recados.index'));
         }
@@ -96,7 +96,7 @@ class RecadoController extends AppBaseController
         $recado = $this->recadoRepository->findWithoutFail($id);
 
         if (empty($recado)) {
-            Flash::error('Recado not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('recados.index'));
         }
@@ -117,14 +117,14 @@ class RecadoController extends AppBaseController
         $recado = $this->recadoRepository->findWithoutFail($id);
 
         if (empty($recado)) {
-            Flash::error('Recado not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('recados.index'));
         }
 
         $recado = $this->recadoRepository->update($request->all(), $id);
 
-        Flash::success('Recado updated successfully.');
+        Flash::success('Atualizado.');
 
         return redirect(route('recados.index'));
     }
@@ -141,14 +141,14 @@ class RecadoController extends AppBaseController
         $recado = $this->recadoRepository->findWithoutFail($id);
 
         if (empty($recado)) {
-            Flash::error('Recado not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('recados.index'));
         }
 
         $this->recadoRepository->delete($id);
 
-        Flash::success('Recado deleted successfully.');
+        Flash::success('Excluído.');
 
         return redirect(route('recados.index'));
     }

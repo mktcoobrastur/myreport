@@ -59,7 +59,7 @@ class PromocoeController extends AppBaseController
 
         $promocoe = $this->promocoeRepository->create($input);
 
-        Flash::success('Promocoe saved successfully.');
+        Flash::success('Salvo.');
 
         return redirect(route('promocoes.index'));
     }
@@ -76,7 +76,7 @@ class PromocoeController extends AppBaseController
         $promocoe = $this->promocoeRepository->findWithoutFail($id);
 
         if (empty($promocoe)) {
-            Flash::error('Promocoe not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('promocoes.index'));
         }
@@ -96,7 +96,7 @@ class PromocoeController extends AppBaseController
         $promocoe = $this->promocoeRepository->findWithoutFail($id);
 
         if (empty($promocoe)) {
-            Flash::error('Promocoe not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('promocoes.index'));
         }
@@ -117,14 +117,14 @@ class PromocoeController extends AppBaseController
         $promocoe = $this->promocoeRepository->findWithoutFail($id);
 
         if (empty($promocoe)) {
-            Flash::error('Promocoe not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('promocoes.index'));
         }
 
         $promocoe = $this->promocoeRepository->update($request->all(), $id);
 
-        Flash::success('Promocoe updated successfully.');
+        Flash::success('Atualizado.');
 
         return redirect(route('promocoes.index'));
     }
@@ -141,14 +141,14 @@ class PromocoeController extends AppBaseController
         $promocoe = $this->promocoeRepository->findWithoutFail($id);
 
         if (empty($promocoe)) {
-            Flash::error('Promocoe not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('promocoes.index'));
         }
 
         $this->promocoeRepository->delete($id);
 
-        Flash::success('Promocoe deleted successfully.');
+        Flash::success('Excluído.');
 
         return redirect(route('promocoes.index'));
     }

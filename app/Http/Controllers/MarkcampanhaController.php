@@ -59,7 +59,7 @@ class MarkcampanhaController extends AppBaseController
 
         $markcampanha = $this->markcampanhaRepository->create($input);
 
-        Flash::success('Markcampanha saved successfully.');
+        Flash::success('Salvo.');
 
         return redirect(route('markcampanhas.index'));
     }
@@ -76,7 +76,7 @@ class MarkcampanhaController extends AppBaseController
         $markcampanha = $this->markcampanhaRepository->findWithoutFail($id);
 
         if (empty($markcampanha)) {
-            Flash::error('Markcampanha not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('markcampanhas.index'));
         }
@@ -96,7 +96,7 @@ class MarkcampanhaController extends AppBaseController
         $markcampanha = $this->markcampanhaRepository->findWithoutFail($id);
 
         if (empty($markcampanha)) {
-            Flash::error('Markcampanha not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('markcampanhas.index'));
         }
@@ -117,14 +117,14 @@ class MarkcampanhaController extends AppBaseController
         $markcampanha = $this->markcampanhaRepository->findWithoutFail($id);
 
         if (empty($markcampanha)) {
-            Flash::error('Markcampanha not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('markcampanhas.index'));
         }
 
         $markcampanha = $this->markcampanhaRepository->update($request->all(), $id);
 
-        Flash::success('Markcampanha updated successfully.');
+        Flash::success('Atualizado.');
 
         return redirect(route('markcampanhas.index'));
     }
@@ -141,14 +141,14 @@ class MarkcampanhaController extends AppBaseController
         $markcampanha = $this->markcampanhaRepository->findWithoutFail($id);
 
         if (empty($markcampanha)) {
-            Flash::error('Markcampanha not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('markcampanhas.index'));
         }
 
         $this->markcampanhaRepository->delete($id);
 
-        Flash::success('Markcampanha deleted successfully.');
+        Flash::success('Excluído.');
 
         return redirect(route('markcampanhas.index'));
     }

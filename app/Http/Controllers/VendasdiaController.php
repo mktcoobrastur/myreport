@@ -59,7 +59,7 @@ class VendasdiaController extends AppBaseController
 
         $vendasdia = $this->vendasdiaRepository->create($input);
 
-        Flash::success('Vendasdia saved successfully.');
+        Flash::success('Salvo.');
 
         return redirect(route('vendasdias.index'));
     }

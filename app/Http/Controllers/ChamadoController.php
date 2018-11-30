@@ -62,7 +62,7 @@ class ChamadoController extends AppBaseController
 
         $chamado = $this->chamadoRepository->create($input);
 
-        Flash::success('Chamado saved successfully.');
+        Flash::success('Chamado salvo.');
 
         return redirect(route('chamados.index'));
     }
@@ -79,7 +79,7 @@ class ChamadoController extends AppBaseController
         $chamado = $this->chamadoRepository->findWithoutFail($id);
 
         if (empty($chamado)) {
-            Flash::error('Chamado not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('chamados.index'));
         }
@@ -99,7 +99,7 @@ class ChamadoController extends AppBaseController
         $chamado = $this->chamadoRepository->findWithoutFail($id);
 
         if (empty($chamado)) {
-            Flash::error('Chamado not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('chamados.index'));
         }
@@ -120,14 +120,14 @@ class ChamadoController extends AppBaseController
         $chamado = $this->chamadoRepository->findWithoutFail($id);
 
         if (empty($chamado)) {
-            Flash::error('Chamado not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('chamados.index'));
         }
 
         $chamado = $this->chamadoRepository->update($request->all(), $id);
 
-        Flash::success('Chamado updated successfully.');
+        Flash::success('Chamado atualizado.');
 
         return redirect(route('chamados.index'));
     }
@@ -144,14 +144,14 @@ class ChamadoController extends AppBaseController
         $chamado = $this->chamadoRepository->findWithoutFail($id);
 
         if (empty($chamado)) {
-            Flash::error('Chamado not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('chamados.index'));
         }
 
         $this->chamadoRepository->delete($id);
 
-        Flash::success('Chamado deleted successfully.');
+        Flash::success('Chamado excluído.');
 
         return redirect(route('chamados.index'));
     }

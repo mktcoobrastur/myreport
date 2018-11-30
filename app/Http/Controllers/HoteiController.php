@@ -76,7 +76,7 @@ class HoteiController extends AppBaseController
         $hotei = $this->hoteiRepository->findWithoutFail($id);
 
         if (empty($hotei)) {
-            Flash::error('Hotei not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('hoteis.index'));
         }
@@ -96,7 +96,7 @@ class HoteiController extends AppBaseController
         $hotei = $this->hoteiRepository->findWithoutFail($id);
 
         if (empty($hotei)) {
-            Flash::error('Hotei not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('hoteis.index'));
         }
@@ -117,14 +117,14 @@ class HoteiController extends AppBaseController
         $hotei = $this->hoteiRepository->findWithoutFail($id);
 
         if (empty($hotei)) {
-            Flash::error('Hotei not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('hoteis.index'));
         }
 
         $hotei = $this->hoteiRepository->update($request->all(), $id);
 
-        Flash::success('Hotei updated successfully.');
+        Flash::success('Atualizado.');
 
         return redirect(route('hoteis.index'));
     }
@@ -141,14 +141,14 @@ class HoteiController extends AppBaseController
         $hotei = $this->hoteiRepository->findWithoutFail($id);
 
         if (empty($hotei)) {
-            Flash::error('Hotei not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('hoteis.index'));
         }
 
         $this->hoteiRepository->delete($id);
 
-        Flash::success('Hotei deleted successfully.');
+        Flash::success('Excluido.');
 
         return redirect(route('hoteis.index'));
     }

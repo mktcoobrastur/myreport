@@ -59,7 +59,7 @@ class MarkconveniadoController extends AppBaseController
 
         $markconveniado = $this->markconveniadoRepository->create($input);
 
-        Flash::success('Markconveniado saved successfully.');
+        Flash::success('Salvo.');
 
         return redirect('markconveniados/'.$markconveniado->id.'/edit');
     }
@@ -76,7 +76,7 @@ class MarkconveniadoController extends AppBaseController
         $markconveniado = $this->markconveniadoRepository->findWithoutFail($id);
 
         if (empty($markconveniado)) {
-            Flash::error('Markconveniado not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('markconveniados.index'));
         }
@@ -96,7 +96,7 @@ class MarkconveniadoController extends AppBaseController
         $markconveniado = $this->markconveniadoRepository->findWithoutFail($id);
 
         if (empty($markconveniado)) {
-            Flash::error('Markconveniado not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('markconveniados.index'));
         }
@@ -117,14 +117,14 @@ class MarkconveniadoController extends AppBaseController
         $markconveniado = $this->markconveniadoRepository->findWithoutFail($id);
 
         if (empty($markconveniado)) {
-            Flash::error('Markconveniado not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('markconveniados.index'));
         }
 
         $markconveniado = $this->markconveniadoRepository->update($request->all(), $id);
 
-        Flash::success('Markconveniado updated successfully.');
+        Flash::success('Atualizado.');
 
         return redirect(route('markconveniados.index'));
     }
@@ -141,14 +141,14 @@ class MarkconveniadoController extends AppBaseController
         $markconveniado = $this->markconveniadoRepository->findWithoutFail($id);
 
         if (empty($markconveniado)) {
-            Flash::error('Markconveniado not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('markconveniados.index'));
         }
 
         $this->markconveniadoRepository->delete($id);
 
-        Flash::success('Markconveniado deleted successfully.');
+        Flash::success('Excluído.');
 
         return redirect(route('markconveniados.index'));
     }

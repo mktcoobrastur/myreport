@@ -59,7 +59,7 @@ class DepartamentoController extends AppBaseController
 
         $departamento = $this->departamentoRepository->create($input);
 
-        Flash::success('Departamento saved successfully.');
+        Flash::success('Departamento Salvo.');
 
         return redirect(route('departamentos.index'));
     }
@@ -76,7 +76,7 @@ class DepartamentoController extends AppBaseController
         $departamento = $this->departamentoRepository->findWithoutFail($id);
 
         if (empty($departamento)) {
-            Flash::error('Departamento not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('departamentos.index'));
         }
@@ -96,7 +96,7 @@ class DepartamentoController extends AppBaseController
         $departamento = $this->departamentoRepository->findWithoutFail($id);
 
         if (empty($departamento)) {
-            Flash::error('Departamento not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('departamentos.index'));
         }
@@ -117,14 +117,14 @@ class DepartamentoController extends AppBaseController
         $departamento = $this->departamentoRepository->findWithoutFail($id);
 
         if (empty($departamento)) {
-            Flash::error('Departamento not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('departamentos.index'));
         }
 
         $departamento = $this->departamentoRepository->update($request->all(), $id);
 
-        Flash::success('Departamento updated successfully.');
+        Flash::success('Departamento atualizado.');
 
         return redirect(route('departamentos.index'));
     }
@@ -141,14 +141,14 @@ class DepartamentoController extends AppBaseController
         $departamento = $this->departamentoRepository->findWithoutFail($id);
 
         if (empty($departamento)) {
-            Flash::error('Departamento not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('departamentos.index'));
         }
 
         $this->departamentoRepository->delete($id);
 
-        Flash::success('Departamento deleted successfully.');
+        Flash::success('Departamento excluído.');
 
         return redirect(route('departamentos.index'));
     }

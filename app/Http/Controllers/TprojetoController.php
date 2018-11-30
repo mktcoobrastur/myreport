@@ -59,7 +59,7 @@ class TprojetoController extends AppBaseController
 
         $tprojeto = $this->tprojetoRepository->create($input);
 
-        Flash::success('Tprojeto saved successfully.');
+        Flash::success('Salvo.');
 
         return redirect(route('tprojetos.index'));
     }
@@ -76,7 +76,7 @@ class TprojetoController extends AppBaseController
         $tprojeto = $this->tprojetoRepository->findWithoutFail($id);
 
         if (empty($tprojeto)) {
-            Flash::error('Tprojeto not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('tprojetos.index'));
         }
@@ -96,7 +96,7 @@ class TprojetoController extends AppBaseController
         $tprojeto = $this->tprojetoRepository->findWithoutFail($id);
 
         if (empty($tprojeto)) {
-            Flash::error('Tprojeto not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('tprojetos.index'));
         }
@@ -117,14 +117,14 @@ class TprojetoController extends AppBaseController
         $tprojeto = $this->tprojetoRepository->findWithoutFail($id);
 
         if (empty($tprojeto)) {
-            Flash::error('Tprojeto not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('tprojetos.index'));
         }
 
         $tprojeto = $this->tprojetoRepository->update($request->all(), $id);
 
-        Flash::success('Tprojeto updated successfully.');
+        Flash::success('Atualizado.');
 
         return redirect(route('tprojetos.index'));
     }
@@ -141,14 +141,14 @@ class TprojetoController extends AppBaseController
         $tprojeto = $this->tprojetoRepository->findWithoutFail($id);
 
         if (empty($tprojeto)) {
-            Flash::error('Tprojeto not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('tprojetos.index'));
         }
 
         $this->tprojetoRepository->delete($id);
 
-        Flash::success('Tprojeto deleted successfully.');
+        Flash::success('Excluído.');
 
         return redirect(route('tprojetos.index'));
     }

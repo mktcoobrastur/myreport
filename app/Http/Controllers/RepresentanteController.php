@@ -59,7 +59,7 @@ class RepresentanteController extends AppBaseController
 
         $representante = $this->representanteRepository->create($input);
 
-        Flash::success('Representante saved successfully.');
+        Flash::success('Salvo.');
 
         return redirect(route('representantes.index'));
     }
@@ -76,7 +76,7 @@ class RepresentanteController extends AppBaseController
         $representante = $this->representanteRepository->findWithoutFail($id);
 
         if (empty($representante)) {
-            Flash::error('Representante not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('representantes.index'));
         }
@@ -96,7 +96,7 @@ class RepresentanteController extends AppBaseController
         $representante = $this->representanteRepository->findWithoutFail($id);
 
         if (empty($representante)) {
-            Flash::error('Representante not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('representantes.index'));
         }
@@ -117,14 +117,14 @@ class RepresentanteController extends AppBaseController
         $representante = $this->representanteRepository->findWithoutFail($id);
 
         if (empty($representante)) {
-            Flash::error('Representante not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('representantes.index'));
         }
 
         $representante = $this->representanteRepository->update($request->all(), $id);
 
-        Flash::success('Representante updated successfully.');
+        Flash::success('Atualizado.');
 
         return redirect(route('representantes.index'));
     }
@@ -141,14 +141,14 @@ class RepresentanteController extends AppBaseController
         $representante = $this->representanteRepository->findWithoutFail($id);
 
         if (empty($representante)) {
-            Flash::error('Representante not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('representantes.index'));
         }
 
         $this->representanteRepository->delete($id);
 
-        Flash::success('Representante deleted successfully.');
+        Flash::success('Excluido.');
 
         return redirect(route('representantes.index'));
     }

@@ -28,6 +28,8 @@
 </div>
 
 <!-- Representante Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('representante', 'Representante:') !!}
 <select name="representante" class="form-control">
 <?php
     //Consulta SELECT representantes
@@ -40,7 +42,7 @@
     }
 ?>
     </select>
-
+</div>
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
     {!! Form::submit('Salvar', ['class' => 'btn btn-primary']) !!}

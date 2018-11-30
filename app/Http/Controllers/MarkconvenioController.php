@@ -59,7 +59,7 @@ class MarkconvenioController extends AppBaseController
 
         $markconvenio = $this->markconvenioRepository->create($input);
 
-        Flash::success('Markconvenio saved successfully.');
+        Flash::success('Salvo.');
 
         return redirect(route('markconvenios.index'));
     }
@@ -76,7 +76,7 @@ class MarkconvenioController extends AppBaseController
         $markconvenio = $this->markconvenioRepository->findWithoutFail($id);
 
         if (empty($markconvenio)) {
-            Flash::error('Markconvenio not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('markconvenios.index'));
         }
@@ -96,7 +96,7 @@ class MarkconvenioController extends AppBaseController
         $markconvenio = $this->markconvenioRepository->findWithoutFail($id);
 
         if (empty($markconvenio)) {
-            Flash::error('Markconvenio not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('markconvenios.index'));
         }
@@ -117,14 +117,14 @@ class MarkconvenioController extends AppBaseController
         $markconvenio = $this->markconvenioRepository->findWithoutFail($id);
 
         if (empty($markconvenio)) {
-            Flash::error('Markconvenio not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('markconvenios.index'));
         }
 
         $markconvenio = $this->markconvenioRepository->update($request->all(), $id);
 
-        Flash::success('Markconvenio updated successfully.');
+        Flash::success('Atualizado.');
 
         return redirect(route('markconvenios.index'));
     }
@@ -141,14 +141,14 @@ class MarkconvenioController extends AppBaseController
         $markconvenio = $this->markconvenioRepository->findWithoutFail($id);
 
         if (empty($markconvenio)) {
-            Flash::error('Markconvenio not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('markconvenios.index'));
         }
 
         $this->markconvenioRepository->delete($id);
 
-        Flash::success('Markconvenio deleted successfully.');
+        Flash::success('Excluído.');
 
         return redirect(route('markconvenios.index'));
     }

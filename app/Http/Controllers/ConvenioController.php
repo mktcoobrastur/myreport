@@ -63,7 +63,7 @@ class ConvenioController extends AppBaseController
 
         $convenio = $this->convenioRepository->create($input);
 
-        Flash::success('Convenio saved successfully.');
+        Flash::success('Convenio salvo.');
 
         return redirect(route('convenios.index'));
     }
@@ -80,7 +80,7 @@ class ConvenioController extends AppBaseController
         $convenio = $this->convenioRepository->findWithoutFail($id);
 
         if (empty($convenio)) {
-            Flash::error('Convenio not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('convenios.index'));
         }
@@ -100,7 +100,7 @@ class ConvenioController extends AppBaseController
         $convenio = $this->convenioRepository->findWithoutFail($id);
 
         if (empty($convenio)) {
-            Flash::error('Convenio not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('convenios.index'));
         }
@@ -121,14 +121,14 @@ class ConvenioController extends AppBaseController
         $convenio = $this->convenioRepository->findWithoutFail($id);
 
         if (empty($convenio)) {
-            Flash::error('Convenio not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('convenios.index'));
         }
 
         $convenio = $this->convenioRepository->update($request->all(), $id);
 
-        Flash::success('Convenio updated successfully.');
+        Flash::success('Convenio atualizado.');
 
         return redirect(route('convenios.index'));
     }
@@ -145,14 +145,14 @@ class ConvenioController extends AppBaseController
         $convenio = $this->convenioRepository->findWithoutFail($id);
 
         if (empty($convenio)) {
-            Flash::error('Convenio not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('convenios.index'));
         }
 
         $this->convenioRepository->delete($id);
 
-        Flash::success('Convenio deleted successfully.');
+        Flash::success('Convenio excluído.');
 
         return redirect(route('convenios.index'));
     }

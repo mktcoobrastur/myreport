@@ -59,7 +59,7 @@ class VendasreController extends AppBaseController
 
         $vendasre = $this->vendasreRepository->create($input);
 
-        Flash::success('Vendasre saved successfully.');
+        Flash::success('Salvo.');
 
         return redirect(route('vendasres.index'));
     }
@@ -76,7 +76,7 @@ class VendasreController extends AppBaseController
         $vendasre = $this->vendasreRepository->findWithoutFail($id);
 
         if (empty($vendasre)) {
-            Flash::error('Vendasre not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('vendasres.index'));
         }
@@ -96,7 +96,7 @@ class VendasreController extends AppBaseController
         $vendasre = $this->vendasreRepository->findWithoutFail($id);
 
         if (empty($vendasre)) {
-            Flash::error('Vendasre not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('vendasres.index'));
         }
@@ -117,14 +117,14 @@ class VendasreController extends AppBaseController
         $vendasre = $this->vendasreRepository->findWithoutFail($id);
 
         if (empty($vendasre)) {
-            Flash::error('Vendasre not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('vendasres.index'));
         }
 
         $vendasre = $this->vendasreRepository->update($request->all(), $id);
 
-        Flash::success('Vendasre updated successfully.');
+        Flash::success('Atualizado.');
 
         return redirect(route('vendasres.index'));
     }
@@ -141,14 +141,14 @@ class VendasreController extends AppBaseController
         $vendasre = $this->vendasreRepository->findWithoutFail($id);
 
         if (empty($vendasre)) {
-            Flash::error('Vendasre not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('vendasres.index'));
         }
 
         $this->vendasreRepository->delete($id);
 
-        Flash::success('Vendasre deleted successfully.');
+        Flash::success('Excluído.');
 
         return redirect(route('vendasres.index'));
     }

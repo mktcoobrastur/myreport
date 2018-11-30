@@ -59,7 +59,7 @@ class IndiceController extends AppBaseController
 
         $indice = $this->indiceRepository->create($input);
 
-        Flash::success('Indice saved successfully.');
+        Flash::success('Indice salvo.');
 
         return redirect(route('indices.index'));
     }
@@ -76,7 +76,7 @@ class IndiceController extends AppBaseController
         $indice = $this->indiceRepository->findWithoutFail($id);
 
         if (empty($indice)) {
-            Flash::error('Indice not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('indices.index'));
         }
@@ -96,7 +96,7 @@ class IndiceController extends AppBaseController
         $indice = $this->indiceRepository->findWithoutFail($id);
 
         if (empty($indice)) {
-            Flash::error('Indice not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('indices.index'));
         }
@@ -117,14 +117,14 @@ class IndiceController extends AppBaseController
         $indice = $this->indiceRepository->findWithoutFail($id);
 
         if (empty($indice)) {
-            Flash::error('Indice not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('indices.index'));
         }
 
         $indice = $this->indiceRepository->update($request->all(), $id);
 
-        Flash::success('Indice updated successfully.');
+        Flash::success('Indice atualizado.');
 
         return redirect(route('indices.index'));
     }
@@ -141,14 +141,14 @@ class IndiceController extends AppBaseController
         $indice = $this->indiceRepository->findWithoutFail($id);
 
         if (empty($indice)) {
-            Flash::error('Indice not found');
+            Flash::error('Ocorreu um erro.');
 
             return redirect(route('indices.index'));
         }
 
         $this->indiceRepository->delete($id);
 
-        Flash::success('Indice deleted successfully.');
+        Flash::success('Indice excluído.');
 
         return redirect(route('indices.index'));
     }

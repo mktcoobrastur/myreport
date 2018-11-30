@@ -5,7 +5,7 @@
 
     <div class="alert" style="width: 250px;">
         <form action="/uploadConvenio.php" method="post" enctype="multipart/form-data">
-    		<label>Enviar Imagem:</label>
+    		<label>Enviar Logo:</label>
 	 		<input type="hidden" name="idChamado" value="{!! $convenio->id !!}" />
     	    <input type="file" name="arquivos[]" multiple>
             <input type="submit" name="enviaArquivo" value="Enviar">
@@ -68,8 +68,8 @@
                 <?php if ($linha['status'] == 'F') { echo "FINALIZADO"; } ?>
             </td>
             <td>
-            <a href="/tconvenios/<?php echo $linha['id'];?>" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-            <a href="/tconvenios/<?php echo $linha['id'];?>/edit?c={!! $convenio->id !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+            <a href="http://webdesigner2/sistema/public/tconvenios/<?php echo $linha['id'];?>" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
+            <a href="http://webdesigner2/sistema/public/tconvenios/<?php echo $linha['id'];?>/edit?c={!! $convenio->id !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
             {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Tem certeza?')"]) !!}
             </td>
         </tr>

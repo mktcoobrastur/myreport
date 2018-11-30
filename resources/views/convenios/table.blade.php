@@ -39,7 +39,7 @@
 @foreach($convenios as $convenio)
 
 <div class="conveniosOut">
-    <h4>{!! strtoupper($convenio->nome) !!}</h4>
+<a href="{!! route('convenios.show', [$convenio->id]) !!}" class='btn btn-default btn-xs'><h4>{!! strtoupper($convenio->nome) !!}</h4>
 
         <?php
             $conexao  = mysqli_connect("localhost","root","","sistema");
@@ -48,7 +48,7 @@
             
     	    while ($linha = mysqli_fetch_array($query)) {
         ?>
-			<img src="http://webdesigner2/sistema/public/imgconvenios/<?php echo $linha['img']; ?>" alt="<?php echo $linha['nome']; ?>" />
+			<img src="http://webdesigner2/sistema/public/imgconvenios/<?php echo $linha['img']; ?>" alt="<?php echo $linha['nome']; ?>" /></a>
 		</a>
 
 	    <?php } ?>

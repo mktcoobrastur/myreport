@@ -13,7 +13,6 @@
             <i class="fa fa-files-o"></i>
             <span>Marketing</span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right">2</span>
             </span>
           </a>
           <ul class="treeview-menu">
@@ -34,11 +33,10 @@
           <i class="fa fa-book"></i>
             <span>Relacionamento</span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right">3</span>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="{!! route('relacionamentos.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
+            <!--li><a href="{!! route('relacionamentos.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li-->
             <li><a href="{!! route('chamados.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Gerenciamento de Chamados</a></li>
             <li><a href="http://webdesigner2/sistema/public/indice"><i class="fa fa-circle-o text-aqua"></i> Índice ( Chamados )</a></li>
             <li><a href="http://webdesigner2/sistema/public/reclameaqui"><i class="fa fa-circle-o text-aqua"></i> Índice ( ReclameAqui )</a></li>
@@ -57,19 +55,15 @@
           <i class="fa fa-pie-chart"></i>
             <span>Negócios</span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right">4</span>
             </span>
           </a>
     <ul class="treeview-menu">
-      <li><a href="{!! route('negocios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
       <li><a href="{!! route('convenios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Convênios</a></li>
       <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Indicação Premiada</a></li>
-
-        <hr>
-
-      <li><a href="{!! route('vendasdias.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Vendas</a></li>
       <li><a href="{!! route('metas.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Metas</span></a></li>
       <li><a href="{!! route('representantes.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Representantes</span></a></li>
+      <li><a href="{!! route('negocios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
+      <li><a href="{!! route('vendasdias.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Vendas</a></li>
       <!--li><a href="{!! route('vendasres.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Vendas Representantes</span></a></li>
       <li><a href="http://webdesigner2/sistema/public/relatorio-representantes"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Representantes</span></a></li>
       <li><a href="http://webdesigner2/sistema/public/relatorio-televenda"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Televenda</span></a></li-->
@@ -86,7 +80,6 @@
           <i class="fa fa-h-square"></i> 
             <span>Hotéis</span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right">3</span>
             </span>
           </a>
           <ul class="treeview-menu">
@@ -107,7 +100,6 @@
           <i class="fa fa-laptop"></i>
             <span>Gestão Triton</span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right">1</span>
             </span>
           </a>
           <ul class="treeview-menu">
@@ -125,7 +117,6 @@
           <i class="fa fa-envelope"></i>
             <span>Televenda</span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right">1</span>
             </span>
           </a>
           <ul class="treeview-menu">
@@ -165,7 +156,6 @@
           <i class="fa fa-laptop"></i>
             <span>Menu Programador</span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right">11</span>
             </span>
           </a>
 

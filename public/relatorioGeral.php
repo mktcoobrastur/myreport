@@ -14,7 +14,7 @@
 <div style="width: 80%; margin: 0 auto;">
 
   <div class="form-group" style="float: left; width: 400px; margin-left: 10px; margin-top: 2px;">
-  <form action="http://webdesigner2/sistema/public/relatorioGeral.php" method="post" target="blank">
+  <form action="http://webdesigner2/sistema/public/relatorioGeral.php" method="post">
     <label style="color:#fff;">Mensal Geral:</label>
     <select name="mes" class="form-control">
       <option value="01">Janeiro</option>

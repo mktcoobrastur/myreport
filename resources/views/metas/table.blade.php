@@ -60,7 +60,7 @@
         $queryMetas  = mysqli_query($con, "SELECT * FROM metas WHERE representante = $getR");
         while($linha = mysqli_fetch_array($queryMetas)) {
     ?>
-                
+
         <tr>
             <td>
                 <?php 

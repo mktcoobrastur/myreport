@@ -30,13 +30,6 @@
     
     @yield('css')
 	<link rel="stylesheet" href="http://webdesigner2/sistema/public/css/pace.min.css">
-    <?php if(Request::segment(1) == 'laminas') { ?>
-
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <?php } else { ?>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <?php } ?>
-
 	
     <script type="text/javascript">
 	jQuery(document).ready(function(){
@@ -98,6 +91,8 @@
                 <!-- start message -->
 
         <?php
+            if(isset(Auth::user()->depto)) { echo "Logado"; }
+
             $conexao  = mysqli_connect("localhost","root","","sistema");
             $userName   = Auth::user()->name;
             $sql    = "SELECT * FROM recados where para = '$userName' order by id desc limit 0,3";
@@ -370,7 +365,7 @@
     })  
   })
 </script>
-    <!-- jQuery 3.1.1 -->
+   <!-- jQuery 3.1.1 -->
     <script src="/js/pace.min.js"></script>
     <script src="<?php echo $URL; ?>js/pace.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -379,7 +374,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/js/adminlte.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
-
 
 <script type="text/javascript" src="http://webdesigner2/sistema/public/lib/jquery.bgiframe.min.js"></script>
 <script type="text/javascript" src="http://webdesigner2/sistema/public/lib/jquery.ajaxQueue.js"></script>

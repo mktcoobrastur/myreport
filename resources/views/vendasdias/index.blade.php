@@ -51,7 +51,7 @@
 
 
   <div class="form-group" style="float: left; width: 500px; margin-left: 10px;">
-  <form action="http://webdesigner2/sistema/public/relatorioGeral.php" method="post" target="blank">
+  <form action="http://webdesigner2/sistema/public/relatorioGeral.php" method="post" target="new">
     <label>Mensal Geral:</label>
     <select name="mes" class="form-control">
       <option value="01">Janeiro</option>
@@ -123,6 +123,8 @@
     </div>
 </div>
 
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="http://webdesigner2/sistema/public/funcs.js"></script>
 
 
 

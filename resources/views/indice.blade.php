@@ -97,6 +97,14 @@
     font-family: 'Source Sans Pro' !important;
     font-size: 30px;
   }
+  .caixaBl {
+    width: 220px;
+    margin-top: 20px;
+    margin-left: 80px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    padding: 5px;
+  }
 </style>
 
 <section class="content-header">
@@ -140,6 +148,15 @@
                   <input type="text" class="knob" value="<?php echo $linhaElogios; ?>" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgColor="#3c8dbc" data-readonly="true">
 
                   <div class="knob-label labelChart">Elogios</div>
+                  <div id="MeuDiv" style="display: none;" class="caixaBl caixaum">
+                      <?php
+                        $con = new mysqli("localhost", "root", "", "sistema");
+                        $queryCh = mysqli_query($con, "SELECT * FROM chamados WHERE motivo = 'Elogios'");
+                        $linha8 = mysqli_fetch_array($queryCh);
+                            echo $linha8['tecnico']." (3)<br />";
+                        
+                      ?>                    
+                  </div>
                 </div>
                 <!-- ./col -->
                 <div class="row">
@@ -147,6 +164,16 @@
                   <input type="text" class="knob" value="<?php echo $linhaInfo; ?>" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgColor="#3c8dbc" data-readonly="true">
 
                   <div class="knob-label labelChart">Informações</div>
+                  <div id="MeuDiv2" style="display: none;" class="caixaBl caixadois">
+                      <?php
+                        $con = new mysqli("localhost", "root", "", "sistema");
+                        $queryCh = mysqli_query($con, "SELECT * FROM chamados WHERE motivo = 'Informacoes'");
+                        while($linha8 = mysqli_fetch_array($queryCh)) {
+                            echo $linha8['tecnico']."<br />";
+                        }
+                      ?>                    
+                  </div>
+
                 </div>
                 <!-- ./col -->
                 <div class="row">
@@ -154,6 +181,16 @@
                   <input type="text" class="knob" value="<?php echo $linhaRecl; ?>" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgColor="#3c8dbc" data-readonly="true">
 
                   <div class="knob-label labelChart">Reclamações</div>
+                  <div id="MeuDivt" style="display: none;" class="caixaBl caixatres">
+                      <?php
+                        $con = new mysqli("localhost", "root", "", "sistema");
+                        $queryCh = mysqli_query($con, "SELECT * FROM chamados WHERE motivo = 'Reclamacoes'");
+                        $linha8 = mysqli_fetch_array($queryCh);
+                            echo $linha8['tecnico']."(2)<br />";
+                        
+                      ?>                    
+                  </div>
+
                 </div>
                 <!-- ./col -->
                 <div class="row">
@@ -161,11 +198,22 @@
                   <input type="text" class="knob" value="<?php echo $linhaServ; ?>" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgColor="#3c8dbc" data-readonly="true">
 
                   <div class="knob-label labelChart">Serviços ou Solicitações</div>
+                  <div id="MeuDiv" style="display: none;" class="caixaBl caixaquatro">
+                      <?php
+                        $con = new mysqli("localhost", "root", "", "sistema");
+                        $queryCh = mysqli_query($con, "SELECT * FROM chamados WHERE motivo = 'Servicos'");
+                        while($linha8 = mysqli_fetch_array($queryCh)) {
+                            echo $linha8['tecnico']." (2)<br />";
+                        }
+                      ?>                    
+                  </div>
                 </div>
                 <!-- ./col -->
             </div>
 
-
+                  <div style="width: 100%; text-align: center; margin-top: 50px;">
+	                <a id="exibir" href="" class="btn btn-primary" style="text-decoration: none;">+ detalhes</a>
+                  </div>
 
             </div>
 
@@ -181,7 +229,51 @@
       <!-- /.row -->
 
 
+<script>
+    //Elogios
+	$(document).ready(function(){
 
+		$("a").click(function(event){
+			var link = $(this);			
+
+			if(link.attr("id").match("esconder"))
+				$("#MeuDiv").hide("slow");
+			else
+				$("#MeuDiv").show("slow");
+
+			event.preventDefault();
+		});
+	})
+    //Informações
+    $(document).ready(function(){
+
+    $("a").click(function(event){
+    var link = $(this);			
+
+    if(link.attr("id").match("esconder2"))
+        $("#MeuDiv2").hide("slow");
+    else
+        $("#MeuDiv2").show("slow");
+
+    event.preventDefault();
+    });
+})
+    //Informações
+    $(document).ready(function(){
+
+$("a").click(function(event){
+var link = $(this);			
+
+if(link.attr("id").match("escondert"))
+    $(".caixatres").hide("slow");
+else
+    $(".caixatres").show("slow");
+
+event.preventDefault();
+});
+})
+
+</script>
 
 </section>
     <!-- /.content -->

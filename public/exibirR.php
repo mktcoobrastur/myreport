@@ -75,6 +75,6 @@ while($row = mysqli_fetch_array($consultaVendas)) {
 
 </div>
 <?php 
-// Acentua��o
+// Acentuacao
 header("Content-Type: text/html; charset=UTF-8",true);
 ?>

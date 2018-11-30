@@ -34,6 +34,20 @@
                                            ), '', ['class' => 'form-control']) !!}
 </div>
 
+<!-- Categoria Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('tecnico', 'Categoria:') !!}
+    {!! Form::select('tecnico', array('Cancelamento' => 'Cancelamento',
+                                           'Central' => 'Central de Atendimento',
+                                           'Cobranca' => 'Cobrança',
+                                           'e-tickets' => 'e-Tickets',
+                                           'Hotel' => 'Hotel',
+                                           'Reservas' => 'Reservas',
+                                           'Vendas' => 'Vendas',
+                                           'Outros' => 'Outros'
+                                           ), '', ['class' => 'form-control']) !!}
+</div>
+
 <!-- Mensagem Field -->
 <div class="form-group col-sm-12 col-lg-12">
     {!! Form::label('mensagem', 'Mensagem:') !!}

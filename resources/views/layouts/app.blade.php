@@ -433,6 +433,21 @@
     color: #fff;
     cursor: pointer;
 }
+.suggest {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: 50px;
+    background: #3C8DBB;
+    border-top: 4px solid #fff;
+    border-left: 4px solid #fff;
+    line-height: 42px;
+    text-align: center;
+}
+.linkS {
+    color: #fff;
+}
 </style>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
@@ -452,7 +467,7 @@
            <div class="um">
            <span style="display: block; width: 350px; margin: 0 auto; text-align: left;">
                <br /><br /><br />
-               <a class="btnRodape" href="#">Ranking Televenda</a><br />  
+               <a class="btnRodape" href="http://webdesigner2/sistema/public/televenda" target="new">Ranking Televenda</a><br />  
                <a class="btnRodape" href="#">Ranking Representantes</a>
                </span>
            </div>
@@ -468,7 +483,53 @@
                <div class="qr" style="background-image: url(img/08.jpg);"></div>
             </div>
            </div>
-       </footer>
+        </footer>
+        <div class="suggest">
+            <a class="linkS" href="" data-toggle="modal" data-target="#modalExemplo"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp; Tem alguma sugestão de melhoria?</a>
+        </div>
+
+
+<div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sugestões</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+            <label>Eu sou:</label>
+            <input type="text" class="form-control" value="<?php echo $userName; ?>">
+        </div>
+        <div class="form-group">
+            <label>Para qual página de departamento você quer enviar uma sugestão?</label>
+            <select name="depto" class="form-control">
+                <option>Marketing</option>
+                <option>Relacionamento</option>
+                <option>Negócios</option>
+                <option>Hotéis</option>
+                <option>Gestão Triton</option>
+                <option>Televenda</option>
+                <option>Projetos</option>
+                <option>Demais funcionalidades</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Sugestão:</label>
+            <textarea class="form-control" rows="8"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Enviar Feedback</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
     </body>
 </html>

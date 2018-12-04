@@ -303,7 +303,12 @@
      
                  <div class="OutR">
                      <div class="infoTop">
-                     <img src="<?php echo $l->indice; ?>" width="100" alt="Indice" />
+                     <img src="<?php echo $l->indice; ?>" style="margin-left: -20px;" width="100" alt="Indice" />
+                    <span style="position: absolute; margin-top: 20px; font-size: 23px;">
+                    <?php echo $l->nota; ?><i style="font-size: 14px;">/10</i><br />
+                        <b><?php echo $l->ind; ?></b>
+                    </span>
+
                      <i style="display: block;"><?php echo $l->periodoinicio; ?> - <?php echo $l->periodofinal; ?></i>
                      </div>
                      <div class="infoTop">

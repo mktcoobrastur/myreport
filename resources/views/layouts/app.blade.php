@@ -298,14 +298,14 @@
             @yield('content')
         </div>
 
-        <!-- Main Footer -->
-        <footer class="main-footer" style="max-height: 100px;text-align: center">
-            <strong>Copyright © 2018 <a href="#">Coobrastur</a>.</strong> All rights reserved.
-        </footer>
 
     </div>
 @else
-    <nav class="navbar navbar-default navbar-static-top">
+       <div style="clear: both;"></div>
+       <!-- Main Footer -->
+       <footer class="main-footer" style="background: #252525; width: 100%; height: 200px; text-align: center">
+           <strong>Copyright © 2018 <a href="#">Coobrastur</a>.</strong> All rights reserved.
+       </footer>    <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
             <div class="navbar-header">
 
@@ -387,6 +387,86 @@
 <link rel="stylesheet" type="text/css" href="http://webdesigner2/sistema/public/lib/jquery.autocomplete.css"/>
 <link rel="stylesheet" type="text/css" href="http://webdesigner2/sistema/public/lib/thickbox.css"/>
 
+<style>
+.rodape {
+    position: absolute; 
+    margin-left: 0;
+    margin-bottom: 0; 
+    background: #212C31; 
+    width: 100%; 
+    height: 285px;
+    text-align: center;
+    border-top: 1px solid #EBEFF4;
+    color: #ccc;
+}
+.um {
+    float: left;
+    width: 31%;
+    height: 230px;
+    margin: 10px;
+    font-family: Helvetica;
+}
+.btnRodape {
+    font-family: Helvetica;
+    color: #ccc;
+    display: block;
+    height: 25px;
+    font-size: 19px;
+    font-weight: bold;
+}
+.qr {
+    float: left;
+    margin: 10px;
+    width: 80px;
+    max-width: 80px;
+    height: 80px;
+    background: #ccc;
+    box-shadow: 1px 2px 10px #555;
+    font-family: Helvetica;
+    font-size: 25px;
+    word-wrap: break-word;
+    color: #999;
+}
+.qr:hover {
+    color: #777;
+    cursor: pointer;
+}
+</style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
     @yield('scripts')
-</body>
+
+       <!-- Main Footer -->
+       <footer class="rodape">
+           <div style="width: 100%; height: 30px;"></div>
+           <div style="width: 80%; margin: 0 auto;">
+           <div class="um">
+                <img src="img/logo-coobrastur.png" alt="Coobrastur Turismo" /><br /><br />
+                <span style="display: block; width: 200px; margin: 0 auto; text-align: left;">
+                    <b style="font-size: 19px;">myReport Coobrastur</b><br />
+                    Sistema de gerenciamento<br /> de tarefas e controle interno.
+                </span>
+           </div>
+           <div class="um">
+           <span style="display: block; width: 350px; margin: 0 auto; text-align: left;">
+               <br /><br /><br />
+               <a class="btnRodape" href="#">Ranking Televenda</a><br />  
+               <a class="btnRodape" href="#">Ranking Representantes</a>
+               </span>
+           </div>
+           <div class="um">
+               <div class="qr">MARKETING</div>
+               <div class="qr" style="font-size: 19px;">RELACIONAMENTO</div>
+               <div class="qr" style="font-size: 26px;">NEGÓCIOS</div>
+               <div class="qr" style="font-size: 29px;">HOTÉIS</div>
+
+               <div class="qr" style="font-size: 30px;">TRI<br />TON</div>
+               <div class="qr" style="font-size: 25px;">TELEVENDA</div>
+               <div class="qr" style="font-size: 25px;">PROJETOS</div>
+               <div class="qr">SAIR</div>
+            </div>
+           </div>
+       </footer>
+
+    </body>
 </html>

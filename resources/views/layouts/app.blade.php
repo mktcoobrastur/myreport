@@ -365,7 +365,6 @@
 </script>
    <!-- jQuery 3.1.1 -->
     <script src="<?php echo $URL; ?>js/pace.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- AdminLTE App -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/js/adminlte.min.js"></script>
@@ -485,8 +484,9 @@
            </div>
         </footer>
         <div class="suggest">
-            <a class="linkS" href="" data-toggle="modal" data-target="#modalExemplo"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp; Tem alguma sugestão de melhoria?</a>
+            <a class="linkS" href="" data-toggle="modal" data-target="#modalExemplo" id="botao" data-loading-text="Loading..."><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp; Tem alguma sugestão de melhoria?</a>
         </div>
+
 
 
 <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -524,12 +524,11 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
         <button type="button" class="btn btn-primary">Enviar Feedback</button>
-      </div>
+    </div>
     </div>
   </div>
 </div>
 
-
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </body>
 </html>

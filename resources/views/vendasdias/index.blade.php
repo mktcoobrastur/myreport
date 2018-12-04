@@ -16,7 +16,7 @@
         <div class="box">
           <div class="alert">
 
-  <div class="form-group" style="float: left;width: 500px;">
+  <div class="form-group" style="float: left;width: 400px;">
   <form action="http://webdesigner2/sistema/public/relatorio.php" method="post" target="blank">
     <label>Mensal por representante:</label>
     <select name="mes" class="form-control">
@@ -50,7 +50,7 @@
   </div>
 
 
-  <div class="form-group" style="float: left; width: 500px; margin-left: 10px;">
+  <div class="form-group" style="float: left; width: 400px; margin-left: 10px;">
   <form action="http://webdesigner2/sistema/public/relatorioGeral.php" method="post" target="new">
     <label>Mensal Geral:</label>
     <select name="mes" class="form-control">
@@ -71,8 +71,16 @@
   </form>
   </div>
 
-
-<div style="clear: both;"></div>
+<div class="form-group" style="float: left; width: 400px; margin-left: 10px;">
+  <form action="http://webdesigner2/sistema/public/relatorioPeriodo.php" method="post" target="new">
+    <label>Por período:</label><br />
+    <input type="date" name="inicio" style="float: left; width: 150px;" class="form-control">
+    <span style="float: left; margin-left: 10px; margin-right: 10px; margin-top: 5px;"> até </span>
+    <input type="date" name="fim" style="float: left; width: 150px;" class="form-control">
+    <input type="submit" class="btn btn-primary" name="busca" value="Gerar Relatório" style="margin-top: 2px;">
+  </form>
+  </div>
+  <div style="clear: both;"></div>
 
           </div>
         </div>

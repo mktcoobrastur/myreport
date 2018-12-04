@@ -1,7 +1,6 @@
 <?php
 // Incluir aquivo de conex�o
 include("conn.php");
-
  
 // Recebe a id enviada no m�todo GET
 $id = $_GET['id'];
@@ -12,7 +11,6 @@ $sql = mysqli_query($con, "SELECT * FROM representantes WHERE id = '".$id."'");
 // Pega os dados e armazena em uma vari�vel
 $noticia = mysqli_fetch_object($sql);
  
-
 //Pesquisa Vendas por Atendente
 $consultaVendas = mysqli_query($con, "SELECT * FROM vendasre WHERE representante = '".$id."'");
 $valorV         = mysqli_num_rows($consultaVendas);
@@ -53,7 +51,7 @@ $valorV         = mysqli_num_rows($consultaVendas);
 while($row = mysqli_fetch_array($consultaVendas)) {
 ?>
     <tr>
-      <th scope="row"><?php echo date("d/m/Y", strtotime($row['created_at'])); ?></th>
+      <th scope="row"><?php echo date("d/m/Y", strtotime($row['indice'])); ?></th>
       <td>
       <?php
         $consultaRe = mysqli_query($con, "SELECT * FROM representantes WHERE id = $id");
@@ -75,6 +73,6 @@ while($row = mysqli_fetch_array($consultaVendas)) {
 
 </div>
 <?php 
-// Acentuacao
-header("Content-Type: text/html; charset=UTF-8",true);
+  // Acentuacao
+  header("Content-Type: text/html; charset=UTF-8",true);
 ?>

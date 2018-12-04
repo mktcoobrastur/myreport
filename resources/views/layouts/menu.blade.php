@@ -25,9 +25,11 @@
   if ($pag == 'fotos')          { $ahoteis = "active"; }
   if ($pag == 'laminas')        { $ahoteis = "active"; }
 
+  if ($pag == 'tritons')        { $atriton = "active"; }
+
   if ($pag == 'telemarketings') { $atelevenda = "active"; }
-  if ($pag == 'atendentes') { $atelevenda = "active"; }
-  if ($pag == 'ranking') { $atelevenda = "active"; }
+  if ($pag == 'atendentes')     { $atelevenda = "active"; }
+  if ($pag == 'ranking')        { $atelevenda = "active"; }
 
 ?>
 
@@ -92,14 +94,10 @@
           </a>
     <ul class="treeview-menu <?php if(isset($anegocios)) { echo $anegocios; } ?>">
       <li><a href="{!! route('convenios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Convênios</a></li>
-      <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> Indicação Premiada</a></li>
       <li><a href="{!! route('metas.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Metas</span></a></li>
       <li><a href="{!! route('representantes.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Representantes</span></a></li>
       <li><a href="{!! route('negocios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
       <li><a href="{!! route('vendasdias.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Vendas</a></li>
-      <!--li><a href="{!! route('vendasres.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Vendas Representantes</span></a></li>
-      <li><a href="http://webdesigner2/sistema/public/relatorio-representantes"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Representantes</span></a></li>
-      <li><a href="http://webdesigner2/sistema/public/relatorio-televenda"><i class="fa fa-circle-o text-aqua"></i><span>Relatório Televenda</span></a></li-->
     </ul>
 </li>
 <?php } ?>
@@ -135,7 +133,7 @@
             <span class="pull-right-container">
             </span>
           </a>
-          <ul class="treeview-menu">
+          <ul class="treeview-menu <?php if(isset($atriton)) { echo $atriton; } ?>">
             <li><a href="{!! route('tritons.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
           </ul>
 </li>

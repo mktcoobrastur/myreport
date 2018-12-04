@@ -168,7 +168,7 @@
                         <b><?php echo $l->ind; ?></b>
                     </span>
                 </div>
-                <i style="display: block;"><?php echo $l->periodoinicio; ?> - <?php echo $l->periodofinal; ?></i>
+                <span class="alert"><i style="display: block;"><?php echo $l->periodoinicio; ?> - <?php echo $l->periodofinal; ?></i></span>
                 </div>
                 <div class="infoTop">
                     <div class="text-center mtop">

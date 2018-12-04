@@ -39,7 +39,8 @@
             <!--li><a href="{!! route('relacionamentos.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li-->
             <li><a href="{!! route('chamados.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Gerenciamento de Chamados</a></li>
             <li><a href="http://webdesigner2/sistema/public/indice"><i class="fa fa-circle-o text-aqua"></i> Índice ( Chamados )</a></li>
-            <li><a href="http://webdesigner2/sistema/public/reclameaqui"><i class="fa fa-circle-o text-aqua"></i> Índice ( ReclameAqui )</a></li>
+            <li><a href="http://webdesigner2/sistema/public/reclameaqui?t=6"><i class="fa fa-circle-o text-aqua"></i> Índice ReclameAqui 6 meses</a></li>
+            <li><a href="http://webdesigner2/sistema/public/reclameaqui?t=12"><i class="fa fa-circle-o text-aqua"></i> Índice ReclameAqui 12 meses</a></li>
           </ul>
 </li>
 
@@ -123,6 +124,7 @@
             <li><a href="{!! route('telemarketings.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
             <li><a href="{!! route('atendentes.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Atendentes</span></a></li>
             <li><a href="javascript:newPopup()"><i class="fa fa-circle-o text-aqua"></i><span> Lançar Vendas</span></a></li>
+            <li><a href="http://webdesigner2/sistema/public/ranking"><i class="fa fa-circle-o text-aqua"></i> Ranking</a></li>
           </ul>
 </li>
 <script language=javascript type="text/javascript">
@@ -139,17 +141,8 @@
     <a href="{!! route('projetos.index') !!}"><i class="fa fa-edit"></i> <span>Projetos</span></a>
 </li>
 <?php } ?>
-<!--li class="{{ Request::is('tarefas*') ? 'active' : '' }}">
-    <a href="{!! route('tarefas.index') !!}"><i class="fa fa-edit"></i><span>Tarefas</span></a>
-</li>
-
-<li class="{{ Request::is('departamentos*') ? 'active' : '' }}">
-    <a href="{!! route('departamentos.index') !!}"><i class="fa fa-edit"></i><span>Departamentos</span></a>
-</li-->
-
 
 <?php if(Auth::user()->email == 'designer@coobrastur.com.br') { ?>
-
 
 <li class="treeview">
           <a href="#">

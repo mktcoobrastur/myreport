@@ -290,7 +290,6 @@
                    <h3 class="box-title">Índice Reclame Aqui ( 6 meses )</h3>
                    <i style=""> - Fonte de dados site reclameaqui.com.br</i>
                    <div class="box-tools pull-right">
-                   <a href="http://webdesigner2/sistema/public/indices/1/edit" class="btn btn-primary">Novo Índice</a>
                      </button>
                    </div>
                  </div>

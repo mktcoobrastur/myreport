@@ -91,8 +91,6 @@
                 <!-- start message -->
 
         <?php
-            if(isset(Auth::user()->depto)) { echo "Logado"; }
-
             $conexao  = mysqli_connect("localhost","root","","sistema");
             $userName   = Auth::user()->name;
             $sql    = "SELECT * FROM recados where para = '$userName' order by id desc limit 0,3";

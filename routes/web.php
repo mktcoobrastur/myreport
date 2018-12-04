@@ -31,6 +31,9 @@ Route::get('/reclameaqui', function () {
     return view('reclameaqui');
 });
 
+Route::get('/ranking', function () {
+    return view('ranking');
+});
 
 /* Relatórios */
 

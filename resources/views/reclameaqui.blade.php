@@ -134,7 +134,7 @@
     color: #89C053;
 }
 </style>
-
+<?php $get = $_GET['t']; ?>
 <section class="content-header">
 
      <div class="row">
@@ -143,7 +143,7 @@
             <div class="box-header">
               <i class="fa fa-bar-chart-o"></i>
 
-              <h3 class="box-title">Índice Reclame Aqui ( 6 meses )</h3>
+              <h3 class="box-title">Índice Reclame Aqui ( <?php echo $get; ?> meses )</h3>
               <i style=""> - Fonte de dados site reclameaqui.com.br</i>
               <div class="box-tools pull-right">
               <a href="http://webdesigner2/sistema/public/indices/1/edit" class="btn btn-primary">Novo Índice</a>
@@ -153,8 +153,9 @@
 
             <div class="alert">
             <?php 
+                
                 $con = new mysqli("localhost", "root", "", "sistema");
-                $consulta = mysqli_query($con, "SELECT * FROM indices");
+                $consulta = mysqli_query($con, "SELECT * FROM indices where tempo = $get");
                 $l = mysqli_fetch_object($consulta);
             ?>
 
@@ -240,4 +241,9 @@
 
 </section>
     <!-- /.content -->
+
+
+
+
+
 @endsection

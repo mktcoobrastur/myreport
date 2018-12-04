@@ -418,17 +418,19 @@
     float: left;
     margin: 10px;
     width: 80px;
-    max-width: 80px;
     height: 80px;
-    background: #ccc;
+    background: #3C8DBB;
     box-shadow: 1px 2px 10px #555;
     font-family: Helvetica;
     font-size: 25px;
     word-wrap: break-word;
-    color: #999;
+    color: #fff;
+    border-radius: 5px;
 }
 .qr:hover {
-    color: #777;
+    background: #549EC7;
+    box-shadow: 0px 0px 5px #fff;
+    color: #fff;
     cursor: pointer;
 }
 </style>
@@ -455,15 +457,15 @@
                </span>
            </div>
            <div class="um">
-               <div class="qr">MARKETING</div>
-               <div class="qr" style="font-size: 19px;">RELACIONAMENTO</div>
-               <div class="qr" style="font-size: 26px;">NEGÓCIOS</div>
-               <div class="qr" style="font-size: 29px;">HOTÉIS</div>
+               <div class="qr" style="background-image: url(img/01.jpg);"></div>
+               <div class="qr" style="background-image: url(img/02.jpg);"></div>
+               <div class="qr" style="background-image: url(img/03.jpg);"></div>
+               <div class="qr" style="background-image: url(img/04.jpg);"></div>
 
-               <div class="qr" style="font-size: 30px;">TRI<br />TON</div>
-               <div class="qr" style="font-size: 25px;">TELEVENDA</div>
-               <div class="qr" style="font-size: 25px;">PROJETOS</div>
-               <div class="qr">SAIR</div>
+               <div class="qr" style="background-image: url(img/05.jpg);"></div>
+               <div class="qr" style="background-image: url(img/06.jpg);"></div>
+               <div class="qr" style="background-image: url(img/07.jpg);"></div>
+               <div class="qr" style="background-image: url(img/08.jpg);"></div>
             </div>
            </div>
        </footer>

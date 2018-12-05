@@ -3,11 +3,7 @@
 @section('content')
     <section class="content-header">
         <h1>
-<<<<<<< HEAD
-            Negocios
-=======
             Negócios
->>>>>>> 02789964ec70ae9a125b3f62c782f02e5f99d9ef
         </h1>
     </section>
     <div class="content">

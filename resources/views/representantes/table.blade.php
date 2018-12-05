@@ -2,7 +2,7 @@
     <thead>
         <tr>
             <th>Nome</th>
-            <th colspan="3">Ações</th>
+            <th colspan="3" style="text-align: right;">Ações</th>
         </tr>
     </thead>
     <tbody>

@@ -16,15 +16,26 @@
     <p>{!! $atendente->representante !!}</p>
 </div>
 
-<!-- Created At Field -->
-<div class="form-group">
-    {!! Form::label('created_at', 'Criado em:') !!}
-    <p>{!! $atendente->created_at !!}</p>
-</div>
+<!-- Representante Field -->
+<div class="alert" style="width: 250px;">
+        <form action="http://webdesigner2/sistema/public/uploadAtendentes.php" method="post" enctype="multipart/form-data">
+    		<label>Enviar Foto:</label>
+	 		<input type="hidden" name="idChamado" value="{!! $atendente->id !!}" />
+    	    <input type="file" name="arquivos[]" class="form-control">
+            <input type="submit" name="enviaArquivo" class="btn" value="Enviar">
+        </form>
+	</div>
 
-<!-- Updated At Field -->
-<div class="form-group">
-    {!! Form::label('updated_at', 'Atualizado em:') !!}
-    <p>{!! $atendente->updated_at !!}</p>
-</div>
+    <div class="alert" >
+        <?php
+            $conexao  = mysqli_connect("localhost","root","","sistema");
+            $query    = "SELECT * FROM atendentes WHERE id = $atendente->id;";
+            $query    = mysqli_query($conexao, $query);
+            
+    	    while ($linha = mysqli_fetch_array($query)) {
+        ?>
+			<img style="position: absolute; top: 50px; right: 50px;" class="img-circle" width="200" src="http://webdesigner2/sistema/public/imgatendentes/<?php echo $linha['img']; ?>" />
+		</a>
 
+	    <?php } ?>
+    </div>

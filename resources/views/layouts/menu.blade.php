@@ -190,3 +190,5 @@
 
 </li>
 <?php } ?>
+
+<li class="treeview"><a href="{!! route('usuarios.index') !!}"><i class="fa fa-user-circle"></i><span> Usuários</span></a></li>

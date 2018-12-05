@@ -12,7 +12,7 @@
         <tr>
             <td>{!! $usuario->name !!}</td>
             <td>{!! $usuario->email !!}</td>
-            <td>{!! $usuario->created_at !!}</td>
+            <td><?php echo date("d/m/Y", strtotime($usuario->created_at)); ?></td>
             <td>
                 {!! Form::open(['route' => ['usuarios.destroy', $usuario->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

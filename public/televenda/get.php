@@ -6,7 +6,7 @@
 	while($res = mysqli_fetch_assoc($qryLista)){
 ?>
                         <li class='linha'>
-                            <img class="img-circle ftAtendente" src="img/ft/<?php echo $res['img']; ?>" alt="" />
+                            <img class="img-circle ftAtendente" src="http://webdesigner2/sistema/public/imgatendentes/<?php echo $res['img']; ?>" alt="" />
                             <span class="nomeV"><?php echo utf8_encode($res['nome']); ?></span>
                             <span class="pull-right nVendas">
                                 <?php echo $res['qnt_vendas']; ?>

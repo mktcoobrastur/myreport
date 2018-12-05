@@ -3,7 +3,6 @@
         <tr>
             <th>Nome Atendente</th>
             <th>Representante</th>
-            <th>Vendas Acumuladas</th>
             <th colspan="3">Ações</th>
         </tr>
     </thead>
@@ -12,7 +11,6 @@
         <tr>
             <td>{!! $atendente->nome !!}</td>
             <td>{!! strtoupper($atendente->representante) !!}</td>
-            <td style="text-align: center;">{!! $atendente->qnt_vendas !!}</td>
             <td>
                 {!! Form::open(['route' => ['atendentes.destroy', $atendente->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

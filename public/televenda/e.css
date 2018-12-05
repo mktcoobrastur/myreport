@@ -56,13 +56,13 @@ body {
 
 #lista {
     display: block;
-    width: 1300px;
+    width: 800px;
 }
 
 .linha {
     float: left;
-    width: 480px;
-    height: 60px;
+    width: 300px;
+    height: 50px;
     line-height: 45px;
     padding-left: 15px;
     margin-left: 10px;
@@ -80,7 +80,19 @@ body {
     position: relative;
     /*-webkit-animation: bounceIn 2s;*/
 }
-
+@media only screen and (max-width: 1300px) {
+    .linha {
+        width: 220px;
+        font-size: 11px;
+    }
+    #lista {
+        display: block;
+        width: 600px;
+    }
+    .campeao {
+        width: 100px;
+    }
+}
 .linha { transition: 0.5s; } /* Transitions linha */
 
 .linha:hover {
@@ -178,7 +190,7 @@ body {
   .progressMeta {
       position: absolute;
       left: 50px;
-      top: 180px;
+      top: 30px;
   }
 
   .progressMeta h4 {

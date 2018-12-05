@@ -70,8 +70,7 @@ if (isset($_GET['c'])) {
             <td>{!! strtoupper($chamado->status) !!}</td>
             <td>
                 <div class='btn-group'>
-                    <a href="{!! route('chamados.show', [$chamado->id]) !!}" class='btn btn-default btn-xs'><i class="fa fa-eye" aria-hidden="true"></i></a>
-                    <a href="{!! route('chamados.edit', [$chamado->id]) !!}" class='btn btn-default btn-xs'><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                    <a href="{!! route('chamados.edit', [$chamado->id]) !!}" class='btn btn-default btn-xs'><i class="fa fa-eye" aria-hidden="true"></i></a>
                 </div>
             </td>
         </tr>

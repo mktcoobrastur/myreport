@@ -430,7 +430,7 @@
     background: #549EC7;
     box-shadow: 0px 0px 5px #fff;
     color: #fff;
-    cursor: pointer;
+    cursor: not-allowed;
 }
 .suggest {
     position: fixed;

@@ -19,12 +19,10 @@ $valorV         = mysqli_num_rows($consultaVendas);
 <script type="text/javascript" src="jquery-1.8.0.min.js"></script>
 <div class="lResult">
     <div class="dResult">
-        <label>Vendas Acumuladas:</label>
-        <?php echo $noticia->qnt; ?>
     </div>
 
     <div class="dResult" style="margin-left: 150px;">
-        <label>Vendas Distintas:</label>
+        <label>Total Vendas:</label>
         <?php echo $valorV; ?>
     </div>
 <div style="clear: both;"></div>
@@ -73,6 +71,4 @@ while($row = mysqli_fetch_array($consultaVendas)) {
 
 </div>
 <?php 
-  // Acentuacao
-  header("Content-Type: text/html; charset=UTF-8",true);
 ?>

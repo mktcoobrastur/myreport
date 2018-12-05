@@ -89,7 +89,7 @@
         </script>
 <style type="text/css">
 .OutR {
-    width: 60%;
+    width: 98%;
     height: 500px;
     background: #fff;
     border-radius: 5px;

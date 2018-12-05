@@ -169,8 +169,14 @@
 ?>
 <li><a href="{!! route('projetos.index') !!}"><i class="fa fa-edit"></i> <span>Projetos</span></a></li>
 <?php } ?>
+<?php 
+  $consultaAcesso = mysqli_query($con, "SELECT * FROM permissoes WHERE user = $idUser AND acesso =  8");
+  $a              = mysqli_fetch_array($consultaAcesso);
+  if($a != Null) {
+?>
 
     <li><a href="{!! route('usuarios.index') !!}"><i class="fa fa-user-o"></i> <span>Usuarios</span></a></li>
+    <?php } ?>
 
 <?php if(Auth::user()->email == 'designer@coobrastur.com.br') { ?>
 
@@ -192,4 +198,3 @@
 
 </li>
 <?php } ?>
-

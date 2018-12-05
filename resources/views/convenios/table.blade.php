@@ -1,8 +1,8 @@
 <style type="text/css">
     .conveniosOut {
         float: left;
-        width: 250px;
-        height: 240px;
+        width: 180px;
+        height: 180px;
         background: #f0f0f0;
         padding: 10px;
         margin: 10px;
@@ -22,8 +22,8 @@
         background: #ffffff;
         border-radius: 5px;
         padding: 5px;
-        width: 180px;
-        height: 130px;
+        width: 130px;
+        height: 80px;
         margin-bottom: 16px;
     }
     .conveniosOut h4 {

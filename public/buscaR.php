@@ -14,5 +14,4 @@ while ($noticias = mysqli_fetch_object($sql)) {
 }
  
 // Acentua
-header("Content-Type: text/html; charset=ISO-8859-1",true);
 ?>

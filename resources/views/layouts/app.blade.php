@@ -415,9 +415,9 @@
 }
 .qr {
     float: left;
-    margin: 10px;
-    width: 80px;
-    height: 80px;
+    margin: 7px;
+    width: 65px;
+    height: 65px;
     background: #3C8DBB;
     box-shadow: 1px 2px 10px #555;
     font-family: Helvetica;
@@ -499,9 +499,10 @@
         </button>
       </div>
       <div class="modal-body">
+      <form action="http://webdesigner2/sistema/public/sug.php" method="post">
         <div class="form-group">
             <label>Eu sou:</label>
-            <input type="text" class="form-control" value="<?php echo $userName; ?>">
+            <input type="text" class="form-control" name="nome" value="<?php echo $userName; ?>">
         </div>
         <div class="form-group">
             <label>Para qual página de departamento você quer enviar uma sugestão?</label>
@@ -518,13 +519,14 @@
         </div>
         <div class="form-group">
             <label>Sugestão:</label>
-            <textarea class="form-control" rows="8"></textarea>
+            <textarea name="sugestao" class="form-control" rows="8"></textarea>
         </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        <button type="button" class="btn btn-primary">Enviar Feedback</button>
+        <button type="submit" class="btn btn-primary">Enviar Feedback</button>
     </div>
+    </form>
     </div>
   </div>
 </div>

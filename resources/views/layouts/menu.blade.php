@@ -170,6 +170,8 @@
 <li><a href="{!! route('projetos.index') !!}"><i class="fa fa-edit"></i> <span>Projetos</span></a></li>
 <?php } ?>
 
+    <li><a href="{!! route('usuarios.index') !!}"><i class="fa fa-user-o"></i> <span>Usuarios</span></a></li>
+
 <?php if(Auth::user()->email == 'designer@coobrastur.com.br') { ?>
 
 <li class="treeview">
@@ -191,4 +193,3 @@
 </li>
 <?php } ?>
 
-<li class="treeview"><a href="{!! route('usuarios.index') !!}"><i class="fa fa-user-circle"></i><span> Usuários</span></a></li>

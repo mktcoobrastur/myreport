@@ -92,8 +92,8 @@
             <td>
                 {!! Form::open(['route' => ['metas.destroy', $linha['meta']], 'method' => 'delete']) !!}
                 <div class='btn-group pull-right'>
-                    <a href="{!! route('metas.show', [$linha['meta']]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-                    <a href="{!! route('metas.edit', [$linha['meta']]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+                    <a href="{!! route('metas.show', [$linha['id']]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
+                    <a href="{!! route('metas.edit', [$linha['id']]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
                     {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Tem certeza?')"]) !!}
                 </div>
                 {!! Form::close() !!}

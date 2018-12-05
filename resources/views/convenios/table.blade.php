@@ -3,7 +3,6 @@
         float: left;
         width: 180px;
         height: 180px;
-        background: #f0f0f0;
         padding: 10px;
         margin: 10px;
         border-radius: 5px;
@@ -14,11 +13,14 @@
         border-bottom: 1px solid #CCC;
         border-right: 1px solid #CCC;
     }
+    .conveniosOut a {
+        background: #fff;
+        border: 0;
+    }
     .conveniosOut:hover {
-        background: #f9f9f9;
     }
     .conveniosOut img {
-        border: 1px solid #ccc;
+        border: 1px solid #f0f0f0;
         background: #ffffff;
         border-radius: 5px;
         padding: 5px;

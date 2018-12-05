@@ -53,6 +53,7 @@
             <li><a href="{!! route('marketings.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
             <li><a href="http://webdesigner2/sistema/public/mark"><i class="fa fa-circle-o text-aqua"></i> Emarks</a></li>
             <li><a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i>Solicitação de Lâminas</a></li>
+            <li><a href="http://webdesigner2/sistema/public/sugest"><i class="fa fa-circle-o text-aqua"></i>Sugestões myReport</a></li>
           </ul>
 </li>
 <?php } ?>

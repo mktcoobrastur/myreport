@@ -129,6 +129,7 @@
     box-shadow: 1px 1px 10px #ccc;
     padding: 20px;
     font-size: 18px;
+    overflow: auto;
 }
 .descr b {
     color: #89C053;

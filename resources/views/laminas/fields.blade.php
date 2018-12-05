@@ -2,7 +2,7 @@
 
 <script type="text/javascript">
  	$(document).ready(function(){
-		$("#txtNome").autocomplete("http://127.0.0.1:8000/completar.php", {
+		$("#txtNome").autocomplete("http://webdesigner2/sistema/public/completar.php", {
 			width:400,
 			selectFirst: false
 		});

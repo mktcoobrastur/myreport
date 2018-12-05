@@ -19,6 +19,10 @@ Route::get('/indice', function () {
     return view('indice');
 });
 
+Route::get('/sugest', function () {
+    return view('sugest');
+});
+
 Route::get('/mark', function () {
     return view('mark');
 });

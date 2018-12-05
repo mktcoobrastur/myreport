@@ -1,6 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
+
+<style type="text/css">
+    .pesquisa {
+        width: 400px;
+    }
+@media only screen and (max-width: 1300px) {
+    .buscaAtendentes {
+        width: 97%;
+        margin-top: 15px;
+    }
+    .pesquisa {
+        width: 100%;
+    }
+}
+</style>
+
     <section class="content-header">
         <h1 class="pull-left">Relatório Vendas</h1>
         <h1 class="pull-right">
@@ -16,7 +32,7 @@
         <div class="box">
           <div class="alert">
 
-  <div class="form-group" style="float: left;width: 400px;">
+  <div class="form-group pesquisa" style="float: left;">
   <form action="http://webdesigner2/sistema/public/relatorio.php" method="post" target="blank">
     <label>Mensal por representante:</label>
     <select name="mes" class="form-control">
@@ -50,7 +66,7 @@
   </div>
 
 
-  <div class="form-group" style="float: left; width: 400px; margin-left: 10px;">
+  <div class="form-group pesquisa" style="float: left; margin-left: 10px;">
   <form action="http://webdesigner2/sistema/public/relatorioGeral.php" method="post" target="new">
     <label>Mensal Geral:</label>
     <select name="mes" class="form-control">
@@ -71,15 +87,6 @@
   </form>
   </div>
 
-<div class="form-group" style="float: left; width: 400px; margin-left: 10px;">
-  <form action="http://webdesigner2/sistema/public/relatorioPeriodo.php" method="post" target="new">
-    <label>Por período:</label><br />
-    <input type="date" name="inicio" style="float: left; width: 150px;" class="form-control">
-    <span style="float: left; margin-left: 10px; margin-right: 10px; margin-top: 5px;"> até </span>
-    <input type="date" name="fim" style="float: left; width: 150px;" class="form-control">
-    <input type="submit" class="btn btn-primary" name="busca" value="Gerar Relatório" style="margin-top: 2px;">
-  </form>
-  </div>
   <div style="clear: both;"></div>
 
           </div>

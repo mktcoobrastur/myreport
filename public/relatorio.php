@@ -121,7 +121,46 @@
             </div>
             <!-- #END# Hover Zoom Effect -->
 
-<div style="float: left; width:50%; text-align: center;">
+
+
+  <div style="width: 100%; float: left; margin-left: 15px; margin-top: 38px;">
+
+<div>
+  <div class="box box-solid">
+    <div class="box-header">
+      <h3 class="box-title text-blue">Andamento Mês</h3>
+
+      <div class="box-tools pull-right">
+        <button type="button" class="btn btn-default btn-sm"><i class="fa fa-refresh"></i></button>
+      </div>
+    </div>
+    <!-- /.box-header -->
+    <div class="box-body text-center">
+      <div class="sparkline" data-type="line" style="width:100%;" data-spot-Radius="6" data-highlight-Spot-Color="#f39c12" data-highlight-Line-Color="#165C80" data-min-Spot-Color="#f56954" data-max-Spot-Color="#00a65a" data-spot-Color="#39CCCC" data-offset="90" data-width="100%" data-height="200px" data-line-Width="2" data-line-Color="#218BC5" data-fill-Color="rgba(57, 204, 204, 0.08)">
+    <?php
+      //CONSULTA PESQUISA
+      $consultaCh = mysqli_query($con, "SELECT * FROM vendasre WHERE MONTH(indice) = $dataget AND representante = $representante ORDER BY indice ASC");
+      while($Ch = mysqli_fetch_array($consultaCh)) {
+    ?>
+    <?php echo $Ch['qnt']; ?>,
+    <?php
+      }
+    ?>
+      </div>
+    </div>
+    <!-- /.box-body -->
+  </div>
+  <!-- /.box -->
+</div>
+<!-- /.col -->
+
+  </div>
+
+
+
+
+
+<div style="float: left; width:100%; text-align: center;">
 <h4>&nbsp;</h4>
 
 <table class="table" style="font-size: 11px; background: #ffffff;">
@@ -204,7 +243,7 @@
 </div>
 
 
-
+</div>
 
 <script type="text/javascript">
 $(function(){
@@ -216,40 +255,7 @@ $(function(){
     });
 </script>
 
-  <div style="width: 700px; float: left; margin-left: 15px; margin-top: 38px;">
 
-<div>
-  <div class="box box-solid">
-    <div class="box-header">
-      <h3 class="box-title text-blue">Andamento Mês</h3>
-
-      <div class="box-tools pull-right">
-        <button type="button" class="btn btn-default btn-sm"><i class="fa fa-refresh"></i></button>
-      </div>
-    </div>
-    <!-- /.box-header -->
-    <div class="box-body text-center">
-      <div class="sparkline" data-type="line" data-spot-Radius="6" data-highlight-Spot-Color="#f39c12" data-highlight-Line-Color="#165C80" data-min-Spot-Color="#f56954" data-max-Spot-Color="#00a65a" data-spot-Color="#39CCCC" data-offset="90" data-width="100%" data-height="200px" data-line-Width="2" data-line-Color="#218BC5" data-fill-Color="rgba(57, 204, 204, 0.08)">
-    <?php
-      //CONSULTA PESQUISA
-      $consultaCh = mysqli_query($con, "SELECT * FROM vendasre WHERE MONTH(indice) = $dataget AND representante = $representante ORDER BY indice ASC");
-      while($Ch = mysqli_fetch_array($consultaCh)) {
-    ?>
-    <?php echo $Ch['qnt']; ?>,
-    <?php
-      }
-    ?>
-      </div>
-    </div>
-    <!-- /.box-body -->
-  </div>
-  <!-- /.box -->
-</div>
-<!-- /.col -->
-
-  </div>
-
-</div>
 
 
 <!-- jQuery 3 -->

@@ -62,7 +62,7 @@
 
             <!-- Logo -->
             <a href="#" class="logo">
-            my<b>Report</b>
+            <img width="120" src="http://webdesigner2/sistema/public/img/myreport.png" />
             </a>
 
             <!-- Header Navbar -->
@@ -500,6 +500,12 @@
       </div>
       <div class="modal-body">
       <form action="http://webdesigner2/sistema/public/sug.php" method="post">
+        <div class="form-group">
+            <label>Estou na página:</label>
+            <?php echo Request::url(); ?>
+            <input type="hidden" name="url" value="<?php echo Request::url(); ?>">
+        </div>
+
         <div class="form-group">
             <label>Eu sou:</label>
             <input type="text" class="form-control" name="nome" value="<?php echo $userName; ?>">

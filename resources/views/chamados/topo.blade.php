@@ -14,6 +14,18 @@
         margin-top: 40px;
         margin-right: 30px;
     }
+
+
+@media only screen and (max-width: 1330px) {
+    .botoes {
+        float: right;
+        margin-top: -40px;
+        width: 540px;
+    }
+    .logoCentral {
+        width: 400px;
+    }
+}
 </style>
 <div class="boxCentral">
             <img class="logoCentral" src="http://webdesigner2/sistema/public/img/logo-fale-conosco.png" alt="Central do Usuário" />

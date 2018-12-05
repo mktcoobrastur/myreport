@@ -4,7 +4,7 @@
         float: left;
         display: block;
         text-align: center;
-        width: 16%;
+        width: 23%;
         margin: 2px;
         color: #fff;
     }
@@ -21,11 +21,16 @@
         width:100%;
         text-align: center;
     }
+    @media only screen and (max-width: 1330px) {
+        .reprLst {
+            width: 25%;
+        }
+    }
     </style>
 
 <div class="space"></div>
 <span class="titleR"></span>
-<ul>
+<ul style="width: 100%;">
     <?php
         $con = new mysqli("localhost", "root", "", "sistema");
         $queryRepr  = mysqli_query($con, "SELECT id, nome FROM representantes");

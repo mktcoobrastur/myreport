@@ -8,7 +8,6 @@ if (isset($_GET['c'])) {
         <th>&nbsp;</th>
         <th>Usuário</th>
         <th>Email</th>
-        <th>Telefone</th>
         <th>Motivo</th>
         <th>Mensagem</th>
         <th>Status</th>
@@ -30,7 +29,6 @@ if (isset($_GET['c'])) {
             <td><i class="fa fa-handshake-o"></i></td>
             <td><a href="/chamados/<?php echo $linha['id']; ?>/edit"><?php echo utf8_encode($linha['usuario']); ?></a></td>
             <td><?php echo $linha['email']; ?></td>
-            <td><?php echo $linha['fone']; ?></td>
             <td><b class='btn btn-default btn-xs'><?php echo $linha['motivo']; ?></b></td>
             <td><?php echo utf8_encode(substr($linha['mensagem'], 0, 150)); ?>...</td>
             <td><?php echo strtoupper($linha['status']); ?></td>
@@ -56,8 +54,6 @@ if (isset($_GET['c'])) {
         <tr>
         <th>&nbsp;</th>
         <th>Usuário</th>
-        <th>Email</th>
-        <th>Telefone</th>
         <th>Motivo</th>
         <th>Mensagem</th>
         <th>Status</th>
@@ -69,8 +65,6 @@ if (isset($_GET['c'])) {
         <tr>            
             <td><a href="{!! route('chamados.edit', [$chamado->id]) !!}" class='btn btn-primary btn-xs' alt="Atender Chamado"><i class="fa fa-handshake-o" aria-hidden="true"></i></a></td>
             <td><a href="{!! route('chamados.edit', [$chamado->id]) !!}">{!! $chamado->usuario !!}</a></td>
-            <td>{!! $chamado->email !!}</td>
-            <td>{!! $chamado->fone !!}</td>
             <td><b class='btn btn-default btn-xs'>{!! $chamado->motivo !!}</b></td>
             <td>{!! substr($chamado->mensagem, 0, 150) !!}...</td>
             <td>{!! strtoupper($chamado->status) !!}</td>

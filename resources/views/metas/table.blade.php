@@ -33,7 +33,7 @@
 <ul style="width: 100%;">
     <?php
         $con = new mysqli("localhost", "root", "", "sistema");
-        $queryRepr  = mysqli_query($con, "SELECT id, nome FROM representantes");
+        $queryRepr  = mysqli_query($con, "SELECT id, nome, deleted_at FROM representantes where id != 5");
         while($result = mysqli_fetch_array($queryRepr)) {
             echo "<a href='?r=".$result['id']."'><li class='btn btn-primary reprLst'>".$result['nome']."</li></a>";
         }

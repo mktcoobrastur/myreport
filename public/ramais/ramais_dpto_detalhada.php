@@ -1,7 +1,6 @@
 <!-- CONTEUDO -->
 <?php
 	$resultado = mysqli_query($con, "SELECT * FROM funcionarios order by setor, nome");
-	ini_set('default_charset','UTF-8');
 	$letra1 = "";
 	echo "<br>";
 	echo "<table border='0' cellpadding='0' cellspacing='0' width='740' align='center'>";

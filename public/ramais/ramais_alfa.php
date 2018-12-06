@@ -11,7 +11,7 @@
 	$resultado 		= mysqli_query($con, "SELECT * FROM funcionarios order by nome");
 	$letra1 = "";
 	echo "<br>";
-	echo "<table border='0' cellpadding='0' cellspacing='0' class='tabela' width='1000' align='center'>";
+	echo "<table border='0' cellpadding='0' cellspacing='0' class='tabela' width='740' align='center'>";
 	while ($linha = mysqli_fetch_array($resultado)) {
 		$setor 		= $linha["setor"];
 		$nome 		= utf8_encode($linha["nome"]);

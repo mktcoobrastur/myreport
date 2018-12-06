@@ -7,7 +7,6 @@
 //*      Colabora��o ..: Tha�s Braga	                                          *
 //********************************************************************************* -->
 <?php
-	header('Content-Type: text/html; charset=iso-8859-1');
 	include('config_inc.php');
 	if(isset($_GET['tipo'])){
 		$ordem = $_GET['tipo'];
@@ -45,9 +44,36 @@
 				font-weight: bold;
 				color: #666666;
 			}
+			.buscaRamais {
+				width: 1000px;
+				margin: 0 auto;
+				font-family: sans-serif;
+			}
+			.buscaRamais b {
+				font-size: 14px;
+			}
+			#conteudo {
+				padding: 15px;
+			}
+			#busca {
+				width: 100%;
+				height: 30px;
+			}
+			#nome {
+				color: #000 !important;
+			}
 		</style>
 	</head>
 	<body marginleft='0' marginright='0' marginbottom='0' margintop='0' bgcolor='#FFFFFF'>
+	<script type="text/javascript" src="funcs.js"></script>
+
+<div class="buscaRamais">
+	<b>Busca Rápida:</b><br />
+	<input type="text" id="busca" onkeyup="buscarNoticias(this.value)" class="form-control" />
+	<div id="resultado"></div>
+	<br /><br />
+	<div id="conteudo"></div>
+</div>
 		<center>
 			<table border='0' cellspacing='0' cellpadding='0' width='740' align='center'>
 				<tr><td colspan='5'><img src='imagens/coobrastur_header.png'></td></tr>

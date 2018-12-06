@@ -7,8 +7,8 @@
 	echo "<table border='0' cellpadding='0' cellspacing='0' width='740' align='center'>";
 	$setorTemp = "";
 	while ($linha = mysqli_fetch_array($resultado)) {
-		$setor = $linha["setor"];
-		$nome = $linha["nome"];
+		$setor = utf8_encode($linha["setor"]);
+		$nome = utf8_encode($linha["nome"]);
 		$ramal = $linha["ramal"];
 		$email = $linha["email"];
 		$externo = $linha["externo"];

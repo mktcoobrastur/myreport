@@ -162,7 +162,27 @@
   function newPopup(){
     varWindow = window.open ('http://webdesigner2/televenda/users/', 'popup', "width=500, height=300, right=100, bottom=100, scrollbars=no ")
   }
-</script><?php } ?>
+</script>
+<?php } ?>
+<?php
+  $consultaAcesso = mysqli_query($con, "SELECT * FROM permissoes WHERE user = $idUser AND acesso =  9");
+  $a              = mysqli_fetch_array($consultaAcesso);
+  if($a != Null) {
+?>
+<li class="treeview">
+          <a href="#">
+          <i class="fa fa-users"></i>
+            <span>Apoio Logístico</span>
+            <span class="pull-right-container">
+            </span>
+          </a>
+
+  <ul class="treeview-menu">
+  <li><a href="{!! route('funcionarios.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span>Ramais Coobrastur</span></a></li>
+  </ul>
+
+</li>
+<?php } ?>
 <?php 
   $consultaAcesso = mysqli_query($con, "SELECT * FROM permissoes WHERE user = $idUser AND acesso =  7");
   $a              = mysqli_fetch_array($consultaAcesso);
@@ -170,14 +190,14 @@
 ?>
 <li><a href="{!! route('projetos.index') !!}"><i class="fa fa-edit"></i> <span>Projetos</span></a></li>
 <?php } ?>
-<?php 
+<?php
   $consultaAcesso = mysqli_query($con, "SELECT * FROM permissoes WHERE user = $idUser AND acesso =  8");
   $a              = mysqli_fetch_array($consultaAcesso);
   if($a != Null) {
 ?>
 
     <li><a href="{!! route('usuarios.index') !!}"><i class="fa fa-user-o"></i> <span>Usuarios</span></a></li>
-    <?php } ?>
+<?php } ?>
 
 <?php if(Auth::user()->email == 'designer@coobrastur.com.br') { ?>
 
@@ -199,3 +219,5 @@
 
 </li>
 <?php } ?>
+  
+<li><a href="http://webdesigner2/sistema/public/ramais-coobrastur"><i class="fa fa-user-o"></i> <span>Ramais Coobrastur</span></a></li>

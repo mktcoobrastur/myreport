@@ -92,7 +92,7 @@ function newPopup(){
 varWindow = window.open ('http://localhost/televenda/users/', 'popup', "width=500, height=300, right=100, bottom=100, scrollbars=no ")
 }
 </script>
-<a href="javascript:newPopup()" class="pull-right">Acesso Televenda</a>
+<!--a href="javascript:newPopup()" class="pull-right">Acesso Televenda</a-->
 
 
 </div>

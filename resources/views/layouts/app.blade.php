@@ -372,14 +372,8 @@
 <script type="text/javascript" src="http://webdesigner2/sistema/public/lib/jquery.bgiframe.min.js"></script>
 <script type="text/javascript" src="http://webdesigner2/sistema/public/lib/jquery.ajaxQueue.js"></script>
 <script type="text/javascript" src="http://webdesigner2/sistema/public/lib/thickbox-compressed.js"></script>
-<script type="text/javascript" src="http://webdesigner2/sistema/public/lib/jquery.autocomplete.js"></script>
 <!--css -->
-<link rel="stylesheet" type="text/css" href="http://webdesigner2/sistema/public/lib/jquery.autocomplete.css"/>
 <link rel="stylesheet" type="text/css" href="http://webdesigner2/sistema/public/lib/thickbox.css"/>
-<script type="text/javascript" src="http://webdesigner2/sistema/public/lib/jquery.bgiframe.min.js"></script>
-<script type="text/javascript" src="http://webdesigner2/sistema/public/lib/jquery.ajaxQueue.js"></script>
-<script type="text/javascript" src="http://webdesigner2/sistema/public/lib/thickbox-compressed.js"></script>
-<script type="text/javascript" src="http://webdesigner2/sistema/public/lib/jquery.autocomplete.js"></script>
 <!--css -->
 <link rel="stylesheet" type="text/css" href="http://webdesigner2/sistema/public/lib/jquery.autocomplete.css"/>
 <link rel="stylesheet" type="text/css" href="http://webdesigner2/sistema/public/lib/thickbox.css"/>

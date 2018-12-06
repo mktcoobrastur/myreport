@@ -15,6 +15,10 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::get('/ramais-coobrastur', function () {
+    return view('ramais-coobrastur');
+});
+
 Route::get('/indice', function () {
     return view('indice');
 });
@@ -120,3 +124,5 @@ Route::resource('vendasres', 'VendasreController');
 Route::resource('laminas', 'LaminaController');
 
 Route::resource('indices', 'IndiceController');
+
+Route::resource('funcionarios', 'FuncionarioController');

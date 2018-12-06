@@ -35,7 +35,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
     <div class="login-logo">
-        <img src="/img/myreport.png" />
+        <img src="img/myreport.png" />
     </div>
 
     <!-- /.login-logo -->

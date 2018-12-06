@@ -92,7 +92,7 @@
             <select name="acesso" class="form-control" style="width: 180px;">
                 <?php
                     $con = new mysqli("localhost", "root", "", "sistema");
-                    $consulta = mysqli_query($con, "SELECT * FROM departamentos");
+                    $consulta = mysqli_query($con, "SELECT * FROM departamentos ORDER BY depto ASC");
                     while($linha = mysqli_fetch_array($consulta)) {
                 ?>
                     <option value="<?php echo $linha['id']; ?>"><?php echo utf8_encode($linha['depto']); ?></option>

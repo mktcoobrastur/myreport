@@ -62,7 +62,7 @@
     <?php
         $getR = $_GET['r'];
         $con = new mysqli("localhost", "root", "", "sistema");
-        $queryMetas  = mysqli_query($con, "SELECT * FROM metas WHERE representante = $getR");
+        $queryMetas  = mysqli_query($con, "SELECT * FROM metas WHERE representante = $getR ORDER BY mes asc");
         while($linha = mysqli_fetch_array($queryMetas)) {
     ?>
 

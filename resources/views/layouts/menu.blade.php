@@ -95,7 +95,7 @@
           </a>
     <ul class="treeview-menu <?php if(isset($anegocios)) { echo $anegocios; } ?>">
       <li><a href="{!! route('convenios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Convênios</a></li>
-      <li><a href="{!! route('metas.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Metas</span></a></li>
+      <li><a href="{!! route('metas.index') !!}?r=1"><i class="fa fa-circle-o text-aqua"></i> <span>Metas</span></a></li>
       <li><a href="{!! route('representantes.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Representantes</span></a></li>
       <li><a href="{!! route('negocios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
       <li><a href="{!! route('vendasdias.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Vendas</a></li>

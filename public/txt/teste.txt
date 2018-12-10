@@ -1,0 +1,15 @@
+3478;PULLMAN SÃO PAULO IBIRAPUERA;SÃO PAULO;SP;RUA JOINVILLE, 515;VILA MARIANA;-23.582493;-46.650325;BRASIL;www.pullmanhotels.com/pt-br/hotel-2125-pullman-sao-paulo-ibirapuera/index.shtml;J,M,N,Q,S,Z;A,B,C,F,G,I,;Diamante
+3523;MERCURE SÃO PAULO PAMPLONA;SÃO PAULO;SP;RUA PAMPLOMA, 1.315;JARDIM PAULISTA;-23.568541;-46.658184;BRASIL;www.mercure.com/pt-br/hotel-6284-mercure-sao-paulo-pamplona-hotel/index.shtml;K,M,Q,S,Z;A,B,F,G,I,;Diamante
+4006;PRODIGY ARACAJU BY GJP;BARRA DOS COQUEIROS;SE;SÍTIO TINGUI, S/N;PRAIA DA COSTA;-10.915775;-37.005489;BRASIL;www.prodigyaracaju.com.br;J,M,N,P,S,T,U,V,Y;A,B,C,F,I,;Diamante
+4275;PULLMANN RIO DE JANEIRO SÃO CONRADO;RIO DE JANEIRO;RJ;AV. AQUARELA DO BRASIL, 75;SÃO CONRADO;-22.998159;-43.258412;BRASIL;www.royaltulipriosaoconrado.com/pt-br;M,N,O,Q,S,T,V,W,Z;A,B,F,I,;Diamante
+4516;BLUE TREE PARK LINS ÁGUAS TERMAIS RESORT;LINS;SP;MARGINAL DE ACESSO AV. TIRADENTES, S/N;RURAL;-21.69145;-49.759818;BRASIL;www.bluetreeparklins.com.br;M,N,O,P,Q,R,S,T,U,Y;A,B,C,F,G,H,I,;Diamante
+4767;BEST WESTERN DUBAI MACAÉ HOTEL;MACAÉ;RJ;RUA PROFESSORA IRENE MEIRELES, 253;GLÓRIA;-22.39857;-41.798397;BRASIL;www.hoteldubaimacae.com.br;J,M,N,S,V,Y;A,B,C,F,G,I,;Diamante
+4814;SOLAR DO ROSÁRIO HOTEL;OURO PRETO;MG;RUA GETÚLIO VARGAS, 270;ROSÁRIO;-20.383629;-43.509448;BRASIL;www.hotelsolardorosario.com.br;M,N,R,S,Y;A,B,C,D,E,F,G,I,;Diamante
+4928;QUALITY HOTEL AFONSO PENA;BELO HORIZONTE;MG;AV. AFONSO PENA, 3.761;SERRA;-19.942887;-43.923217;BRASIL;www.atlanticahotels.com.br/hotel/belo-horizonte/quality-hotel-afonso-pena;J,M,N,Q,S,Z;A,B,F,G,I,;Diamante
+5069;APARTHOTEL ADAGIO SÃO PAULO ITAIM BIBI;SÃO PAULO;SP;RUA PROFESSOR CARLOS DE CARVALHO, 168;ITAIM BIBI;-23.582721;-46.680218;BRASIL;www.accorhotels.com/pt-br/hotel-2845-aparthotel-adagio-sao-paulo-itaim-bibi-anteriormente-mercure/index.shtml;J,L,N,S,Z;A,B,C,F,G,H,I,;Diamante
+6265;SLAVIERO ESSENTIAL FLORIANÓPOLIS PRAIA DOS INGLESES;FLORIANÓPOLIS;SC;RUA DAS GAIVOTAS, 1.140;INGLESES;-27.42823;-48.39876;BRASIL;www.slavierohoteis.com.br/hotel-em-florianopolis/slaviero-essential-florianopolis-ingleses-acquamar/hotel/;M,Q,S,V,Z;A,B,F,I,;Diamante
+6298;CASA CAIADA POUSADA;MACEIÓ;AL;RODOVIA GUNTHER FRANS OLIVEIRA, KM 10, 20;PESCARIA;-9.539241;-35.628685;BRASIL;www.casacaiadapousada.com.br;M,N,O,P,Q,S,Y;A,B,C,F,I,;Diamante
+6309;LE CANTON VILLAGE HOTEL;TERESÓPOLIS;RJ;RUA ANTÔNIO SILVA, 300;VARGEM GRANDE;-22.385328;-42.856164;BRASIL;www.lecanton.com.br/hoteis/hotel-village;L,M,O,P,Q,S,T,Y;A,B,C,F,I,;Diamante
+6342;TRYP SÃO PAULO ITAIM HOTEL;SÃO PAULO;SP;RUA MANUEL GUEDES, 320;ITAIM BIBI;0;0;BRASIL;www.melia.com/pt/hoteis/brasil/sao-paulo/tryp-sao-paulo-itaim-hotel/index.html;J,K,M,N,S,Z;A,B,F,G,I,;Diamante
+6344;TRYP SÃO PAULO JESUÍNO ARRUDA HOTEL;SÃO PAULO;SP;RUA JESUÍNO ARRUDA, 806;ITAIM BIBI;0;0;BRASIL;www.melia.com/pt/hoteis/brasil/sao-paulo/tryp-sao-paulo-jesuino-arruda-hotel/index.html;J,L,M,N,Z;A,B,F,G,I,;Diamante
+6345;TRYP SÃO PAULO IGUATEMI HOTEL;SÃO PAULO;SP;RUA IGUATEMI, 150;ITAIM BIBI;0;0;BRASIL;www.melia.com/pt/hoteis/brasil/sao-paulo/tryp-sao-paulo-iguatemi-hotel/index.html;J,M,N,Q,S,Z;A,B,F,G,I,;Diamante

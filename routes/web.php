@@ -43,6 +43,10 @@ Route::get('/ranking', function () {
     return view('ranking');
 });
 
+Route::get('/converter', function () {
+    return view('converter');
+});
+
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');

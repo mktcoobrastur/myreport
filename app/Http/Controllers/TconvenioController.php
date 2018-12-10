@@ -76,7 +76,7 @@ class TconvenioController extends AppBaseController
         $tconvenio = $this->tconvenioRepository->findWithoutFail($id);
 
         if (empty($tconvenio)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #1725.');
 
             return redirect(route('tconvenios.index'));
         }
@@ -96,7 +96,7 @@ class TconvenioController extends AppBaseController
         $tconvenio = $this->tconvenioRepository->findWithoutFail($id);
 
         if (empty($tconvenio)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #1725.');
 
             return redirect(route('tconvenios.index'));
         }
@@ -117,7 +117,7 @@ class TconvenioController extends AppBaseController
         $tconvenio = $this->tconvenioRepository->findWithoutFail($id);
 
         if (empty($tconvenio)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #1725.');
 
             return redirect(route('tconvenios.index'));
         }
@@ -141,7 +141,7 @@ class TconvenioController extends AppBaseController
         $tconvenio = $this->tconvenioRepository->findWithoutFail($id);
 
         if (empty($tconvenio)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #1725.');
 
             return redirect(route('tconvenios.index'));
         }

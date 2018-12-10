@@ -43,26 +43,6 @@ Route::get('/ranking', function () {
     return view('ranking');
 });
 
-/* Relatórios */
-
-        Route::get('/r-televenda', function () {
-            return view('r-televenda');
-        });
-
-        Route::get('/r-representantes', function () {
-            return view('r-representantes');
-        });
-
-        Route::get('/relatorio-representantes', function () {
-            return view('relatorio-representantes');
-        });
-
-        Route::get('/relatorio-televenda', function () {
-            return view('relatorio-televenda');
-        });
-
-/* Fim Relatórios */
-
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');

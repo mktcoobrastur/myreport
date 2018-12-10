@@ -29,7 +29,7 @@
 <?php
     if (isset($_GET['arq'])) {
         $arq = $_GET['arq'];
-        echo "<center><a class='btn btn-default' href='http://webdesigner2/sistema/public/$arq' download>".$_GET['arq']."</a></center>";
+        echo "<center>Clique no arquivo para fazer o download.<br /><br /><a class='btn btn-primary' href='http://webdesigner2/sistema/public/$arq' download>".$_GET['arq']."</a></center>";
     }
 ?>
 @endsection

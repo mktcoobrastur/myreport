@@ -76,7 +76,7 @@ class IndiceController extends AppBaseController
         $indice = $this->indiceRepository->findWithoutFail($id);
 
         if (empty($indice)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #1741.');
 
             return redirect(route('indices.index'));
         }
@@ -96,7 +96,7 @@ class IndiceController extends AppBaseController
         $indice = $this->indiceRepository->findWithoutFail($id);
 
         if (empty($indice)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #1741.');
 
             return redirect(route('indices.index'));
         }
@@ -117,7 +117,7 @@ class IndiceController extends AppBaseController
         $indice = $this->indiceRepository->findWithoutFail($id);
 
         if (empty($indice)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #1741.');
 
             return redirect(route('indices.index'));
         }
@@ -141,7 +141,7 @@ class IndiceController extends AppBaseController
         $indice = $this->indiceRepository->findWithoutFail($id);
 
         if (empty($indice)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #1741.');
 
             return redirect(route('indices.index'));
         }

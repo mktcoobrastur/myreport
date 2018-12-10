@@ -76,7 +76,7 @@ class FuncionarioController extends AppBaseController
         $funcionario = $this->funcionarioRepository->findWithoutFail($id);
 
         if (empty($funcionario)) {
-            Flash::error('Funcionario not found');
+            Flash::error('Ocorreu um erro #0602');
 
             return redirect(route('funcionarios.index'));
         }
@@ -96,7 +96,7 @@ class FuncionarioController extends AppBaseController
         $funcionario = $this->funcionarioRepository->findWithoutFail($id);
 
         if (empty($funcionario)) {
-            Flash::error('Funcionario not found');
+            Flash::error('Ocorreu um erro #0602');
 
             return redirect(route('funcionarios.index'));
         }
@@ -117,7 +117,7 @@ class FuncionarioController extends AppBaseController
         $funcionario = $this->funcionarioRepository->findWithoutFail($id);
 
         if (empty($funcionario)) {
-            Flash::error('Funcionario not found');
+            Flash::error('Ocorreu um erro #0602');
 
             return redirect(route('funcionarios.index'));
         }
@@ -141,14 +141,14 @@ class FuncionarioController extends AppBaseController
         $funcionario = $this->funcionarioRepository->findWithoutFail($id);
 
         if (empty($funcionario)) {
-            Flash::error('Funcionario not found');
+            Flash::error('Ocorreu um erro #0602');
 
             return redirect(route('funcionarios.index'));
         }
 
         $this->funcionarioRepository->delete($id);
 
-        Flash::success('Funcionario deleted successfully.');
+        Flash::success('Excluído com sucesso!');
 
         return redirect(route('funcionarios.index'));
     }

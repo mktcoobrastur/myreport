@@ -76,7 +76,7 @@ class MarkcampanhaController extends AppBaseController
         $markcampanha = $this->markcampanhaRepository->findWithoutFail($id);
 
         if (empty($markcampanha)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #2811.');
 
             return redirect(route('markcampanhas.index'));
         }
@@ -96,7 +96,7 @@ class MarkcampanhaController extends AppBaseController
         $markcampanha = $this->markcampanhaRepository->findWithoutFail($id);
 
         if (empty($markcampanha)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #2811.');
 
             return redirect(route('markcampanhas.index'));
         }
@@ -117,7 +117,7 @@ class MarkcampanhaController extends AppBaseController
         $markcampanha = $this->markcampanhaRepository->findWithoutFail($id);
 
         if (empty($markcampanha)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #2811.');
 
             return redirect(route('markcampanhas.index'));
         }
@@ -141,7 +141,7 @@ class MarkcampanhaController extends AppBaseController
         $markcampanha = $this->markcampanhaRepository->findWithoutFail($id);
 
         if (empty($markcampanha)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #2811.');
 
             return redirect(route('markcampanhas.index'));
         }

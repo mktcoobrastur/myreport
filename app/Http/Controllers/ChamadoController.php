@@ -17,6 +17,7 @@ class ChamadoController extends AppBaseController
     /** @var  ChamadoRepository */
     private $chamadoRepository;
 
+
     public function __construct(ChamadoRepository $chamadoRepo)
     {
         $this->chamadoRepository = $chamadoRepo;
@@ -79,7 +80,7 @@ class ChamadoController extends AppBaseController
         $chamado = $this->chamadoRepository->findWithoutFail($id);
 
         if (empty($chamado)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #0508.');
 
             return redirect(route('chamados.index'));
         }
@@ -99,7 +100,7 @@ class ChamadoController extends AppBaseController
         $chamado = $this->chamadoRepository->findWithoutFail($id);
 
         if (empty($chamado)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #0508.');
 
             return redirect(route('chamados.index'));
         }
@@ -120,7 +121,7 @@ class ChamadoController extends AppBaseController
         $chamado = $this->chamadoRepository->findWithoutFail($id);
 
         if (empty($chamado)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #0508.');
 
             return redirect(route('chamados.index'));
         }
@@ -144,7 +145,7 @@ class ChamadoController extends AppBaseController
         $chamado = $this->chamadoRepository->findWithoutFail($id);
 
         if (empty($chamado)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #0508.');
 
             return redirect(route('chamados.index'));
         }

@@ -80,7 +80,7 @@ class ConvenioController extends AppBaseController
         $convenio = $this->convenioRepository->findWithoutFail($id);
 
         if (empty($convenio)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #0704.');
 
             return redirect(route('convenios.index'));
         }
@@ -100,7 +100,7 @@ class ConvenioController extends AppBaseController
         $convenio = $this->convenioRepository->findWithoutFail($id);
 
         if (empty($convenio)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #0704.');
 
             return redirect(route('convenios.index'));
         }
@@ -121,7 +121,7 @@ class ConvenioController extends AppBaseController
         $convenio = $this->convenioRepository->findWithoutFail($id);
 
         if (empty($convenio)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #0704.');
 
             return redirect(route('convenios.index'));
         }
@@ -145,7 +145,7 @@ class ConvenioController extends AppBaseController
         $convenio = $this->convenioRepository->findWithoutFail($id);
 
         if (empty($convenio)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #0704.');
 
             return redirect(route('convenios.index'));
         }

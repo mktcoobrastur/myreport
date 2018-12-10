@@ -76,7 +76,7 @@ class PromocoeController extends AppBaseController
         $promocoe = $this->promocoeRepository->findWithoutFail($id);
 
         if (empty($promocoe)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #6115.');
 
             return redirect(route('promocoes.index'));
         }
@@ -96,7 +96,7 @@ class PromocoeController extends AppBaseController
         $promocoe = $this->promocoeRepository->findWithoutFail($id);
 
         if (empty($promocoe)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #6115.');
 
             return redirect(route('promocoes.index'));
         }
@@ -117,7 +117,7 @@ class PromocoeController extends AppBaseController
         $promocoe = $this->promocoeRepository->findWithoutFail($id);
 
         if (empty($promocoe)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #6115.');
 
             return redirect(route('promocoes.index'));
         }
@@ -141,7 +141,7 @@ class PromocoeController extends AppBaseController
         $promocoe = $this->promocoeRepository->findWithoutFail($id);
 
         if (empty($promocoe)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #6115.');
 
             return redirect(route('promocoes.index'));
         }

@@ -76,7 +76,7 @@ class MarkconvenioController extends AppBaseController
         $markconvenio = $this->markconvenioRepository->findWithoutFail($id);
 
         if (empty($markconvenio)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #7882.');
 
             return redirect(route('markconvenios.index'));
         }
@@ -96,7 +96,7 @@ class MarkconvenioController extends AppBaseController
         $markconvenio = $this->markconvenioRepository->findWithoutFail($id);
 
         if (empty($markconvenio)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #7882.');
 
             return redirect(route('markconvenios.index'));
         }
@@ -117,7 +117,7 @@ class MarkconvenioController extends AppBaseController
         $markconvenio = $this->markconvenioRepository->findWithoutFail($id);
 
         if (empty($markconvenio)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #7882.');
 
             return redirect(route('markconvenios.index'));
         }
@@ -141,7 +141,7 @@ class MarkconvenioController extends AppBaseController
         $markconvenio = $this->markconvenioRepository->findWithoutFail($id);
 
         if (empty($markconvenio)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #7882.');
 
             return redirect(route('markconvenios.index'));
         }

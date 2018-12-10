@@ -24,7 +24,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Chamado extends Model
 {
     use SoftDeletes;
-
+    
     public $table = 'chamados';
     
     const CREATED_AT = 'created_at';

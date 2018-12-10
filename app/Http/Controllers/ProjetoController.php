@@ -76,7 +76,7 @@ class ProjetoController extends AppBaseController
         $projeto = $this->projetoRepository->findWithoutFail($id);
 
         if (empty($projeto)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #1995.');
 
             return redirect(route('projetos.index'));
         }
@@ -96,7 +96,7 @@ class ProjetoController extends AppBaseController
         $projeto = $this->projetoRepository->findWithoutFail($id);
 
         if (empty($projeto)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #1995.');
 
             return redirect(route('projetos.index'));
         }
@@ -117,7 +117,7 @@ class ProjetoController extends AppBaseController
         $projeto = $this->projetoRepository->findWithoutFail($id);
 
         if (empty($projeto)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #1995.');
 
             return redirect(route('projetos.index'));
         }
@@ -141,7 +141,7 @@ class ProjetoController extends AppBaseController
         $projeto = $this->projetoRepository->findWithoutFail($id);
 
         if (empty($projeto)) {
-            Flash::error('Ocorreu um erro.');
+            Flash::error('Ocorreu um erro #1995.');
 
             return redirect(route('projetos.index'));
         }

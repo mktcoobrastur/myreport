@@ -1,299 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?> 
 <root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'> 
 <Diamante> 
-<state> 
+
+ <state> 
 <sflag/> 
-<city> 
-<cname> 
-PINDAMONHANGABA 
+<sflag/> 
+<cname>.  
 </cname> 
-</city> 
-<hotel><hname>SLEEP INN PINDA 
-</hname></hotel> 
-<description> 
-<hdescription> 
-AV. DR. FRANCISCO LESSA JUNIOR, 2.002 
-JARDIM RESIDENCIAL DR LESSA 
-www.sleepinnpindamonhangaba.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-J,M,N,YA,B,C,F,G,I, 
-</itemh> 
-</description> 
-</state> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SE.jpg'/> 
  
-<state> 
 <sflag/> 
-<city> 
-<cname> 
-RIO DE JANEIRO 
-</cname> 
-</city> 
-<hotel><hname>SERRAMAR HOTEL 
-</hname></hotel> 
-<description> 
-<hdescription> 
-ESTRADA DA BARRA DA TIJUCA, 1020 
-BARRA DA TIJUCA 
-www.hotelserramar.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-J,M,N,Q,S,YA,B,C,I, 
-</itemh> 
-</description> 
+  
 </state> 
+  
  
-<state> 
-<sflag/> 
-<city> 
-<cname> 
-GRAVATAL 
-</cname> 
-</city> 
-<hotel><hname>TERMAS DO LAGO HOTEL 
-</hname></hotel> 
-<description> 
-<hdescription> 
-RUA LEDOVINO RIGOTTI, 2495 
-TERMAS 
-www.hoteltermasdolago.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-M,N,O,P,S,YA,B,C,I, 
-</itemh> 
-</description> 
-</state> 
- 
-<state> 
-<sflag/> 
-<city> 
-<cname> 
-CATALÃO 
-</cname> 
-</city> 
-<hotel><hname>BRISTOL CATALÃO HOTEL 
-</hname></hotel> 
-<description> 
-<hdescription> 
-RUA GUIMARÃES ROSA, 85 
-JARDIM COLONIAL 
-www.goo.gl/GE1uPw</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-L,M,R,SA,B,F,I, 
-</itemh> 
-</description> 
-</state> 
- 
-<state> 
-<sflag/> 
-<city> 
-<cname> 
-CANELA 
-</cname> 
-</city> 
-<hotel><hname>LAGHETTO VIVACE CANELA 
-</hname></hotel> 
-<description> 
-<hdescription> 
-RUA JÚLIO DE CASTILHOS, 602 
-CENTRO 
-www.laghettohoteis.com.br/hoteis/canela/vivace-canela</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-J,M,N,P,ZA,B,C,F,I, 
-</itemh> 
-</description> 
-</state> 
- 
-<state> 
-<sflag/> 
-<city> 
-<cname> 
-JOÃO PESSOA 
-</cname> 
-</city> 
-<hotel><hname>DO MAR MANAÍRA HOTEL 
-</hname></hotel> 
-<description> 
-<hdescription> 
-AVENIDA POMBAL, 396 
-PRAIA DE TAMBAÚ 
-www.coobrastur.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-S,VA,B,G,I, 
-</itemh> 
-</description> 
-</state> 
- 
-<state> 
-<sflag/> 
-<city> 
-<cname> 
-IGREJINHA 
-</cname> 
-</city> 
-<hotel><hname>IBIS IGREJINHA HOTEL 
-</hname></hotel> 
-<description> 
-<hdescription> 
-AV. PRESIDENTE TANCREDO DE ALMEIDA NEVES, 5.650 
-INDUSTRIAL 
-www.accorhotels.com/pt-br/hotel-A0G6-ibis-igrejinha-/index.shtml</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-L,M,N,YA,B,I, 
-</itemh> 
-</description> 
-</state> 
- 
-<state> 
-<sflag/> 
-<city> 
-<cname> 
-ARACAJU 
-</cname> 
-</city> 
-<hotel><hname>NB HOTÉIS 
-</hname></hotel> 
-<description> 
-<hdescription> 
-AV. DR. JOSÉ MACHADO DE SOUZA, 120 
-JARDINS 
-www.nbhoteis.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-J,L,M,YA,B,F,I, 
-</itemh> 
-</description> 
-</state> 
- 
-<state> 
-<sflag/> 
-<city> 
-<cname> 
-RECIFE 
-</cname> 
-</city> 
-<hotel><hname>MANIBU RECIFE HOTEL 
-</hname></hotel> 
-<description> 
-<hdescription> 
-AV. CONSELHEIRO AGUIAR, 919 
-BOA VIAGEM 
-www.hotelmaniburecife.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-M,N,P,S,V,ZA,B,F,G,I, 
-</itemh> 
-</description> 
-</state> 
- 
-<state> 
-<sflag/> 
-<city> 
-<cname> 
-PORTO SEGURO 
-</cname> 
-</city> 
-<hotel><hname>CASA BLANCA PARK HOTEL 
-</hname></hotel> 
-<description> 
-<hdescription> 
-AV. 22 DE ABRIL, 435 
-CENTRO 
-www.casablancapark.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-N,O,P,Q,S,T,VA,B,F,I, 
-</itemh> 
-</description> 
-</state> 
- 
-<state> 
-<sflag/> 
-<city> 
-<cname> 
-JOÃO PESSOA 
-</cname> 
-</city> 
-<hotel><hname>ARAM BEACH e CONVENTION HOTEL 
-</hname></hotel> 
-<description> 
-<hdescription> 
-RUA NOSSA SENHORA DOS NAVEGANTES, 431 
-PRAIA DE TAMBAÚ 
-http://www.aramhoteis.com.br/hoteis/beach-convention</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-M,N,O,S,V,YA,B,C,G,I, 
-</itemh> 
-</description> 
-</state> 
- 
-<state> 
-<sflag/> 
-<city> 
-<cname> 
-CAXIAS DO SUL 
-</cname> 
-</city> 
-<hotel><hname>PERSONAL SMART HOTEL 
-</hname></hotel> 
-<description> 
-<hdescription> 
-RUA PADRE JOÃO SCHIAVO, 950 
-PETRÓPOLIS 
-www.personalsmart.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-L,ZA,B,C,E,G,I, 
-</itemh> 
-</description> 
-</state> 
- 
-<state> 
-<sflag/> 
-<city> 
-<cname> 
-FORTALEZA 
-</cname> 
-</city> 
-<hotel><hname>ALPHA PRAIA HOTEL 
-</hname></hotel> 
-<description> 
-<hdescription> 
-RUA BARÃO DE ARACATI, 280 
-MEIRELES 
-www.alphapraiahotel.com.br/hotel/</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-SA,B, 
-</itemh> 
-</description> 
-</state> 
- 
-<state> 
-<sflag/> 
-<city> 
-<cname> 
-IMPERATRIZ 
-</cname> 
-</city> 
-<hotel><hname>STAY INN HOTEL 
-</hname></hotel> 
-<description> 
-<hdescription> 
-AV BERNARDO SAYAO, 17 
-MARANHÃO NOVO 
-www.stayinnhotel.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-M,N,YA,B,G,I, 
-</itemh> 
-</description> 
-</state> 
  
 <state> 
 <sflag/> 
@@ -302,19 +23,38 @@ M,N,YA,B,G,I,
 PINDAMONHANGABA 
 </cname> 
 </city> 
-<hotel><hname>INTERCITY PÁTIO PINDA HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+INTERCITY PATIO PINDA, HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA ALCIDES RAMOS NOGUEIRA, 782 
 NOSSA SRA DO PERPÉTUO SOCORRO 
-www.intercityhoteis.com.br/hotel-pindamonhangaba/hotel-intercity-patio-pinda/34/</hdescription> 
-<itemhname>Características:</itemhname> 
+www.intercityhoteis.com.br/hotel-pindamonhangaba/hotel-intercity-patio-pinda/34/ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 J,K,M,N,OA,B,F,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RS.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -323,19 +63,38 @@ J,K,M,N,OA,B,F,G,I,
 GRAMADO 
 </cname> 
 </city> 
-<hotel><hname>SERRAVALLE POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+SERRAVALLE POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AV DAS HORTÊNSIAS, 5.355 
 CARNIEL 
-www.pousadaserravalle.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.pousadaserravalle.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 O,YA,B,C,E,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/CE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -344,19 +103,38 @@ O,YA,B,C,E,I,
 FORTALEZA 
 </cname> 
 </city> 
-<hotel><hname>ALGARVE PRAIA HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+ALGARVE PRAIA HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA TIGIPIÓ, 135 
 PRAIA DE IRACEMA 
-www.algarvepraiahotel.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.algarvepraiahotel.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 SA,B,C,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/CE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -365,19 +143,38 @@ SA,B,C,I,
 FORTALEZA 
 </cname> 
 </city> 
-<hotel><hname>ARA MAR PRAIA HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+ARA MAR PRAIA HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA HISTORIADOR RAIMUNDO GIRÃO, 430 
 PRAIA DE IRACEMA 
-www.arapraiahotel.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.arapraiahotel.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 SA,B,C,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/MS.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -386,19 +183,38 @@ SA,B,C,I,
 BONITO 
 </cname> 
 </city> 
-<hotel><hname>RIO FORMOSO HOTEL FAZENDA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+RIO FORMOSO HOTEL FAZENDA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 ROD. DO TURISMO KM 11, SN 
 ZONA RURAL 
-www.rioformoso.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.rioformoso.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,O,P,S,T,YA,B,C, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SC.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -407,19 +223,38 @@ M,O,P,S,T,YA,B,C,
 TERMAS DA GUARDA 
 </cname> 
 </city> 
-<hotel><hname>SANDRINI PARK HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+SANDRINI PARK HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 ESTRADA GERAL DA GUARDA, 9.500 
 GUARDA MARGEM DIRETA 
-www.sandriniparkhotel.com.br/inicio/</hdescription> 
-<itemhname>Características:</itemhname> 
+www.sandriniparkhotel.com.br/inicio/ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,N,O,P,Q,R,S,T,U,YA,B,C,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/PB.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -428,19 +263,38 @@ M,N,O,P,Q,R,S,T,U,YA,B,C,G,I,
 JOÃO PESSOA 
 </cname> 
 </city> 
-<hotel><hname>TAMBAÚ FAMILLY POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+TAMBAÚ FAMILLY POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AVENIDA OLINDA, 155 
 TAMBAÚ 
-www.tambaufamilly.com.br/</hdescription> 
-<itemhname>Características:</itemhname> 
+www.tambaufamilly.com.br/ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 J,O,V,YA,B,C,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RJ.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -449,40 +303,38 @@ J,O,V,YA,B,C,G,I,
 RIO DE JANEIRO 
 </cname> 
 </city> 
-<hotel><hname>DAYS INN RIO DE JANEIRO LAPA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+DAYS INN RIO DE JANEIRO LAPA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA DO REZENDE, 107 
 CENTRO 
-www.wyndhamhotels.com/days-inn/rio-de-janeiro-brazil/days-inn-rio-de-janeiro-lapa/overview</hdescription> 
-<itemhname>Características:</itemhname> 
+www.wyndhamhotels.com/days-inn/rio-de-janeiro-brazil/days-inn-rio-de-janeiro-lapa/overview 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,NA,B,F,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
  
-<state> 
+
+ <state> 
 <sflag/> 
-<city> 
-<cname> 
-BARREIRINHAS 
+<sflag/> 
+<cname>.  
 </cname> 
-</city> 
-<hotel><hname>PORTAL DO SOL LENÇÓIS POUSADA MARINA 
-</hname></hotel> 
-<description> 
-<hdescription> 
-TRAVESSA DA RUA PRINCIPAL, 01 
-BOA VISTA 
-www.portaldosol-lencois.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-M,S,V,YA,B,C,G, 
-</itemh> 
-</description> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/BA.jpg'/> 
+ 
+<sflag/> 
+  
 </state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -491,19 +343,38 @@ M,S,V,YA,B,C,G,
 MORRO DE SÃO PAULO 
 </cname> 
 </city> 
-<hotel><hname>MORRO DA SAUDADE HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+MORRO DA SAUDADE HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA DO RECEPTIVO 2ª PRAIA, S/N 
 CAIRU 
-www.hotelmorrodasaudade.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.hotelmorrodasaudade.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 J,L,S,VA,B,C, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/MG.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -512,19 +383,38 @@ J,L,S,VA,B,C,
 VIÇOSA 
 </cname> 
 </city> 
-<hotel><hname>BRISTOL VIÇOSA HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+BRISTOL VIÇOSA HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA DR. MILTON BANDEIRA, 366 
 VEREDA DO BOSQUE 
-http://bristolvicosahotel.com.br/</hdescription> 
-<itemhname>Características:</itemhname> 
+http://bristolvicosahotel.com.br/ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,N,SA,B,E,F,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/MG.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -533,19 +423,38 @@ M,N,SA,B,E,F,I,
 BELO HORIZONTE 
 </cname> 
 </city> 
-<hotel><hname>BEAGÁ CONVENTION HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+BEAGÁ CONVENTION HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AV. AMAZONAS, 5110 
 NOVA SUÍÇA 
-www.hotelbeagaconvention.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.hotelbeagaconvention.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,M,N,Q,S,T,ZA,B,E,F,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/MG.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -554,19 +463,38 @@ L,M,N,Q,S,T,ZA,B,E,F,G,I,
 UBÁ 
 </cname> 
 </city> 
-<hotel><hname>BRISTOL EASY HOTEL - UBÁ 
-</hname></hotel> 
+<hotel> 
+<hname> 
+BRISTOL EASY HOTEL - UBÁ</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AV. COMENDADOR JACINTO SOARES DE SOUZA LIMA, 865 
 CENTRO 
-www.alliahotels.com.br/futuros-hoteis/bristol/bristol-easy-hotel-uba</hdescription> 
-<itemhname>Características:</itemhname> 
+www.alliahotels.com.br/futuros-hoteis/bristol/bristol-easy-hotel-uba 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,NA,B,F,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/MG.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -575,19 +503,38 @@ M,NA,B,F,G,I,
 BELO HORIZONTE 
 </cname> 
 </city> 
-<hotel><hname>SAMBA BELO HORIZONTE CENTRO 
-</hname></hotel> 
+<hotel> 
+<hname> 
+SAMBA BELO HORIZONTE CENTRO</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AV. AFONSO PENA, 772 
 CENTRO 
-http://www.sambahoteis.com/hoteis/samba-belo-horizonte</hdescription> 
-<itemhname>Características:</itemhname> 
+http://www.sambahoteis.com/hoteis/samba-belo-horizonte 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 NA,B,F,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -596,19 +543,38 @@ NA,B,F,I,
 ATIBAIA 
 </cname> 
 </city> 
-<hotel><hname>ITAPETINGA HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+ITAPETINGA HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA OTÁVIO PASSOS, 85 
 AVINÓPOLIS 
-itapetingahotel.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+itapetingahotel.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,N,O,P,S,YA,B,C,D,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SC.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -617,19 +583,38 @@ M,N,O,P,S,YA,B,C,D,G,I,
 BALNEÁRIO CAMBORIÚ 
 </cname> 
 </city> 
-<hotel><hname>FLAT LARANJEIRA CONCEPT 
-</hname></hotel> 
+<hotel> 
+<hname> 
+FLAT LARANJEIRA CONCEPT</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA 2950, 439 
 CENTRO 
-www,flatconcept.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www,flatconcept.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,V,ZA,B,C,G,H,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/CE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -638,19 +623,38 @@ L,V,ZA,B,C,G,H,I,
 JERICOACOARA 
 </cname> 
 </city> 
-<hotel><hname>CANAÃ POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+CANAÃ POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA DAS DUNAS, 501 
 VILA DE JERICOACOARA 
-www.facebook.com/Pousada-Canaã-2010691532501679/</hdescription> 
-<itemhname>Características:</itemhname> 
+www.facebook.com/Pousada-Canaã-2010691532501679/ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,SA,B,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/PB.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -659,19 +663,38 @@ L,SA,B,I,
 JOÃO PESSOA 
 </cname> 
 </city> 
-<hotel><hname>DO MAR CABO BRANCO HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+DO MAR CABO BRANCO HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AVENIDA CABO BRANCO, 3033 
 CABO BRANCO 
-www.coobrastur.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.coobrastur.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 S,YA,B,C,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RN.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -680,19 +703,38 @@ S,YA,B,C,I,
 PORTALEGRE 
 </cname> 
 </city> 
-<hotel><hname>RECANTO ALTO DA SERRA POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+RECANTO ALTO DA SERRA POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA DOS MIRANTES, 52 
 CENTRO 
-www.recantoaltodaserra.com</hdescription> 
-<itemhname>Características:</itemhname> 
+www.recantoaltodaserra.com 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,S,YA,B,C,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SC.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -701,19 +743,38 @@ M,S,YA,B,C,G,I,
 BOMBINHAS 
 </cname> 
 </city> 
-<hotel><hname>CABANAS PORTO BELO POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+CABANAS PORTO BELO POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA TAINHAS, 303 
 CENTRO 
-www.cabanasportobelo.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.cabanasportobelo.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,S,YA,C,G,H,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RS.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -722,19 +783,38 @@ M,S,YA,C,G,H,I,
 GRAMADO 
 </cname> 
 </city> 
-<hotel><hname>COLINA PREMIUM LAGO HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+COLINA PREMIUM LAGO HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA LEOPOLDO ROSENFELD, 300 
 PLANALTO 
-www.colinahoteis.com.br/colina-premium</hdescription> 
-<itemhname>Características:</itemhname> 
+www.colinahoteis.com.br/colina-premium 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 J,K,O,YA,B,C,E,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/MG.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -743,19 +823,38 @@ J,K,O,YA,B,C,E,I,
 BELO HORIZONTE 
 </cname> 
 </city> 
-<hotel><hname>STOP INN PLUS PAMPULHA HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+STOP INN PLUS PAMPULHA HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA ALAMEDA DAS PALMEIRAS, 743 
 SÃO JOSÉ 
-http://www.hotelstopinn.com.br/pampulha/hotel-overview.html</hdescription> 
-<itemhname>Características:</itemhname> 
+http://www.hotelstopinn.com.br/pampulha/hotel-overview.html 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,SA,B,F,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SC.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -764,19 +863,38 @@ L,SA,B,F,I,
 ITAPEMA 
 </cname> 
 </city> 
-<hotel><hname>RECANTO DOM ARTHUR POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+RECANTO DOM ARTHUR POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA 106, 233 
 CENTRO 
-www.recantodomarthur.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.recantodomarthur.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 N,S,YA,C, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SC.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -785,19 +903,38 @@ N,S,YA,C,
 BOMBINHAS 
 </cname> 
 </city> 
-<hotel><hname>OCEÂNICA POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+OCEANICA POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA RIO PASSA VINTE, 110 
 ZIMBROS 
-www.oceanicazimbros.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.oceanicazimbros.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,N,P,S,T,V,W,YA,B,C,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/MT.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -806,19 +943,38 @@ L,N,P,S,T,V,W,YA,B,C,I,
 PRIMAVERA DO LESTE 
 </cname> 
 </city> 
-<hotel><hname>TEZLA HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+TEZLA HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA OLIVERIO PORTA, 910 
 CENTRO LESTE 
-www.tezlahotel.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.tezlahotel.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 J,L,M,N,O,YA,B,C,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SC.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -827,19 +983,38 @@ J,L,M,N,O,YA,B,C,I,
 PORTO BELO 
 </cname> 
 </city> 
-<hotel><hname>MORRO DO SOL HOTEL e EVENTOS 
-</hname></hotel> 
+<hotel> 
+<hname> 
+MORRO DO SOL HOTEL e EVENTOS</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA MORRO DO SOL, 100 
 CENTRO 
-www.morrodosol.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.morrodosol.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,N,P,R,S,YA,B,C,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/CE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -848,40 +1023,38 @@ M,N,P,R,S,YA,B,C,G,I,
 ARACATI 
 </cname> 
 </city> 
-<hotel><hname>MIRANTE DAS GAMBOAS COMPLEXO TURÍSTICO 
-</hname></hotel> 
+<hotel> 
+<hname> 
+MIRANTE DAS GAMBOAS COMPLEXO TURÍSTICO</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 ESTRADA DO CUMBI - KM 0, S/N 
 ILHA DOS VEADOS 
-www.mirantedasgamboas.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.mirantedasgamboas.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,M,N,P,S,T,YA,B,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
  
-<state> 
+
+ <state> 
 <sflag/> 
-<city> 
-<cname> 
-SÃO LUÍS 
+<sflag/> 
+<cname>.  
 </cname> 
-</city> 
-<hotel><hname>PRAIA BELLA HOTEL 
-</hname></hotel> 
-<description> 
-<hdescription> 
-AV. LITORÂNEA, 46 
-PRAIA DO CALHAU 
-www.coobrastur.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-M,N,S,V,YA,B,C,F,G,I, 
-</itemh> 
-</description> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RJ.jpg'/> 
+ 
+<sflag/> 
+  
 </state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -890,19 +1063,38 @@ M,N,S,V,YA,B,C,F,G,I,
 RIO DE JANEIRO 
 </cname> 
 </city> 
-<hotel><hname>RAMADA ENCORE RIBALTA HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+RAMADA ENCORE RIBALTA HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AV DAS AMERICAS, 9.650 
 BARRA DA TIJUCA 
-www.verthoteis.com.br/hotel/ramada-encore-ribalta/</hdescription> 
-<itemhname>Características:</itemhname> 
+www.verthoteis.com.br/hotel/ramada-encore-ribalta/ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 J,L,M,P,W,ZA,B,F,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/MG.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -911,19 +1103,38 @@ J,L,M,P,W,ZA,B,F,G,I,
 BELO HORIZONTE 
 </cname> 
 </city> 
-<hotel><hname>FRONT EXPOMINAS HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+FRONT EXPOMINAS HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA CURRAL DEL REI, 598 
 PADRE EUSTÁQUIO 
-www.fronthoteis.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.fronthoteis.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 J,L,YA,B,F,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/CE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -932,19 +1143,38 @@ J,L,YA,B,F,G,I,
 FORTALEZA 
 </cname> 
 </city> 
-<hotel><hname>ALGAS PRAIA HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+ALGAS PRAIA HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA ANTONIO AUGUSTO, 32 
 MEIRELES 
-http://algaspraiahotel.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+http://algaspraiahotel.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 VA,B,C,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/MG.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -953,19 +1183,38 @@ VA,B,C,I,
 LAGOA SANTA 
 </cname> 
 </city> 
-<hotel><hname>ESUITES SPA LAGOA SANTA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+ESUITES SPA LAGOA SANTA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA DOS OPERÁRIOS, 735 
 JOANA D'ARC 
-www.verthoteis.com.br/hotel/esuites-lagoa-santa/</hdescription> 
-<itemhname>Características:</itemhname> 
+www.verthoteis.com.br/hotel/esuites-lagoa-santa/ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,M,N,Q,SA,B,F,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/MG.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -974,19 +1223,38 @@ L,M,N,Q,SA,B,F,I,
 BELO HORIZONTE 
 </cname> 
 </city> 
-<hotel><hname>ESUITES SAVASSI TOSCANINI 
-</hname></hotel> 
+<hotel> 
+<hname> 
+ESUITES SAVASSI TOSCANINI</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA ARTURO TOSCANINI, 61 
 SANTO ANTONIO 
-www.verthoteis.com.br/hotel/esuites-savassi-toscanini/</hdescription> 
-<itemhname>Características:</itemhname> 
+www.verthoteis.com.br/hotel/esuites-savassi-toscanini/ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 J,L,M,Q,ZA,B,F,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RN.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -995,19 +1263,38 @@ J,L,M,Q,ZA,B,F,G,I,
 TIBAU DO SUL 
 </cname> 
 </city> 
-<hotel><hname>CORAIS DO SUL POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+CORAIS DO SUL POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AV GOVERNADOR ALUISIO ALVES, 282 
 CENTRO 
-https://pt-br.facebook.com/pousadacoraisdosul/</hdescription> 
-<itemhname>Características:</itemhname> 
+https://pt-br.facebook.com/pousadacoraisdosul/ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,P,S,V,YA,B,C,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RN.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1016,19 +1303,38 @@ L,P,S,V,YA,B,C,I,
 TIBAU DO SUL 
 </cname> 
 </city> 
-<hotel><hname>CHALÉS DAS ESTRELAS 
-</hname></hotel> 
+<hotel> 
+<hname> 
+CHALÉS DAS ESTRELAS</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA HÉLIO GALVÃO, 133 
 CENTRO 
-www.brisasalugueis.com</hdescription> 
-<itemhname>Características:</itemhname> 
+www.brisasalugueis.com 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,M,N,S,YA,B,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1037,19 +1343,38 @@ L,M,N,S,YA,B,I,
 OSASCO 
 </cname> 
 </city> 
-<hotel><hname>RAMADA ENCORE OSASCO 
-</hname></hotel> 
+<hotel> 
+<hname> 
+RAMADA ENCORE OSASCO</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA RUI BARBOSA, 25 
 VILA YARA 
-www.verthoteis.com.br/hotel/ramada-encore-osasco/</hdescription> 
-<itemhname>Características:</itemhname> 
+www.verthoteis.com.br/hotel/ramada-encore-osasco/ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 J,L,M,N,ZA,B,F,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/CE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1058,19 +1383,38 @@ J,L,M,N,ZA,B,F,G,I,
 PARACURU 
 </cname> 
 </city> 
-<hotel><hname>VENTOBRASIL HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+VENTOBRASIL HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA ORMEZINDA SAMPAIO, 240 
 CENTRO 
-ventobrasil.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+ventobrasil.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,N,S,V,YA,B,C,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RS.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1079,19 +1423,38 @@ M,N,S,V,YA,B,C,I,
 NOVO HAMBURGO 
 </cname> 
 </city> 
-<hotel><hname>IBIS NOVO HAMBURGO 
-</hname></hotel> 
+<hotel> 
+<hname> 
+IBIS NOVO HAMBURGO</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA JOSE DO PATRICÍNIO, 303 
 RIO BRANCO 
-https://bit.ly/2JRZDnl</hdescription> 
-<itemhname>Características:</itemhname> 
+https://bit.ly/2JRZDnl 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,M,YA,F,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1100,19 +1463,38 @@ L,M,YA,F,G,I,
 GUARATINGUETÁ 
 </cname> 
 </city> 
-<hotel><hname>IBIS GUARATINGUETÁ HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+IBIS GUARATINGUETÁ HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AV. JUSCELINO KUBITSCHECK DE OLIVEIRA, 1301 
 CAMPO DO GALVÃO 
-bit.ly/2HvoajO</hdescription> 
-<itemhname>Características:</itemhname> 
+bit.ly/2HvoajO 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,N,YA,B,F,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RS.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1121,19 +1503,38 @@ M,N,YA,B,F,G,I,
 GUAÍBA 
 </cname> 
 </city> 
-<hotel><hname>IBIS GUAÍBA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+IBIS GUAÍBA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA DONA FRUTUOSA, 929 
 CORONEL NASSUCA 
-www.ibis.com</hdescription> 
-<itemhname>Características:</itemhname> 
+www.ibis.com 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 J,L,M,N,YA,B,C,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1142,19 +1543,38 @@ J,L,M,N,YA,B,C,G,I,
 ARAÇATUBA 
 </cname> 
 </city> 
-<hotel><hname>IBIS ARAÇATUBA HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+IBIS ARAÇATUBA HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AV. BRASÍLIA, 2500 
 JARDIM NOVA IORQUE 
-https://bit.ly/2HJje8M</hdescription> 
-<itemhname>Características:</itemhname> 
+https://bit.ly/2HJje8M 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 J,L,M,N,YA,B,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SC.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1163,19 +1583,38 @@ J,L,M,N,YA,B,I,
 CRICIÚMA 
 </cname> 
 </city> 
-<hotel><hname>IBIS CRICIÚMA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+IBIS CRICIÚMA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AV. GABRIEL ZANETTE, 1090 
 PRÓSPERA 
-https://bit.ly/2J2SHlZ</hdescription> 
-<itemhname>Características:</itemhname> 
+https://bit.ly/2J2SHlZ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 J,L,M,YA,B,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SC.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1184,19 +1623,38 @@ J,L,M,YA,B,G,I,
 CHAPECÓ 
 </cname> 
 </city> 
-<hotel><hname>IBIS CHAPECÓ 
-</hname></hotel> 
+<hotel> 
+<hname> 
+IBIS CHAPECÓ</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA SÃO PEDRO, 2.300 
 ENGENHO BRAUN 
-https://www.accorhotels.com/pt/hotel-9362-ibis-chapeco/index.shtml</hdescription> 
-<itemhname>Características:</itemhname> 
+https://www.accorhotels.com/pt/hotel-9362-ibis-chapeco/index.shtml 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,M,N,YA,B,E,F,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/PR.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1205,19 +1663,38 @@ L,M,N,YA,B,E,F,G,I,
 UMUARAMA 
 </cname> 
 </city> 
-<hotel><hname>IBIS STYLES UMUARAMA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+IBIS STYLES UMUARAMA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AV. PARANÁ, 7095 
 PARQUE ALPHAVILLE 
-https://bit.ly/2EYB1p9</hdescription> 
-<itemhname>Características:</itemhname> 
+https://bit.ly/2EYB1p9 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,M,N,YA,B,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/MG.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1226,19 +1703,38 @@ L,M,N,YA,B,G,I,
 BELO HORIZONTE 
 </cname> 
 </city> 
-<hotel><hname>RAMADA ENCORE VIRGINIA LUXEMBURGO 
-</hname></hotel> 
+<hotel> 
+<hname> 
+RAMADA ENCORE VIRGINIA LUXEMBURGO</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA GENTIOS, 274 
 LUXEMBURGO 
-http://www.verthoteis.com.br/hotel/ramada-encore-virginia-luxemburgo-belo-horizonte/</hdescription> 
-<itemhname>Características:</itemhname> 
+http://www.verthoteis.com.br/hotel/ramada-encore-virginia-luxemburgo-belo-horizonte/ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,M,P,S,ZA,B,F,H,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/PE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1247,19 +1743,38 @@ L,M,P,S,ZA,B,F,H,I,
 PORTO DE GALINHAS 
 </cname> 
 </city> 
-<hotel><hname>CORES DO MAR, POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+CORES DO MAR, POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AVENIDA BAOBÁS, SN 
 NOSSA SENHORA APARECIDA Ó 
-https://www.coresdomarportodegalinhas.com.br/</hdescription> 
-<itemhname>Características:</itemhname> 
+grupocoresdomar.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,N,P,S,V,YA,B,C,F,G, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RS.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1268,19 +1783,38 @@ M,N,P,S,V,YA,B,C,F,G,
 PORTO ALEGRE 
 </cname> 
 </city> 
-<hotel><hname>IBIS PORTO ALEGRE ASSIS BRASIL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+IBIS PORTO ALEGRE ASSIS BRASIL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AV. ASSIS BRASIL, 9300 
 SARANDI 
-https://bit.ly/2F3L4cF</hdescription> 
-<itemhname>Características:</itemhname> 
+https://bit.ly/2F3L4cF 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 J,K,L,M,YA,B,E,F,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RS.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1289,19 +1823,38 @@ J,K,L,M,YA,B,E,F,G,I,
 GRAMADO 
 </cname> 
 </city> 
-<hotel><hname>LAGHETTO ALLEGRO ALPENHAUS HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+LAGHETTO ALLEGRO ALPENHAUS HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AV. BORGES DE MEDEIROS, 4.206 
 CENTRO 
-www.laghettohoteis.com.br/hoteis/gramado/allegro-alpenhaus</hdescription> 
-<itemhname>Características:</itemhname> 
+www.laghettohoteis.com.br/hoteis/gramado/allegro-alpenhaus 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,N,P,Q,R,ZB,C,D,E,F,H,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/PE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1310,19 +1863,38 @@ M,N,P,Q,R,ZB,C,D,E,F,H,I,
 RECIFE 
 </cname> 
 </city> 
-<hotel><hname>GOLDEN PARK RECIFE BOA VIAGEM HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+GOLDEN PARK RECIFE BOA VIAGEM HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AV. BOA VIAGEM, 5.576 
 BOA VIAGEM 
-www.facebook.com/boaviagemgoldenpark/?rf=218121894962354</hdescription> 
-<itemhname>Características:</itemhname> 
+www.facebook.com/boaviagemgoldenpark/?rf=218121894962354 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 J,O,S,VA,B,E,F,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/CE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1331,19 +1903,38 @@ J,O,S,VA,B,E,F,I,
 AQUIRAZ 
 </cname> 
 </city> 
-<hotel><hname>DON'ANA HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+DON'ANA HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA 1, QD 22, SN 
 PRAIA DO PRESÍDIO 
-www.hoteldonana.com</hdescription> 
-<itemhname>Características:</itemhname> 
+www.hoteldonana.com 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,M,O,S,T,V,WA,B,C,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RN.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1352,19 +1943,38 @@ L,M,O,S,T,V,WA,B,C,G,I,
 NATAL 
 </cname> 
 </city> 
-<hotel><hname>TERRAZZO PONTA NEGRA FLAT 
-</hname></hotel> 
+<hotel> 
+<hname> 
+TERRAZZO PONTA NEGRA FLAT</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AVENIDA ENGENHEIRO ROBERTO FREIRE, 4795 
 PONTA NEGRA 
-www.terazzoflathotelnatal.com/</hdescription> 
-<itemhname>Características:</itemhname> 
+www.terazzoflathotelnatal.com/ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,N,O,Q,S,V,YA,B,C,F,G,H,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/BA.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1373,19 +1983,38 @@ M,N,O,Q,S,V,YA,B,C,F,G,H,I,
 MARAÚ 
 </cname> 
 </city> 
-<hotel><hname>VELAS E VENTO POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+VELAS E VENTO POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 LOTEAMENTO PRAIA BELA DE TAIPU, LOTE 13 QD 01, S/N 
 TAIPU DE FORA 
-www.pousadavelasvento.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.pousadavelasvento.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,M,S,V,YA,B,C,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/CE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1394,19 +2023,38 @@ L,M,S,V,YA,B,C,G,I,
 ICAPUÍ 
 </cname> 
 </city> 
-<hotel><hname>AMOR A MAR POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+AMOR A MAR POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AV. BEIRA MAR, SN 
 PRAIA DE BERREIRAS 
-pousadaamoramar.com</hdescription> 
-<itemhname>Características:</itemhname> 
+pousadaamoramar.com 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,M,S,V,YA,B,C,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RS.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1415,19 +2063,38 @@ L,M,S,V,YA,B,C,I,
 GRAMADO 
 </cname> 
 </city> 
-<hotel><hname>COLINA PREMIUM SÃO FRANCISCO HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+COLINA PREMIUM SÃO FRANCISCO HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA PEDRO CANDIAGO, 993 
 PLANALTO 
-www.colinahoteis.com.br/colina-sao-francisco</hdescription> 
-<itemhname>Características:</itemhname> 
+www.colinahoteis.com.br/colina-sao-francisco 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 K,YA,B,C,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SC.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1436,19 +2103,38 @@ K,YA,B,C,G,I,
 FLORIANÓPOLIS 
 </cname> 
 </city> 
-<hotel><hname>PEDRA ROSA POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+PEDRA ROSA POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AV. PREFEITO ACÁCIO GARIBALDI SÃO THIAGO, 78 
 LAGOA DA CONCEIÇÃO 
-www.pousadapedrarosa.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.pousadapedrarosa.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,V,W,ZA,B,C,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RS.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1457,19 +2143,38 @@ L,V,W,ZA,B,C,G,I,
 TRAMANDAÍ 
 </cname> 
 </city> 
-<hotel><hname>CENTENÁRIO HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+CENTENÁRIO HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AV. FERNANDES BASTOS, 100 
 CENTRO 
-grupokimar.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+grupokimar.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
-O,S,YA,B,C,D,I, 
+O,S,YA,B,C,D,H,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SC.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1478,19 +2183,38 @@ O,S,YA,B,C,D,I,
 GAROPABA 
 </cname> 
 </city> 
-<hotel><hname>ARTHEMIS POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+ARTHEMIS POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA DOS EUCALIPTOS, SN 
 PRAIA DA FERRUGEM 
-pousadaarthemis.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+pousadaarthemis.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,O,P,S,V,YA,B,C,D,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RS.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1499,19 +2223,38 @@ L,O,P,S,V,YA,B,C,D,I,
 TRAMANDAÍ 
 </cname> 
 </city> 
-<hotel><hname>KIMAR HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+KIMAR HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AV. FERNANDES BASTOS, 813 
 CENTRO 
-www.grupokimar.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.grupokimar.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 N,O,YA,B,C,D,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SC.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1520,19 +2263,38 @@ N,O,YA,B,C,D,I,
 BALNEÁRIO CAMBORIÚ 
 </cname> 
 </city> 
-<hotel><hname>SANDRI CITY HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+SANDRI CITY HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA 1400, 160 
 CENTRO 
-www.hotelsandri.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.hotelsandri.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 J,K,NA,B,F,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/PA.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1541,40 +2303,38 @@ J,K,NA,B,F,I,
 PARAUAPEBAS 
 </cname> 
 </city> 
-<hotel><hname>ESUITES VALE DOS CARAJÁS 
-</hname></hotel> 
+<hotel> 
+<hname> 
+ESUITES VALE DOS CARAJÁS</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RODOVIA FARUK SALMEM KM 2,7, S/N 
 NOVO HORIZONTE 
-www.valedoscarajasparkhtel.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.valedoscarajasparkhtel.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,N,P,S,YA,B,F,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
  
-<state> 
+
+ <state> 
 <sflag/> 
-<city> 
-<cname> 
-SÃO LUÍS 
+<sflag/> 
+<cname>.  
 </cname> 
-</city> 
-<hotel><hname>SLZ LAGOA HOTEL 
-</hname></hotel> 
-<description> 
-<hdescription> 
-AV. COLARES MOREIRA, 14 
-JARDIM RENASCENÇA 
-www.slzlagoahotel.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-M,N,Q,S,YA,B,C,G,I, 
-</itemh> 
-</description> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/CE.jpg'/> 
+ 
+<sflag/> 
+  
 </state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1583,19 +2343,38 @@ M,N,Q,S,YA,B,C,G,I,
 BEBERIBE 
 </cname> 
 </city> 
-<hotel><hname>MAR ABERTO POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+MAR ABERTO POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AV. ASSIS MOREIRA QUADRA 25 LOTES 01 02, S/N 
 PRAIA DAS FONTES 
-www.pousadamaraberto.com</hdescription> 
-<itemhname>Características:</itemhname> 
+www.pousadamaraberto.com 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,O,P,S,YA,B,C,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1604,19 +2383,38 @@ M,O,P,S,YA,B,C,G,I,
 SÃO PAULO 
 </cname> 
 </city> 
-<hotel><hname>RAMADA ENCORE SÃO PAULO TIRADENTES 
-</hname></hotel> 
+<hotel> 
+<hname> 
+RAMADA ENCORE SÃO PAULO TIRADENTES</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AV. TIRADENTES, 826 
 LUZ 
-www.verthoteis.com.br/hotel/ramada-encore-tiradentes</hdescription> 
-<itemhname>Características:</itemhname> 
+www.verthoteis.com.br/hotel/ramada-encore-tiradentes 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,M,N,ZA,B,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1625,19 +2423,38 @@ L,M,N,ZA,B,I,
 BIRIGUI 
 </cname> 
 </city> 
-<hotel><hname>IBIS STYLES BIRIGUI 
-</hname></hotel> 
+<hotel> 
+<hname> 
+IBIS STYLES BIRIGUI</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA ANTÔNIO BERSANETTI, 400 
 RESIDENCIAL LALUCE 2 
-www.ibis.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.ibis.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,M,N,YA,B,F,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/AL.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1646,19 +2463,38 @@ L,M,N,YA,B,F,I,
 MACEIÓ 
 </cname> 
 </city> 
-<hotel><hname>PORTO DA PRAIA HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+PORTO DA PRAIA HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA PREFEITO ABDON ARROXELAS, 128 
 PONTA VERDE 
-www.hotelportodapraia.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.hotelportodapraia.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,O,S,V,YA,B,C,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/CE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1667,19 +2503,38 @@ M,O,S,V,YA,B,C,G,I,
 AQUIRAZ 
 </cname> 
 </city> 
-<hotel><hname>JANGADEIRO PRAIA HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+JANGADEIRO PRAIA HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA LUIZ EDUARDO STUDART, SN 
 PRAIA DO PRESÍDIO 
-www.hoteljangadeiro.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.hoteljangadeiro.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,O,P,Q,S,T,U,V,YA,B,C,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RN.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1688,19 +2543,38 @@ M,O,P,Q,S,T,U,V,YA,B,C,I,
 TIBAU DO SUL 
 </cname> 
 </city> 
-<hotel><hname>CACIMBINHA POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+CACIMBINHA POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AVENIDA ANTÕNIO FLORÊNCIO, 1.038A 
 CENTRO 
-www.pousadacacimbinha.com.br/pt-br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.pousadacacimbinha.com.br/pt-br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,S,YA,B,C,F,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/PB.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1709,19 +2583,38 @@ L,S,YA,B,C,F,I,
 JOÃO PESSOA 
 </cname> 
 </city> 
-<hotel><hname>JAMPA MAR HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+JAMPA MAR HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AVENIDA ANTÔNIO LIRA, 407 
 TAMBAÚ 
-www.jampamarhotel.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.jampamarhotel.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 YA,B,C,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1730,19 +2623,38 @@ YA,B,C,I,
 JACAREÍ 
 </cname> 
 </city> 
-<hotel><hname>IBIS JACAREÍ HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+IBIS JACAREÍ HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA TIRADENTES, 299 
 CENTRO 
-www.accorhotels.com/gb/hotel-8637-ibis-jacarei/index.shtml</hdescription> 
-<itemhname>Características:</itemhname> 
+www.accorhotels.com/gb/hotel-8637-ibis-jacarei/index.shtml 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,M,YA,B,F,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/CE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1751,40 +2663,38 @@ L,M,YA,B,F,G,I,
 CAUCAIA 
 </cname> 
 </city> 
-<hotel><hname>PARAÍSO DAS DUNAS HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+PARAÍSO DAS DUNAS HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AV. DAS DUNAS, 295 
 CUMBUCO 
-pousada-paraiso-da-dunas-br.book.direct/pt-br</hdescription> 
-<itemhname>Características:</itemhname> 
+pousada-paraiso-da-dunas-br.book.direct/pt-br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 O,S,V,YA,B,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
  
-<state> 
+
+ <state> 
 <sflag/> 
-<city> 
-<cname> 
-CAROLINA 
+<sflag/> 
+<cname>.  
 </cname> 
-</city> 
-<hotel><hname>DO LAJES POUSADA 
-</hname></hotel> 
-<description> 
-<hdescription> 
-ROD BR 230 KM 02 - CX POSTAL 07, S/N 
-SUCUPIRA 
-www.pousadadolajes.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-N,O,P,S,T,YA,B,I, 
-</itemh> 
-</description> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/AL.jpg'/> 
+ 
+<sflag/> 
+  
 </state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1793,19 +2703,38 @@ N,O,P,S,T,YA,B,I,
 MACEIÓ 
 </cname> 
 </city> 
-<hotel><hname>SOFT INN MACEIÓ PONTA VERDE 
-</hname></hotel> 
+<hotel> 
+<hname> 
+SOFT INN MACEIÓ PONTA VERDE</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA ENGENHEIRO MARIO DE GUSMÃO, 988 
 PONTA VERDE 
-www.bhghoteis.com.br/hotel/soft-inn-maceio-ponta-verde/</hdescription> 
-<itemhname>Características:</itemhname> 
+https://www.bhghoteis.com.br/hotel/soft-inn-maceio-ponta-verde/ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,V,ZA,B,F,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/BA.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1814,19 +2743,38 @@ M,V,ZA,B,F,G,I,
 JANDAÍRA 
 </cname> 
 </city> 
-<hotel><hname>FANTASIAS DO AGRESTE POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+FANTASIAS DO AGRESTE POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 VILA DE MANGUE SECO, S/N 
 POVOADO DE MANGUE SECO 
-www.fantasiasdoagreste.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.fantasiasdoagreste.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,O,VA,B,C,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SC.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1835,19 +2783,38 @@ M,O,VA,B,C,I,
 JOINVILLE 
 </cname> 
 </city> 
-<hotel><hname>IBIS STYLES JOINVILLE 
-</hname></hotel> 
+<hotel> 
+<hname> 
+IBIS STYLES JOINVILLE</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA COMANDANTE FREDERICO STOLL, 47 
 CENTRO 
-www.accorhotels.com/pt/hotel-3138-ibis-styles-joinville/index.shtml</hdescription> 
-<itemhname>Características:</itemhname> 
+www.accorhotels.com/pt/hotel-3138-ibis-styles-joinville/index.shtml 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,M,N,ZA,B,C,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/CE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1856,19 +2823,38 @@ L,M,N,ZA,B,C,I,
 ARACATI 
 </cname> 
 </city> 
-<hotel><hname>DO TOBY POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+DO TOBY POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA LEANDRO BEZERRA, 148 
 CANOA QUEBRADA 
-www.pousadadotoby.com</hdescription> 
-<itemhname>Características:</itemhname> 
+www.pousadadotoby.com 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,N,S,V,YA,B,C,F,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/BA.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1877,19 +2863,38 @@ M,N,S,V,YA,B,C,F,G,I,
 PORTO SEGURO 
 </cname> 
 </city> 
-<hotel><hname>PORTO SEGURO ECO BAHIA HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+PORTO SEGURO ECO BAHIA HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA DR. ANTÔNIO RICALDI, 177 
-CENTRO HISTÓRICO 
-www.psebahiahotel.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+CIDADE HISTÓRICA 
+www.psebahiahotel.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,N,O,P,Q,S,T,YA,B,F,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/PR.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1898,19 +2903,38 @@ M,N,O,P,Q,S,T,YA,B,F,I,
 CURITIBA 
 </cname> 
 </city> 
-<hotel><hname>SAN JUAN EXECUTIVE 
-</hname></hotel> 
+<hotel> 
+<hname> 
+SAN JUAN EXECUTIVE</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AV SETE DE SETEMBRO, 2516 
 CENTRO 
-www.sanjuanhoteis.com.br/pt-br/hoteis/detalhes/1/san-juan-executive</hdescription> 
-<itemhname>Características:</itemhname> 
+www.sanjuanhoteis.com.br/pt-br/hoteis/detalhes/1/san-juan-executive 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,N,O,P,ZA,B,C,F,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/PE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1919,19 +2943,38 @@ M,N,O,P,ZA,B,C,F,G,I,
 TAMANDARÉ 
 </cname> 
 </city> 
-<hotel><hname>SOLAR DOS CARNEIROS POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+SOLAR DOS CARNEIROS POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA 13, LOTE 02, QUADRA 24, S/N 
 PONTAL DOS CARNEIROS 
-www.solardoscarneiros.tur.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.solardoscarneiros.tur.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 SA,B,C,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/AL.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1940,19 +2983,38 @@ SA,B,C,I,
 MACEIÓ 
 </cname> 
 </city> 
-<hotel><hname>PAJUÇARA PRAIA HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+PAJUÇARA PRAIA HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AVENIDA DR ANTÔNIO GOUVEIA, 197 
 PAJUÇARA 
-www.pajucarahotel.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.pajucarahotel.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,M,N,O,Q,S,T,V,YA,B,C,F,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/AL.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1961,19 +3023,38 @@ L,M,N,O,Q,S,T,V,YA,B,C,F,I,
 MACEIÓ 
 </cname> 
 </city> 
-<hotel><hname>PAJUÇARA EXPRESS HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+PAJUÇARA EXPRESS HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AVENIDA DR ANTÔNIO GOUVEIA, 261 
 PAJUÇARA 
-www.pajucaraexpress.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.pajucaraexpress.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,M,N,O,VA,B,C,F,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SC.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -1982,19 +3063,38 @@ L,M,N,O,VA,B,C,F,I,
 BLUMENAU 
 </cname> 
 </city> 
-<hotel><hname>IBIS BUDGET BLUMENAU 
-</hname></hotel> 
+<hotel> 
+<hname> 
+IBIS BUDGET BLUMENAU</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA PAULO ZIMMERMANN, 142 
 CENTRO 
-www.accorhotels.com/pt/hotel-9382-ibis-budget-blumenau-/index.shtml</hdescription> 
-<itemhname>Características:</itemhname> 
+www.accorhotels.com/pt/hotel-9382-ibis-budget-blumenau-/index.shtml 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 J,L,ZA,E,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/MG.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -2003,19 +3103,38 @@ J,L,ZA,E,I,
 LAGOA DA PRATA 
 </cname> 
 </city> 
-<hotel><hname>SAMBA LAGOA DA PRATA BY GILBERTO SILVA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+SAMBA LAGOA DA PRATA BY GILBERTO SILVA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA ALAGOAS, 750 
 CENTRO 
-sambahoteis.com/hoteis/lagoa-da-prata</hdescription> 
-<itemhname>Características:</itemhname> 
+sambahoteis.com/hoteis/lagoa-da-prata 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 MA,B,F,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/BA.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -2024,19 +3143,38 @@ MA,B,F,I,
 ARRAIAL D AJUDA 
 </cname> 
 </city> 
-<hotel><hname>SOLAR DAS ORQUÍDEAS POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+SOLAR DAS ORQUÍDEAS POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 ESTRADA DA BALSA, 3.190 
 ARRAIAL D AJUDA 
-https://pt-br.facebook.com/solardasorquideas/</hdescription> 
-<itemhname>Características:</itemhname> 
+www.pousadasolardasorquideas.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 S,YA,B,C,D,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/AL.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -2045,19 +3183,38 @@ S,YA,B,C,D,G,I,
 MACEIÓ 
 </cname> 
 </city> 
-<hotel><hname>AQUARELA DO BRASIL POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+AQUARELA DO BRASIL POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA DESEMBARGADOR ALMEIDA GUIMARÃES, 367 
 PAJUÇARA 
-pousadaaquareladobrasil.com</hdescription> 
-<itemhname>Características:</itemhname> 
+pousadaaquareladobrasil.com 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 A,B,C,F,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RS.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -2066,19 +3223,38 @@ A,B,C,F,G,I,
 SÃO LOURENÇO DO SUL 
 </cname> 
 </city> 
-<hotel><hname>NONA AMÁBILE POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+NONA AMÁBILE POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA DUQUE DE CAXIAS, 523 
 NAVEGANTES 
-www.pousadanonaamabile.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.pousadanonaamabile.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,N,P,W,YA,B,C,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/AL.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -2087,19 +3263,38 @@ L,N,P,W,YA,B,C,G,I,
 PARIPUEIRA 
 </cname> 
 </city> 
-<hotel><hname>VILA DOS CORAIS POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+VILA DOS CORAIS POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA EUGÊNIO COSTA, 1.162 
 PRAIA DA COSTA BRAVA 
-www.pousadaviladoscorais.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.pousadaviladoscorais.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 J,O,S,V,YA,B,C,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -2108,19 +3303,38 @@ J,O,S,V,YA,B,C,G,I,
 JUNDIAÍ 
 </cname> 
 </city> 
-<hotel><hname>RED ROOF INN JUNDIAÍ 
-</hname></hotel> 
+<hotel> 
+<hname> 
+RED ROOF INN JUNDIAÍ</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA SAKAI MASSAU, SN 
 CIDADE SANTOS DUMONT 
-www.nobilehoteis.com.br/hoteis/red-roof-inn-jundiai-jundiai-sp/</hdescription> 
-<itemhname>Características:</itemhname> 
+www.nobilehoteis.com.br/hoteis/red-roof-inn-jundiai-jundiai-sp/ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,M,S,YA,B,F,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/PE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -2129,19 +3343,38 @@ L,M,S,YA,B,F,G,I,
 GRAVATÁ 
 </cname> 
 </city> 
-<hotel><hname>TRÊS PALMEIRAS HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+TRÊS PALMEIRAS HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA QUINTINO BOCAIÚVA, 336 
 CENTRO 
-www.hoteltrespalmeiras.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.hoteltrespalmeiras.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,O,P,Q,R,S,YA,B,C,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/CE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -2150,19 +3383,38 @@ M,O,P,Q,R,S,YA,B,C,G,I,
 ARACATI 
 </cname> 
 </city> 
-<hotel><hname>RESIDÊNCIA OCEANOS POUSADA	 
-</hname></hotel> 
+<hotel> 
+<hname> 
+RESIDÊNCIA OCEANOS POUSADA	</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AVENIDA INTEGRAÇÃO, 853 
 CANOA QUEBRADA 
-www.facebook.com/PousadaResidenciaOceanos/</hdescription> 
-<itemhname>Características:</itemhname> 
+www.facebook.com/PousadaResidenciaOceanos/ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,O,S,V,YA,B, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/PE.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -2171,19 +3423,38 @@ L,O,S,V,YA,B,
 PORTO DE GALINHAS 
 </cname> 
 </city> 
-<hotel><hname>SARGAÇO DU MARACA POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+SARGAÇO DU MARACA POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AVENIDA SERTANIA, 240 
 PRAIA DE MARACAÍPE 
-https://pt-br.facebook.com/sargacodumaraca/</hdescription> 
-<itemhname>Características:</itemhname> 
+pt-br.facebook.com/sargacodumaraca/ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 S,VA,B,C,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RS.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -2192,19 +3463,38 @@ S,VA,B,C,I,
 GRAMADO 
 </cname> 
 </city> 
-<hotel><hname>ALAMEDA FELICE HOTEL 
-</hname></hotel> 
+<hotel> 
+<hname> 
+ALAMEDA FELICE HOTEL</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA DO REFÚGIO, 46 
 CENTRO 
-http://alamedahoteis.com.br/alameda-felice/</hdescription> 
-<itemhname>Características:</itemhname> 
+http://alamedahoteis.com.br/alameda-felice/ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 LA,B, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RJ.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -2213,19 +3503,38 @@ LA,B,
 CAMPOS DOS GOYTACAZES 
 </cname> 
 </city> 
-<hotel><hname>RAMADA HOTEL E SUITES CAMPOS DOS GOYTACAZES 
-</hname></hotel> 
+<hotel> 
+<hname> 
+RAMADA HOTEL E SUITES CAMPOS DOS GOYTACAZES</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA BRUNO DE AZEVEDO, 60 
 PARQUE TAMANDARÉ 
-bit.ly/2Pg0xMd</hdescription> 
-<itemhname>Características:</itemhname> 
+bit.ly/2Pg0xMd 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 J,L,M,N,P,Q,S,YA,B,F,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/MG.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -2234,19 +3543,38 @@ J,L,M,N,P,Q,S,YA,B,F,I,
 SERRA DO CIPÓ 
 </cname> 
 </city> 
-<hotel><hname>FLOR DE PEQUI ECONOMIC INN 
-</hname></hotel> 
+<hotel> 
+<hname> 
+FLOR DE PEQUI ECONOMIC INN</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA DAS BROMÉLIAS, 132 
 RECANTO DA SERRA 
-www.pousadaflordepequi.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.pousadaflordepequi.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 S,YA,B,C,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RJ.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -2255,19 +3583,38 @@ S,YA,B,C,I,
 PARATY 
 </cname> 
 </city> 
-<hotel><hname>PARQUE HOTEL PEREQUÊ 
-</hname></hotel> 
+<hotel> 
+<hname> 
+PARQUE HOTEL PEREQUÊ</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 AV. OTÁVIO GAMA, 622 
 CABORÊ 
-www.hotelpereque.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.hotelpereque.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 P,Q,S,YA,B,F,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RS.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -2276,19 +3623,38 @@ P,Q,S,YA,B,F,I,
 COTIPORÃ 
 </cname> 
 </city> 
-<hotel><hname>PICCOLO REFÚGGIO POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+PICCOLO REFÚGGIO POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA LINHA BRASIL, 695 
 CAPELA CARAVÁGGIO 
-www.piccolorefuggio.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
+www.piccolorefuggio.com.br 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 K,L,N,O,S,T,YA,B,E,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/BA.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -2297,19 +3663,38 @@ K,L,N,O,S,T,YA,B,E,G,I,
 ILHÉUS 
 </cname> 
 </city> 
-<hotel><hname>DOCE DESEJO POUSADA 
-</hname></hotel> 
+<hotel> 
+<hname> 
+DOCE DESEJO POUSADA</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RODOVIA ILHÉUS/UNA KM 29, SN 
 ACUIPE 
-pousada-e-restaurante-doce-desejo.negocio.site/</hdescription> 
-<itemhname>Características:</itemhname> 
+pousada-e-restaurante-doce-desejo.negocio.site/ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,M,S,V,W,YA,B,C,G,I, 
 </itemh> 
-</description> 
+ </description> 
 </state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+
+<sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/PB.jpg'/> 
+ 
+<sflag/> 
+  
+</state> 
+  
+ 
  
 <state> 
 <sflag/> 
@@ -2318,230 +3703,23 @@ L,M,S,V,W,YA,B,C,G,I,
 CAMPINA GRANDE 
 </cname> 
 </city> 
-<hotel><hname>NORD EASY CAMPINA GRANDE 
-</hname></hotel> 
+<hotel> 
+<hname> 
+NORD EASY CAMPINA GRANDE</hname> 
+</hotel> 
 <description> 
 <hdescription> 
 RUA CORONEL JOAO LOURENÇO PORTO, 20 
 CENTRO 
-http://www.nordhoteis.com.br/hotel/nord-easy-campi</hdescription> 
-<itemhname>Características:</itemhname> 
+http://www.nordhoteis.com.br/hotel/nord-easy-campi 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 NA,B,I, 
 </itemh> 
-</description> 
-</state> 
- 
-<state> 
-<sflag/> 
-<city> 
-<cname> 
-MARAGOGI 
-</cname> 
-</city> 
-<hotel><hname>PORTO DOS CORAIS POUSADA 
-</hname></hotel> 
-<description> 
-<hdescription> 
-RUA PROJETADA, 13 
-CARVÃO 
-www.pousadaportodoscorais.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-L,O,P,S,YA,B,C,G,I, 
-</itemh> 
-</description> 
-</state> 
- 
-<state> 
-<sflag/> 
-<city> 
-<cname> 
-CONDE 
-</cname> 
-</city> 
-<hotel><hname>LAGUNA POUSADA 
-</hname></hotel> 
-<description> 
-<hdescription> 
-AV BEIRA MAR, SN 
-CARAPIBUS 
-www.pousadalagunapb.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-M,S,V,YA,B,C,G,I, 
-</itemh> 
-</description> 
-</state> 
- 
-<state> 
-<sflag/> 
-<city> 
-<cname> 
-FORTALEZA 
-</cname> 
-</city> 
-<hotel><hname>ECCO HOTEL FORTALEZA 
-</hname></hotel> 
-<description> 
-<hdescription> 
-RUA ANTÔNIO AUGUSTO, 144 
-MEIRELES 
-www.hoteisvillage.com.br/ecco/ecco-fortaleza</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-N,ZA,B,F,G,I, 
-</itemh> 
-</description> 
-</state> 
- 
-<state> 
-<sflag/> 
-<city> 
-<cname> 
-CAMAÇARI 
-</cname> 
-</city> 
-<hotel><hname>PLANETA GUARAJUBA POUSADA 
-</hname></hotel> 
-<description> 
-<hdescription> 
-CONDOMÍNIO ÁGUA RUA B, LT 20 QD 21, SN 
-GUARAJUBA 
-www.pousadaplanetaguarajuba.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-N,O,SA,B,C,I, 
-</itemh> 
-</description> 
-</state> 
- 
-<state> 
-<sflag/> 
-<city> 
-<cname> 
-RIBEIRÃO PRETO 
-</cname> 
-</city> 
-<hotel><hname>INTERCITY RIBEIRÃO PRETO 
-</hname></hotel> 
-<description> 
-<hdescription> 
-AVENIDA PRESIDENTE KENNEDY, 1657 
-RIBERÂNIA 
-www.intercityhoteis.com.br/hotel-ribeirao-preto/hotel-intercity-ribeirao-preto/39/</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-L,M,N,S,X,ZA,B,F,I, 
-</itemh> 
-</description> 
-</state> 
- 
-<state> 
-<sflag/> 
-<city> 
-<cname> 
-TRÊS RIOS 
-</cname> 
-</city> 
-<hotel><hname>INTERCITY TRÊS RIOS 
-</hname></hotel> 
-<description> 
-<hdescription> 
-RUA DA BANDEIRA, 22 
-CENTRO 
-www.intercityhoteis.com.br/hotel-tres-rios</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-L,M,N,ZA,B,F,I, 
-</itemh> 
-</description> 
-</state> 
- 
-<state> 
-<sflag/> 
-<city> 
-<cname> 
-LAURO DE FREITAS 
-</cname> 
-</city> 
-<hotel><hname>MAIS HOTEL 
-</hname></hotel> 
-<description> 
-<hdescription> 
-RUA JOÃO CHAGAS ORTINS DE FREITAS, QD B LT 6 A 9, 577 
-BURAQUINHO 
-www.maishotel.com.br</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-J,M,N,Q,S,YA,B,F,G,I, 
-</itemh> 
-</description> 
-</state> 
- 
-<state> 
-<sflag/> 
-<city> 
-<cname> 
-BAURU 
-</cname> 
-</city> 
-<hotel><hname>INTERCITY BAURU 
-</hname></hotel> 
-<description> 
-<hdescription> 
-RUA JOSÉ ANTONIO BRAGA, 4-50 
-VILA AVIAÇÃO 
-www.intercityhoteis.com.br/hotel-bauru/hotel-intercity-bauru/18/</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-L,M,N,YA,B,E,F,G,I, 
-</itemh> 
-</description> 
-</state> 
- 
-<state> 
-<sflag/> 
-<city> 
-<cname> 
-LAURO DE FREITAS 
-</cname> 
-</city> 
-<hotel><hname>INTERCITY SALVADOR AEROPORTO 
-</hname></hotel> 
-<description> 
-<hdescription> 
-AV SANTOS DUMONT, KM 1,5, 1883 
-ESTRADA DO COCO 
-www.intercityhoteis.com.br/hotel-salvador/hotel-intercity-salvador-aeroporto/44/#localizacao</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
-M,N,S,ZA,B,F,G,I, 
-</itemh> 
-</description> 
-</state> 
- 
-<state> 
-<sflag/> 
-<city> 
-<cname> 
- 
-</cname> 
-</city> 
-<hotel><hname> 
-</hname></hotel> 
-<description> 
-<hdescription> 
- 
- 
-</hdescription> 
-<itemhname>Características:</itemhname> 
-<itemh> 
- 
-</itemh> 
-</description> 
+ </description> 
 </state> 
  
 </Diamante> 
 </root> 
- 

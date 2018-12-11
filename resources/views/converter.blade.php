@@ -6,6 +6,11 @@
     <h1>Conversor TXT to XML</h1>
     </div><br />
     <div class="box" style="padding: 10px;">
+
+        <div class="alert alert-warning">
+            <li>O arquivo não deve conter linhas em branco.</li>
+            <li>O arquivo não deve conter &.</li>
+        </div>
         <form action="http://webdesigner2/sistema/public/converter.php" method="post" enctype="multipart/form-data">
         <div class="form-group">
             <label>Selecione o arquivo a ser convertido.</label>

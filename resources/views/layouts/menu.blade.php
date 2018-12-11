@@ -9,6 +9,8 @@
   if ($pag == 'marketings')     { $amarketing = "active"; }
   if ($pag == 'mark')           { $amarketing = "active"; }
   if ($pag == 'laminas')        { $amarketing = "active"; }
+  if ($pag == 'sugest')         { $amarketing = "active"; }
+  if ($pag == 'converter')      { $amarketing = "active"; }
 
   if ($pag == 'chamados')       { $arelacionamento = "active"; }
   if ($pag == 'indice')         { $arelacionamento = "active"; }

@@ -30,7 +30,9 @@ $arquivo = fopen("http://webdesigner2/sistema/public/txt/$documento","r");
 
 // a função feof verifica se o seu arquivo chegou ao fim , abaixo
 //ele vai ler o arquivo txt quando o arquivo for diferente do fim 
-$xml = "<?xml version='1.0' encoding='UTF-8'?> \r\n";
+$xml  = "<?xml version='1.0' encoding='UTF-8'?> \r\n";
+$xml .="<root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'> \r\n";
+
 $xml .= "<".$rede."> \r\n";
 while( !feof($arquivo)){
 
@@ -40,7 +42,11 @@ $linha = fgets($arquivo);
     $partes = explode(';', utf8_encode($linha)); // separa o que tiver antes e depois do ponto e vírgula
     $xml .= "<state> \r\n";
     $xml .= "<sflag/> \r\n";
-    $xml .= "<city/> \r\n";
+    $xml .= "<city> \r\n";
+    $xml .= "<cname> \r\n";
+    $xml .= $partes[2]." \r\n"; // cidade
+    $xml .= "</cname> \r\n";
+    $xml .= "</city> \r\n";
     $xml .= "<hotel>";
     $xml .= "<hname>";
     $xml .= $partes[1]." \r\n"; // nome do hotel
@@ -48,8 +54,7 @@ $linha = fgets($arquivo);
     $xml .= "</hotel> \r\n";
     $xml .= "<description> \r\n";
     $xml .= "<hdescription> \r\n";
-    $xml .= $partes[2]." \r\n"; // cidade
-    $xml .= $partes[3]." \r\n"; // estado
+    //$xml .= $partes[3]." \r\n"; // estado
     $xml .= $partes[4]." \r\n"; // rua e numero
     $xml .= $partes[5]." \r\n"; // bairro
     $xml .= $partes[9]; // site
@@ -65,7 +70,8 @@ $linha = fgets($arquivo);
 //echo utf8_encode($linha)."<br /><br />";
 
 }
-$xml .= '</'.$rede.'>';
+$xml .= "</".$rede."> \r\n";
+$xml .= "</root> \r\n \r\n";
 
 $xmlfinal = str_replace('&', 'e', $xml);
 

@@ -43,8 +43,8 @@
             <td>
                 
                 <div class='btn-group'>
-                    <a href="promocoes/<?php echo $linha['id']; ?>" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-                    <a href="promocoes/<?php echo $linha['id']; ?>/edit" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+                    <a href="promocoes/<?php echo $linha['id']; ?>" style="color: #555;" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
+                    <a href="promocoes/<?php echo $linha['id']; ?>/edit" style="color: #555;" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
                     {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
                 </div>
                 
@@ -84,8 +84,8 @@
             <td>
                 {!! Form::open(['route' => ['promocoes.destroy', $promocoe->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>
-                    <a href="{!! route('promocoes.show', [$promocoe->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-                    <a href="{!! route('promocoes.edit', [$promocoe->id]) !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+                    <a href="{!! route('promocoes.show', [$promocoe->id]) !!}" style="color: #555;" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
+                    <a href="{!! route('promocoes.edit', [$promocoe->id]) !!}" style="color: #555;" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
                     {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Tem certeza?')"]) !!}
                 </div>
                 {!! Form::close() !!}

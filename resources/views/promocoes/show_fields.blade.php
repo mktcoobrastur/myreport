@@ -43,14 +43,14 @@
 
 <!-- Created At Field -->
 <div class="boxStatus">
-    {!! Form::label('created_at', 'Criado em:') !!}
+    {!! Form::label('created_at', 'Data criação:') !!}
     <p>{!! $promocoe->created_at !!}</p>
 </div>
 
-<!-- Updated At Field -->
+<!-- Validade At Field -->
 <div class="boxStatus">
-    {!! Form::label('updated_at', 'Atualizado em:') !!}
-    <p>{!! $promocoe->updated_at !!}</p>
+    {!! Form::label('validade', 'Valido até:') !!}
+    <p>{!! $promocoe->validade !!}</p>
 </div>
 
     <div style="clear: both;"></div>

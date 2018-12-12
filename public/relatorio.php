@@ -158,8 +158,86 @@
 
 
 
+<?php 
+  if($representante == 4) {
+?>
+<!-- INICIO TABELA -->
+<div style="float: left; width:100%; text-align: center;">
+<h4>&nbsp;</h4>
+
+<table class="table" style="font-size: 11px; background: #ffffff;">
+  <thead>
+    <tr>
+      <th scope="col">Atendente</th>
+      <th scope="col">Total Vendas</th>
+      <th scope="col">Plano</th>
+      <th scope="col" style="text-align: right;">Data da Venda</th>
+    </tr>
+  </thead>
+  <tbody>
+
+<?php
+    //CONSULTA PESQUISA
+    $consulta = mysqli_query($con, "SELECT * FROM vendasdia ORDER BY created_at ASC");
+    while($l = mysqli_fetch_array($consulta)) {
+?>
+    <tr>
+      <td>
+        <?php 
+
+        $nome     =  $l['atendente'];
+        $queryN   = mysqli_query($con, "SELECT * FROM atendentes WHERE id = $nome");
+        $row      = mysqli_fetch_array($queryN);
+        echo $row['nome'];
+        ?>
+      </td>
+      <td>
+        <span class="badge" style="font-size: 13px;"><?php echo $l['qnt']; ?></span>
+      </td>
+      <td>
+      <span class="badge" style="font-size: 13px;">
+        <?php if ($l['plano'] == 1) echo "MASTER"; ?>
+        <?php if ($l['plano'] == 2) echo "VIP"; ?>
+        <?php if ($l['plano'] == 3) echo "GOLD MASTER"; ?>
+        <?php if ($l['plano'] == 4) echo "GOLD VIP"; ?>
+        <?php if ($l['plano'] == 5) echo "DIAMANTE"; ?>
+      </span>
+      </td>
+      <td align="right"><?php echo date("d/m/Y", strtotime($l['created_at'])); ?></td>
+    </tr>
+
+<?php
+    }
+?>
+
+  <thead>
+    <tr class="minhaDiv">
+    </tr>
+  </thead>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- DIV DETALHES OCULTA -->
+
+<div style="float: left;" class="minhaDiv">
+zxc
+
+</div>
+<!-- FIM DIV DETALHES OCULTA -->
 
 
+  </tbody>
+</table>
+</div>
+
+
+</div>
+<!-- FIM TABELA -->
+
+
+<?php
+  } else {
+?>
+
+<!-- INICIO TABELA -->
 <div style="float: left; width:100%; text-align: center;">
 <h4>&nbsp;</h4>
 
@@ -244,6 +322,13 @@
 
 
 </div>
+<!-- FIM TABELA -->
+
+
+<?php
+  }
+?>
+
 
 <script type="text/javascript">
 $(function(){

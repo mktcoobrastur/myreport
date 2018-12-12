@@ -94,7 +94,7 @@
 
 <br />
 
-<div class="divR">Pesquisa rápida</div>
+<div class="divR" style="text-align: left; padding-left: 14px;">Pesquisa rápida Televenda</div>
 
 <div class="buscaAtendentes">
     <strong>Atendentes:</strong><br />
@@ -102,14 +102,6 @@
     <div id="resultado"></div>
     <br /><br />
     <div id="conteudo"></div>
-</div>
-
-<div class="buscaAtendentes">
-    <strong>Representantes:</strong><br />
-    <input type="text" id="busca" onkeyup="buscarR(this.value)" class="form-control" />
-    <div id="resultadoR"></div>
-    <br /><br />
-    <div id="conteudoR"></div>
 </div>
 
 <div style="clear: both;"></div>      

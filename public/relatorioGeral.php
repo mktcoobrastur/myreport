@@ -130,6 +130,15 @@
                 </div>
             </div>
             <!-- #END# Hover Zoom Effect -->
+            <style>
+            .linkExp:hover {
+                opacity: 0.7;
+            }
+            </style>
+<div style="text-align: left;">Gerar Arquivos:<br />
+    <a href="" class="linkExp"><img src="http://webdesigner2/sistema/public/img/pdf.png" /></a>
+    <a href="" class="linkExp"><img src="http://webdesigner2/sistema/public/img/xls.png" /></a>
+</div>
 
 <div style="float: left; width:70%; text-align: center;">
 <h4>&nbsp;</h4>
@@ -210,6 +219,10 @@
       <?php } ?>
 
 </tr>
+
+
+
+
 
 <?php
     }

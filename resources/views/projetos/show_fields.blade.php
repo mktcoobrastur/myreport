@@ -89,8 +89,8 @@
                 <?php if ($linha['status'] == 'F') { echo "FINALIZADO"; } ?>
             </td>
             <td>
-            <a href="/tprojetos/<?php echo $linha['id'];?>" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-            <a href="/tprojetos/<?php echo $linha['id'];?>/edit" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+            <a href="/tprojetos/<?php echo $linha['id'];?>" class='btn btn-default btn-xs' style="color: #555;"><i class="glyphicon glyphicon-eye-open"></i></a>
+            <a href="/tprojetos/<?php echo $linha['id'];?>/edit" class='btn btn-default btn-xs' style="color: #555;"><i class="glyphicon glyphicon-edit"></i></a>
             {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Tem certeza?')"]) !!}
             </td>
         </tr>

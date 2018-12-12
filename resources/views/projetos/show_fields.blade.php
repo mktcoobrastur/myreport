@@ -25,9 +25,9 @@
 <!-- Status Field -->
 <div class="boxStatus">
     {!! Form::label('status', 'Status:') !!}
-    <?php if ($projeto->status == 'E') { echo "EM ESPERA"; } ?>
-    <?php if ($projeto->status == 'A') { echo "EM ANDAMENTO"; } ?>
-    <?php if ($projeto->status == 'F') { echo "FINALIZADO"; } ?>
+    <?php if ($projeto->status == 'E') { echo "EM ESPERA";      } ?>
+    <?php if ($projeto->status == 'A') { echo "EM ANDAMENTO";   } ?>
+    <?php if ($projeto->status == 'F') { echo "FINALIZADO";     } ?>
 </div>
 
 <!-- Created At Field -->

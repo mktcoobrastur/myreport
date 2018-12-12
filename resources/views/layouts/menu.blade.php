@@ -54,7 +54,7 @@
           <ul class="treeview-menu <?php if(isset($amarketing)) { echo $amarketing; } ?>">
             <li><a href="{!! route('marketings.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
             <li><a href="http://webdesigner2/sistema/public/mark"><i class="fa fa-circle-o text-aqua"></i> Emarks</a></li>
-            <li><a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Solicitação de Lâminas</a></li>
+            <li><a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Outras Solicitações</a></li>
             <li><a href="http://webdesigner2/sistema/public/sugest"><i class="fa fa-circle-o text-aqua"></i> Sugestões myReport</a></li>
             <li><a href="http://webdesigner2/sistema/public/converter"><i class="fa fa-circle-o text-aqua"></i><span> Conversor TXT to XML</span></a></li>
           </ul>
@@ -121,7 +121,7 @@
             <li><a href="{!! route('hoteis.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
             <li><a href="{!! route('promocoes.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Promoções</a></li>
             <li><a href="{!! route('fotos.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Fotos Site</a></li>
-            <li><a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Solicitação de Lâminas</a></li>
+            <li><a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Outras Solicitações</a></li>
           </ul>
 </li>
 <?php } ?>
@@ -217,7 +217,7 @@
     <li><a href="{!! route('departamentos.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Departamentos</span></a></li>
     <li><a href="{!! route('recados.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Recados</span></a></li>
     <li><a href="javascript:newPopup()"><i class="fa fa-circle-o text-aqua"></i> <span>Acesso Televenda</span></a></li>
-    <li><a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span> Solicitação de Lâminas</span></a></li>
+    <li><a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span> Outras Solicitações</span></a></li>
     <li><a href="http://webdesigner2/sistema/public/converter"><i class="fa fa-circle-o text-aqua"></i><span> Conversor TXT to XML</span></a></li>
   </ul>
 

@@ -1,7 +1,15 @@
+@extends('layouts.app')
+
+@section('content')
 <?php
-if (isset($_GET['c'])) {
+if (isset($_GET['de_filtro'])) {
 
 ?>
+<div class="alert">
+<div class="content-header">
+    <h4>Buscando entre <?php echo date("d/m/Y", strtotime($_GET['de_filtro'])); ?> e <?php echo date("d/m/Y", strtotime($_GET['ate_filtro'])); ?></h4>
+    </div>
+<div class="box box-primary" style="padding: 10px;">
 <table class="table table-responsive" id="chamados-table">
     <thead>
         <tr>
@@ -19,9 +27,10 @@ if (isset($_GET['c'])) {
 
 <?php
 
-        $c      = $_GET['c'];
+        $de_filtro      = $_GET['de_filtro'];
+        $ate_filtro     = $_GET['ate_filtro'];
         $conexao  = mysqli_connect("mysql05-farm61.uni5.net","marketingcoobr03","i8h9p5z2","marketingcoobr03");
-        $query    = "SELECT * FROM chamados WHERE status = '$c';";
+        $query    = "SELECT * FROM chamados WHERE date > '$de_filtro' AND date < '$ate_filtro'";
         $query    = mysqli_query($conexao, $query);
         while ($linha = mysqli_fetch_array($query)) {
 
@@ -49,38 +58,8 @@ if (isset($_GET['c'])) {
 </table>
 <?php
 
-    } else {
+    }
 ?>
-
-<table class="table table-responsive" id="chamados-table">
-    <thead>
-        <tr>
-        <th>&nbsp;</th>
-        <th>Usuário</th>
-        <th>Motivo</th>
-        <th>Mensagem</th>
-        <th>Status</th>
-        <th>Quem está tratando</th>
-            <th colspan="3">Ações</th>
-        </tr>
-    </thead>
-    <tbody>
-    @foreach($chamados as $chamado)
-        <tr>            
-            <td><a href="{!! route('chamados.edit', [$chamado->id]) !!}" class='btn btn-primary btn-xs' alt="Atender Chamado"><i class="fa fa-handshake-o" aria-hidden="true"></i></a></td>
-            <td><a href="http://webdesigner2/sistema/public/historico-chamados?cpf=<?php echo $chamado->cpf; ?>">{!! $chamado->usuario !!}</a></td>
-            <td><b class='btn btn-default btn-xs'>{!! $chamado->motivo !!}</b></td>
-            <td>{!! substr($chamado->mensagem, 0, 150) !!}...</td>
-            <td>{!! strtoupper($chamado->status) !!}</td>
-            <td>{!! $chamado->atendente !!}</td>
-            <td>
-                <div class='btn-group'>
-                    <a href="{!! route('chamados.edit', [$chamado->id]) !!}" class='btn btn-default btn-xs'><i class="fa fa-eye" aria-hidden="true"></i></a>
-                </div>
-            </td>
-        </tr>
-    @endforeach
-    </tbody>
-</table>
-<?php } ?>
-
+</div>
+</div>
+@endsection

@@ -76,7 +76,7 @@
           <ul class="treeview-menu <?php if(isset($arelacionamento)) { echo $arelacionamento; } ?>">
             <!--li><a href="{!! route('relacionamentos.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li-->
             <li><a href="{!! route('chamados.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Gerenciamento de Chamados</a></li>
-            <li><a href="http://webdesigner2/sistema/public/indice"><i class="fa fa-circle-o text-aqua"></i> Índice ( Chamados )</a></li>
+            <li><a href="http://webdesigner2/sistema/public/indice"><i class="fa fa-circle-o text-aqua"></i> Índice Chamados</a></li>
             <li><a href="http://webdesigner2/sistema/public/reclameaqui?t=6"><i class="fa fa-circle-o text-aqua"></i> Índice ReclameAqui 6 meses</a></li>
             <li><a href="http://webdesigner2/sistema/public/reclameaqui?t=12"><i class="fa fa-circle-o text-aqua"></i> Índice ReclameAqui 12 meses</a></li>
           </ul>

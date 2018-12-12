@@ -449,7 +449,7 @@
            <div style="width: 100%; height: 30px;"></div>
            <div style="width: 80%; margin: 0 auto;">
            <div class="um">
-                <img src="img/logo-coobrastur.png" alt="Coobrastur Turismo" /><br /><br />
+                <img src="http://webdesigner2/sistema/public/img/logo-coobrastur.png" alt="Coobrastur Turismo" /><br /><br />
                 <span style="display: block; width: 200px; margin: 0 auto; text-align: left;">
                     <b style="font-size: 19px;">myReport Coobrastur</b><br />
                     Sistema de gerenciamento<br /> de tarefas e controle interno.

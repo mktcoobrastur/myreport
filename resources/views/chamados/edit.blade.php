@@ -7,7 +7,7 @@
             <i class="fa fa-print" aria-hidden="true"></i> Imprimir
         </a>
         <h1>
-            Chamado <b>#{!! $chamado->id !!}</b>
+            Chamado <b>#{!! $chamado->id !!}</b> - Data de Abertura: {!! $chamado->date !!}
         </h1>
    </section>
    <div class="content">
@@ -46,7 +46,7 @@
 	 		<input type="hidden" name="idChamado" value="c_{!! $chamado->id !!}" />
     	    <input class="form-control" type="file" name="arquivos[]" multiple>
             <br>
-            <input type="submit" name="enviaArquivo" value="Enviar arquivo">
+            <input type="submit" name="enviaArquivo" value="Enviar arquivo" class="btn btn-primary">
         </form>
 	</div>
 
@@ -58,4 +58,5 @@
            </div>
        </div>
    </div>
+
 @endsection

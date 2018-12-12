@@ -31,6 +31,14 @@ Route::get('/mark', function () {
     return view('mark');
 });
 
+Route::get('/historico-chamados', function () {
+    return view('historico-chamados');
+});
+
+Route::get('/filtro-chamados', function () {
+    return view('filtro-chamados');
+});
+
 Route::get('/notificacoes', function () {
     return view('notificacoes');
 });

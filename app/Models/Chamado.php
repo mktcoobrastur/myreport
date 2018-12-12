@@ -20,6 +20,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @property string entendimento
  * @property string solucao
  * @property string status
+ * @property string atendente
  */
 class Chamado extends Model
 {
@@ -44,7 +45,9 @@ class Chamado extends Model
         'mensagem',
         'entendimento',
         'solucao',
-        'status'
+        'status',
+        'atendente',
+        'date'
     ];
 
     /**
@@ -63,7 +66,9 @@ class Chamado extends Model
         'mensagem' => 'string',
         'entendimento' => 'string',
         'solucao' => 'string',
-        'status' => 'string'
+        'status' => 'string',
+        'atendente' => 'string',
+        'date' => 'date'
     ];
 
     /**

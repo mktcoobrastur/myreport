@@ -5,7 +5,19 @@
     <section class="content-header">
         
         @include('chamados.topo')
-        
+
+    <div style="float: left; width: 100%;">
+        <div class="content-header">
+    <b>Pesquisa por Período:</b>
+    </div>
+    <div class="box box-primary" style="padding: 10px;">
+    <form action="http://webdesigner2/sistema/public/filtro-chamados">    
+        <span style="display: block; float: left; line-height: 30px;">De: </span> <input type="date" name="de_filtro" class="form-control" style="float: left; width: 250px;">  
+        <span style="display: block; float: left; line-height: 30px;">Até: </span> <input type="date" name="ate_filtro" class="form-control" style="float: left; width: 250px;">
+        <input type="submit" name="buscar" value="Filtrar" class="btn" >
+    </form>
+    </div>
+    </div>        
         <h1 class="pull-left">
             <?php 
                 if(isset($_GET['c'])) {

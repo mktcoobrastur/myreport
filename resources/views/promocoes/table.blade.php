@@ -24,7 +24,7 @@
     <tbody>
         <?php
             $campo = $_GET['q'];
-            $conexao  = mysqli_connect("localhost","root","","sistema");
+            $conexao  = mysqli_connect("mysql05-farm61.uni5.net","marketingcoobr03","i8h9p5z2","marketingcoobr03");
             $query    = "SELECT * from promocoes WHERE hotel LIKE '%".$campo."%' OR codigo LIKE '%".$campo."%'";
             $query    = mysqli_query($conexao, $query);
             

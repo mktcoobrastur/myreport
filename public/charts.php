@@ -1,5 +1,5 @@
 <?php
-    $con = new mysqli("localhost", "root", "", "sistema");
+    $con = new mysqli("mysql05-farm61.uni5.net", "marketingcoobr03", "i8h9p5z2", "marketingcoobr03");
     $consulta1 = mysqli_query($con, "SELECT SUM(qnt) qnt FROM vendasre WHERE MONTH(indice) = 01");
     $janeiro = mysqli_fetch_object($consulta1); $janeiro->qnt;
     

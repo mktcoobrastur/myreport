@@ -1,6 +1,6 @@
 <?php
 
-			$conexao = mysqli_connect("localhost","root","","sistema");
+			$conexao  = mysqli_connect("mysql05-farm61.uni5.net","marketingcoobr03","i8h9p5z2","marketingcoobr03");
 
             $idChamado  = $_POST['idChamado'];
             $usuario    = $_POST['usuario'];

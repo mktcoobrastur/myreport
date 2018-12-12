@@ -1,7 +1,8 @@
 <?php
 
     $idChamado  = $_GET['c'];
-    $conexao    = mysqli_connect("localhost","root","","sistema");
+	$conexao    = mysqli_connect("mysql05-farm61.uni5.net", "marketingcoobr03", "i8h9p5z2", "marketingcoobr03");		
+
     $query      = "SELECT * FROM chamados WHERE id = $idChamado;";
     $query      = mysqli_query($conexao, $query);
     while ($linha = mysqli_fetch_array($query)) {

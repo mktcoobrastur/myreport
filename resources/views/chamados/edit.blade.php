@@ -25,7 +25,7 @@
 <div class="alert">
     <h3 style='margin-left: 10px;'>Anexos</h3>
         <?php
-            $conexao  = mysqli_connect("localhost","root","","sistema");
+            $conexao  = mysqli_connect("mysql05-farm61.uni5.net","marketingcoobr03","i8h9p5z2","marketingcoobr03");
             $idch     =  'c_'.$chamado->id;
             $query    = "SELECT * FROM anexos WHERE tarefa = '$idch';";
             $query    = mysqli_query($conexao, $query);

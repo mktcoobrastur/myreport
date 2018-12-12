@@ -124,7 +124,7 @@
             </div>
 
         <?php
-            $conexao  = mysqli_connect("localhost","root","","sistema");
+            $conexao  = mysqli_connect("mysql05-farm61.uni5.net","marketingcoobr03","i8h9p5z2","marketingcoobr03");
             #### ELOGIOS ####
             $sql    = "SELECT * FROM chamados WHERE motivo = 'Elogios'";
             $query    = mysqli_query($conexao, $sql); $linhaElogios = mysqli_num_rows($query);
@@ -150,7 +150,7 @@
                   <div class="knob-label labelChart">Elogios</div>
                   <div id="MeuDiv" style="display: none;" class="caixaBl caixaum">
                       <?php
-                        $con = new mysqli("localhost", "root", "", "sistema");
+                        $con = new mysqli("mysql05-farm61.uni5.net", "marketingcoobr03", "i8h9p5z2", "marketingcoobr03");
                         $queryCh = mysqli_query($con, "SELECT * FROM chamados WHERE motivo = 'Elogios'");
                         $linha8 = mysqli_fetch_array($queryCh);
                             echo $linha8['tecnico']." (3)<br />";
@@ -166,7 +166,7 @@
                   <div class="knob-label labelChart">Informações</div>
                   <div id="MeuDiv2" style="display: none;" class="caixaBl caixadois">
                       <?php
-                        $con = new mysqli("localhost", "root", "", "sistema");
+                        $con = new mysqli("mysql05-farm61.uni5.net", "marketingcoobr03", "i8h9p5z2", "marketingcoobr03");
                         $queryCh = mysqli_query($con, "SELECT * FROM chamados WHERE motivo = 'Informacoes'");
                         while($linha8 = mysqli_fetch_array($queryCh)) {
                             echo $linha8['tecnico']."<br />";
@@ -183,7 +183,7 @@
                   <div class="knob-label labelChart">Reclamações</div>
                   <div id="MeuDivt" style="display: none;" class="caixaBl caixatres">
                       <?php
-                        $con = new mysqli("localhost", "root", "", "sistema");
+                        $con = new mysqli("mysql05-farm61.uni5.net", "marketingcoobr03", "i8h9p5z2", "marketingcoobr03");
                         $queryCh = mysqli_query($con, "SELECT * FROM chamados WHERE motivo = 'Reclamacoes'");
                         $linha8 = mysqli_fetch_array($queryCh);
                             echo $linha8['tecnico']."(2)<br />";
@@ -200,7 +200,7 @@
                   <div class="knob-label labelChart">Serviços ou Solicitações</div>
                   <div id="MeuDiv" style="display: none;" class="caixaBl caixaquatro">
                       <?php
-                        $con = new mysqli("localhost", "root", "", "sistema");
+                        $con = new mysqli("mysql05-farm61.uni5.net", "marketingcoobr03", "i8h9p5z2", "marketingcoobr03");
                         $queryCh = mysqli_query($con, "SELECT * FROM chamados WHERE motivo = 'Servicos'");
                         while($linha8 = mysqli_fetch_array($queryCh)) {
                             echo $linha8['tecnico']." (2)<br />";

@@ -32,7 +32,7 @@
 <span class="titleR"></span>
 <ul style="width: 100%;">
     <?php
-        $con = new mysqli("localhost", "root", "", "sistema");
+        $con = new mysqli("mysql05-farm61.uni5.net", "marketingcoobr03", "i8h9p5z2", "marketingcoobr03");
         $queryRepr  = mysqli_query($con, "SELECT id, nome, deleted_at FROM representantes where id != 5");
         while($result = mysqli_fetch_array($queryRepr)) {
             echo "<a href='?r=".$result['id']."'><li class='btn btn-primary reprLst'>".$result['nome']."</li></a>";
@@ -61,7 +61,7 @@
 
     <?php
         $getR = $_GET['r'];
-        $con = new mysqli("localhost", "root", "", "sistema");
+        $con = new mysqli("mysql05-farm61.uni5.net", "marketingcoobr03", "i8h9p5z2", "marketingcoobr03");
         $queryMetas  = mysqli_query($con, "SELECT * FROM metas WHERE representante = $getR ORDER BY mes asc");
         while($linha = mysqli_fetch_array($queryMetas)) {
     ?>
@@ -86,7 +86,7 @@
             <td>
                 <?php 
                     $nome     =  $linha['representante'];
-                    $con                = new mysqli("localhost", "root", "", "sistema");
+                    $con = new mysqli("mysql05-farm61.uni5.net", "marketingcoobr03", "i8h9p5z2", "marketingcoobr03");
                     $queryN   = mysqli_query($con, "SELECT * FROM representantes WHERE id = $nome");
                     $row      = mysqli_fetch_array($queryN);
                     echo $row['nome'];
@@ -145,7 +145,7 @@
             <td>
                 <?php 
                     $nome     =  $meta->representante;
-                    $con                = new mysqli("localhost", "root", "", "sistema");
+                    $con = new mysqli("mysql05-farm61.uni5.net", "marketingcoobr03", "i8h9p5z2", "marketingcoobr03");
                     $queryN   = mysqli_query($con, "SELECT * FROM representantes WHERE id = $nome");
                     $row      = mysqli_fetch_array($queryN);
                     echo $row['nome'];

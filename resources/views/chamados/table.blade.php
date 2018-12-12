@@ -17,8 +17,9 @@ if (isset($_GET['c'])) {
     <tbody>
 
 <?php
+
         $c      = $_GET['c'];
-        $conexao  = mysqli_connect("localhost","root","","sistema");
+        $conexao  = mysqli_connect("mysql05-farm61.uni5.net","marketingcoobr03","i8h9p5z2","marketingcoobr03");
         $query    = "SELECT * FROM chamados WHERE status = '$c';";
         $query    = mysqli_query($conexao, $query);
         while ($linha = mysqli_fetch_array($query)) {

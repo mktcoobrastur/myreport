@@ -33,7 +33,7 @@
 <select name="representante" class="form-control">
 <?php
     //Consulta SELECT representantes
-    $con = new mysqli("localhost", "root", "", "sistema");
+    $con = new mysqli("mysql05-farm61.uni5.net", "marketingcoobr03", "i8h9p5z2", "marketingcoobr03");
     $consulta = mysqli_query($con, "SELECT * FROM representantes ORDER BY id ASC");
     while ($l = mysqli_fetch_array($consulta)) {
 ?>

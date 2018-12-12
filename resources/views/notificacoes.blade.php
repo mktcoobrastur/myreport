@@ -17,7 +17,7 @@
 <div class="box">
     <div class="alert">
 <?php
-    $con = new mysqli("localhost", "root", "", "sistema");
+    $con = new mysqli("mysql05-farm61.uni5.net", "marketingcoobr03", "i8h9p5z2", "marketingcoobr03");
     $consulta = mysqli_query($con, "SELECT * FROM notificacoes ORDER BY id DESC");
     while ($l = mysqli_fetch_array($consulta)) {
 ?>

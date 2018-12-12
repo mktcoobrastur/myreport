@@ -1,12 +1,6 @@
 <?php
 
-			$servername = "localhost";
-			$username = "root";
-			$password = "";
-			$banco = "sistema";
-			
-			// Create connection
-			$conn = mysqli_connect($servername, $username, $password, $banco);
+			$conn    = mysqli_connect("mysql05-farm61.uni5.net", "marketingcoobr03", "i8h9p5z2", "marketingcoobr03");
 			
 			// Check connection
 			if (!$conn) {

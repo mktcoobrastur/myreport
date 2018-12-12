@@ -13,7 +13,7 @@
         <td style="font-weight: bold; color: #165C80;"><?php echo date("d/m/Y", strtotime($vendasre->indice)); ?></td>
             <td>
                 <?php
-                    $con = new mysqli("localhost", "root", "", "sistema");
+                    $con = new mysqli("mysql05-farm61.uni5.net", "marketingcoobr03", "i8h9p5z2", "marketingcoobr03");
                     $consultaH = mysqli_query($con, "SELECT * FROM representantes where id = '$vendasre->representante'");
                     $lH = mysqli_fetch_array($consultaH);
                     echo $lH['nome'];

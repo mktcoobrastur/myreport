@@ -67,7 +67,7 @@
 
                 <?php
                     $id_user = $usuario->id;
-                    $con = new mysqli("localhost", "root", "", "sistema");
+                    $con = new mysqli("mysql05-farm61.uni5.net", "marketingcoobr03", "i8h9p5z2", "marketingcoobr03");
                     $consulta = mysqli_query($con, "SELECT * FROM permissoes WHERE user = $id_user");
                     while($linha = mysqli_fetch_array($consulta)) {
                 ?>
@@ -91,7 +91,7 @@
             <input type="hidden" name="idUser" value="{!! $usuario->id !!}">
             <select name="acesso" class="form-control" style="width: 180px;">
                 <?php
-                    $con = new mysqli("localhost", "root", "", "sistema");
+                    $con = new mysqli("mysql05-farm61.uni5.net", "marketingcoobr03", "i8h9p5z2", "marketingcoobr03");
                     $consulta = mysqli_query($con, "SELECT * FROM departamentos ORDER BY depto ASC");
                     while($linha = mysqli_fetch_array($consulta)) {
                 ?>

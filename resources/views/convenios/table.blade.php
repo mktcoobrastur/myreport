@@ -44,7 +44,7 @@
 <a href="{!! route('convenios.show', [$convenio->id]) !!}" class='btn btn-default btn-xs'><h4>{!! strtoupper($convenio->nome) !!}</h4>
 
         <?php
-            $conexao  = mysqli_connect("localhost","root","","sistema");
+            $conexao  = mysqli_connect("mysql05-farm61.uni5.net","marketingcoobr03","i8h9p5z2","marketingcoobr03");
             $query    = "SELECT * FROM convenios WHERE id = $convenio->id;";
             $query    = mysqli_query($conexao, $query);
             

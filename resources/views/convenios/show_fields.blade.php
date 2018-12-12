@@ -3,14 +3,6 @@
     <h2>{!! $convenio->nome !!}</h2>
 </div>
 
-    <div class="alert" style="width: 250px;">
-        <form action="/uploadConvenio.php" method="post" enctype="multipart/form-data">
-    		<label>Enviar Logo:</label>
-	 		<input type="hidden" name="idChamado" value="{!! $convenio->id !!}" />
-    	    <input type="file" name="arquivos[]" multiple>
-            <input type="submit" name="enviaArquivo" value="Enviar">
-        </form>
-	</div>
 
     <div class="alert" >
         <?php
@@ -20,7 +12,7 @@
             
     	    while ($linha = mysqli_fetch_array($query)) {
         ?>
-			<img style="position: absolute; top: 50px; right: 50px;" width="200" src="http://webdesigner2/sistema/public/imgconvenios/<?php echo $linha['img']; ?>" />
+			<img style="position: absolute; top: 30px; right: 50px;" width="150" src="http://webdesigner2/sistema/public/imgconvenios/<?php echo $linha['img']; ?>" />
 		</a>
 
 	    <?php } ?>

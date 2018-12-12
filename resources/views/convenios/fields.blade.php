@@ -10,6 +10,12 @@
     {!! Form::text('site', null, ['class' => 'form-control']) !!}
 </div>
 
+<!-- Logo Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('img', 'Logo:') !!}
+    {!! Form::file('img', null, ['class' => 'form-control']) !!}
+</div>
+
 <!-- Texto Field -->
 <div class="form-group col-sm-12 col-lg-12">
     {!! Form::label('texto', 'Texto:') !!}

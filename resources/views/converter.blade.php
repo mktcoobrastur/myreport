@@ -3,13 +3,14 @@
 @section('content')
 <div class="alert">
     <div class="content-header">
-    <h1>Conversor TXT to XML</h1>
+    <h1>Conversor TXT to XML (Revista)</h1>
     </div><br />
     <div class="box" style="padding: 10px;">
 
         <div class="alert alert-warning">
+            <li>O nome do arquivo não deve conter espaço ou caracteres especiais.</li>
             <li>O arquivo não deve conter linhas em branco.</li>
-            <li>O arquivo não deve conter &.</li>
+            <li>O conteúdo arquivo não deve conter &.</li>
         </div>
         <form action="http://webdesigner2/sistema/public/converter.php" method="post" enctype="multipart/form-data">
         <div class="form-group">

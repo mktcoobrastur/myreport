@@ -86,16 +86,6 @@
 
         <?php }?>
 
-    <div class="alert">
-        <form name="up1" action="http://webdesigner2/sistema/public/uploadPromo1.php" method="post" enctype="multipart/form-data">
-    		<label>Enviar Arquivos:</label> <br />
-            <input type="hidden" name="idRedirect" value="{!! $promocoe->id !!}" />
-	 		<input type="hidden" name="idChamado" value="{!! $promocoe->codigo !!}" />
-    	    <input class="form-control" type="file" name="arquivos[]" multiple>
-            <br>
-            <input type="submit" name="enviaArquivo" value="Enviar">
-        </form>
-	</div>
     </p>
         <!--#####################-->
 
@@ -135,16 +125,6 @@
 
 <?php } ?>
 
-    <div class="alert">
-        <form name="up2" action="http://localhost/sistema/public/uploadPromo2.php" method="post" enctype="multipart/form-data">
-    		<label>Enviar Arquivos:</label> <br />
-	 		<input type="hidden" name="idChamado" value="{!! $promocoe->codigo !!}" />
-            <input type="hidden" name="idRedirect" value="{!! $promocoe->id !!}" />
-    	    <input class="form-control" type="file" name="arquivos[]" multiple>
-            <br>
-            <input type="submit" name="enviaArquivo" value="Enviar">
-        </form>
-	</div>
     </p>
 
         <!--#####################-->

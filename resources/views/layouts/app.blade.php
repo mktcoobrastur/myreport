@@ -362,7 +362,7 @@
   })
 </script>
    <!-- jQuery 3.1.1 -->
-    <script src="<?php echo $URL; ?>js/pace.min.js"></script>
+    <script src="http://webdesigner2/sistema/public/js/pace.min.js"></script>
 
     <!-- AdminLTE App -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/js/adminlte.min.js"></script>

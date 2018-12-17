@@ -22,7 +22,7 @@
                     while ($l = mysqli_fetch_array($consulta)) {
                 ?>
                         <option value="<?php echo $l['id']; ?>">
-                            <?php echo $l['nome']; ?>
+                            <?php echo utf8_encode($l['nome']); ?>
                         </option>
                 <?php
                     }

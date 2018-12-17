@@ -37,7 +37,7 @@
             
     	    while ($linha = mysqli_fetch_array($query)) {
         ?>
-			<img style="position: absolute; top: 90px; right: 50px;" class="img-circle" width="200" src="http://webdesigner2/sistema/public/imgatendentes/<?php echo $linha['img']; ?>" />
+			<img style="position: absolute; top: 90px; right: 50px; height: 180px;" class="img-circle" width="200" src="http://webdesigner2/sistema/public/imgatendentes/<?php echo $linha['img']; ?>" />
 		</a>
 
 	    <?php } ?>

@@ -17,3 +17,16 @@
 </div>
 
 
+    <div class="alert" >
+        <?php
+            $conexao  = mysqli_connect("mysql05-farm61.uni5.net","marketingcoobr03","i8h9p5z2","marketingcoobr03");
+            $query    = "SELECT * FROM atendentes WHERE id = $atendente->id;";
+            $query    = mysqli_query($conexao, $query);
+            
+    	    while ($linha = mysqli_fetch_array($query)) {
+        ?>
+			<img style="position: absolute; top: 50px; right: 50px; height: 180px; border: 1px solid #ccc;" class="img-circle" width="200" src="http://webdesigner2/sistema/public/imgatendentes/<?php echo $linha['img']; ?>" />
+		</a>
+
+	    <?php } ?>
+    </div>

@@ -135,8 +135,18 @@
                 opacity: 0.7;
             }
             </style>
+<script language="JavaScript">
+    function DoPrinting()
+    {
+    if (!window.print) {
+        alert("Use o Netscape ou Internet Explorer \n nas versões 4.0 ou superior!")
+    return
+    }
+    window.print()
+    }
+</script>
 <div style="text-align: left;">Gerar Arquivos:<br />
-    <a href="" class="linkExp"><img src="http://webdesigner2/sistema/public/img/pdf.png" /></a>
+    <a href="" onclick='javascript:DoPrinting();' class="linkExp"><img src="http://webdesigner2/sistema/public/img/pdf.png" /></a>
     <a href="" class="linkExp"><img src="http://webdesigner2/sistema/public/img/xls.png" /></a>
 </div>
 

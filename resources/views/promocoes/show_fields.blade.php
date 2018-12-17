@@ -78,7 +78,8 @@
         <?php if ($promocoe->imgPrincipal != null) { ?>
 
 		<a data-toggle="modal" data-target=".bd-example-modal-lg1" target="blank" class="anexos">
-			<img width="20" src="https://png.icons8.com/metro/1600/attach.png" />
+    		<img width="20" src="https://png.icons8.com/metro/1600/attach.png" />
+	        <img width="20" style="float: right; color: #999; margin-left: 5px; cursor: pointer;" src="https://png.icons8.com/metro/1600/eye.png" />
 			{!! $promocoe->imgPrincipal !!}
             <i class="fa fa-download pull-right" style='margin-top: 4px;' aria-hidden="true"></i>
 		</a>
@@ -126,6 +127,7 @@
 <?php if ($promocoe->imgLamina != null) { ?>
 
 		<a data-toggle="modal" data-target=".bd-example-modal-lg2" target="blank" class="anexos">
+            <img width="20" style="float: right; color: #999; margin-left: 5px; cursor: pointer;" src="https://png.icons8.com/metro/1600/eye.png" />
 			<img width="20" src="https://png.icons8.com/metro/1600/attach.png" />
 			{!! $promocoe->imgLamina !!}
             <i class="fa fa-download pull-right" style='margin-top: 4px;' aria-hidden="true"></i>

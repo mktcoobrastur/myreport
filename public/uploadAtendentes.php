@@ -40,10 +40,10 @@ if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
 
 
 			
-			$servername = "localhost";
-			$username = "root";
-			$password = "";
-			$banco = "sistema";
+        $servername = "mysql05-farm61.uni5.net";
+        $username = "marketingcoobr03";
+        $password = "i8h9p5z2";
+        $banco = "marketingcoobr03";
 			
 			
 			// Create connection

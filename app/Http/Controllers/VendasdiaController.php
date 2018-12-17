@@ -32,25 +32,6 @@ class VendasdiaController extends AppBaseController
         $this->vendasdiaRepository->pushCriteria(new RequestCriteria($request));
         $vendasdias = $this->vendasdiaRepository->all();
 
-        $chars  = utf8_encode($vendasdias);
-                  render($chars);
-
-                  // Header XLS
-                  $arquivo = 'relatorio.xls';
-                  $headers  = header ("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
-                  $headers .= header ("Last-Modified: " . gmdate("D,d M YH:i:s") . " GMT");
-                  $headers .= header ("Cache-Control: no-cache, must-revalidate");
-                  $headers .= header ("Pragma: no-cache");
-                  $headers .= header ("Content-type: application/x-msexcel"); // .xls
-                  $headers .= header ("Content-Disposition: attachment; filename=\"{$arquivo}\"" );
-                  $headers .= header ("Content-Description: Relatorio Coobrastur" );       
-                  
-                  $query->whereHas($headers, function($query) use($chars,$vendasdias) {
-                    $query->where($chars,$vendasdias);
-                  });
-                                  
-                  return view($chars)->with($vendasdias);
-
         return view('vendasdias.index')
             ->with('vendasdias', $vendasdias->where('created_at','=','NOW()'));
     }

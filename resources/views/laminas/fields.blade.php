@@ -1,18 +1,8 @@
 
 
-<script type="text/javascript">
- 	$(document).ready(function(){
-		$("#txtNome").autocomplete("http://webdesigner2/sistema/public/completar.php", {
-			width:400,
-			selectFirst: false
-		});
-	});
- </script>
-
 <!-- Hotel Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('hotel', 'Hotel:') !!}<br />
-    <i class="opaque">Pesquise pelo código ou pelo nome do hotel.</i>
     {!! Form::text('hotel', null, ['class' => 'form-control', 'id' => 'txtNome']) !!}
 </div>
 

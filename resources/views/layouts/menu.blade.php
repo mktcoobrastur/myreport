@@ -199,7 +199,7 @@
   if($a != Null) {
 ?>
 
-    <li><a href="{!! route('usuarios.index') !!}"><i class="fa fa-user-o"></i> <span>Usuarios</span></a></li>
+    <li><a href="{!! route('usuarios.index') !!}"><i class="fa fa-user-o"></i> <span>Usuários</span></a></li>
 <?php } ?>
 
 <?php if(Auth::user()->email == 'designer@coobrastur.com.br') { ?>

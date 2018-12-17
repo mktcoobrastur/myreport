@@ -147,15 +147,19 @@
                 <div class="col-xs-6 col-md-3 text-center">
                   <input type="text" class="knob" value="<?php echo $linhaElogios; ?>" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgColor="#3c8dbc" data-readonly="true">
 
-                  <div class="knob-label labelChart"><a class="btn btn-default" style="color: #888; text-decoration: none;" href="http://webdesigner2/sistema/public/chamados">Elogios</a></div>
+                  <div class="knob-label labelChart">Elogios</div>
                   <div id="MeuDiv" style="display: none;" class="caixaBl caixaum">
                       <?php
                         $con = new mysqli("mysql05-farm61.uni5.net", "marketingcoobr03", "i8h9p5z2", "marketingcoobr03");
-                        $queryCh = mysqli_query($con, "SELECT * FROM chamados WHERE motivo = 'Elogios'");
-                        $linha8 = mysqli_fetch_array($queryCh);
-                            echo $linha8['tecnico']." (3)<br />";
-                        
-                      ?>                    
+                        $queryCh8 = mysqli_query($con, "SELECT * FROM chamados WHERE motivo = 'Elogios'");
+                        $linha8 = mysqli_num_rows($queryCh8);
+                            echo '<b>'.$linha8." chamados</b><br />";
+
+                            $queryCh81 = mysqli_query($con, "SELECT * FROM chamados WHERE motivo = 'Elogios' AND status = 'ABERTO'");
+                            $linha81 = mysqli_num_rows($queryCh81);
+    
+                            echo '<i>'.$linha81." aguardando reposta.</i><br />";
+                          ?>                    
                   </div>
                 </div>
                 <!-- ./col -->
@@ -163,14 +167,17 @@
                 <div class="col-xs-6 col-md-3 text-center">
                   <input type="text" class="knob" value="<?php echo $linhaInfo; ?>" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgColor="#3c8dbc" data-readonly="true">
 
-                  <div class="knob-label labelChart"><a class="btn btn-default" style="color: #888; text-decoration: none;" href="http://webdesigner2/sistema/public/chamados">Informações</a></div>
+                  <div class="knob-label labelChart">Informações</div>
                   <div id="MeuDiv2" style="display: none;" class="caixaBl caixadois">
                       <?php
-                        $con = new mysqli("mysql05-farm61.uni5.net", "marketingcoobr03", "i8h9p5z2", "marketingcoobr03");
-                        $queryCh = mysqli_query($con, "SELECT * FROM chamados WHERE motivo = 'Informacoes'");
-                        while($linha8 = mysqli_fetch_array($queryCh)) {
-                            echo utf8_encode($linha8['tecnico'])."<br />";
-                        }
+                        $queryCh7 = mysqli_query($con, "SELECT * FROM chamados WHERE motivo = 'Informacoes'");
+                        $linha7 = mysqli_num_rows($queryCh7);
+                        echo '<b>'.$linha7." chamados</b><br />";
+
+                        $queryCh71 = mysqli_query($con, "SELECT * FROM chamados WHERE motivo = 'Informacoes' AND status = 'ABERTO'");
+                        $linha71 = mysqli_num_rows($queryCh71);
+
+                        echo '<i>'.$linha71." aguardando reposta.</i><br />";
                       ?>                    
                   </div>
 
@@ -180,14 +187,18 @@
                 <div class="col-xs-6 col-md-3 text-center">
                   <input type="text" class="knob" value="<?php echo $linhaRecl; ?>" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgColor="#3c8dbc" data-readonly="true">
 
-                  <div class="knob-label labelChart"><a class="btn btn-default" style="color: #888; text-decoration: none;" href="http://webdesigner2/sistema/public/chamados">Reclamações</a></div>
+                  <div class="knob-label labelChart">Reclamações</div>
                   <div id="MeuDivt" style="display: none;" class="caixaBl caixatres">
                       <?php
                         $con = new mysqli("mysql05-farm61.uni5.net", "marketingcoobr03", "i8h9p5z2", "marketingcoobr03");
-                        $queryCh = mysqli_query($con, "SELECT * FROM chamados WHERE motivo = 'Reclamacoes'");
-                        $linha8 = mysqli_fetch_array($queryCh);
-                            echo utf8_encode($linha8['tecnico'])."(2)<br />";
-                        
+                        $queryCh6 = mysqli_query($con, "SELECT * FROM chamados WHERE motivo = 'Reclamacoes'");
+                        $linha6 = mysqli_num_rows($queryCh6);
+                            echo '<b>'.$linha6." chamados</b><br />";
+                            
+                            $queryCh61 = mysqli_query($con, "SELECT * FROM chamados WHERE motivo = 'Reclamacoes' AND status = 'ABERTO'");
+                            $linha61 = mysqli_num_rows($queryCh61);
+    
+                            echo '<i>'.$linha61." aguardando reposta.</i><br />";
                       ?>                    
                   </div>
 
@@ -197,15 +208,19 @@
                 <div class="col-xs-6 col-md-3 text-center">
                   <input type="text" class="knob" value="<?php echo $linhaServ; ?>" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgColor="#3c8dbc" data-readonly="true">
 
-                  <div class="knob-label labelChart"><a class="btn btn-default" style="color: #888; text-decoration: none;" href="http://webdesigner2/sistema/public/chamados">Serviços e/ou Solicitações</a></div>
+                  <div class="knob-label labelChart">Serviços e/ou Solicitações</div>
                   <div id="MeuDiv" style="display: none;" class="caixaBl caixaquatro">
                       <?php
                         $con = new mysqli("mysql05-farm61.uni5.net", "marketingcoobr03", "i8h9p5z2", "marketingcoobr03");
-                        $queryCh = mysqli_query($con, "SELECT * FROM chamados WHERE motivo = 'Servicos'");
-                        while($linha8 = mysqli_fetch_array($queryCh)) {
-                            echo $linha8['tecnico']." (2)<br />";
-                        }
-                      ?>                    
+                        $queryCh5 = mysqli_query($con, "SELECT * FROM chamados WHERE motivo = 'Servicos'");
+                        $linha5 = mysqli_fetch_array($queryCh5);
+                            echo '<b>'.$linha5." chamados</b><br />";
+
+                            $queryCh51 = mysqli_query($con, "SELECT * FROM chamados WHERE motivo = 'Reclamacoes' AND status = 'ABERTO'");
+                            $linha51 = mysqli_num_rows($queryCh51);
+    
+                            echo '<i>'.$linha51." aguardando reposta.</i><br />";
+?>                    
                   </div>
                 </div>
                 <!-- ./col -->

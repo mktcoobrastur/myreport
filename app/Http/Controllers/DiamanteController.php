@@ -59,7 +59,7 @@ class DiamanteController extends AppBaseController
 
         $diamante = $this->diamanteRepository->create($input);
 
-        Flash::success('Diamante saved successfully.');
+        Flash::success('Página salva com sucesso.');
 
         return redirect(route('diamantes.index'));
     }
@@ -76,7 +76,7 @@ class DiamanteController extends AppBaseController
         $diamante = $this->diamanteRepository->findWithoutFail($id);
 
         if (empty($diamante)) {
-            Flash::error('Diamante not found');
+            Flash::error('Erro! #084795 (Comunique este código de erro ao Setor Responsável)');
 
             return redirect(route('diamantes.index'));
         }
@@ -96,7 +96,7 @@ class DiamanteController extends AppBaseController
         $diamante = $this->diamanteRepository->findWithoutFail($id);
 
         if (empty($diamante)) {
-            Flash::error('Diamante not found');
+            Flash::error('Erro! #084795 (Comunique este código de erro ao Setor Responsável)');
 
             return redirect(route('diamantes.index'));
         }
@@ -117,14 +117,14 @@ class DiamanteController extends AppBaseController
         $diamante = $this->diamanteRepository->findWithoutFail($id);
 
         if (empty($diamante)) {
-            Flash::error('Diamante not found');
+            Flash::error('Erro! #084795 (Comunique este código de erro ao Setor Responsável)');
 
             return redirect(route('diamantes.index'));
         }
 
         $diamante = $this->diamanteRepository->update($request->all(), $id);
 
-        Flash::success('Diamante updated successfully.');
+        Flash::success('Página atualizada com sucesso.');
 
         return redirect(route('diamantes.index'));
     }
@@ -141,14 +141,14 @@ class DiamanteController extends AppBaseController
         $diamante = $this->diamanteRepository->findWithoutFail($id);
 
         if (empty($diamante)) {
-            Flash::error('Diamante not found');
+            Flash::error('Erro! #084795 (Comunique este código de erro ao Setor Responsável)');
 
             return redirect(route('diamantes.index'));
         }
 
         $this->diamanteRepository->delete($id);
 
-        Flash::success('Diamante deleted successfully.');
+        Flash::success('Página excluída.');
 
         return redirect(route('diamantes.index'));
     }

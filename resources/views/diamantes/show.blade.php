@@ -11,6 +11,7 @@
             <div class="box-body">
                 <div class="row" style="padding-left: 20px">
                     @include('diamantes.show_fields')
+                    <div style="float: left; width: 100%; height: 40px;"></div>
                     <a href="{!! route('diamantes.index') !!}" class="btn btn-default">Voltar</a>
                 </div>
             </div>

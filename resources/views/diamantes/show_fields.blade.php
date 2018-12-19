@@ -9,4 +9,3 @@
     {!! Form::label('conteudo', 'Conteudo:') !!}
     <p><?php echo $diamante->conteudo; ?></p>
 </div>
-

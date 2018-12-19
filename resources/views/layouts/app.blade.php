@@ -50,7 +50,9 @@
 			return false;
 		});
 	});
-	</script>
+    </script>
+    
+
 </head>
 
 <body class="skin-blue sidebar-mini">
@@ -337,7 +339,7 @@
             </div>
         </div>
     </nav>
-
+<script src="http://webdesigner2/sistema/public/js/ckeditor.js"></script>
     <div id="page-content-wrapper">
         <div class="container-fluid">
             <div class="row">
@@ -363,7 +365,7 @@
 </script>
    <!-- jQuery 3.1.1 -->
     <script src="http://webdesigner2/sistema/public/js/pace.min.js"></script>
-
+<script src="http://webdesigner2/sistema/public/js/ckeditor.js"></script>
     <!-- AdminLTE App -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/js/adminlte.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
@@ -377,7 +379,6 @@
 <!--css -->
 <link rel="stylesheet" type="text/css" href="http://webdesigner2/sistema/public/lib/jquery.autocomplete.css"/>
 <link rel="stylesheet" type="text/css" href="http://webdesigner2/sistema/public/lib/thickbox.css"/>
-
 <style>
 .rodape {
     position: absolute; 

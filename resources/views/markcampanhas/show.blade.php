@@ -11,7 +11,7 @@
             <div class="box-body">
                 <div class="row" style="padding-left: 20px">
                     @include('markcampanhas.show_fields')
-                    <a href="{!! route('markcampanhas.index') !!}" class="btn btn-default">Back</a>
+                    <a href="{!! route('markcampanhas.index') !!}" class="btn btn-default">Voltar</a>
                 </div>
             </div>
         </div>

@@ -213,6 +213,9 @@
           </a>
 
   <ul class="treeview-menu">
+  <li class="{{ Request::is('diamantes*') ? 'active' : '' }}">
+    <a href="{!! route('diamantes.index') !!}"><i class="fa fa-edit"></i><span>Site Diamante</span></a>
+</li>
     <li><a href="{!! route('usuarios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Usuarios</span></a></li>
     <li><a href="{!! route('departamentos.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Departamentos</span></a></li>
     <li><a href="{!! route('recados.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Recados</span></a></li>
@@ -225,3 +228,4 @@
 <?php } ?>
   
 <li><a href="http://webdesigner2/sistema/public/ramais-coobrastur"><i class="fa fa-user-o"></i> <span>Ramais Coobrastur</span></a></li>
+

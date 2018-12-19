@@ -11,7 +11,7 @@
             <div class="box-body">
                 <div class="row" style="padding-left: 20px">
                     @include('tprojetos.show_fields')
-                    <a href="{!! route('tprojetos.index') !!}" class="btn btn-default">Back</a>
+                    <a href="{!! route('tprojetos.index') !!}" class="btn btn-default">Voltar</a>
                 </div>
             </div>
         </div>

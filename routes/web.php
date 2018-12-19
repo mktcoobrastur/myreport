@@ -118,3 +118,5 @@ Route::resource('laminas', 'LaminaController');
 Route::resource('indices', 'IndiceController');
 
 Route::resource('funcionarios', 'FuncionarioController');
+
+Route::resource('diamantes', 'DiamanteController');

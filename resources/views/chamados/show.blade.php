@@ -12,7 +12,7 @@
             <div class="box-body">
                 <div class="row" style="padding-left: 20px">
                     @include('chamados.show_fields')
-                    <a href="{!! route('chamados.index') !!}" class="btn btn-default">Back</a>
+                    <a href="{!! route('chamados.index') !!}" class="btn btn-default">Voltar</a>
                 </div>
             </div>
         </div>

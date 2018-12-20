@@ -120,3 +120,5 @@ Route::resource('indices', 'IndiceController');
 Route::resource('funcionarios', 'FuncionarioController');
 
 Route::resource('diamantes', 'DiamanteController');
+
+Route::resource('destinos', 'DestinosController');

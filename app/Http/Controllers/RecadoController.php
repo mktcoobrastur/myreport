@@ -76,7 +76,7 @@ class RecadoController extends AppBaseController
         $recado = $this->recadoRepository->findWithoutFail($id);
 
         if (empty($recado)) {
-            Flash::error('Ocorreu um erro #5517.');
+            Flash::error('Ocorreu um erro #5517 (Comunique este código de erro ao Setor Responsável).');
 
             return redirect(route('recados.index'));
         }
@@ -96,7 +96,7 @@ class RecadoController extends AppBaseController
         $recado = $this->recadoRepository->findWithoutFail($id);
 
         if (empty($recado)) {
-            Flash::error('Ocorreu um erro #5517.');
+            Flash::error('Ocorreu um erro #5517 (Comunique este código de erro ao Setor Responsável).');
 
             return redirect(route('recados.index'));
         }
@@ -117,7 +117,7 @@ class RecadoController extends AppBaseController
         $recado = $this->recadoRepository->findWithoutFail($id);
 
         if (empty($recado)) {
-            Flash::error('Ocorreu um erro #5517.');
+            Flash::error('Ocorreu um erro #5517 (Comunique este código de erro ao Setor Responsável).');
 
             return redirect(route('recados.index'));
         }
@@ -141,7 +141,7 @@ class RecadoController extends AppBaseController
         $recado = $this->recadoRepository->findWithoutFail($id);
 
         if (empty($recado)) {
-            Flash::error('Ocorreu um erro #5517.');
+            Flash::error('Ocorreu um erro #5517 (Comunique este código de erro ao Setor Responsável).');
 
             return redirect(route('recados.index'));
         }

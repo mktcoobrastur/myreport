@@ -76,7 +76,7 @@ class FuncionarioController extends AppBaseController
         $funcionario = $this->funcionarioRepository->findWithoutFail($id);
 
         if (empty($funcionario)) {
-            Flash::error('Ocorreu um erro #0602');
+            Flash::error('Ocorreu um erro #0602 (Comunique este código de erro ao Setor Responsável)');
 
             return redirect(route('funcionarios.index'));
         }
@@ -96,7 +96,7 @@ class FuncionarioController extends AppBaseController
         $funcionario = $this->funcionarioRepository->findWithoutFail($id);
 
         if (empty($funcionario)) {
-            Flash::error('Ocorreu um erro #0602');
+            Flash::error('Ocorreu um erro #0602 (Comunique este código de erro ao Setor Responsável)');
 
             return redirect(route('funcionarios.index'));
         }
@@ -117,7 +117,7 @@ class FuncionarioController extends AppBaseController
         $funcionario = $this->funcionarioRepository->findWithoutFail($id);
 
         if (empty($funcionario)) {
-            Flash::error('Ocorreu um erro #0602');
+            Flash::error('Ocorreu um erro #0602 (Comunique este código de erro ao Setor Responsável)');
 
             return redirect(route('funcionarios.index'));
         }
@@ -141,7 +141,7 @@ class FuncionarioController extends AppBaseController
         $funcionario = $this->funcionarioRepository->findWithoutFail($id);
 
         if (empty($funcionario)) {
-            Flash::error('Ocorreu um erro #0602');
+            Flash::error('Ocorreu um erro #0602 (Comunique este código de erro ao Setor Responsável)');
 
             return redirect(route('funcionarios.index'));
         }

@@ -4,7 +4,7 @@
             <th style="width: 700px;">Destino</th>
             <th>Última Atualização</th>
             <th style="text-align: right;">Ações</th>
-        </tr>
+        </tr>   
     </thead>
     <tbody>
     @foreach($destinos as $destinos)

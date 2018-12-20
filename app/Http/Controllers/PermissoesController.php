@@ -76,7 +76,7 @@ class PermissoesController extends AppBaseController
         $permissoes = $this->permissoesRepository->findWithoutFail($id);
 
         if (empty($permissoes)) {
-            Flash::error('Ocorreu um erro #2776.');
+            Flash::error('Ocorreu um erro #2776 (Comunique este código de erro ao Setor Responsável).');
 
             return redirect(route('permissoes.index'));
         }
@@ -96,7 +96,7 @@ class PermissoesController extends AppBaseController
         $permissoes = $this->permissoesRepository->findWithoutFail($id);
 
         if (empty($permissoes)) {
-            Flash::error('Ocorreu um erro #2776.');
+            Flash::error('Ocorreu um erro #2776 (Comunique este código de erro ao Setor Responsável).');
 
             return redirect(route('permissoes.index'));
         }
@@ -117,7 +117,7 @@ class PermissoesController extends AppBaseController
         $permissoes = $this->permissoesRepository->findWithoutFail($id);
 
         if (empty($permissoes)) {
-            Flash::error('Ocorreu um erro #2776.');
+            Flash::error('Ocorreu um erro #2776 (Comunique este código de erro ao Setor Responsável).');
 
             return redirect(route('permissoes.index'));
         }
@@ -141,7 +141,7 @@ class PermissoesController extends AppBaseController
         $permissoes = $this->permissoesRepository->findWithoutFail($id);
 
         if (empty($permissoes)) {
-            Flash::error('Ocorreu um erro #2776.');
+            Flash::error('Ocorreu um erro #2776 (Comunique este código de erro ao Setor Responsável).');
 
             return redirect(route('permissoes.index'));
         }

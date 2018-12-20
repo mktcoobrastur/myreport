@@ -59,7 +59,7 @@ class DestinosController extends AppBaseController
 
         $destinos = $this->destinosRepository->create($input);
 
-        Flash::success('Destinos saved successfully.');
+        Flash::success('Salvo com sucesso!.');
 
         return redirect(route('destinos.index'));
     }
@@ -76,7 +76,7 @@ class DestinosController extends AppBaseController
         $destinos = $this->destinosRepository->findWithoutFail($id);
 
         if (empty($destinos)) {
-            Flash::error('Destinos not found');
+            Flash::error('Erro! #564001 (Comunique este código de erro ao Setor Responsável)');
 
             return redirect(route('destinos.index'));
         }
@@ -96,7 +96,7 @@ class DestinosController extends AppBaseController
         $destinos = $this->destinosRepository->findWithoutFail($id);
 
         if (empty($destinos)) {
-            Flash::error('Destinos not found');
+            Flash::error('Erro! #564001 (Comunique este código de erro ao Setor Responsável)');
 
             return redirect(route('destinos.index'));
         }
@@ -117,14 +117,14 @@ class DestinosController extends AppBaseController
         $destinos = $this->destinosRepository->findWithoutFail($id);
 
         if (empty($destinos)) {
-            Flash::error('Destinos not found');
+            Flash::error('Erro! #564001 (Comunique este código de erro ao Setor Responsável)');
 
             return redirect(route('destinos.index'));
         }
 
         $destinos = $this->destinosRepository->update($request->all(), $id);
 
-        Flash::success('Destinos updated successfully.');
+        Flash::success('Atualizado.');
 
         return redirect(route('destinos.index'));
     }
@@ -141,14 +141,14 @@ class DestinosController extends AppBaseController
         $destinos = $this->destinosRepository->findWithoutFail($id);
 
         if (empty($destinos)) {
-            Flash::error('Destinos not found');
+            Flash::error('Erro! #564001 (Comunique este código de erro ao Setor Responsável)');
 
             return redirect(route('destinos.index'));
         }
 
         $this->destinosRepository->delete($id);
 
-        Flash::success('Destinos deleted successfully.');
+        Flash::success('Apagado.');
 
         return redirect(route('destinos.index'));
     }

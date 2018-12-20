@@ -76,7 +76,7 @@ class RepresentanteController extends AppBaseController
         $representante = $this->representanteRepository->findWithoutFail($id);
 
         if (empty($representante)) {
-            Flash::error('Ocorreu um erro #8484.');
+            Flash::error('Ocorreu um erro #8484 (Comunique este código de erro ao Setor Responsável).');
 
             return redirect(route('representantes.index'));
         }
@@ -96,7 +96,7 @@ class RepresentanteController extends AppBaseController
         $representante = $this->representanteRepository->findWithoutFail($id);
 
         if (empty($representante)) {
-            Flash::error('Ocorreu um erro #8484.');
+            Flash::error('Ocorreu um erro #8484 (Comunique este código de erro ao Setor Responsável).');
 
             return redirect(route('representantes.index'));
         }
@@ -117,7 +117,7 @@ class RepresentanteController extends AppBaseController
         $representante = $this->representanteRepository->findWithoutFail($id);
 
         if (empty($representante)) {
-            Flash::error('Ocorreu um erro #8484.');
+            Flash::error('Ocorreu um erro #8484 (Comunique este código de erro ao Setor Responsável).');
 
             return redirect(route('representantes.index'));
         }
@@ -141,7 +141,7 @@ class RepresentanteController extends AppBaseController
         $representante = $this->representanteRepository->findWithoutFail($id);
 
         if (empty($representante)) {
-            Flash::error('Ocorreu um erro #8484.');
+            Flash::error('Ocorreu um erro #8484 (Comunique este código de erro ao Setor Responsável).');
 
             return redirect(route('representantes.index'));
         }

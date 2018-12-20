@@ -76,7 +76,7 @@ class VendasreController extends AppBaseController
         $vendasre = $this->vendasreRepository->findWithoutFail($id);
 
         if (empty($vendasre)) {
-            Flash::error('Ocorreu um erro #4534.');
+            Flash::error('Ocorreu um erro #4534 (Comunique este código de erro ao Setor Responsável).');
 
             return redirect(route('vendasres.index'));
         }
@@ -96,7 +96,7 @@ class VendasreController extends AppBaseController
         $vendasre = $this->vendasreRepository->findWithoutFail($id);
 
         if (empty($vendasre)) {
-            Flash::error('Ocorreu um erro #4534.');
+            Flash::error('Ocorreu um erro #4534 (Comunique este código de erro ao Setor Responsável).');
 
             return redirect(route('vendasres.index'));
         }
@@ -117,7 +117,7 @@ class VendasreController extends AppBaseController
         $vendasre = $this->vendasreRepository->findWithoutFail($id);
 
         if (empty($vendasre)) {
-            Flash::error('Ocorreu um erro #4534.');
+            Flash::error('Ocorreu um erro #4534 (Comunique este código de erro ao Setor Responsável).');
 
             return redirect(route('vendasres.index'));
         }
@@ -141,7 +141,7 @@ class VendasreController extends AppBaseController
         $vendasre = $this->vendasreRepository->findWithoutFail($id);
 
         if (empty($vendasre)) {
-            Flash::error('Ocorreu um erro #4534.');
+            Flash::error('Ocorreu um erro #4534 (Comunique este código de erro ao Setor Responsável).');
 
             return redirect(route('vendasres.index'));
         }

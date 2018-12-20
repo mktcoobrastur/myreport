@@ -76,7 +76,7 @@ class TprojetoController extends AppBaseController
         $tprojeto = $this->tprojetoRepository->findWithoutFail($id);
 
         if (empty($tprojeto)) {
-            Flash::error('Ocorreu um erro #3326.');
+            Flash::error('Ocorreu um erro #3326 (Comunique este código de erro ao Setor Responsável).');
 
             return redirect(route('tprojetos.index'));
         }
@@ -96,7 +96,7 @@ class TprojetoController extends AppBaseController
         $tprojeto = $this->tprojetoRepository->findWithoutFail($id);
 
         if (empty($tprojeto)) {
-            Flash::error('Ocorreu um erro #3326.');
+            Flash::error('Ocorreu um erro #3326 (Comunique este código de erro ao Setor Responsável).');
 
             return redirect(route('tprojetos.index'));
         }
@@ -117,7 +117,7 @@ class TprojetoController extends AppBaseController
         $tprojeto = $this->tprojetoRepository->findWithoutFail($id);
 
         if (empty($tprojeto)) {
-            Flash::error('Ocorreu um erro #3326.');
+            Flash::error('Ocorreu um erro #3326 (Comunique este código de erro ao Setor Responsável).');
 
             return redirect(route('tprojetos.index'));
         }
@@ -141,7 +141,7 @@ class TprojetoController extends AppBaseController
         $tprojeto = $this->tprojetoRepository->findWithoutFail($id);
 
         if (empty($tprojeto)) {
-            Flash::error('Ocorreu um erro #3326.');
+            Flash::error('Ocorreu um erro #3326 (Comunique este código de erro ao Setor Responsável).');
 
             return redirect(route('tprojetos.index'));
         }

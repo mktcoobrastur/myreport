@@ -77,7 +77,7 @@ class DepartamentosController extends AppBaseController
         $departamentos = $this->departamentosRepository->findWithoutFail($id);
 
         if (empty($departamentos)) {
-            Flash::error('Ocorreu um erro #1487.');
+            Flash::error('Ocorreu um erro #1487 (Comunique este código de erro ao Setor Responsável).');
 
             return redirect(route('departamentos.index'));
         }
@@ -97,7 +97,7 @@ class DepartamentosController extends AppBaseController
         $departamentos = $this->departamentosRepository->findWithoutFail($id);
 
         if (empty($departamentos)) {
-            Flash::error('Ocorreu um erro #1487.');
+            Flash::error('Ocorreu um erro #1487 (Comunique este código de erro ao Setor Responsável).');
 
             return redirect(route('departamentos.index'));
         }
@@ -118,7 +118,7 @@ class DepartamentosController extends AppBaseController
         $departamentos = $this->departamentosRepository->findWithoutFail($id);
 
         if (empty($departamentos)) {
-            Flash::error('Ocorreu um erro #1487.');
+            Flash::error('Ocorreu um erro #1487 (Comunique este código de erro ao Setor Responsável).');
 
             return redirect(route('departamentos.index'));
         }
@@ -142,7 +142,7 @@ class DepartamentosController extends AppBaseController
         $departamentos = $this->departamentosRepository->findWithoutFail($id);
 
         if (empty($departamentos)) {
-            Flash::error('Ocorreu um erro #1487.');
+            Flash::error('Ocorreu um erro #1487 (Comunique este código de erro ao Setor Responsável).');
 
             return redirect(route('departamentos.index'));
         }

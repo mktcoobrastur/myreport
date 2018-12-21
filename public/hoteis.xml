@@ -1,6 +1,43 @@
 <?xml version='1.0' encoding='UTF-8'?> 
 <root xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'> 
-<Gold> 
+<Diamante> 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
 
  <state> 
 <sflag/> 
@@ -77,6 +114,117 @@ www.pousadaserravalle.com.br
 <itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 O,YA,B,C,E,I, 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
 </itemh> 
  </description> 
 </state> 
@@ -287,6 +435,117 @@ J,O,V,YA,B,C,G,I,
 <sflag/> 
 <cname>.  
 </cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
 
 <sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RJ.jpg'/> 
  
@@ -317,6 +576,43 @@ www.wyndhamhotels.com/days-inn/rio-de-janeiro-brazil/days-inn-rio-de-janeiro-lap
 <itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,NA,B,F,G,I, 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
 </itemh> 
  </description> 
 </state> 
@@ -567,6 +863,117 @@ M,N,O,P,S,YA,B,C,D,G,I,
 <sflag/> 
 <cname>.  
 </cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
 
 <sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SC.jpg'/> 
  
@@ -757,6 +1164,117 @@ www.cabanasportobelo.com.br
 <itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,S,YA,C,G,H,I, 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
 </itemh> 
  </description> 
 </state> 
@@ -1007,6 +1525,117 @@ M,N,P,R,S,YA,B,C,G,I,
 <sflag/> 
 <cname>.  
 </cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
 
 <sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/CE.jpg'/> 
  
@@ -1037,6 +1666,43 @@ www.mirantedasgamboas.com.br
 <itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,M,N,P,S,T,YA,B,G,I, 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
 </itemh> 
  </description> 
 </state> 
@@ -1157,6 +1823,117 @@ http://algaspraiahotel.com.br
 <itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 VA,B,C,I, 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
 </itemh> 
  </description> 
 </state> 
@@ -1407,6 +2184,80 @@ M,N,S,V,YA,B,C,I,
 <sflag/> 
 <cname>.  
 </cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
 
 <sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RS.jpg'/> 
  
@@ -1637,6 +2488,80 @@ https://www.accorhotels.com/pt/hotel-9362-ibis-chapeco/index.shtml
 <itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,M,N,YA,B,E,F,G,I, 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
 </itemh> 
  </description> 
 </state> 
@@ -1927,6 +2852,80 @@ L,M,O,S,T,V,WA,B,C,G,I,
 <sflag/> 
 <cname>.  
 </cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
 
 <sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RN.jpg'/> 
  
@@ -2167,6 +3166,80 @@ O,S,YA,B,C,D,H,I,
 <sflag/> 
 <cname>.  
 </cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
 
 <sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SC.jpg'/> 
  
@@ -2327,6 +3400,43 @@ M,N,P,S,YA,B,F,G,I,
 <sflag/> 
 <cname>.  
 </cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
 
 <sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/CE.jpg'/> 
  
@@ -2397,6 +3507,80 @@ www.verthoteis.com.br/hotel/ramada-encore-tiradentes
 <itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 L,M,N,ZA,B,I, 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
 </itemh> 
  </description> 
 </state> 
@@ -2607,6 +3791,80 @@ YA,B,C,I,
 <sflag/> 
 <cname>.  
 </cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
 
 <sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/SE.jpg'/> 
  
@@ -2757,6 +4015,117 @@ www.fantasiasdoagreste.com.br
 <itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 M,O,VA,B,C,I, 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
 </itemh> 
  </description> 
 </state> 
@@ -3007,6 +4376,117 @@ L,M,N,O,Q,S,T,V,YA,B,C,F,I,
 <sflag/> 
 <cname>.  
 </cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
 
 <sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/AL.jpg'/> 
  
@@ -3197,6 +4677,117 @@ pousadaaquareladobrasil.com
 <itemhname>Caracteristicas:</itemhname> 
 <itemh> 
 A,B,C,F,G,I, 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
 </itemh> 
  </description> 
 </state> 
@@ -3447,6 +5038,80 @@ S,VA,B,C,I,
 <sflag/> 
 <cname>.  
 </cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
 
 <sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/RS.jpg'/> 
  
@@ -3647,6 +5312,80 @@ K,L,N,O,S,T,YA,B,E,G,I,
 <sflag/> 
 <cname>.  
 </cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
+<sflag/> 
+  
+</state> 
+  
+ 
+ 
+<state> 
+<sflag/> 
+<city> 
+<cname> 
+ 
+</cname> 
+</city> 
+<hotel> 
+<hname> 
+</hname> 
+</hotel> 
+<description> 
+<hdescription> 
+ 
+ 
+ 
+</hdescription> 
+ 
+<itemhname>Caracteristicas:</itemhname> 
+<itemh> 
+ 
+</itemh> 
+ </description> 
+</state> 
+ 
+
+ <state> 
+<sflag/> 
+<sflag/> 
+<cname>.  
+</cname> 
 
 <sflag href='A:/01 - COOBRASTUR/03 - Revistas/Revista 2017/Links/BA.jpg'/> 
  
@@ -3721,5 +5460,5 @@ NA,B,I,
  </description> 
 </state> 
  
-</Gold> 
+</Diamante> 
 </root> 

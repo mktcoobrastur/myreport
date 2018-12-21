@@ -59,7 +59,7 @@ class HoteisdiamanteController extends AppBaseController
 
         $hoteisdiamante = $this->hoteisdiamanteRepository->create($input);
 
-        Flash::success('Hoteisdiamante saved successfully.');
+        Flash::success('Salvo com sucesso.');
 
         return redirect(route('hoteisdiamantes.index'));
     }
@@ -76,7 +76,7 @@ class HoteisdiamanteController extends AppBaseController
         $hoteisdiamante = $this->hoteisdiamanteRepository->findWithoutFail($id);
 
         if (empty($hoteisdiamante)) {
-            Flash::error('Hoteisdiamante not found');
+            Flash::error('Erro! #000795 (Comunique este código de erro ao Setor Responsável)');
 
             return redirect(route('hoteisdiamantes.index'));
         }
@@ -96,7 +96,7 @@ class HoteisdiamanteController extends AppBaseController
         $hoteisdiamante = $this->hoteisdiamanteRepository->findWithoutFail($id);
 
         if (empty($hoteisdiamante)) {
-            Flash::error('Hoteisdiamante not found');
+            Flash::error('Erro! #000795 (Comunique este código de erro ao Setor Responsável)');
 
             return redirect(route('hoteisdiamantes.index'));
         }
@@ -117,14 +117,14 @@ class HoteisdiamanteController extends AppBaseController
         $hoteisdiamante = $this->hoteisdiamanteRepository->findWithoutFail($id);
 
         if (empty($hoteisdiamante)) {
-            Flash::error('Hoteisdiamante not found');
+            Flash::error('Erro! #000795 (Comunique este código de erro ao Setor Responsável)');
 
             return redirect(route('hoteisdiamantes.index'));
         }
 
         $hoteisdiamante = $this->hoteisdiamanteRepository->update($request->all(), $id);
 
-        Flash::success('Hoteisdiamante updated successfully.');
+        Flash::success('Atualizado.');
 
         return redirect(route('hoteisdiamantes.index'));
     }
@@ -141,14 +141,14 @@ class HoteisdiamanteController extends AppBaseController
         $hoteisdiamante = $this->hoteisdiamanteRepository->findWithoutFail($id);
 
         if (empty($hoteisdiamante)) {
-            Flash::error('Hoteisdiamante not found');
+            Flash::error('Erro! #000795 (Comunique este código de erro ao Setor Responsável)');
 
             return redirect(route('hoteisdiamantes.index'));
         }
 
         $this->hoteisdiamanteRepository->delete($id);
 
-        Flash::success('Hoteisdiamante deleted successfully.');
+        Flash::success('Apagado.');
 
         return redirect(route('hoteisdiamantes.index'));
     }

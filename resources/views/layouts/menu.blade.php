@@ -59,6 +59,20 @@
             <li><a href="http://webdesigner2/sistema/public/converter"><i class="fa fa-circle-o text-aqua"></i><span> Conversor TXT to XML</span></a></li>
           </ul>
 </li>
+<li class="treeview">
+          <a href="#">
+            <i class="fa fa-files-o"></i>
+            <span>Site Diamante</span>
+            <span class="pull-right-container">
+            </span>
+          </a>
+          <ul class="treeview-menu <?php if(isset($amarketing)) { echo $amarketing; } ?>">
+          <li><a href="{!! route('diamantes.index') !!}"><i class="fa fa-edit"></i><span>Interesses</span></a></li>
+    <li><a href="{!! route('destinos.index') !!}"><i class="fa fa-edit"></i><span>Destinos</span></a></li>
+    <li><a href="{!! route('hoteisdiamantes.index') !!}"><i class="fa fa-edit"></i><span>Hoteis Diamante</span></a></li>
+          </ul>
+</li>
+
 <?php } ?>
 <?php 
   $consultaAcesso = mysqli_query($con, "SELECT * FROM permissoes WHERE user = $idUser AND acesso =  2");
@@ -213,8 +227,6 @@
           </a>
 
   <ul class="treeview-menu">
-    <li><a href="{!! route('diamantes.index') !!}"><i class="fa fa-edit"></i><span>Interesses</span></a></li>
-    <li><a href="{!! route('destinos.index') !!}"><i class="fa fa-edit"></i><span>Destinos</span></a></li>
     <li><a href="{!! route('usuarios.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Usuarios</span></a></li>
     <li><a href="{!! route('departamentos.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Departamentos</span></a></li>
     <li><a href="{!! route('recados.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Recados</span></a></li>

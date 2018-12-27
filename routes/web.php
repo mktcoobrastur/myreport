@@ -124,3 +124,7 @@ Route::resource('diamantes', 'DiamanteController');
 Route::resource('destinos', 'DestinosController');
 
 Route::resource('hoteisdiamantes', 'HoteisdiamanteController');
+
+Route::resource('roteiros', 'RoteirosController');
+
+Route::resource('infos', 'InfoController');

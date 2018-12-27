@@ -70,6 +70,6 @@ if (isset($_FILES['arquivos']) && !empty($_FILES['arquivos']['name']))
 			
             //echo $idChamado;
 			//echo "<br />ok!";
-        	header("Location:http://webdesigner2/sistema/public/chamados/$idChamado");
+        	header("Location:http://webdesigner2/sistema/public/chamados/$idChamado/edit");
 }
 ?>

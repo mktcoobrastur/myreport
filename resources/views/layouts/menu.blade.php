@@ -67,9 +67,11 @@
             </span>
           </a>
           <ul class="treeview-menu <?php if(isset($amarketing)) { echo $amarketing; } ?>">
-          <li><a href="{!! route('diamantes.index') !!}"><i class="fa fa-edit"></i><span>Interesses</span></a></li>
-    <li><a href="{!! route('destinos.index') !!}"><i class="fa fa-edit"></i><span>Destinos</span></a></li>
-    <li><a href="{!! route('hoteisdiamantes.index') !!}"><i class="fa fa-edit"></i><span>Hoteis Diamante</span></a></li>
+            <li><a href="http://webdesigner2/sistema/public/infos/1/edit"><i class="fa fa-edit"></i><span>Configurações Gerais</span></a></li>
+            <li><a href="{!! route('diamantes.index') !!}"><i class="fa fa-edit"></i><span>Interesses</span></a></li>
+            <li><a href="{!! route('destinos.index') !!}"><i class="fa fa-edit"></i><span>Destinos</span></a></li>
+            <li><a href="{!! route('roteiros.index') !!}"><i class="fa fa-edit"></i><span>Roteiros</span></a></li>
+            <li><a href="{!! route('hoteisdiamantes.index') !!}"><i class="fa fa-edit"></i><span>Hoteis Diamante</span></a></li>
           </ul>
 </li>
 

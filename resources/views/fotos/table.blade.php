@@ -1,4 +1,4 @@
-<?php echo $_ENV['APP_URL']; ?><style type="text/css">
+<style type="text/css">
     .tHover:hover {
         background: #f0f0f0;
     }

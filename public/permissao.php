@@ -33,6 +33,6 @@
 			
 
 			//echo "ok!";
-        	header("Location:http://webdesigner2/sistema/public/usuarios/$idUser/edit");
+        	header("Location:".$_ENV['APP_URL']."usuarios/$idUser/edit");
 
 ?>

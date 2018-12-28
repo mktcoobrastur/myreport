@@ -4,17 +4,17 @@
     <title>Relatório Geral</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <meta name="Description" content="Software de Gestão Coobrastur">
-    <link rel="stylesheet" href="http://webdesigner2/sistema/public/i.css">
+    <link rel="stylesheet" href="<?php echo $_ENV['APP_URL']; ?>i.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
-    <link href="http://webdesigner2/sistema/public/lib/style.css" rel="stylesheet">
+    <link href="<?php echo $_ENV['APP_URL']; ?>lib/style.css" rel="stylesheet">
 
 </head>
 <body style="background: #EBEFF4; padding: 20px; text-align: center;">
 <div style="width: 80%; margin: 0 auto;">
 
   <div class="form-group" style="float: left; width: 400px; margin-left: 10px; margin-top: 2px;">
-  <form action="http://webdesigner2/sistema/public/relatorioGeral.php" method="post">
+  <form action="<?php echo $_ENV['APP_URL']; ?>relatorioGeral.php" method="post">
     <label style="color:#fff;">Mensal Geral:</label>
     <select name="mes" class="form-control">
       <option value="01">Janeiro</option>
@@ -146,8 +146,8 @@
     }
 </script>
 <div style="text-align: left;">Gerar Arquivos:<br />
-    <a href="" onclick='javascript:DoPrinting();' class="linkExp"><img src="http://webdesigner2/sistema/public/img/pdf.png" /></a>
-    <a href="" class="linkExp"><img src="http://webdesigner2/sistema/public/img/xls.png" /></a>
+    <a href="" onclick='javascript:DoPrinting();' class="linkExp"><img src="<?php echo $_ENV['APP_URL']; ?>img/pdf.png" /></a>
+    <a href="" class="linkExp"><img src="<?php echo $_ENV['APP_URL']; ?>img/xls.png" /></a>
 </div>
 
 <div style="float: left; width:70%; text-align: center;">
@@ -268,9 +268,9 @@
 
 
 
-<script src="http://webdesigner2/sistema/public/lib/jquery.min.js"></script>
-<script src="http://webdesigner2/sistema/public/lib/jquery.knob.js"></script>
-<script src="http://webdesigner2/sistema/public/lib/jquery.sparkline.min.js"></script>
+<script src="<?php echo $_ENV['APP_URL']; ?>lib/jquery.min.js"></script>
+<script src="<?php echo $_ENV['APP_URL']; ?>lib/jquery.knob.js"></script>
+<script src="<?php echo $_ENV['APP_URL']; ?>lib/jquery.sparkline.min.js"></script>
 <!-- page script -->
 <script>
 

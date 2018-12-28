@@ -42,5 +42,5 @@
 
         echo $redirect." - ".$id;
 
-        header("Location:http://webdesigner2/sistema/public/fotos/$redirect");
+        header("Location:".$_ENV['APP_URL']."fotos/$redirect");
 ?>

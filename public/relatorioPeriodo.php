@@ -4,12 +4,12 @@
     <title>Relatório</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <meta name="Description" content="Software de Gestão Coobrastur">
-    <link rel="stylesheet" href="http://webdesigner2/sistema/public/i.css">
+    <link rel="stylesheet" href="<?php echo $_ENV['APP_URL']; ?>i.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://webdesigner2/sistema/public/lib/AdminLTE.min.css">
+    <link rel="stylesheet" href="<?php echo $_ENV['APP_URL']; ?>lib/AdminLTE.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
-    <link href="http://webdesigner2/sistema/public/lib/style.css" rel="stylesheet">
+    <link href="<?php echo $_ENV['APP_URL']; ?>lib/style.css" rel="stylesheet">
 
 </head>
 <body style="background: #EBEFF4; padding: 20px; text-align: center;">
@@ -83,9 +83,9 @@ $(function(){
 </script>
 
 <!-- jQuery 3 -->
-<script src="http://webdesigner2/sistema/public/lib/jquery.min.js"></script>
-<script src="http://webdesigner2/sistema/public/lib/jquery.knob.js"></script>
-<script src="http://webdesigner2/sistema/public/lib/jquery.sparkline.min.js"></script>
+<script src="<?php echo $_ENV['APP_URL']; ?>lib/jquery.min.js"></script>
+<script src="<?php echo $_ENV['APP_URL']; ?>lib/jquery.knob.js"></script>
+<script src="<?php echo $_ENV['APP_URL']; ?>lib/jquery.sparkline.min.js"></script>
 <!-- page script -->
 <script>
   $(function () {

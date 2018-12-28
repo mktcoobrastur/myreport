@@ -3,15 +3,20 @@
 @section('content')
     <section class="content-header">
         <h1>
-            Roteiros
+            Parceiros
         </h1>
     </section>
     <div class="content">
+        @include('adminlte-templates::common.errors')
         <div class="box box-primary">
+
             <div class="box-body">
-                <div class="row" style="padding-left: 20px">
-                    @include('roteiros.show_fields')
-                    <a href="{!! route('roteiros.index') !!}" class="btn btn-default">Voltar</a>
+                <div class="row">
+                    {!! Form::open(['route' => 'parceiros.store']) !!}
+
+                        @include('parceiros.fields')
+
+                    {!! Form::close() !!}
                 </div>
             </div>
         </div>

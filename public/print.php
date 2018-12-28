@@ -48,7 +48,7 @@
 </style>
 
 <div class="all">
-	<img class="logo" src="http://webdesigner2/sistema/public/img/logoDossie.png" alt="Coobrastur" />
+	<img class="logo" src="<?php echo $_ENV['APP_URL']; ?>img/logoDossie.png" alt="Coobrastur" />
 	<h2>Dossiê de Reclamação<br /><b>PROTOCOLO:</b> <?php echo $linha['id']; ?></h2>
 		<div class="space"></div>
 	<table>

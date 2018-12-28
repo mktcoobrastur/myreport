@@ -67,11 +67,12 @@
             </span>
           </a>
           <ul class="treeview-menu <?php if(isset($amarketing)) { echo $amarketing; } ?>">
-            <li><a href="<?php echo $_ENV['APP_URL']; ?>infos/1/edit"><i class="fa fa-edit"></i><span>Configurações Gerais</span></a></li>
-            <li><a href="{!! route('diamantes.index') !!}"><i class="fa fa-edit"></i><span>Interesses</span></a></li>
-            <li><a href="{!! route('destinos.index') !!}"><i class="fa fa-edit"></i><span>Destinos</span></a></li>
-            <li><a href="{!! route('roteiros.index') !!}"><i class="fa fa-edit"></i><span>Roteiros</span></a></li>
-            <li><a href="{!! route('hoteisdiamantes.index') !!}"><i class="fa fa-edit"></i><span>Hoteis Diamante</span></a></li>
+            <li><a href="<?php echo $_ENV['APP_URL']; ?>infos/1/edit"><i class="fa fa-circle-o text-aqua"></i><span>Configurações Gerais</span></a></li>
+            <li><a href="{!! route('diamantes.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span>Interesses</span></a></li>
+            <li><a href="{!! route('destinos.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span>Destinos</span></a></li>
+            <li><a href="{!! route('roteiros.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span>Roteiros</span></a></li>
+            <li><a href="{!! route('hoteisdiamantes.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span>Hoteis Diamante</span></a></li>
+            <li><a href="{!! route('parceiros.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span>Parceiros</span></a></li>
           </ul>
 </li>
 

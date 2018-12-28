@@ -4,7 +4,7 @@
     <section class="content-header">
         <h1 class="pull-left">Hotéis Diamantes</h1>
         <h1 class="pull-right">
-           <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="{!! route('hoteisdiamantes.create') !!}">Novo</a>
+           <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="{!! route('hoteisdiamantes.create') !!}">Adicionar</a>
         </h1>
     </section>
     <div class="content">

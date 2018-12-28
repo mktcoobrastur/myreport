@@ -464,15 +464,15 @@
                </span>
            </div>
            <div class="um">
-               <div class="qr" style="background-image: url(img/01.jpg);"></div>
-               <div class="qr" style="background-image: url(img/02.jpg);"></div>
-               <div class="qr" style="background-image: url(img/03.jpg);"></div>
-               <div class="qr" style="background-image: url(img/04.jpg);"></div>
+               <div class="qr" style="background-image: url(<?php echo $_ENV['APP_URL']; ?>img/01.jpg);"></div>
+               <div class="qr" style="background-image: url(<?php echo $_ENV['APP_URL']; ?>img/02.jpg);"></div>
+               <div class="qr" style="background-image: url(<?php echo $_ENV['APP_URL']; ?>img/03.jpg);"></div>
+               <div class="qr" style="background-image: url(<?php echo $_ENV['APP_URL']; ?>img/04.jpg);"></div>
 
-               <div class="qr" style="background-image: url(img/05.jpg);"></div>
-               <div class="qr" style="background-image: url(img/06.jpg);"></div>
-               <div class="qr" style="background-image: url(img/07.jpg);"></div>
-               <div class="qr" style="background-image: url(img/08.jpg);"></div>
+               <div class="qr" style="background-image: url(<?php echo $_ENV['APP_URL']; ?>img/05.jpg);"></div>
+               <div class="qr" style="background-image: url(<?php echo $_ENV['APP_URL']; ?>img/06.jpg);"></div>
+               <div class="qr" style="background-image: url(<?php echo $_ENV['APP_URL']; ?>img/07.jpg);"></div>
+               <div class="qr" style="background-image: url(<?php echo $_ENV['APP_URL']; ?>img/08.jpg);"></div>
             </div>
            </div>
         </footer>

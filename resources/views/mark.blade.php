@@ -60,12 +60,12 @@
     <i class="fa fa-user-o bg-blue"></i>
     <div class="timeline-item" style="background: #f0f0f0; box-shadow: 3px 3px 8px #ccc;">
         <h3 class="timeline-header"><a href="/markconvenios/<?php echo $linha['id']; ?>"><i class="fa fa-caret-right" aria-hidden="true"></i> <?php echo strtoupper($linha['nome']); ?></a>
-        <a href="http://webdesigner2/sistema/public/markconveniados/create?r=<?php echo $linha['id']; ?>" class="btn btn-default btn-xs pull-right"><i class="fa fa-plus" aria-hidden="true"></i></a>
+        <a href="<?php echo $_ENV['APP_URL']; ?>markconveniados/create?r=<?php echo $linha['id']; ?>" class="btn btn-default btn-xs pull-right"><i class="fa fa-plus" aria-hidden="true"></i></a>
     </h3>
         <div class="timeline-body">
         <div class="timeline-footer">
             <?php while ($linha2 = mysqli_fetch_array($query2)) { ?>
-                <a class="btn btn-primary btn-xs" href="http://webdesigner2/sistema/public/markconveniados/<?php echo $linha2['id']; ?>"><?php echo strtoupper($linha2['nome']); ?></a>
+                <a class="btn btn-primary btn-xs" href="<?php echo $_ENV['APP_URL']; ?>markconveniados/<?php echo $linha2['id']; ?>"><?php echo strtoupper($linha2['nome']); ?></a>
             <?php } ?>                
         </div>
         </div>
@@ -103,14 +103,14 @@
     <!-- timeline icon -->
     <i class="fa fa-user-o bg-red"></i>
     <div class="timeline-item" style="background: #f0f0f0;">
-        <h3 class="timeline-header"><a href="http://webdesigner2/sistema/public/markconvenios/<?php echo $linha['id']; ?>"><i class="fa fa-caret-right" aria-hidden="true"></i> <?php echo utf8_encode(strtoupper($linha['nome'])); ?></a>
-        <a href="http://webdesigner2/sistema/public/markconveniados/create?r=<?php echo $linha['id']; ?>" class="btn btn-default btn-xs pull-right"><i class="fa fa-plus" aria-hidden="true"></i></a>
+        <h3 class="timeline-header"><a href="<?php echo $_ENV['APP_URL']; ?>markconvenios/<?php echo $linha['id']; ?>"><i class="fa fa-caret-right" aria-hidden="true"></i> <?php echo utf8_encode(strtoupper($linha['nome'])); ?></a>
+        <a href="<?php echo $_ENV['APP_URL']; ?>markconveniados/create?r=<?php echo $linha['id']; ?>" class="btn btn-default btn-xs pull-right"><i class="fa fa-plus" aria-hidden="true"></i></a>
         </h3>
 
         <div class="timeline-body">
         <div class="timeline-footer">
             <?php while ($linha2 = mysqli_fetch_array($query2)) { ?>
-                <a class="btn btn-danger btn-xs" href="http://webdesigner2/sistema/public/markconveniados/<?php echo $linha2['id']; ?>"><?php echo strtoupper(utf8_encode($linha2['nome'])); ?></a>
+                <a class="btn btn-danger btn-xs" href="<?php echo $_ENV['APP_URL']; ?>markconveniados/<?php echo $linha2['id']; ?>"><?php echo strtoupper(utf8_encode($linha2['nome'])); ?></a>
             <?php } ?>                
         </div>
         </div>

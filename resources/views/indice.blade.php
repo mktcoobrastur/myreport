@@ -293,5 +293,5 @@ event.preventDefault();
 </section>
     <!-- /.content -->
 
-<script src="http://webdesigner2/sistema/public/js/jquery.knob.js"></script>
+<script src="<?php echo $_ENV['APP_URL']; ?>js/jquery.knob.js"></script>
 @endsection

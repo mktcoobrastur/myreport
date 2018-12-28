@@ -12,7 +12,7 @@
             <li>O arquivo não deve conter linhas em branco.</li>
             <li>O conteúdo arquivo não deve conter &.</li>
         </div>
-        <form action="http://webdesigner2/sistema/public/converter.php" method="post" enctype="multipart/form-data">
+        <form action="<?php echo $_ENV['APP_URL']; ?>converter.php" method="post" enctype="multipart/form-data">
         <div class="form-group">
             <label>Selecione o arquivo a ser convertido.</label>
             <input type="file" name="arquivos[]" class="form-control"  multiple>
@@ -34,8 +34,9 @@
 
 <?php
     if (isset($_GET['arq'])) {
-        $arq = $_GET['arq'];
-        echo "<center>Clique no arquivo para fazer o download.<br /><br /><a class='btn btn-primary' href='http://webdesigner2/sistema/public/$arq' download>".$_GET['arq']."</a></center>";
+        $caminho = $_ENV['APP_URL'];
+        $caminho.$arq = $_GET['arq'];
+        echo "<center>Clique no arquivo para fazer o download.<br /><br /><a class='btn btn-primary' href='$arq' download>".$_GET['arq']."</a></center>";
     }
 ?>
 @endsection

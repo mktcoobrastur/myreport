@@ -118,18 +118,18 @@
         ?>  <div style="float: left; margin: 5px;">
             <a class="linkPrincipal">
                 <div class="tooltips">
-                    <input type="radio" name="marcar" style="position: absolute; margin-left: 3px;" onclick="window.location='http://webdesigner2/sistema/public/marcaFotos.php?id=<?php echo $linha['id']; ?>&item={!! $foto->id !!}&cod={!! $foto->codigo !!}';" />
+                    <input type="radio" name="marcar" style="position: absolute; margin-left: 3px;" onclick="window.location='<?php echo $_ENV['APP_URL']; ?>marcaFotos.php?id=<?php echo $linha['id']; ?>&item={!! $foto->id !!}&cod={!! $foto->codigo !!}';" />
                     <span class="tooltiptext">Marcar como Foto Principal</span>
                 </div>
-               <a href="http://webdesigner2/sistema/public/excluiFotos.php?id=<?php echo $linha['id']; ?>&item={!! $foto->id !!}" onclick="return confirm('Tem certeza?')" class="btn btn-danger excluirBtn" alt="Excluir" data-toggle="tooltip" data-placement="top" title="Excluir">x</a>
-                <img width="130" height="90" src="http://webdesigner2/sistema/public/imghoteis/{!! $foto->codigo !!}/<?php echo $linha['img']; ?>" alt="Coobrastur" />
+               <a href="<?php echo $_ENV['APP_URL']; ?>excluiFotos.php?id=<?php echo $linha['id']; ?>&item={!! $foto->id !!}" onclick="return confirm('Tem certeza?')" class="btn btn-danger excluirBtn" alt="Excluir" data-toggle="tooltip" data-placement="top" title="Excluir">x</a>
+                <img width="130" height="90" src="<?php echo $_ENV['APP_URL']; ?>imghoteis/{!! $foto->codigo !!}/<?php echo $linha['img']; ?>" alt="Coobrastur" />
             <?php if($linha['principal'] == 1) { ?><span style="<?php echo $cssP; ?>">P</span><?php } ?>
 		    </a></div>
         <?php } ?>
 
     </div>
     <div style="clear: both;"></div>
-        <form action="http://webdesigner2/sistema/public/uploadFotos.php" method="post" enctype="multipart/form-data">
+        <form action="<?php echo $_ENV['APP_URL']; ?>uploadFotos.php" method="post" enctype="multipart/form-data">
     		<label>Enviar Fotos:</label> <br />
 	 		<input type="hidden" name="idChamado" value="{!! $foto->id !!}" />
 	 		<input type="hidden" name="codigo" value="{!! $foto->codigo !!}" />

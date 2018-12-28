@@ -60,7 +60,7 @@
         <?php }?>
 
     <div class="alert">
-        <form name="up1" action="http://webdesigner2/sistema/public/uploadPromo1.php" method="post" enctype="multipart/form-data">
+        <form name="up1" action="<?php echo $_ENV['APP_URL']; ?>uploadPromo1.php" method="post" enctype="multipart/form-data">
     		<label>Enviar Arquivos:</label> <br />
             <input type="hidden" name="idRedirect" value="{!! $promocoe->id !!}" />
 	 		<input type="hidden" name="idChamado" value="{!! $promocoe->codigo !!}" />
@@ -84,7 +84,7 @@
                             <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <img style="margin-left: 25%; margin-bottom: 5px;" width="300" src="http://webdesigner2/sistema/public/promo/{!! $promocoe->imgPrincipal !!}" />
+                        <img style="margin-left: 25%; margin-bottom: 5px;" width="300" src="<?php echo $_ENV['APP_URL']; ?>promo/{!! $promocoe->imgPrincipal !!}" />
             </div>
         </div>
     </div>
@@ -109,7 +109,7 @@
 <?php } ?>
 
     <div class="alert">
-        <form name="up2" action="http://localhost/sistema/public/uploadPromo2.php" method="post" enctype="multipart/form-data">
+        <form name="up2" action="<?php echo $_ENV['APP_URL']; ?>uploadPromo2.php" method="post" enctype="multipart/form-data">
     		<label>Enviar Arquivos:</label> <br />
 	 		<input type="hidden" name="idChamado" value="{!! $promocoe->codigo !!}" />
             <input type="hidden" name="idRedirect" value="{!! $promocoe->id !!}" />
@@ -132,7 +132,7 @@
                             <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <img style="margin-left: 5px; margin-bottom: 5px;" width="590" src="http://localhost/sistema/public/promoG/{!! $promocoe->imgLamina !!}" />
+                        <img style="margin-left: 5px; margin-bottom: 5px;" width="590" src="<?php echo $_ENV['APP_URL']; ?>promoG/{!! $promocoe->imgLamina !!}" />
             </div>
         </div>
     </div>

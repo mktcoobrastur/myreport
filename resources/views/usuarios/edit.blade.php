@@ -23,7 +23,7 @@
  <!-- Check List -->
 <div class="form-group alert">
     {!! Form::label('permissao', 'Permissões:') !!} 
-        <a href="http://webdesigner2/sistema/public/fullPermissao.php?idUser={!! $usuario->id !!}" class="btn btn-danger btn-sm">Permissão Total</a>
+        <a href="<?php echo $_ENV['APP_URL']; ?>fullPermissao.php?idUser={!! $usuario->id !!}" class="btn btn-danger btn-sm">Permissão Total</a>
 
 
                 <?php
@@ -40,7 +40,7 @@
                         echo "&nbsp;&nbsp;".utf8_encode($linhaF['depto'])."&nbsp;&nbsp;";
                     }
                 ?>
-                     <a href="http://webdesigner2/sistema/public/excluiPermissao.php?id=<?php echo $linha['id']; ?>&item={!! $usuario->id !!}" onclick="return confirm('Tem certeza que deseja excluir esta permissão para este usuário?')" class="btn btn-danger btn-sm botaoe" alt="Excluir" data-toggle="tooltip" data-placement="top" title="Excluir" style="text-decoration: none;">x</a>
+                     <a href="<?php echo $_ENV['APP_URL']; ?>excluiPermissao.php?id=<?php echo $linha['id']; ?>&item={!! $usuario->id !!}" onclick="return confirm('Tem certeza que deseja excluir esta permissão para este usuário?')" class="btn btn-danger btn-sm botaoe" alt="Excluir" data-toggle="tooltip" data-placement="top" title="Excluir" style="text-decoration: none;">x</a>
                     </span>
                 <?php
                     }
@@ -48,7 +48,7 @@
 
 
 
-            <form action="http://webdesigner2/sistema/public/permissao.php" method="post">
+            <form action="<?php echo $_ENV['APP_URL']; ?>permissao.php" method="post">
             <input type="hidden" name="idUser" value="{!! $usuario->id !!}">
             <select name="acesso" class="form-control" style="width: 180px;">
                 <?php

@@ -5,7 +5,7 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="http://webdesigner2/sistema/public/img/logo.jpg" class="img-circle"
+                <img src="<?php echo $_ENV['APP_URL']; ?>img/logo.jpg" class="img-circle"
                      alt="User Image"/>
             </div>
             <div class="pull-left info">

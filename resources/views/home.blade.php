@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
         <script>
             $(function($) {
 
@@ -145,7 +146,7 @@
     </div>
 </div>
 
-<script src="http://webdesigner2/sistema/public/js/jquery.knob.js"></script>
+<script src="<?php echo $_ENV['APP_URL']; ?>vjs/jquery.knob.js"></script>
      
      <script>
                  $(function($) {
@@ -391,5 +392,5 @@
 
 </section>
     <!-- /.content -->
-<script src="http://webdesigner2/sistema/public/js/jquery.knob.js"></script>
+<script src="<?php echo $_ENV['APP_URL']; ?>js/jquery.knob.js"></script>
 @endsection

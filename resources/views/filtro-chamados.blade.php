@@ -38,7 +38,7 @@ if (isset($_GET['de_filtro'])) {
 
         <tr>
             <td><i class="fa fa-handshake-o"></i></td>
-            <td><a href="http://webdesigner2/sistema/public/historico-chamados?cpf=<?php echo $linha['cpf']; ?>"><?php echo utf8_encode($linha['usuario']); ?></a></td>
+            <td><a href="<?php echo $_ENV['APP_URL']; ?>historico-chamados?cpf=<?php echo $linha['cpf']; ?>"><?php echo utf8_encode($linha['usuario']); ?></a></td>
             <td><?php echo $linha['email']; ?></td>
             <td><b class='btn btn-default btn-xs'><?php echo $linha['motivo']; ?></b></td>
             <td><?php echo utf8_encode(substr($linha['mensagem'], 0, 150)); ?>...</td>

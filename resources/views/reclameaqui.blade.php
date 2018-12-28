@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<script src="http://webdesigner2/sistema/public/js/jquery.knob.js"></script>
+<script src="<?php echo $_ENV['APP_URL']; ?>js/jquery.knob.js"></script>
      
 <script>
             $(function($) {
@@ -147,7 +147,7 @@
               <h3 class="box-title">Índice Reclame Aqui ( <?php echo $get; ?> meses )</h3>
               <i style=""> - Fonte de dados site reclameaqui.com.br</i>
               <div class="box-tools pull-right">
-              <a href="http://webdesigner2/sistema/public/indices/1/edit" class="btn btn-primary">Novo Índice</a>
+              <a href="<?php echo $_ENV['APP_URL']; ?>indices/1/edit" class="btn btn-primary">Novo Índice</a>
                 </button>
               </div>
             </div>

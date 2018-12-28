@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
     <!-- Theme style -->
-    <link rel="stylesheet" href="http://webdesigner2/sistema/public/css/AdminLTE.css">
+    <link rel="stylesheet" href="<?php echo $_ENV['APP_URL']; ?>css/AdminLTE.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/css/skins/_all-skins.min.css">
 
     <!-- iCheck -->
@@ -26,10 +26,10 @@
 
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="http://webdesigner2/sistema/public/i.css">
+    <link rel="stylesheet" href="<?php echo $_ENV['APP_URL']; ?>i.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
     @yield('css')
-	<link rel="stylesheet" href="http://webdesigner2/sistema/public/css/pace.min.css">
+	<link rel="stylesheet" href="<?php echo $_ENV['APP_URL']; ?>css/pace.min.css">
 	
     <script type="text/javascript">
 	jQuery(document).ready(function(){
@@ -64,7 +64,7 @@
 
             <!-- Logo -->
             <a href="#" class="logo">
-            <img width="120" src="http://webdesigner2/sistema/public/img/myreport.png" />
+            <img width="120" src="<?php echo $_ENV['APP_URL']; ?>img/myreport.png" />
             </a>
 
             <!-- Header Navbar -->
@@ -133,7 +133,7 @@
                             <!-- Menu Toggle Button -->
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <!-- The user image in the navbar-->
-                                <img src="http://webdesigner2/sistema/public/img/logo.jpg"
+                                <img src="<?php echo $_ENV['APP_URL']; ?>img/logo.jpg"
                                      class="user-image" alt="User Image"/>
                                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
                                 <span class="hidden-xs">{!! Auth::user()->name !!}</span>
@@ -141,7 +141,7 @@
                             <ul class="dropdown-menu" style="box-shadow: 2px 2px 50px #999; background: #ffffff;">
                                 <!-- The user image in the menu -->
                                 <li class="user-header">
-                                    <img src="http://webdesigner2/sistema/public/img/logo.jpg"
+                                    <img src="<?php echo $_ENV['APP_URL']; ?>img/logo.jpg"
                                          class="img-circle" alt="User Image"/>
                                     <p>
                                         {!! Auth::user()->name !!}
@@ -194,7 +194,7 @@
             <div class="box-body box-profile">
 
               <h3 class="profile-username text-center">Contatos</h3>
-                <img src="http://webdesigner2/sistema/public/img/beta.png" width="40" alt="Beta" style="position: absolute; margin-top: -30px; margin-left: 25px;" />
+                <img src="<?php echo $_ENV['APP_URL']; ?>img/beta.png" width="40" alt="Beta" style="position: absolute; margin-top: -30px; margin-left: 25px;" />
               <p class="text-muted text-center">Clique para conversar.</p>
 
               <ul class="list-group list-group-unbordered">
@@ -339,7 +339,7 @@
             </div>
         </div>
     </nav>
-<script src="http://webdesigner2/sistema/public/js/ckeditor.js"></script>
+<script src="<?php echo $_ENV['APP_URL']; ?>js/ckeditor.js"></script>
     <div id="page-content-wrapper">
         <div class="container-fluid">
             <div class="row">
@@ -364,21 +364,21 @@
   })
 </script>
    <!-- jQuery 3.1.1 -->
-    <script src="http://webdesigner2/sistema/public/js/pace.min.js"></script>
-<script src="http://webdesigner2/sistema/public/js/ckeditor.js"></script>
+    <script src="<?php echo $_ENV['APP_URL']; ?>js/pace.min.js"></script>
+<script src="<?php echo $_ENV['APP_URL']; ?>js/ckeditor.js"></script>
     <!-- AdminLTE App -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/js/adminlte.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
 
-<script type="text/javascript" src="http://webdesigner2/sistema/public/lib/jquery.bgiframe.min.js"></script>
-<script type="text/javascript" src="http://webdesigner2/sistema/public/lib/jquery.ajaxQueue.js"></script>
-<script type="text/javascript" src="http://webdesigner2/sistema/public/lib/thickbox-compressed.js"></script>
+<script type="text/javascript" src="<?php echo $_ENV['APP_URL']; ?>lib/jquery.bgiframe.min.js"></script>
+<script type="text/javascript" src="<?php echo $_ENV['APP_URL']; ?>lib/jquery.ajaxQueue.js"></script>
+<script type="text/javascript" src="<?php echo $_ENV['APP_URL']; ?>lib/thickbox-compressed.js"></script>
 <!--css -->
-<link rel="stylesheet" type="text/css" href="http://webdesigner2/sistema/public/lib/thickbox.css"/>
+<link rel="stylesheet" type="text/css" href="<?php echo $_ENV['APP_URL']; ?>lib/thickbox.css"/>
 <!--css -->
-<link rel="stylesheet" type="text/css" href="http://webdesigner2/sistema/public/lib/jquery.autocomplete.css"/>
-<link rel="stylesheet" type="text/css" href="http://webdesigner2/sistema/public/lib/thickbox.css"/>
+<link rel="stylesheet" type="text/css" href="<?php echo $_ENV['APP_URL']; ?>lib/jquery.autocomplete.css"/>
+<link rel="stylesheet" type="text/css" href="<?php echo $_ENV['APP_URL']; ?>lib/thickbox.css"/>
 <style>
 .rodape {
     position: absolute; 
@@ -450,7 +450,7 @@
            <div style="width: 100%; height: 30px;"></div>
            <div style="width: 80%; margin: 0 auto;">
            <div class="um">
-                <img src="http://webdesigner2/sistema/public/img/logo-coobrastur.png" alt="Coobrastur Turismo" /><br /><br />
+                <img src="<?php echo $_ENV['APP_URL']; ?>img/logo-coobrastur.png" alt="Coobrastur Turismo" /><br /><br />
                 <span style="display: block; width: 200px; margin: 0 auto; text-align: left;">
                     <b style="font-size: 19px;">myReport Coobrastur</b><br />
                     Sistema de gerenciamento<br /> de tarefas e controle interno.
@@ -459,7 +459,7 @@
            <div class="um">
            <span style="display: block; width: 350px; margin: 0 auto; text-align: left;">
                <br /><br /><br />
-               <a class="btnRodape" href="http://webdesigner2/sistema/public/televenda" target="new">Ranking Televenda</a><br />  
+               <a class="btnRodape" href="<?php echo $_ENV['APP_URL']; ?>televenda" target="new">Ranking Televenda</a><br />  
                <a class="btnRodape" href="#">Ranking Representantes</a>
                </span>
            </div>
@@ -492,7 +492,7 @@
         </button>
       </div>
       <div class="modal-body">
-      <form action="http://webdesigner2/sistema/public/sug.php" method="post">
+      <form action="<?php echo $_ENV['APP_URL']; ?>sug.php" method="post">
         <div class="form-group">
             <label>Estou na página:</label>
             <?php echo Request::url(); ?>

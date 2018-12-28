@@ -17,7 +17,7 @@
 </div>
  
 
-<script src="http://webdesigner2/sistema/public/js/ckeditor.js"></script>
+<script src="<?php echo $_ENV['APP_URL']; ?>js/ckeditor.js"></script>
 <script type="text/javascript">
     CKEDITOR.replace( 'conteudo', {
     contentsCss: ['body {font-size: 14px; line-height: 24px; font-family: "Arial"}'],

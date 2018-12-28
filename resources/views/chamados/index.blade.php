@@ -11,7 +11,7 @@
     <b>Pesquisa por Período:</b>
     </div>
     <div class="box box-primary" style="padding: 10px;">
-    <form action="http://webdesigner2/sistema/public/filtro-chamados">    
+    <form action="<?php echo $_ENV['APP_URL']; ?>filtro-chamados">    
         <span style="display: block; float: left; line-height: 30px;">De: </span> <input type="date" name="de_filtro" class="form-control" style="float: left; width: 250px;">  
         <span style="display: block; float: left; line-height: 30px;">Até: </span> <input type="date" name="ate_filtro" class="form-control" style="float: left; width: 250px;">
         <input type="submit" name="buscar" value="Filtrar" class="btn" >

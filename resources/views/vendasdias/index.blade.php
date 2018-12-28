@@ -33,7 +33,7 @@
           <div class="alert">
 
   <div class="form-group pesquisa" style="float: left;">
-  <form action="http://webdesigner2/sistema/public/relatorio.php" method="post" target="blank">
+  <form action="<?php echo $_ENV['APP_URL']; ?>relatorio.php" method="post" target="blank">
     <label>Mensal por representante:</label>
     <select name="mes" class="form-control">
       <option value="01">Janeiro</option>
@@ -67,7 +67,7 @@
 
 
   <div class="form-group pesquisa" style="float: left; margin-left: 10px;">
-  <form action="http://webdesigner2/sistema/public/relatorioGeral.php" method="post" target="new">
+  <form action="<?php echo $_ENV['APP_URL']; ?>relatorioGeral.php" method="post" target="new">
     <label>Mensal Geral:</label>
     <select name="mes" class="form-control">
       <option value="01">Janeiro</option>
@@ -113,7 +113,7 @@
 </div>
 
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     <script src="http://webdesigner2/sistema/public/funcs.js"></script>
+     <script src="<?php echo $_ENV['APP_URL']; ?>funcs.js"></script>
 
 
 

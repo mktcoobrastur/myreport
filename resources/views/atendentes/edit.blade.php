@@ -21,7 +21,7 @@
 
 <!-- Representante Field -->
 <div class="alert" style="width: 250px;">
-        <form action="http://webdesigner2/sistema/public/uploadAtendentes.php" method="post" enctype="multipart/form-data">
+        <form action="<?php echo $_ENV['APP_URL']; ?>uploadAtendentes.php" method="post" enctype="multipart/form-data">
     		<label>Enviar Foto:</label>
 	 		<input type="hidden" name="idChamado" value="{!! $atendente->id !!}" />
     	    <input type="file" name="arquivos[]" class="form-control">
@@ -37,7 +37,7 @@
             
     	    while ($linha = mysqli_fetch_array($query)) {
         ?>
-			<img style="position: absolute; top: 90px; right: 50px; height: 180px;" class="img-circle" width="200" src="http://webdesigner2/sistema/public/imgatendentes/<?php echo $linha['img']; ?>" />
+			<img style="position: absolute; top: 90px; right: 50px; height: 180px;" class="img-circle" width="200" src="<?php echo $_ENV['APP_URL']; ?>imgatendentes/<?php echo $linha['img']; ?>" />
 		</a>
 
 	    <?php } ?>

@@ -1,4 +1,4 @@
-<style type="text/css">
+<?php echo $_ENV['APP_URL']; ?><style type="text/css">
     .tHover:hover {
         background: #f0f0f0;
     }
@@ -33,7 +33,7 @@
     <tbody>
         <?php
             $campo = $_GET['q'];
-            $conexao  = mysqli_connect("localhost","root","","sistema");
+            $conexao  = mysqli_connect("mysql05-farm61.uni5.net","marketingcoobr03","i8h9p5z2","marketingcoobr03");
             $query    = "SELECT * from fotos WHERE hotel LIKE '%".$campo."%' OR codigo LIKE '%".$campo."%'";
             $query    = mysqli_query($conexao, $query);
             
@@ -46,8 +46,8 @@
             <td>
                 
                 <div class='btn-group'>
-                    <a href="http://webdesigner2/sistema/public/fotos/<?php echo $linha['id']; ?>" style="color: #555;" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-                    <a href="http://webdesigner2/sistema/public/fotos/<?php echo $linha['id']; ?>/edit" style="color: #555;" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+                    <a href="<?php echo $_ENV['APP_URL']; ?>fotos/<?php echo $linha['id']; ?>" style="color: #555;" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
+                    <a href="<?php echo $_ENV['APP_URL']; ?>fotos/<?php echo $linha['id']; ?>/edit" style="color: #555;" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
                     {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
                 </div>
                 

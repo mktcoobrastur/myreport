@@ -36,7 +36,7 @@
 ?>
 
 <li>
-    <a href="http://webdesigner2/sistema/public/home"><i class="fa fa-dashboard"></i> <span> Painel Principal</span></a>
+    <a href="<?php echo $_ENV['APP_URL']; ?>home"><i class="fa fa-dashboard"></i> <span> Painel Principal</span></a>
 </li>
 <?php 
   $idUser         = Auth::user()->id; 
@@ -53,10 +53,10 @@
           </a>
           <ul class="treeview-menu <?php if(isset($amarketing)) { echo $amarketing; } ?>">
             <li><a href="{!! route('marketings.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
-            <li><a href="http://webdesigner2/sistema/public/mark"><i class="fa fa-circle-o text-aqua"></i> Emarks</a></li>
+            <li><a href="<?php echo $_ENV['APP_URL']; ?>mark"><i class="fa fa-circle-o text-aqua"></i> Emarks</a></li>
             <li><a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Outras Solicitações</a></li>
-            <li><a href="http://webdesigner2/sistema/public/sugest"><i class="fa fa-circle-o text-aqua"></i> Sugestões myReport</a></li>
-            <li><a href="http://webdesigner2/sistema/public/converter"><i class="fa fa-circle-o text-aqua"></i><span> Conversor TXT to XML</span></a></li>
+            <li><a href="<?php echo $_ENV['APP_URL']; ?>sugest"><i class="fa fa-circle-o text-aqua"></i> Sugestões myReport</a></li>
+            <li><a href="<?php echo $_ENV['APP_URL']; ?>converter"><i class="fa fa-circle-o text-aqua"></i><span> Conversor TXT to XML</span></a></li>
           </ul>
 </li>
 <li class="treeview">
@@ -67,7 +67,7 @@
             </span>
           </a>
           <ul class="treeview-menu <?php if(isset($amarketing)) { echo $amarketing; } ?>">
-            <li><a href="http://webdesigner2/sistema/public/infos/1/edit"><i class="fa fa-edit"></i><span>Configurações Gerais</span></a></li>
+            <li><a href="<?php echo $_ENV['APP_URL']; ?>infos/1/edit"><i class="fa fa-edit"></i><span>Configurações Gerais</span></a></li>
             <li><a href="{!! route('diamantes.index') !!}"><i class="fa fa-edit"></i><span>Interesses</span></a></li>
             <li><a href="{!! route('destinos.index') !!}"><i class="fa fa-edit"></i><span>Destinos</span></a></li>
             <li><a href="{!! route('roteiros.index') !!}"><i class="fa fa-edit"></i><span>Roteiros</span></a></li>
@@ -92,9 +92,9 @@
           <ul class="treeview-menu <?php if(isset($arelacionamento)) { echo $arelacionamento; } ?>">
             <!--li><a href="{!! route('relacionamentos.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li-->
             <li><a href="{!! route('chamados.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Gerenciamento de Chamados</a></li>
-            <li><a href="http://webdesigner2/sistema/public/indice"><i class="fa fa-circle-o text-aqua"></i> Índice Chamados</a></li>
-            <li><a href="http://webdesigner2/sistema/public/reclameaqui?t=6"><i class="fa fa-circle-o text-aqua"></i> Índice ReclameAqui 6 meses</a></li>
-            <li><a href="http://webdesigner2/sistema/public/reclameaqui?t=12"><i class="fa fa-circle-o text-aqua"></i> Índice ReclameAqui 12 meses</a></li>
+            <li><a href="<?php echo $_ENV['APP_URL']; ?>indice"><i class="fa fa-circle-o text-aqua"></i> Índice Chamados</a></li>
+            <li><a href="<?php echo $_ENV['APP_URL']; ?>reclameaqui?t=6"><i class="fa fa-circle-o text-aqua"></i> Índice ReclameAqui 6 meses</a></li>
+            <li><a href="<?php echo $_ENV['APP_URL']; ?>reclameaqui?t=12"><i class="fa fa-circle-o text-aqua"></i> Índice ReclameAqui 12 meses</a></li>
           </ul>
 </li>
 
@@ -174,12 +174,12 @@
             <li><a href="{!! route('telemarketings.index') !!}"><i class="fa fa-circle-o text-aqua"></i> Tarefas</a></li>
             <li><a href="{!! route('atendentes.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Atendentes</span></a></li>
             <li><a href="javascript:newPopup()"><i class="fa fa-circle-o text-aqua"></i><span> Lançar Vendas</span></a></li>
-            <li><a href="http://webdesigner2/sistema/public/ranking"><i class="fa fa-circle-o text-aqua"></i> Ranking</a></li>
+            <li><a href="<?php echo $_ENV['APP_URL']; ?>ranking"><i class="fa fa-circle-o text-aqua"></i> Ranking</a></li>
           </ul>
 </li>
 <script language=javascript type="text/javascript">
   function newPopup(){
-    varWindow = window.open ('http://webdesigner2/televenda/users/', 'popup', "width=500, height=300, right=100, bottom=100, scrollbars=no ")
+    varWindow = window.open ('<?php echo $_ENV['APP_URL']; ?>televenda/users/', 'popup', "width=500, height=300, right=100, bottom=100, scrollbars=no ")
   }
 </script>
 <?php } ?>
@@ -234,10 +234,10 @@
     <li><a href="{!! route('recados.index') !!}"><i class="fa fa-circle-o text-aqua"></i> <span>Recados</span></a></li>
     <li><a href="javascript:newPopup()"><i class="fa fa-circle-o text-aqua"></i> <span>Acesso Televenda</span></a></li>
     <li><a href="{!! route('laminas.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span> Outras Solicitações</span></a></li>
-    <li><a href="http://webdesigner2/sistema/public/converter"><i class="fa fa-circle-o text-aqua"></i><span> Conversor TXT to XML</span></a></li>
+    <li><a href="<?php echo $_ENV['APP_URL']; ?>converter"><i class="fa fa-circle-o text-aqua"></i><span> Conversor TXT to XML</span></a></li>
   </ul>
 
 </li>
 <?php } ?>
   
-<li><a href="http://webdesigner2/sistema/public/ramais-coobrastur"><i class="fa fa-user-o"></i> <span>Ramais Coobrastur</span></a></li>
+<li><a href="<?php echo $_ENV['APP_URL']; ?>ramais-coobrastur"><i class="fa fa-user-o"></i> <span>Ramais Coobrastur</span></a></li>

@@ -32,7 +32,7 @@
 
         <tr>
             <td><i class="fa fa-handshake-o"></i></td>
-            <td><a class="btn" href="http://webdesigner2/sistema/public/chamados/<?php echo $linha['id']; ?>/edit" style="color: #333; text-decoration: none;"><?php echo utf8_encode($linha['usuario']); ?></a></td>
+            <td><a class="btn" href="<?php echo $_ENV['APP_URL']; ?>chamados/<?php echo $linha['id']; ?>/edit" style="color: #333; text-decoration: none;"><?php echo utf8_encode($linha['usuario']); ?></a></td>
             <td><?php echo $linha['email']; ?></td>
             <td><b class='btn btn-default btn-xs'><?php echo $linha['motivo']; ?></b></td>
             <td><?php echo utf8_encode(substr($linha['mensagem'], 0, 150)); ?>...</td>

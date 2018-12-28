@@ -12,7 +12,7 @@
             
     	    while ($linha = mysqli_fetch_array($query)) {
         ?>
-			<img style="position: absolute; top: 30px; right: 50px;" width="150" src="http://webdesigner2/sistema/public/imgconvenios/<?php echo $linha['img']; ?>" />
+			<img style="position: absolute; top: 30px; right: 50px;" width="150" src="<?php echo $_ENV['APP_URL']; ?>imgconvenios/<?php echo $linha['img']; ?>" />
 		</a>
 
 	    <?php } ?>
@@ -60,8 +60,8 @@
                 <?php if ($linha['status'] == 'F') { echo "FINALIZADO"; } ?>
             </td>
             <td>
-            <a href="http://webdesigner2/sistema/public/tconvenios/<?php echo $linha['id'];?>" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-            <a href="http://webdesigner2/sistema/public/tconvenios/<?php echo $linha['id'];?>/edit?c={!! $convenio->id !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
+            <a href="<?php echo $_ENV['APP_URL']; ?>tconvenios/<?php echo $linha['id'];?>" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
+            <a href="<?php echo $_ENV['APP_URL']; ?>tconvenios/<?php echo $linha['id'];?>/edit?c={!! $convenio->id !!}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
             {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Tem certeza?')"]) !!}
             </td>
         </tr>

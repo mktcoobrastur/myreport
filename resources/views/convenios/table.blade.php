@@ -50,7 +50,7 @@
             
     	    while ($linha = mysqli_fetch_array($query)) {
         ?>
-			<img src="http://webdesigner2/sistema/public/imgconvenios/<?php echo $linha['img']; ?>" alt="<?php echo $linha['nome']; ?>" /></a>
+			<img src="<?php echo $_ENV['APP_URL']; ?>imgconvenios/<?php echo $linha['img']; ?>" alt="<?php echo $linha['nome']; ?>" /></a>
 		</a>
 
 	    <?php } ?>

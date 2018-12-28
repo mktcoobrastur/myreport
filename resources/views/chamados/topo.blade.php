@@ -28,21 +28,21 @@
 }
 </style>
 <div class="boxCentral">
-            <img class="logoCentral" src="http://webdesigner2/sistema/public/img/logo-fale-conosco.png" alt="Central do Usuário" />
+            <img class="logoCentral" src="<?php echo $_ENV['APP_URL']; ?>img/logo-fale-conosco.png" alt="Central do Usuário" />
             <div class="botoes">
-                <a class="btn btn-default" href="http://webdesigner2/sistema/public/chamados">
+                <a class="btn btn-default" href="<?php echo $_ENV['APP_URL']; ?>chamados">
                    TODOS <span class="badge"></span>
                 </a>
-                <a class="btn btn-default" href="http://webdesigner2/sistema/public/chamados?c=aberto">
+                <a class="btn btn-default" href="<?php echo $_ENV['APP_URL']; ?>chamados?c=aberto">
                    ABERTOS <span class="badge"></span>
                 </a>
-                <a class="btn btn-default" href="http://webdesigner2/sistema/public/chamados?c=andamento">
+                <a class="btn btn-default" href="<?php echo $_ENV['APP_URL']; ?>chamados?c=andamento">
                    EM ANDAMENTO <span class="badge"></span>
                 </a>
-                <a class="btn btn-default" href="http://webdesigner2/sistema/public/chamados?c=pausa">
+                <a class="btn btn-default" href="<?php echo $_ENV['APP_URL']; ?>chamados?c=pausa">
                    EM PAUSA <span class="badge"></span>
                 </a>
-                <a class="btn btn-default" href="http://webdesigner2/sistema/public/chamados?c=encerrado">
+                <a class="btn btn-default" href="<?php echo $_ENV['APP_URL']; ?>chamados?c=encerrado">
                    ENCERRADOS <span class="badge"></span>
                 </a>
             </div>

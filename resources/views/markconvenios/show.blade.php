@@ -11,8 +11,8 @@
             <div class="box-body">
                 <div class="row" style="padding-left: 20px">
                     @include('markconvenios.show_fields')
-                    <a href="/mark" class="btn btn-default">Voltar</a>
-                    <a href="/markconveniados/create?r={!! $markconvenio->id !!}" class="btn btn-default">Adicionar Convênio</a>
+                    <a href="<?php echo $_ENV['APP_URL']; ?>mark" class="btn btn-default">Voltar</a>
+                    <a href="<?php echo $_ENV['APP_URL']; ?>markconveniados/create?r={!! $markconvenio->id !!}" class="btn btn-default">Adicionar Convênio</a>
                 </div>
             </div>
         </div>

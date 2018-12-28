@@ -73,6 +73,7 @@
             <li><a href="{!! route('roteiros.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span>Roteiros</span></a></li>
             <li><a href="{!! route('hoteisdiamantes.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span>Hoteis Diamante</span></a></li>
             <li><a href="{!! route('parceiros.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span>Parceiros</span></a></li>
+            <li><a href="{!! route('emailsdiamantes.index') !!}"><i class="fa fa-circle-o text-aqua"></i><span>Emails Cadastrados</span></a></li>
           </ul>
 </li>
 

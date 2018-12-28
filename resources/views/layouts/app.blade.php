@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
     <!-- Theme style -->
-    <link rel="stylesheet" href="<?php echo $_ENV['APP_URL']; ?>css/AdminLTE.css">
+    <link rel="stylesheet" href="css/AdminLTE.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/css/skins/_all-skins.min.css">
 
     <!-- iCheck -->
@@ -26,10 +26,10 @@
 
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="<?php echo $_ENV['APP_URL']; ?>i.css">
+    <link rel="stylesheet" href="i.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
     @yield('css')
-	<link rel="stylesheet" href="<?php echo $_ENV['APP_URL']; ?>css/pace.min.css">
+	<link rel="stylesheet" href="css/pace.min.css">
 	
     <script type="text/javascript">
 	jQuery(document).ready(function(){

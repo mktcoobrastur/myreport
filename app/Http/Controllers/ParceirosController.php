@@ -55,7 +55,11 @@ class ParceirosController extends AppBaseController
      */
     public function store(CreateParceirosRequest $request)
     {
+
+
         $input = $request->all();
+
+        
 
         $parceiros = $this->parceirosRepository->create($input);
 

@@ -146,7 +146,7 @@
     </div>
 </div>
 
-<script src="<?php echo $_ENV['APP_URL']; ?>vjs/jquery.knob.js"></script>
+<script src="js/jquery.knob.js"></script>
      
      <script>
                  $(function($) {
@@ -392,5 +392,5 @@
 
 </section>
     <!-- /.content -->
-<script src="<?php echo $_ENV['APP_URL']; ?>js/jquery.knob.js"></script>
+<script src="js/jquery.knob.js"></script>
 @endsection

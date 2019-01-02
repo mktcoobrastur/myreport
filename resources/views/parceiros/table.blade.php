@@ -2,8 +2,8 @@
     <thead>
         <tr>
             <th>Parceiro</th>
-            <th style="text-align: center;">Imagem</th>
             <th>Link</th>
+            <th style="text-align: center;">Imagem</th>
             <th colspan="3" style="text-align: right;">Ações</th>
         </tr>
     </thead>
@@ -11,8 +11,8 @@
     @foreach($parceiros as $parceiros)
         <tr>
             <td>{!! $parceiros->parceiro !!}</td>
-            <td style="text-align: center;"><img src="parceirosdiamante/{!! $parceiros->img !!}" /></td>
             <td>{!! $parceiros->link !!}</td>
+            <td style="text-align: center;"><div style="margin: 0 auto; border: 1px solid #ccc; width: 180px;"><img src="parceirosdiamante/{!! $parceiros->img !!}" /></div></td>
             <td>
                 {!! Form::open(['route' => ['parceiros.destroy', $parceiros->id], 'method' => 'delete']) !!}
                 <div class='btn-group pull-right'>

@@ -104,7 +104,7 @@
 
 <section class="content-header">
       <h1>
-      <i class="fa fa-dashboard"></i> Dashboard
+      <i class="fa fa-dashboard"></i> Painel Principal
       </h1>
       <ol class="breadcrumb">
       </ol>

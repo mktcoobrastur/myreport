@@ -13,7 +13,7 @@
 <!-- Img Field -->
 <div class="form-group">
     {!! Form::label('img', 'Img:') !!}
-    <p>{!! $parceiros->img !!}</p>
+    <p><img src="../parceirosdiamante/{!! $parceiros->img !!}" /></p>
 </div>
 
 <!-- Link Field -->
@@ -21,16 +21,3 @@
     {!! Form::label('link', 'Link:') !!}
     <p>{!! $parceiros->link !!}</p>
 </div>
-
-<!-- Created At Field -->
-<div class="form-group">
-    {!! Form::label('created_at', 'Created At:') !!}
-    <p>{!! $parceiros->created_at !!}</p>
-</div>
-
-<!-- Updated At Field -->
-<div class="form-group">
-    {!! Form::label('updated_at', 'Updated At:') !!}
-    <p>{!! $parceiros->updated_at !!}</p>
-</div>
-

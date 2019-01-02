@@ -2,6 +2,7 @@
     <thead>
         <tr>
             <th>Parceiro</th>
+            <th style="text-align: center;">Imagem</th>
             <th>Link</th>
             <th colspan="3" style="text-align: right;">Ações</th>
         </tr>
@@ -10,6 +11,7 @@
     @foreach($parceiros as $parceiros)
         <tr>
             <td>{!! $parceiros->parceiro !!}</td>
+            <td style="text-align: center;"><img src="parceirosdiamante/{!! $parceiros->img !!}" /></td>
             <td>{!! $parceiros->link !!}</td>
             <td>
                 {!! Form::open(['route' => ['parceiros.destroy', $parceiros->id], 'method' => 'delete']) !!}

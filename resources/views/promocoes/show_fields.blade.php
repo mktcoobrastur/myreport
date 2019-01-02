@@ -101,7 +101,7 @@
                             <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <img style="margin-left: 25%; margin-bottom: 5px;" width="300" src="http://webdesigner2/sistema/public/promo/{!! $promocoe->imgPrincipal !!}" />
+                        <img style="margin-left: 25%; margin-bottom: 5px;" width="300" src="<?php echo $_ENV['APP_URL']; ?>promo/{!! $promocoe->imgPrincipal !!}" />
             </div>
         </div>
     </div>

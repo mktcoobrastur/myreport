@@ -132,3 +132,5 @@ Route::resource('infos', 'InfoController');
 Route::resource('parceiros', 'ParceirosController');
 
 Route::resource('emailsdiamantes', 'EmailsdiamanteController');
+
+Route::resource('basecontatos', 'BasecontatoController');

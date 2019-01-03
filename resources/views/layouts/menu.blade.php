@@ -242,4 +242,7 @@
 </li>
 <?php } ?>
   
-<li><a href="<?php echo $_ENV['APP_URL']; ?>ramais-coobrastur"><i class="fa fa-user-o"></i> <span>Ramais Coobrastur</span></a></li>
+<li><a href="<?php echo $_ENV['APP_URL']; ?>ramais-coobrastur"><i class="fa fa-user-o"></i> <span>Ramais Coobrastur</span></a></li><li class="{{ Request::is('basecontatos*') ? 'active' : '' }}">
+    <a href="{!! route('basecontatos.index') !!}"><i class="fa fa-edit"></i><span>Basecontatos</span></a>
+</li>
+

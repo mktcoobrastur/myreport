@@ -250,3 +250,7 @@
     <a href="{!! route('destinosis.index') !!}"><i class="fa fa-edit"></i><span>Destinosis</span></a>
 </li>
 
+<li class="{{ Request::is('dashes*') ? 'active' : '' }}">
+    <a href="{!! route('dashes.index') !!}"><i class="fa fa-edit"></i><span>Dashes</span></a>
+</li>
+

@@ -136,3 +136,5 @@ Route::resource('emailsdiamantes', 'EmailsdiamanteController');
 Route::resource('basecontatos', 'BasecontatoController');
 
 Route::resource('destinosis', 'DestinosiController');
+
+Route::resource('dashes', 'DashController');

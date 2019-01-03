@@ -1,12 +1,9 @@
 <?php
-
-$conexao = mysqli_connect("localhost","root","","sistema");
-			
+			//$conexao = mysqli_connect("localhost","root","","sistema");
 			$servername = "localhost";
 			$username = "root";
 			$password = "";
 			$banco = "sistema";
-			
 			
 			// Create connection
 			$conn = mysqli_connect($servername, $username, $password, $banco);
@@ -16,11 +13,7 @@ $conexao = mysqli_connect("localhost","root","","sistema");
 			    die("Connection failed: " . mysqli_connect_error());
 			}
 
-
-
-            
     	    for ($i=1; $i < 30; $i++) {
-
                 
                 //$sql = "UPDATE promocoes SET imgLamina = '$cod.jpg' where codigo = '$cod'";
 
@@ -32,17 +25,9 @@ $conexao = mysqli_connect("localhost","root","","sistema");
                 } else {
                     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
                 }
-                }
-			
-			
-            
-
+            }
 
 			echo "ok!";
-        	//header("Location:http://localhost/sistema/public/tarefas/$idChamado");
 
-
-
-
-
+			//header("Location:http://localhost/sistema/public/tarefas/$idChamado");
 ?>

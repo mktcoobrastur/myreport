@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Flash;
 use Prettus\Repository\Criteria\RequestCriteria;
 use Response;
+use DB;
 
 class EmailsdiamanteController extends AppBaseController
 {
@@ -31,6 +32,9 @@ class EmailsdiamanteController extends AppBaseController
     {
         $this->emailsdiamanteRepository->pushCriteria(new RequestCriteria($request));
         $emailsdiamantes = $this->emailsdiamanteRepository->all();
+        $emailsdiamantes = DB::table('newsdiamante')
+        ->orderBy('id', 'desc')  // You can pass as many columns as you required. Required 'use DB';
+        ->get();
 
         return view('emailsdiamantes.index')
             ->with('emailsdiamantes', $emailsdiamantes);

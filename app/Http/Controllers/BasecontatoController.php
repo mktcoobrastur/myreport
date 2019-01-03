@@ -31,6 +31,10 @@ class BasecontatoController extends AppBaseController
     {
         $this->basecontatoRepository->pushCriteria(new RequestCriteria($request));
         $basecontatos = $this->basecontatoRepository->all();
+        $basecontatos = DB::table('basecontatos')
+        ->orderBy('id', 'desc')  // You can pass as many columns as you required. Required 'use DB';
+        ->get();
+
 
         return view('basecontatos.index')
             ->with('basecontatos', $basecontatos);

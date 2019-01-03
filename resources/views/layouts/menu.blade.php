@@ -246,3 +246,7 @@
     <a href="{!! route('basecontatos.index') !!}"><i class="fa fa-edit"></i><span>Basecontatos</span></a>
 </li>
 
+<li class="{{ Request::is('destinosis*') ? 'active' : '' }}">
+    <a href="{!! route('destinosis.index') !!}"><i class="fa fa-edit"></i><span>Destinosis</span></a>
+</li>
+

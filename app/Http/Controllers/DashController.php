@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Flash;
 use Prettus\Repository\Criteria\RequestCriteria;
 use Response;
+use DB;
 
 class DashController extends AppBaseController
 {
@@ -31,6 +32,9 @@ class DashController extends AppBaseController
     {
         $this->dashRepository->pushCriteria(new RequestCriteria($request));
         $dashes = $this->dashRepository->all();
+        $dashes = DB::table('dash')
+        ->orderBy('id', 'desc')  // You can pass as many columns as you required. Required 'use DB';
+        ->get();       
 
         return view('dashes.index')
             ->with('dashes', $dashes);
